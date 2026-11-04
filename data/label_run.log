@@ -1,0 +1,97 @@
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Users/hp/EVICTGuard_extract/EVICTGuard/src/label.py", line 271, in <module>
+    main()
+  File "/Users/hp/EVICTGuard_extract/EVICTGuard/src/label.py", line 265, in main
+    frame = label_corpus(a.index, a.rules, a.out, a.review_sample)
+  File "/Users/hp/EVICTGuard_extract/EVICTGuard/src/label.py", line 223, in label_corpus
+    labelled, summary = label_recording(raw, row.recording_id, meta, rules)
+  File "/Users/hp/EVICTGuard_extract/EVICTGuard/src/label.py", line 137, in label_recording
+    hits, runtime_skips = evaluate(raw, rules)
+  File "/Users/hp/EVICTGuard_extract/EVICTGuard/src/sigma_engine.py", line 417, in evaluate
+    idents = {name: _eval_identifier(cols, value, subset.index) for name, value in rule.detection.items()}
+  File "/Users/hp/EVICTGuard_extract/EVICTGuard/src/sigma_engine.py", line 417, in <dictcomp>
+    idents = {name: _eval_identifier(cols, value, subset.index) for name, value in rule.detection.items()}
+  File "/Users/hp/EVICTGuard_extract/EVICTGuard/src/sigma_engine.py", line 323, in _eval_identifier
+    return _eval_map(cols, value, index)
+  File "/Users/hp/EVICTGuard_extract/EVICTGuard/src/sigma_engine.py", line 302, in _eval_map
+    series = cols.get(name, lower=not case_sensitive_re)
+  File "/Users/hp/EVICTGuard_extract/EVICTGuard/src/sigma_engine.py", line 218, in get
+    series = text.str.lower() if lower else text
+  File "/Users/hp/EVICTGuard_extract/EVICTGuard/.venv_mac/lib/python3.9/site-packages/pandas/core/generic.py", line 6321, in __getattr__
+    return object.__getattribute__(self, name)
+  File "/Users/hp/EVICTGuard_extract/EVICTGuard/.venv_mac/lib/python3.9/site-packages/pandas/core/accessor.py", line 224, in __get__
+    accessor_obj = self._accessor(obj)
+  File "/Users/hp/EVICTGuard_extract/EVICTGuard/.venv_mac/lib/python3.9/site-packages/pandas/core/strings/accessor.py", line 194, in __init__
+    self._inferred_dtype = self._validate(data)
+  File "/Users/hp/EVICTGuard_extract/EVICTGuard/.venv_mac/lib/python3.9/site-packages/pandas/core/strings/accessor.py", line 248, in _validate
+    raise AttributeError("Can only use .str accessor with string values!")
+AttributeError: Can only use .str accessor with string values!
+Sigma rules loaded: 2366; skipped at load: {'keyword_search': 4, 'service_unmapped': 35, 'modifier_base64offset': 7, 'modifier_fieldref': 3, 'no_logsource': 1, 'category_unmapped': 9}
+SDWIN-190301125905:empire_powerview_ldap_ntsecuritydescriptor: 9002 events, core=20 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-190301174830:empire_dcsync_dcerpc_drsuapi_DsGetNCChanges: 8465 events, core=0 supporting=3698 ambiguous=3 roots(av/sigma)=1/0
+SDWIN-190319020147:empire_shell_net_localgroup_administrators: 884 events, core=2 supporting=115 ambiguous=0 roots(av/sigma)=1/0
+SDWIN-190319020729:empire_shell_net_local_users: 1907 events, core=0 supporting=166 ambiguous=0 roots(av/sigma)=1/0
+SDWIN-190319021158:empire_shell_samr_EnumDomainUsers: 633 events, core=0 supporting=126 ambiguous=1 roots(av/sigma)=1/0
+SDWIN-190319023812:empire_persistence_registry_modification_run_keys_standard_user: 40569 events, core=63 supporting=117 ambiguous=187 roots(av/sigma)=1/0
+SDWIN-190319024742:empire_schtasks_creation_standard_user: 1297 events, core=1 supporting=227 ambiguous=0 roots(av/sigma)=1/1
+SDWIN-190319131123:empire_over_pth_patch_lsass: 10271 events, core=2 supporting=3948 ambiguous=166 roots(av/sigma)=1/0
+SDWIN-190319145126:empire_shell_rubeus_asktgt_ptt: 1179 events, core=2 supporting=247 ambiguous=1 roots(av/sigma)=1/1
+SDWIN-190403133337:empire_shell_dcerpc_smb_service_dll_hijack: 6349 events, core=4 supporting=592 ambiguous=173 roots(av/sigma)=1/0
+SDWIN-190518182022:empire_launcher_vbs: 2067 events, core=2 supporting=621 ambiguous=0 roots(av/sigma)=1/1
+SDWIN-190518184306:empire_wmi_local_event_subscriptions_elevated_user: 79896 events, core=289 supporting=548 ambiguous=53 roots(av/sigma)=3/2
+SDWIN-190518200432:empire_psinject_PEinjection: 5898 events, core=191 supporting=2187 ambiguous=0 roots(av/sigma)=2/0
+SDWIN-190518201207:empire_shell_rpc_samr_smb_group_domain_admins_standard_user: 1749 events, core=4 supporting=191 ambiguous=0 roots(av/sigma)=1/0
+SDWIN-190518202151:empire_mimikatz_logonpasswords: 6026 events, core=0 supporting=1901 ambiguous=2 roots(av/sigma)=1/0
+SDWIN-190518210125:empire_smbexec_dcerpc_smb_svcctl: 7504 events, core=8 supporting=631 ambiguous=3 roots(av/sigma)=1/4
+SDWIN-190518210652:empire_psexec_dcerpc_tcp_svcctl: 4348 events, core=8 supporting=605 ambiguous=1 roots(av/sigma)=1/3
+SDWIN-190518211052:empire_dcom_shellwindows_stager: 32706 events, core=4 supporting=622 ambiguous=4 roots(av/sigma)=1/3
+SDWIN-190518211456:empire_psremoting_stager: 2744 events, core=8 supporting=561 ambiguous=2 roots(av/sigma)=1/1
+SDWIN-190518213907:empire_msbuild_dcerpc_wmi_smb: 4559 events, core=3 supporting=559 ambiguous=8 roots(av/sigma)=1/1
+SDWIN-190518221344:empire_dllinjection_LoadLibrary_CreateRemoteThread: 12200 events, core=1 supporting=537 ambiguous=440 roots(av/sigma)=1/0
+SDWIN-190518224039:empire_find_localadmin_smb_svcctl_OpenSCManager: 4570 events, core=70 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-190518230752:empire_mimikatz_extract_keys: 13199 events, core=1 supporting=3563 ambiguous=0 roots(av/sigma)=1/0
+SDWIN-190518235535:empire_mimikatz_backupkeys_dcerpc_smb_lsarpc: 7887 events, core=7 supporting=3563 ambiguous=0 roots(av/sigma)=1/0
+SDWIN-190519005224:empire_getsession_dcerpc_smb_srvsvc_NetSessEnum: 5047 events, core=277 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-190625103712:empire_mimikatz_sam_access: 12349 events, core=8 supporting=7853 ambiguous=0 roots(av/sigma)=1/0
+SDWIN-190625133822:empire_shell_reg_dump_sam: 738 events, core=1 supporting=123 ambiguous=0 roots(av/sigma)=1/1
+SDWIN-191027055035:rdp_interactive_taskmanager_lsass_dump: 5489 events, core=5 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-191027223020:covenant_installutil: 1730 events, core=8 supporting=179 ambiguous=0 roots(av/sigma)=0/2
+SDWIN-191225045202:empire_monologue_netntlm_downgrade: 1635 events, core=83 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-200609225055:msf_record_mic: 6202 events, core=20 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-200721232741:empire_launcher_sct_regsvr32: 2390 events, core=4 supporting=695 ambiguous=0 roots(av/sigma)=1/2
+SDWIN-200722001847:empire_persistence_registry_modification_run_keys_elevated_user: 657 events, core=1 supporting=106 ambiguous=0 roots(av/sigma)=1/0
+SDWIN-200724174200:covenant_wmi_remote_event_subscription_ActiveScriptEventConsumers: 3719 events, core=12 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-200805020926:covenant_dcsync_dcerpc_drsuapi_DsGetNCChanges: 869 events, core=3 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-200805034820:covenant_sc_query_dcerpc_smb_svcctl: 629 events, core=0 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-200806012009:covenant_sharpsc_query_dcerpc_smb_svcctl: 349 events, core=0 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-200806015757:covenant_copy_smb_CreateRequest: 506 events, core=1 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-200806022635:covenant_sharpsc_create_dcerpc_smb_svcctl: 3390 events, core=0 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-200806030120:covenant_sharpsc_start_dcerpc_smb_svcctl: 6046 events, core=178 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-200806031938:covenant_sharpsc_stop_dcerpc_smb_svcctl: 1264 events, core=3 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-200806035621:covenant_sharpwmi_create_dcerpc_wmi: 2343 events, core=1 supporting=141 ambiguous=0 roots(av/sigma)=0/1
+SDWIN-200806115603:covenant_psremoting_command: 4284 events, core=123 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-200806130039:covenant_getdomaingroup_ldap_searchrequest_domain_admins: 619 events, core=1 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-200807103913:empire_mimikatz_lsadump_patch: 6982 events, core=4 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-200904032946:empire_uac_shellapi_fodhelper: 4139 events, core=106 supporting=1363 ambiguous=0 roots(av/sigma)=2/2
+SDWIN-200914080546:empire_wmic_add_user_backdoor: 12278 events, core=1 supporting=194 ambiguous=2 roots(av/sigma)=1/0
+SDWIN-200916232559:mimikatz_CVE-2020-1472_Unauthenticated_NetrServerAuthenticate2: 790 events, core=2 supporting=136 ambiguous=0 roots(av/sigma)=0/2
+SDWIN-200917174542:covenant_dcom_executeexcel4macro_allowed: 8121 events, core=11 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-200918145959:covenant_dcom_registerxll: 5504 events, core=170 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-200921001437:empire_wmi_dcerpc_wmi_IWbemServices_ExecMethod: 6383 events, core=2 supporting=566 ambiguous=273 roots(av/sigma)=1/1
+SDWIN-200921175806:empire_schtasks_creation_execution_elevated_user: 59399 events, core=64 supporting=209 ambiguous=184 roots(av/sigma)=1/1
+SDWIN-200921230246:empire_shell_rubeus_asktgt_createnetonly: 3590 events, core=6 supporting=139 ambiguous=0 roots(av/sigma)=0/1
+SDWIN-200922042230:empire_powerdump_sam_access: 1182 events, core=11 supporting=375 ambiguous=1 roots(av/sigma)=1/0
+SDWIN-201009173318:covenant_wmi_wbemcomn_dll_hijack: 8947 events, core=189 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-201009183000:covenant_dcom_iertutil_dll_hijack: 37814 events, core=23 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-201012183248:covenant_lolbin_wuauclt_createremotethread: 1326 events, core=2 supporting=159 ambiguous=0 roots(av/sigma)=0/1
+SDWIN-201017061100:wmic_remote_xsl_jscript: 1364 events, core=2 supporting=422 ambiguous=0 roots(av/sigma)=0/1
+SDWIN-201018195009:psh_lsass_memory_dump_comsvcs: 184 events, core=8 supporting=35 ambiguous=0 roots(av/sigma)=0/1
+SDWIN-201018225619:cmd_lsass_memory_dumpert_syscalls: 118 events, core=7 supporting=23 ambiguous=0 roots(av/sigma)=0/1
+SDWIN-201019002900:cmd_sam_copy_esentutl: 915 events, core=42 supporting=184 ambiguous=0 roots(av/sigma)=0/1
+SDWIN-201019033054:cmd_psexec_lsa_secrets_dump: 286 events, core=8 supporting=46 ambiguous=0 roots(av/sigma)=0/1
+SDWIN-201019224718:cmd_userinitmprlogonscript_batch: 122 events, core=4 supporting=14 ambiguous=0 roots(av/sigma)=0/1
+SDWIN-201019232515:psh_mavinject_dll_notepad: 509 events, core=5 supporting=31 ambiguous=0 roots(av/sigma)=0/1

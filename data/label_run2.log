@@ -1,0 +1,35 @@
+Sigma rules loaded: 2366; skipped at load: {'keyword_search': 4, 'service_unmapped': 35, 'modifier_base64offset': 7, 'modifier_fieldref': 3, 'no_logsource': 1, 'category_unmapped': 9}
+SDWIN-201020013208:psh_input_capture_promptforcreds: 163 events, core=2 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-201021001911:cmd_netsh_fw_mod_open_ports: 2366 events, core=4 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-201021204544:cmd_service_mod_fax: 437 events, core=6 supporting=249 ambiguous=0 roots(av/sigma)=0/2
+SDWIN-201021232814:cmd_discover_iexplorer_version_registry: 68 events, core=3 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-201022002145:psh_hh_local_html_payload: 1221 events, core=6 supporting=387 ambiguous=0 roots(av/sigma)=0/1
+SDWIN-201022013121:psh_control_panel_execution: 1291 events, core=4 supporting=459 ambiguous=0 roots(av/sigma)=0/1
+SDWIN-201022015432:psh_cmstp_execution_bypassuac: 1166 events, core=6 supporting=214 ambiguous=0 roots(av/sigma)=0/2
+SDWIN-201022022144:cmd_mshta_javascript_getobject_sct: 1151 events, core=16 supporting=448 ambiguous=0 roots(av/sigma)=0/1
+SDWIN-201022025808:cmd_mshta_vbscript_execute_psh: 1127 events, core=13 supporting=750 ambiguous=0 roots(av/sigma)=0/2
+SDWIN-201022035214:psh_mshta_html_application_execution: 1553 events, core=14 supporting=559 ambiguous=0 roots(av/sigma)=0/2
+SDWIN-201022042947:purplesharp_ad_playbook_I: 25993 events, core=314 supporting=3150 ambiguous=0 roots(av/sigma)=0/4
+SDWIN-201023020513:psh_register_cimprovider_execute_dll: 1316 events, core=5 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-201023023651:cmd_bitsadmin_download_psh_script: 424 events, core=4 supporting=32 ambiguous=0 roots(av/sigma)=0/1
+SDWIN-201023031210:purplesharp_pe_injection_createremotethread: 692 events, core=8 supporting=313 ambiguous=0 roots(av/sigma)=0/2
+SDWIN-201026235835:cmd_process_herpaderping_snippingtool: 282 events, core=2 supporting=175 ambiguous=0 roots(av/sigma)=0/1
+SDWIN-201028191914:psh_windows_vault_web_credentials: 120 events, core=1 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-201029001615:psh_python_webserver: 2395 events, core=3 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-201029202324:cmd_sharpview_pcre_net: 267 events, core=7 supporting=117 ambiguous=0 roots(av/sigma)=0/1
+SDWIN-201102041306:psh_powershell_httplistener: 110 events, core=1 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-201102163918:cmd_seatbelt_group_user: 451 events, core=2 supporting=103 ambiguous=0 roots(av/sigma)=0/1
+SDWIN-201219070027:schtask_create: 1041 events, core=3 supporting=247 ambiguous=0 roots(av/sigma)=0/3
+SDWIN-201219075059:schtask_modification: 2657 events, core=2 supporting=202 ambiguous=0 roots(av/sigma)=0/2
+SDWIN-210314014019:proxylogon_ssrf_rce_poc: 10487 events, core=17 supporting=224 ambiguous=0 roots(av/sigma)=0/7
+SDWIN-210427020247:aadinternals_export_adfsdatabaseconfig_remotely: 285 events, core=0 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-210611210814:aptsimulator_cobaltstrike: 2611 events, core=9 supporting=1 ambiguous=0 roots(av/sigma)=0/3
+SDWIN-220630130349:auditpol_system_user_auditpolicy_modification: 13645 events, core=29 supporting=322 ambiguous=0 roots(av/sigma)=0/6
+SDWIN-220703123711:reg_cmd_process_commandline_logging_disabled: 8705 events, core=2 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-220703123711:reg_meterpreter_process_commandline_logging_disabled: 12752 events, core=3 supporting=0 ambiguous=0 roots(av/sigma)=0/0
+SDWIN-230718151900:cmd_dumping_ntds_dit_file_ntdsutil: 11184 events, core=245 supporting=265 ambiguous=0 roots(av/sigma)=0/1
+SDWIN-230720004300:empire_ninjacopy_dumping_ntds_dit_file: 13969 events, core=43 supporting=631 ambiguous=0 roots(av/sigma)=0/1
+APT29-DAY1:apt29_evals_day1_manual: 196081 events, core=2080 supporting=24614 ambiguous=0 roots(av/sigma)=0/10
+APT29-DAY2:apt29_evals_day2_manual: 587286 events, core=3521 supporting=42865 ambiguous=0 roots(av/sigma)=0/9
+
+88/110 recordings have core evidence; summary -> data/labels/recording_summary.csv

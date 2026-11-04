@@ -1,0 +1,11 @@
+{
+  "created_at_utc": "2026-10-11T07:09:02.385298+00:00",
+  "noise_type": "benign-looking",
+  "proportion": 0.1,
+  "seed": 2026,
+  "input_records": 15,
+  "output_records": 17,
+  "added_records": 2,
+  "removed_record_ids": [],
+  "label_note": "Synthetic events are not source ground truth; source label fields are preserved."
+}

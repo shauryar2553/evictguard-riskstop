@@ -1,0 +1,11 @@
+{
+  "created_at_utc": "2026-11-02T08:38:48.853818+00:00",
+  "source_database": "E:\\7th Sem\\mp\\EVICTGuard\\database\\evictguard.sqlite",
+  "output": "data\\episodes\\episode_5000.csv",
+  "requested_size": 5000,
+  "records_written": 5000,
+  "seed": 17,
+  "time_ordered": true,
+  "source_label_field": "label",
+  "label_limitations": "Labels are retained only if present in source. No labels were inferred or manufactured; scenario context is not record-level truth."
+}
