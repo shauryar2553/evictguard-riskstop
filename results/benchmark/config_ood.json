@@ -1,0 +1,13 @@
+{
+  "split": "ood",
+  "noise": [
+    "none:0",
+    "background-flood:0.5"
+  ],
+  "capacity": [
+    1024,
+    4096
+  ],
+  "seed": 17,
+  "gold_defer_core_coverage": 0.5
+}

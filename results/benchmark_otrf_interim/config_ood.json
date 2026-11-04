@@ -1,0 +1,17 @@
+{
+  "split": "ood",
+  "noise": [
+    "none:0",
+    "duplicate-flooding:0.5",
+    "background-flood:1.0",
+    "mimic-flood:0.2",
+    "missing-critical:0.3"
+  ],
+  "capacity": [
+    256,
+    512,
+    1024
+  ],
+  "seed": 17,
+  "gold_defer_core_coverage": 0.5
+}

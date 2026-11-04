@@ -1,0 +1,18 @@
+{
+  "no_history": true,
+  "split": "otrf_native_val",
+  "noise": [
+    "none:0"
+  ],
+  "capacity": [
+    0.01,
+    0.05
+  ],
+  "seed": 5,
+  "methods": [
+    "nodoze",
+    "rare_action"
+  ],
+  "episode_filter": null,
+  "gold_defer_core_coverage": 0.5
+}

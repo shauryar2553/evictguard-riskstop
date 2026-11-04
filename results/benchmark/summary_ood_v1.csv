@@ -1,0 +1,3 @@
+noise,proportion,capacity,method,episodes,core_action_recall,core_action_recall_ci95,core_recall,core_recall_ci95,core_ap,core_ap_ci95,supporting_recall,supporting_recall_ci95,attack_recall,attack_recall_ci95,noise_share,noise_share_ci95,runtime_s
+none,0.0,1024,evictguard_v1,16,0.0186,"[0.008, 0.030]",0.007,"[0.003, 0.011]",0.001,"[0.001, 0.001]",0.0022,"[0.001, 0.003]",0.0022,"[0.001, 0.003]",0.0,"[0.000, 0.000]",39.532
+none,0.0,4096,evictguard_v1,16,0.0502,"[0.038, 0.065]",0.0219,"[0.017, 0.028]",0.001,"[0.001, 0.001]",0.0104,"[0.007, 0.014]",0.0104,"[0.007, 0.014]",0.0,"[0.000, 0.000]",38.599

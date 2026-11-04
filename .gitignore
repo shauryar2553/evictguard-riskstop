@@ -1,20 +1,12 @@
+# Python environments (recreate with: python3 -m venv .venv_mac && .venv_mac/bin/pip install -r requirements.txt)
 .venv/
-__pycache__/
-.pytest_cache/
-*.py[cod]
-data/raw/*
-!data/raw/.gitkeep
-data/episodes/*
-data/generated/*
-database/*.db
-results/*
-logs/*
-!*/.gitkeep
 .venv_mac/
+__pycache__/
+*.py[cod]
+.pytest_cache/
 .pytest-tmp/
 .matplotlib/
-data/otrf/
-data/sigma/
-data/atlasv2/
-data/labels/
-data/benchmark/
+.DS_Store
+# Over GitHub's 100 MB limit; the original data/cdb_sample/sample.zip (11 MB) IS included and unzips to these.
+data/cdb_sample/sample.json
+data/cdb_sample/sample_flags.json

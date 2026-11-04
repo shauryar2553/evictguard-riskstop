@@ -1,3 +1,40 @@
+# EVICTGuard + RISKSTOP (NITK B.Tech Major Project)
+
+**Start here:** `NEXT_STEPS.md` (status and next steps), `docs/RESULTS_EVICTGUARD_V2.md` (final results and caveats),
+`docs/DATASET.md` (dataset design), `deliverables/EVICTGuard_Viva_Guide.docx` (plain-language guide).
+
+## Repository map
+| Path | Contents |
+|---|---|
+| `src/` | All code: datasets, labelling, episodes, noise, EVICTGuard v1/v2/v3/Online/Online v2, baselines, ledger, context assembly, benchmark |
+| `tests/` | 38 tests (`.venv_mac/bin/python -m pytest -q`) |
+| `scripts/` | Paper tables/figures, weight sensitivity, label review kit, viva guide generator, tie-break seeds |
+| `results/paper/` | Publication tables (Markdown + LaTeX), figures (PNG + PDF), significance tests |
+| `results/benchmark/` | Raw per-episode results of every experiment |
+| `results/*.sha256`, `results/evictguard_v3.json` | Fingerprints of the frozen methods |
+| `data/` | All datasets, labels and episodes (see licences below) |
+| `database/` | SQLite evidence ledger (Phase 1-2) |
+| `deliverables/` | Viva guide, human label-review sheet, mid-sem presentation, original Phase 1-3 zip |
+| `docs/` | Dataset design, results write-up, slide-11 replacement text |
+
+## Setup (macOS / Linux)
+```bash
+python3 -m venv .venv_mac && .venv_mac/bin/pip install -r requirements.txt
+unzip data/cdb_sample/sample.zip -d data/cdb_sample      # restores the CDB JSON files (too large for GitHub)
+.venv_mac/bin/python -m pytest -q
+./run_pipeline.sh atlasv2                                # rebuilds everything (skips steps already done)
+```
+(Windows: create the venv with `py -3 -m venv .venv` and use `.venv\Scripts\python.exe`.)
+
+## Third-party data and licences (private repository; do not make public without checking these)
+* **OTRF Security-Datasets** (`data/otrf/`): MIT per GitHub metadata. Roberto Rodriguez, https://github.com/OTRF/Security-Datasets
+* **ATLASv2** (`data/atlasv2/`, derived parquet only): the authors "encourage" research use with citation; licence not stated.
+  Cite Alsaheel et al. (USENIX Security 2021) and Riddle, Westfall & Bates (arXiv:2401.01341). REAPr labels: https://bitbucket.org/sts-lab/reapr-ground-truth
+* **Cyber Defense Benchmark sample** (`data/cdb_sample/sample.zip`): from https://github.com/simbianai/cyber_defense_benchmark (MIT-licensed repo). Chona et al., 2026.
+* **SigmaHQ rules** (`data/sigma/`): Detection Rule License 1.1 (attribution required). See `data/sigma/SIGMA_VERSION.md`.
+
+---
+
 # EVICTGuard + RISKSTOP — Phase 1
 
 Phase 1 provides dataset acquisition, inspection, SQLite ingestion, reproducible experimental copies, episode sampling, and tests. It does not implement the EVICTGuard reservoir or RISKSTOP policy.
@@ -90,3 +127,17 @@ python -m pytest -q
 ```
 
 This is a reproducible prototype, not a validated production policy. The OTRF episode is small, categories and host identifiers are simple proxies for diversity, corroboration only measures distinct events sharing a host, and the weights are research defaults rather than empirically tuned values. Full experimental evaluation and RISKSTOP remain future phases.
+
+## Phase 4: Labelled dataset, episodes and benchmark
+
+The single unlabelled OTRF recording has been replaced by a labelled hybrid dataset. See **`docs/DATASET.md`** for the full design and rationale.
+
+```bash
+python -m src.otrf_corpus --include-compound   # 110 OTRF Windows host recordings + metadata (~115 MB)
+python -m src.label --review-sample 5          # Sigma + causal-expansion event labels -> data/labels/
+python -m src.compose_episodes --background otrf   # 300 ATTACK/BENIGN episodes, leakage-safe splits
+python -m src.run_benchmark --split val        # EVICTGuard vs FIFO vs Random -> results/benchmark/
+# after downloading ATLASv2 sysmon + msft-security folders into data/atlasv2/raw/:
+python -m src.atlas_adapter --fetch-reapr && python -m src.atlas_adapter
+python -m src.compose_episodes --background atlasv2
+```

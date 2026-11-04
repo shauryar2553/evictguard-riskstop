@@ -1,0 +1,20 @@
+{
+  "no_history": false,
+  "split": "ood",
+  "noise": [
+    "none:0",
+    "background-flood:0.5"
+  ],
+  "capacity": [
+    256.0,
+    1024.0
+  ],
+  "seed": 17,
+  "methods": [
+    "evictguard_online",
+    "online-protected_only",
+    "evictguard_v2"
+  ],
+  "episode_filter": "h1-",
+  "gold_defer_core_coverage": 0.5
+}

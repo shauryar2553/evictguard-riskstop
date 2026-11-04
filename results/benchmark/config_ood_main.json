@@ -1,0 +1,22 @@
+{
+  "split": "ood",
+  "noise": [
+    "none:0",
+    "duplicate-flooding:0.5",
+    "background-flood:0.5",
+    "mimic-flood:0.2"
+  ],
+  "capacity": [
+    256,
+    1024,
+    4096
+  ],
+  "seed": 17,
+  "methods": [
+    "evictguard_v2",
+    "fifo",
+    "random"
+  ],
+  "episode_filter": null,
+  "gold_defer_core_coverage": 0.5
+}

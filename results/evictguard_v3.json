@@ -1,0 +1,7 @@
+{
+ "method": "evictguard_v3",
+ "definition": "src/evictguard_v2.py (SHA-256 b118c8a54f6d00e471bfb56837193bbdbe4b05f1543dbca03d86cff6bce9c27e) with disable={'redundancy'}",
+ "decided_on": "ATLASv2 h1 development ablation only: v2 0.550/0.821, v3 0.771/0.852 core action recall at 256/1024; dropping novelty too gave no gain (0.768/0.850)",
+ "fresh_test": "OTRF native TRAIN split (50 episodes): v3 had never been evaluated on it. Note: frozen v2 was run there earlier only as a comparator during online development; that did not inform the v3 decision, which used ATLASv2 h1 only.",
+ "frozen_at": "2026-11-04T07:52:45Z"
+}

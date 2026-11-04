@@ -1,0 +1,28 @@
+{
+  "split": "ood",
+  "noise": [
+    "none:0",
+    "background-flood:0.5"
+  ],
+  "capacity": [
+    1024
+  ],
+  "seed": 17,
+  "methods": [
+    "evictguard_v2",
+    "v2-no_history",
+    "v2-no_prevalence",
+    "v2-no_lineage",
+    "v2-no_propagation",
+    "v2-no_location",
+    "v2-no_lolbin",
+    "v2-no_sensitivity",
+    "v2-no_novelty",
+    "v2-no_target_location",
+    "v2-no_command",
+    "v2-no_redundancy",
+    "v2-no_type"
+  ],
+  "episode_filter": "h1-",
+  "gold_defer_core_coverage": 0.5
+}

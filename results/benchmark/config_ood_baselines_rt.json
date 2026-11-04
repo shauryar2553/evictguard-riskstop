@@ -1,0 +1,20 @@
+{
+  "no_history": false,
+  "split": "ood",
+  "noise": [
+    "none:0",
+    "background-flood:0.5"
+  ],
+  "capacity": [
+    256.0,
+    1024.0,
+    4096.0
+  ],
+  "seed": 17,
+  "methods": [
+    "nodoze",
+    "rare_action"
+  ],
+  "episode_filter": null,
+  "gold_defer_core_coverage": 0.5
+}

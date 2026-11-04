@@ -1,0 +1,16 @@
+{
+  "split": "ood",
+  "noise": [
+    "none:0"
+  ],
+  "capacity": [
+    1024,
+    4096
+  ],
+  "seed": 17,
+  "methods": [
+    "evictguard_v1"
+  ],
+  "episode_filter": null,
+  "gold_defer_core_coverage": 0.5
+}
