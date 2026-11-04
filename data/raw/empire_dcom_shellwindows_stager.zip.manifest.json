@@ -1,0 +1,14 @@
+{
+  "scenario": "Empire Invoke DCOM ShellWindows (host telemetry)",
+  "source_url": "https://raw.githubusercontent.com/OTRF/Security-Datasets/master/datasets/atomic/windows/lateral_movement/host/empire_dcom_shellwindows_stager.zip",
+  "documentation_url": "https://securitydatasets.com/notebooks/atomic/windows/execution/SDWIN-190518211052.html",
+  "downloaded_at_utc": "2026-10-11T07:07:29.903765+00:00",
+  "file": "data\\raw\\empire_dcom_shellwindows_stager.zip",
+  "format": "ZIP containing OTRF JSON Lines host telemetry",
+  "size_bytes": 2169218,
+  "limitations": [
+    "Telemetry comes from a simulated Empire DCOM scenario.",
+    "Scenario association does not make every record an independently verified malicious event.",
+    "The accompanying narrative is not a complete event-by-event ground-truth label set."
+  ]
+}

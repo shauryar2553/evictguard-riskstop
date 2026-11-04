@@ -1,0 +1,2 @@
+dataset_id,title,kind,url,techniques,tactics,tool,has_adversary_view,reason
+SDWIN-230718150800,Dumping NTDS.dit from Volume Shadow Copy,atomic,https://raw.githubusercontent.com/OTRF/Security-Datasets/master/datasets/atomic/windows/credential_access/host/cmd_copy_ntds_from_volume_shadow_copy.zip,T1003.003,TA0006,cmd,True,Failed to fetch https://raw.githubusercontent.com/OTRF/Security-Datasets/master/datasets/atomic/windows/credential_access/host/cmd_copy_ntds_from_volume_shadow_copy.zip: HTTP Error 404: Not Found
