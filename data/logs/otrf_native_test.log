@@ -1,0 +1,74 @@
+otrf_native_test-SDWIN-190319024742_empire_schtasks_creation_standard_user done (1297 events)
+otrf_native_test-SDWIN-190403133337_empire_shell_dcerpc_smb_service_dll_hijack done (6349 events)
+otrf_native_test-SDWIN-190518182022_empire_launcher_vbs done (2067 events)
+otrf_native_test-SDWIN-190518213907_empire_msbuild_dcerpc_wmi_smb done (4559 events)
+otrf_native_test-SDWIN-200609225055_msf_record_mic done (6202 events)
+otrf_native_test-SDWIN-200724174200_covenant_wmi_remote_event_subscription_ActiveScriptEventConsumers done (3719 events)
+otrf_native_test-SDWIN-200806035621_covenant_sharpwmi_create_dcerpc_wmi done (2343 events)
+otrf_native_test-SDWIN-200914080546_empire_wmic_add_user_backdoor done (12278 events)
+otrf_native_test-SDWIN-200921001437_empire_wmi_dcerpc_wmi_IWbemServices_ExecMethod done (6383 events)
+otrf_native_test-SDWIN-200921175806_empire_schtasks_creation_execution_elevated_user done (59399 events)
+otrf_native_test-SDWIN-201009173318_covenant_wmi_wbemcomn_dll_hijack done (8947 events)
+otrf_native_test-SDWIN-201019224718_cmd_userinitmprlogonscript_batch done (122 events)
+otrf_native_test-SDWIN-201021232814_cmd_discover_iexplorer_version_registry done (68 events)
+otrf_native_test-SDWIN-201029202324_cmd_sharpview_pcre_net done (267 events)
+otrf_native_test-SDWIN-201102163918_cmd_seatbelt_group_user done (451 events)
+otrf_native_test-SDWIN-201219070027_schtask_create done (1041 events)
+otrf_native_test-SDWIN-201219075059_schtask_modification done (2657 events)
+             noise  capacity        method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+  background-flood      0.01 evictguard_v1        17              0.2941          [0.152, 0.456]       0.2980   0.0784       0.0291
+  background-flood      0.01 evictguard_v2        17              0.6078          [0.402, 0.814]       0.5922   0.3577       0.0737
+  background-flood      0.01          fifo        17              0.0000          [0.000, 0.000]       0.0000      NaN       0.4839
+  background-flood      0.01        nodoze        17              0.0637          [0.000, 0.137]       0.0608   0.0270       0.0000
+  background-flood      0.01        random        17              0.0000          [0.000, 0.000]       0.0000      NaN       0.3923
+  background-flood      0.01   rare_action        17              0.3627          [0.171, 0.559]       0.3490   0.0708       0.0000
+  background-flood      0.01 recency_dedup        17              0.0000          [0.000, 0.000]       0.0000   0.0103       0.5028
+  background-flood      0.05 evictguard_v1        17              0.6863          [0.471, 0.878]       0.6843   0.0784       0.0997
+  background-flood      0.05 evictguard_v2        17              0.9265          [0.833, 1.000]       0.8686   0.3577       0.0966
+  background-flood      0.05          fifo        17              0.0000          [0.000, 0.000]       0.0000      NaN       0.5438
+  background-flood      0.05        nodoze        17              0.3676          [0.201, 0.569]       0.3353   0.0270       0.0000
+  background-flood      0.05        random        17              0.0147          [0.000, 0.044]       0.0098      NaN       0.2924
+  background-flood      0.05   rare_action        17              0.6324          [0.426, 0.853]       0.6039   0.0708       0.0000
+  background-flood      0.05 recency_dedup        17              0.0196          [0.000, 0.059]       0.0196   0.0103       0.4868
+duplicate-flooding      0.01 evictguard_v1        17              0.2941          [0.152, 0.456]       0.2980   0.0485       0.0000
+duplicate-flooding      0.01 evictguard_v2        17              0.5196          [0.314, 0.716]       0.5039   0.2435       0.0252
+duplicate-flooding      0.01          fifo        17              0.0000          [0.000, 0.000]       0.0000      NaN       0.3900
+duplicate-flooding      0.01        nodoze        17              0.0637          [0.000, 0.137]       0.0608   0.0175       0.0000
+duplicate-flooding      0.01        random        17              0.0882          [0.000, 0.235]       0.0882      NaN       0.3923
+duplicate-flooding      0.01   rare_action        17              0.1814          [0.044, 0.363]       0.1725   0.0392       0.0000
+duplicate-flooding      0.01 recency_dedup        17              0.0000          [0.000, 0.000]       0.0000   0.0096       0.4653
+duplicate-flooding      0.05 evictguard_v1        17              0.6863          [0.471, 0.878]       0.6843   0.0485       0.0000
+duplicate-flooding      0.05 evictguard_v2        17              0.9069          [0.799, 1.000]       0.8588   0.2435       0.0337
+duplicate-flooding      0.05          fifo        17              0.0000          [0.000, 0.000]       0.0000      NaN       0.3221
+duplicate-flooding      0.05        nodoze        17              0.3382          [0.172, 0.544]       0.3059   0.0175       0.0000
+duplicate-flooding      0.05        random        17              0.0147          [0.000, 0.044]       0.0098      NaN       0.2924
+duplicate-flooding      0.05   rare_action        17              0.4412          [0.235, 0.662]       0.4275   0.0392       0.0000
+duplicate-flooding      0.05 recency_dedup        17              0.1127          [0.000, 0.250]       0.0784   0.0096       0.3661
+       mimic-flood      0.01 evictguard_v1        17              0.2500          [0.108, 0.422]       0.2588   0.0224       0.0045
+       mimic-flood      0.01 evictguard_v2        17              0.5931          [0.382, 0.809]       0.5824   0.2994       0.0291
+       mimic-flood      0.01          fifo        17              0.0000          [0.000, 0.000]       0.0000      NaN       0.3388
+       mimic-flood      0.01        nodoze        17              0.0441          [0.000, 0.118]       0.0412   0.0236       0.0139
+       mimic-flood      0.01        random        17              0.0147          [0.000, 0.044]       0.0098      NaN       0.1213
+       mimic-flood      0.01   rare_action        17              0.2304          [0.083, 0.397]       0.2216   0.0524       0.0064
+       mimic-flood      0.01 recency_dedup        17              0.0000          [0.000, 0.000]       0.0000   0.0104       0.2590
+       mimic-flood      0.05 evictguard_v1        17              0.6225          [0.412, 0.809]       0.6255   0.0224       0.0175
+       mimic-flood      0.05 evictguard_v2        17              0.8922          [0.784, 0.985]       0.8588   0.2994       0.0132
+       mimic-flood      0.05          fifo        17              0.0000          [0.000, 0.000]       0.0000      NaN       0.3798
+       mimic-flood      0.05        nodoze        17              0.3529          [0.186, 0.549]       0.3059   0.0236       0.0032
+       mimic-flood      0.05        random        17              0.0392          [0.000, 0.098]       0.0294      NaN       0.1058
+       mimic-flood      0.05   rare_action        17              0.5686          [0.353, 0.794]       0.5549   0.0524       0.0195
+       mimic-flood      0.05 recency_dedup        17              0.0784          [0.000, 0.196]       0.0490   0.0104       0.1385
+              none      0.01 evictguard_v1        17              0.1912          [0.069, 0.328]       0.2000   0.0687       0.0000
+              none      0.01 evictguard_v2        17              0.5784          [0.358, 0.794]       0.5706   0.2998       0.0000
+              none      0.01          fifo        17              0.0000          [0.000, 0.000]       0.0000      NaN       0.0000
+              none      0.01        nodoze        17              0.0441          [0.000, 0.118]       0.0412   0.0248       0.0000
+              none      0.01        random        17              0.0196          [0.000, 0.059]       0.0098      NaN       0.0000
+              none      0.01   rare_action        17              0.2108          [0.064, 0.382]       0.2020   0.0524       0.0000
+              none      0.01 recency_dedup        17              0.0000          [0.000, 0.000]       0.0000   0.0111       0.0000
+              none      0.05 evictguard_v1        17              0.6667          [0.461, 0.848]       0.6647   0.0687       0.0000
+              none      0.05 evictguard_v2        17              0.8725          [0.735, 0.985]       0.8490   0.2998       0.0000
+              none      0.05          fifo        17              0.0000          [0.000, 0.000]       0.0000      NaN       0.0000
+              none      0.05        nodoze        17              0.2794          [0.123, 0.471]       0.2471   0.0248       0.0000
+              none      0.05        random        17              0.0196          [0.000, 0.059]       0.0098      NaN       0.0000
+              none      0.05   rare_action        17              0.5490          [0.328, 0.765]       0.5353   0.0524       0.0000
+              none      0.05 recency_dedup        17              0.0784          [0.000, 0.196]       0.0490   0.0111       0.0000

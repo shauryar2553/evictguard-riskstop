@@ -1,0 +1,34 @@
+otrf_native_test-SDWIN-190319024742_empire_schtasks_creation_standard_user done (1297 events)
+otrf_native_test-SDWIN-190403133337_empire_shell_dcerpc_smb_service_dll_hijack done (6349 events)
+otrf_native_test-SDWIN-190518182022_empire_launcher_vbs done (2067 events)
+otrf_native_test-SDWIN-190518213907_empire_msbuild_dcerpc_wmi_smb done (4559 events)
+otrf_native_test-SDWIN-200609225055_msf_record_mic done (6202 events)
+otrf_native_test-SDWIN-200724174200_covenant_wmi_remote_event_subscription_ActiveScriptEventConsumers done (3719 events)
+otrf_native_test-SDWIN-200806035621_covenant_sharpwmi_create_dcerpc_wmi done (2343 events)
+otrf_native_test-SDWIN-200914080546_empire_wmic_add_user_backdoor done (12278 events)
+otrf_native_test-SDWIN-200921001437_empire_wmi_dcerpc_wmi_IWbemServices_ExecMethod done (6383 events)
+otrf_native_test-SDWIN-200921175806_empire_schtasks_creation_execution_elevated_user done (59399 events)
+otrf_native_test-SDWIN-201009173318_covenant_wmi_wbemcomn_dll_hijack done (8947 events)
+otrf_native_test-SDWIN-201019224718_cmd_userinitmprlogonscript_batch done (122 events)
+otrf_native_test-SDWIN-201021232814_cmd_discover_iexplorer_version_registry done (68 events)
+otrf_native_test-SDWIN-201029202324_cmd_sharpview_pcre_net done (267 events)
+otrf_native_test-SDWIN-201102163918_cmd_seatbelt_group_user done (451 events)
+otrf_native_test-SDWIN-201219070027_schtask_create done (1041 events)
+otrf_native_test-SDWIN-201219075059_schtask_modification done (2657 events)
+             noise  capacity      method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+  background-flood      0.01      nodoze        17              0.0833          [0.015, 0.162]       0.0706   0.0270       0.0000
+  background-flood      0.01 rare_action        17              0.0490          [0.000, 0.118]       0.0431   0.0708       0.0000
+  background-flood      0.05      nodoze        17              0.3824          [0.221, 0.579]       0.3451   0.0270       0.0000
+  background-flood      0.05 rare_action        17              0.6373          [0.441, 0.843]       0.6235   0.0708       0.0000
+duplicate-flooding      0.01      nodoze        17              0.0784          [0.015, 0.157]       0.0706   0.0175       0.0000
+duplicate-flooding      0.01 rare_action        17              0.0637          [0.000, 0.137]       0.0529   0.0392       0.0000
+duplicate-flooding      0.05      nodoze        17              0.3529          [0.191, 0.549]       0.3157   0.0175       0.0000
+duplicate-flooding      0.05 rare_action        17              0.4608          [0.255, 0.667]       0.4471   0.0392       0.0000
+       mimic-flood      0.01      nodoze        17              0.0784          [0.000, 0.167]       0.0784   0.0236       0.0139
+       mimic-flood      0.01 rare_action        17              0.0343          [0.000, 0.083]       0.0314   0.0524       0.0026
+       mimic-flood      0.05      nodoze        17              0.2745          [0.118, 0.461]       0.2275   0.0236       0.0116
+       mimic-flood      0.05 rare_action        17              0.3775          [0.186, 0.569]       0.3686   0.0524       0.0106
+              none      0.01      nodoze        17              0.0441          [0.000, 0.118]       0.0412   0.0248       0.0000
+              none      0.01 rare_action        17              0.0735          [0.000, 0.206]       0.0706   0.0524       0.0000
+              none      0.05      nodoze        17              0.2794          [0.123, 0.471]       0.2471   0.0248       0.0000
+              none      0.05 rare_action        17              0.3382          [0.132, 0.544]       0.3294   0.0524       0.0000

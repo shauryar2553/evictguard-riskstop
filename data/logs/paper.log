@@ -1,0 +1,89 @@
+          subset  capacity                     method  episodes core action recall [95% CI] core record recall core AP kept / input
+development (h1)     256.0       EVICTGuard v2 (ours)        10        0.550 [0.415, 0.678]              0.199   0.139        0.11%
+development (h1)     256.0        NoDoze-style triage        10        0.000 [0.000, 0.000]              0.000   0.002        0.11%
+development (h1)     256.0 Sigma alert prioritisation        10        0.009 [0.003, 0.015]              0.003   0.005        0.11%
+development (h1)     256.0        Rare-action anomaly        10        0.007 [0.004, 0.010]              0.003   0.002        0.11%
+development (h1)     256.0            Recency + dedup        10        0.001 [0.000, 0.003]              0.000   0.001        0.11%
+development (h1)     256.0                     Random        10        0.002 [0.001, 0.005]              0.001     n/a        0.11%
+development (h1)     256.0                       FIFO        10        0.001 [0.000, 0.002]              0.000     n/a        0.11%
+development (h1)    1024.0       EVICTGuard v2 (ours)        10        0.821 [0.762, 0.872]              0.272   0.139        0.44%
+development (h1)    1024.0        NoDoze-style triage        10        0.001 [0.000, 0.003]              0.000   0.002        0.44%
+development (h1)    1024.0 Sigma alert prioritisation        10        0.010 [0.004, 0.016]              0.003   0.005        0.44%
+development (h1)    1024.0        Rare-action anomaly        10        0.028 [0.015, 0.042]              0.010   0.002        0.44%
+development (h1)    1024.0            Recency + dedup        10        0.001 [0.000, 0.003]              0.000   0.001        0.44%
+development (h1)    1024.0              EVICTGuard v1        10        0.030 [0.016, 0.043]              0.011   0.001        0.44%
+development (h1)    1024.0                     Random        10        0.022 [0.017, 0.026]              0.005     n/a        0.44%
+development (h1)    1024.0                       FIFO        10        0.001 [0.000, 0.003]              0.000     n/a        0.44%
+development (h1)    4096.0       EVICTGuard v2 (ours)        10        0.869 [0.814, 0.917]              0.286   0.139        1.74%
+development (h1)    4096.0        NoDoze-style triage        10        0.017 [0.007, 0.030]              0.003   0.002        1.74%
+development (h1)    4096.0 Sigma alert prioritisation        10        0.010 [0.004, 0.016]              0.003   0.005        1.74%
+development (h1)    4096.0        Rare-action anomaly        10        0.115 [0.073, 0.155]              0.042   0.002        1.74%
+development (h1)    4096.0            Recency + dedup        10        0.050 [0.020, 0.086]              0.006   0.001        1.74%
+development (h1)    4096.0              EVICTGuard v1        10        0.066 [0.050, 0.083]              0.027   0.001        1.74%
+development (h1)    4096.0                     Random        10        0.055 [0.048, 0.062]              0.017     n/a        1.74%
+development (h1)    4096.0                       FIFO        10        0.001 [0.000, 0.003]              0.000     n/a        1.74%
+   held-out (h2)     256.0       EVICTGuard v2 (ours)         6        0.790 [0.594, 0.893]              0.448   0.377        0.13%
+   held-out (h2)     256.0        NoDoze-style triage         6        0.004 [0.000, 0.008]              0.002   0.002        0.13%
+   held-out (h2)     256.0 Sigma alert prioritisation         6        0.000 [0.000, 0.000]              0.000   0.001        0.13%
+   held-out (h2)     256.0        Rare-action anomaly         6        0.014 [0.004, 0.023]              0.008   0.002        0.13%
+   held-out (h2)     256.0            Recency + dedup         6        0.000 [0.000, 0.000]              0.000   0.001        0.13%
+   held-out (h2)     256.0                     Random         6        0.004 [0.000, 0.008]              0.001     n/a        0.13%
+   held-out (h2)     256.0                       FIFO         6        0.000 [0.000, 0.000]              0.000     n/a        0.13%
+   held-out (h2)    1024.0       EVICTGuard v2 (ours)         6        0.973 [0.960, 0.982]              0.507   0.377        0.51%
+   held-out (h2)    1024.0        NoDoze-style triage         6        0.006 [0.002, 0.010]              0.003   0.002        0.51%
+   held-out (h2)    1024.0 Sigma alert prioritisation         6        0.000 [0.000, 0.000]              0.000   0.001        0.51%
+   held-out (h2)    1024.0        Rare-action anomaly         6        0.048 [0.025, 0.073]              0.028   0.002        0.51%
+   held-out (h2)    1024.0            Recency + dedup         6        0.000 [0.000, 0.000]              0.000   0.001        0.51%
+   held-out (h2)    1024.0              EVICTGuard v1         6        0.000 [0.000, 0.000]              0.000   0.001        0.51%
+   held-out (h2)    1024.0                     Random         6        0.015 [0.006, 0.025]              0.007     n/a        0.51%
+   held-out (h2)    1024.0                       FIFO         6        0.000 [0.000, 0.000]              0.000     n/a        0.51%
+   held-out (h2)    4096.0       EVICTGuard v2 (ours)         6        0.985 [0.972, 0.994]              0.510   0.377        2.03%
+   held-out (h2)    4096.0        NoDoze-style triage         6        0.021 [0.015, 0.027]              0.012   0.002        2.03%
+   held-out (h2)    4096.0 Sigma alert prioritisation         6        0.000 [0.000, 0.000]              0.000   0.001        2.03%
+   held-out (h2)    4096.0        Rare-action anomaly         6        0.167 [0.101, 0.222]              0.097   0.002        2.03%
+   held-out (h2)    4096.0            Recency + dedup         6        0.004 [0.000, 0.011]              0.000   0.001        2.03%
+   held-out (h2)    4096.0              EVICTGuard v1         6        0.023 [0.023, 0.023]              0.013   0.001        2.03%
+   held-out (h2)    4096.0                     Random         6        0.031 [0.021, 0.043]              0.018     n/a        2.03%
+   held-out (h2)    4096.0                       FIFO         6        0.000 [0.000, 0.000]              0.000     n/a        2.03%
+
+          subset noise  capacity             vs  n  mean_diff  wins  p_value
+development (h1)  none       256         nodoze 10   0.549668    10 0.001953
+development (h1)  none       256 sigma_priority 10   0.540944    10 0.001953
+development (h1)  none       256    rare_action 10   0.542290    10 0.001953
+development (h1)  none       256  recency_dedup 10   0.548204    10 0.001953
+development (h1)  none       256         random 10   0.547288    10 0.001953
+development (h1)  none       256           fifo 10   0.549097    10 0.001953
+development (h1)  none      1024         nodoze 10   0.820541    10 0.001953
+development (h1)  none      1024 sigma_priority 10   0.811816    10 0.001953
+development (h1)  none      1024    rare_action 10   0.793904    10 0.001953
+development (h1)  none      1024  recency_dedup 10   0.819969    10 0.001953
+development (h1)  none      1024  evictguard_v1 10   0.791658    10 0.001953
+development (h1)  none      1024         random 10   0.799752    10 0.001953
+development (h1)  none      1024           fifo 10   0.819969    10 0.001953
+development (h1)  none      4096         nodoze 10   0.851923    10 0.001953
+development (h1)  none      4096 sigma_priority 10   0.859503    10 0.001953
+development (h1)  none      4096    rare_action 10   0.754314    10 0.001953
+development (h1)  none      4096  recency_dedup 10   0.818888    10 0.001953
+development (h1)  none      4096  evictguard_v1 10   0.802709    10 0.001953
+development (h1)  none      4096         random 10   0.814342    10 0.001953
+development (h1)  none      4096           fifo 10   0.867655    10 0.001953
+   held-out (h2)  none       256         nodoze  6   0.786260     6 0.031250
+   held-out (h2)  none       256 sigma_priority  6   0.790136     6 0.031250
+   held-out (h2)  none       256    rare_action  6   0.776636     6 0.031250
+   held-out (h2)  none       256  recency_dedup  6   0.790136     6 0.031250
+   held-out (h2)  none       256         random  6   0.786303     6 0.031250
+   held-out (h2)  none       256           fifo  6   0.790136     6 0.031250
+   held-out (h2)  none      1024         nodoze  6   0.967358     6 0.031250
+   held-out (h2)  none      1024 sigma_priority  6   0.973172     6 0.031250
+   held-out (h2)  none      1024    rare_action  6   0.924918     6 0.031250
+   held-out (h2)  none      1024  recency_dedup  6   0.973172     6 0.031250
+   held-out (h2)  none      1024  evictguard_v1  6   0.973172     6 0.031250
+   held-out (h2)  none      1024         random  6   0.957864     6 0.031250
+   held-out (h2)  none      1024           fifo  6   0.973172     6 0.031250
+   held-out (h2)  none      4096         nodoze  6   0.963547     6 0.031250
+   held-out (h2)  none      4096 sigma_priority  6   0.984757     6 0.031250
+   held-out (h2)  none      4096    rare_action  6   0.817348     6 0.031250
+   held-out (h2)  none      4096  recency_dedup  6   0.981012     6 0.031250
+   held-out (h2)  none      4096  evictguard_v1  6   0.961587     6 0.031250
+   held-out (h2)  none      4096         random  6   0.953812     6 0.031250
+   held-out (h2)  none      4096           fifo  6   0.984757     6 0.031250

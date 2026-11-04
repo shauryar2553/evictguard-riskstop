@@ -1,0 +1,19 @@
+ood-attack-h1-m1 done (301305 events)
+ood-attack-h1-m2 done (237499 events)
+ood-attack-h1-m3 done (188974 events)
+ood-attack-h1-m4 done (200563 events)
+ood-attack-h1-m5 done (300806 events)
+ood-attack-h1-m6 done (221476 events)
+ood-attack-h1-s1 done (199957 events)
+ood-attack-h1-s2 done (210729 events)
+ood-attack-h1-s3 done (258548 events)
+ood-attack-h1-s4 done (231973 events)
+ood-attack-h2-m1 done (300808 events)
+ood-attack-h2-m2 done (300969 events)
+ood-attack-h2-m3 done (155882 events)
+ood-attack-h2-m4 done (152311 events)
+ood-attack-h2-m5 done (140087 events)
+ood-attack-h2-m6 done (161364 events)
+noise  capacity        method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+ none      1024 evictguard_v1        16              0.0186          [0.008, 0.030]       0.0070    0.001          0.0
+ none      4096 evictguard_v1        16              0.0502          [0.038, 0.065]       0.0219    0.001          0.0

@@ -1,0 +1,81 @@
+test-attack-0000 done (4005 events)
+test-attack-0001 done (4089 events)
+test-attack-0002 done (4186 events)
+test-attack-0003 done (4001 events)
+test-attack-0004 done (4036 events)
+test-attack-0005 done (4017 events)
+test-attack-0006 done (4068 events)
+test-attack-0007 done (4186 events)
+test-attack-0008 done (4009 events)
+test-attack-0009 done (4174 events)
+test-attack-0010 done (4133 events)
+test-attack-0011 done (4177 events)
+test-attack-0012 done (4007 events)
+test-attack-0013 done (4079 events)
+test-attack-0014 done (4080 events)
+test-attack-0015 done (4199 events)
+test-attack-0016 done (4004 events)
+test-attack-0017 done (4044 events)
+test-attack-0018 done (4083 events)
+test-attack-0019 done (4110 events)
+test-attack-0020 done (4004 events)
+test-attack-0021 done (4193 events)
+test-attack-0022 done (4075 events)
+test-attack-0023 done (4002 events)
+test-attack-0024 done (4227 events)
+test-attack-0025 done (4277 events)
+test-attack-0026 done (4068 events)
+test-attack-0027 done (4155 events)
+test-attack-0028 done (4072 events)
+test-attack-0029 done (4009 events)
+test-attack-0030 done (4179 events)
+test-attack-0031 done (4080 events)
+test-attack-0032 done (4080 events)
+test-attack-0033 done (4175 events)
+test-attack-0034 done (4130 events)
+test-attack-0035 done (4116 events)
+test-attack-0036 done (4193 events)
+test-attack-0037 done (4089 events)
+test-attack-0038 done (4116 events)
+test-attack-0039 done (4181 events)
+             noise  capacity        method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+  background-flood       256 evictguard_v1        40              1.0000          [1.000, 1.000]       1.0000   0.0678       0.1430
+  background-flood       256 evictguard_v2        40              0.9912          [0.960, 1.000]       0.9842   0.7291       0.2593
+  background-flood       256          fifo        40              0.0724          [0.020, 0.164]       0.0724      NaN       0.6390
+  background-flood       256        random        40              0.0105          [0.000, 0.036]       0.0105      NaN       0.4741
+  background-flood       512 evictguard_v1        40              1.0000          [1.000, 1.000]       1.0000   0.0678       0.1362
+  background-flood       512 evictguard_v2        40              1.0000          [1.000, 1.000]       0.9895   0.7291       0.3062
+  background-flood       512          fifo        40              0.0724          [0.020, 0.164]       0.0724      NaN       0.6633
+  background-flood       512        random        40              0.0390          [0.010, 0.086]       0.0355      NaN       0.4839
+duplicate-flooding       256 evictguard_v1        40              1.0000          [1.000, 1.000]       1.0000   0.0316       0.0000
+duplicate-flooding       256 evictguard_v2        40              0.9912          [0.960, 1.000]       0.9842   0.6363       0.0000
+duplicate-flooding       256          fifo        40              0.0811          [0.028, 0.172]       0.0776      NaN       0.3354
+duplicate-flooding       256        random        40              0.0373          [0.005, 0.096]       0.0338      NaN       0.2662
+duplicate-flooding       512 evictguard_v1        40              1.0000          [1.000, 1.000]       1.0000   0.0316       0.0000
+duplicate-flooding       512 evictguard_v2        40              1.0000          [1.000, 1.000]       0.9895   0.6363       0.0000
+duplicate-flooding       512          fifo        40              0.1272          [0.058, 0.215]       0.1237      NaN       0.3483
+duplicate-flooding       512        random        40              0.1118          [0.048, 0.177]       0.1118      NaN       0.2772
+       mimic-flood       256 evictguard_v1        40              1.0000          [1.000, 1.000]       1.0000   0.0024       0.0453
+       mimic-flood       256 evictguard_v2        40              0.9912          [0.960, 1.000]       0.9842   0.7067       0.0529
+       mimic-flood       256          fifo        40              0.0724          [0.020, 0.164]       0.0724      NaN       0.4683
+       mimic-flood       256        random        40              0.0776          [0.028, 0.158]       0.0776      NaN       0.1132
+       mimic-flood       512 evictguard_v1        40              1.0000          [1.000, 1.000]       1.0000   0.0024       0.0775
+       mimic-flood       512 evictguard_v2        40              1.0000          [1.000, 1.000]       0.9895   0.7067       0.0316
+       mimic-flood       512          fifo        40              0.1009          [0.048, 0.197]       0.0974      NaN       0.4288
+       mimic-flood       512        random        40              0.1654          [0.084, 0.250]       0.1654      NaN       0.1515
+  missing-critical       256 evictguard_v1        40              1.0000          [1.000, 1.000]       1.0000   0.0386       0.0000
+  missing-critical       256 evictguard_v2        40              0.9899          [0.964, 1.000]       0.9848   0.7674       0.0000
+  missing-critical       256          fifo        40              0.1010          [0.042, 0.208]       0.0985      NaN       0.0000
+  missing-critical       256        random        40              0.0556          [0.012, 0.131]       0.0556      NaN       0.0000
+  missing-critical       512 evictguard_v1        40              1.0000          [1.000, 1.000]       1.0000   0.0386       0.0000
+  missing-critical       512 evictguard_v2        40              1.0000          [1.000, 1.000]       0.9924   0.7674       0.0000
+  missing-critical       512          fifo        40              0.1465          [0.071, 0.250]       0.1439      NaN       0.0000
+  missing-critical       512        random        40              0.1717          [0.080, 0.286]       0.1667      NaN       0.0000
+              none       256 evictguard_v1        40              1.0000          [1.000, 1.000]       1.0000   0.0492       0.0000
+              none       256 evictguard_v2        40              0.9912          [0.960, 1.000]       0.9842   0.7295       0.0000
+              none       256          fifo        40              0.0811          [0.028, 0.172]       0.0776      NaN       0.0000
+              none       256        random        40              0.0531          [0.010, 0.115]       0.0531      NaN       0.0000
+              none       512 evictguard_v1        40              1.0000          [1.000, 1.000]       1.0000   0.0492       0.0000
+              none       512 evictguard_v2        40              1.0000          [1.000, 1.000]       0.9895   0.7295       0.0000
+              none       512          fifo        40              0.1272          [0.058, 0.215]       0.1237      NaN       0.0000
+              none       512        random        40              0.1237          [0.062, 0.231]       0.1202      NaN       0.0000

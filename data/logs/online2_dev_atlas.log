@@ -1,0 +1,19 @@
+ood-attack-h1-m1 done (301305 events)
+ood-attack-h1-m2 done (237499 events)
+ood-attack-h1-m3 done (188974 events)
+ood-attack-h1-m4 done (200563 events)
+ood-attack-h1-m5 done (300806 events)
+ood-attack-h1-m6 done (221476 events)
+ood-attack-h1-s1 done (199957 events)
+ood-attack-h1-s2 done (210729 events)
+ood-attack-h1-s3 done (258548 events)
+ood-attack-h1-s4 done (231973 events)
+           noise  capacity                   method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+background-flood     256.0     evictguard_online_v2        10              0.7884          [0.729, 0.834]       0.2626      NaN       0.0754
+background-flood     256.0 online_v2-protected_only        10              0.7539          [0.696, 0.794]       0.2518      NaN       0.0000
+background-flood    1024.0     evictguard_online_v2        10              0.8349          [0.774, 0.883]       0.2731      NaN       0.0221
+background-flood    1024.0 online_v2-protected_only        10              0.8179          [0.756, 0.865]       0.2671      NaN       0.0021
+            none     256.0     evictguard_online_v2        10              0.7890          [0.731, 0.834]       0.2628      NaN       0.0000
+            none     256.0 online_v2-protected_only        10              0.7539          [0.696, 0.794]       0.2518      NaN       0.0000
+            none    1024.0     evictguard_online_v2        10              0.8349          [0.774, 0.883]       0.2731      NaN       0.0000
+            none    1024.0 online_v2-protected_only        10              0.8179          [0.756, 0.865]       0.2671      NaN       0.0000

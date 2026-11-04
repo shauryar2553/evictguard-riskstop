@@ -1,0 +1,41 @@
+ood-attack-h1-m1 done (301305 events)
+ood-attack-h1-m2 done (237499 events)
+ood-attack-h1-m3 done (188974 events)
+ood-attack-h1-m4 done (200563 events)
+ood-attack-h1-m5 done (300806 events)
+ood-attack-h1-m6 done (221476 events)
+ood-attack-h1-s1 done (199957 events)
+ood-attack-h1-s2 done (210729 events)
+ood-attack-h1-s3 done (258548 events)
+ood-attack-h1-s4 done (231973 events)
+ood-attack-h2-m1 done (300808 events)
+ood-attack-h2-m2 done (300969 events)
+ood-attack-h2-m3 done (155882 events)
+ood-attack-h2-m4 done (152311 events)
+ood-attack-h2-m5 done (140087 events)
+ood-attack-h2-m6 done (161364 events)
+           noise  capacity         method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+background-flood     256.0         nodoze        16              0.0000          [0.000, 0.000]       0.0000   0.0016       0.0000
+background-flood     256.0    rare_action        16              0.0000          [0.000, 0.000]       0.0000   0.0020       0.0000
+background-flood     256.0  recency_dedup        16              0.0013          [0.000, 0.003]       0.0002   0.0011       0.6445
+background-flood     256.0 sigma_priority        16              0.0055          [0.002, 0.010]       0.0019   0.0026       0.4299
+background-flood    1024.0         nodoze        16              0.0000          [0.000, 0.000]       0.0000   0.0016       0.0000
+background-flood    1024.0    rare_action        16              0.0000          [0.000, 0.000]       0.0000   0.0020       0.0000
+background-flood    1024.0  recency_dedup        16              0.0034          [0.000, 0.008]       0.0002   0.0011       0.5268
+background-flood    1024.0 sigma_priority        16              0.0064          [0.002, 0.011]       0.0021   0.0026       0.5034
+background-flood    4096.0         nodoze        16              0.0187          [0.011, 0.028]       0.0065   0.0016       0.0000
+background-flood    4096.0    rare_action        16              0.2149          [0.149, 0.279]       0.1029   0.0020       0.0000
+background-flood    4096.0  recency_dedup        16              0.0192          [0.007, 0.035]       0.0032   0.0011       0.2884
+background-flood    4096.0 sigma_priority        16              0.0076          [0.003, 0.013]       0.0021   0.0026       0.3544
+            none     256.0         nodoze        16              0.0000          [0.000, 0.000]       0.0000   0.0016       0.0000
+            none     256.0    rare_action        16              0.0000          [0.000, 0.000]       0.0000   0.0017       0.0000
+            none     256.0  recency_dedup        16              0.0009          [0.000, 0.002]       0.0002   0.0012       0.0000
+            none     256.0 sigma_priority        16              0.0055          [0.002, 0.010]       0.0019   0.0033       0.0000
+            none    1024.0         nodoze        16              0.0000          [0.000, 0.000]       0.0000   0.0016       0.0000
+            none    1024.0    rare_action        16              0.0000          [0.000, 0.000]       0.0000   0.0017       0.0000
+            none    1024.0  recency_dedup        16              0.0009          [0.000, 0.002]       0.0002   0.0012       0.0000
+            none    1024.0 sigma_priority        16              0.0060          [0.002, 0.010]       0.0021   0.0033       0.0000
+            none    4096.0         nodoze        16              0.0187          [0.011, 0.028]       0.0065   0.0016       0.0000
+            none    4096.0    rare_action        16              0.1546          [0.105, 0.198]       0.0711   0.0017       0.0000
+            none    4096.0  recency_dedup        16              0.0328          [0.011, 0.062]       0.0038   0.0012       0.0000
+            none    4096.0 sigma_priority        16              0.0060          [0.002, 0.010]       0.0021   0.0033       0.0000

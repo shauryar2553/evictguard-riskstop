@@ -1,0 +1,29 @@
+ood-attack-h1-m1 done (301305 events)
+ood-attack-h1-m2 done (237499 events)
+ood-attack-h1-m3 done (188974 events)
+ood-attack-h1-m4 done (200563 events)
+ood-attack-h1-m5 done (300806 events)
+ood-attack-h1-m6 done (221476 events)
+ood-attack-h1-s1 done (199957 events)
+ood-attack-h1-s2 done (210729 events)
+ood-attack-h1-s3 done (258548 events)
+ood-attack-h1-s4 done (231973 events)
+ood-attack-h2-m1 done (300808 events)
+ood-attack-h2-m2 done (300969 events)
+ood-attack-h2-m3 done (155882 events)
+ood-attack-h2-m4 done (152311 events)
+ood-attack-h2-m5 done (140087 events)
+ood-attack-h2-m6 done (161364 events)
+           noise  capacity      method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+background-flood     256.0      nodoze        16              0.0000          [0.000, 0.000]       0.0000   0.0016          0.0
+background-flood     256.0 rare_action        16              0.0146          [0.009, 0.020]       0.0067   0.0020          0.0
+background-flood    1024.0      nodoze        16              0.0046          [0.001, 0.009]       0.0017   0.0016          0.0
+background-flood    1024.0 rare_action        16              0.0491          [0.033, 0.066]       0.0228   0.0020          0.0
+background-flood    4096.0      nodoze        16              0.0181          [0.011, 0.025]       0.0063   0.0016          0.0
+background-flood    4096.0 rare_action        16              0.1753          [0.139, 0.210]       0.0800   0.0020          0.0
+            none     256.0      nodoze        16              0.0015          [0.000, 0.004]       0.0008   0.0016          0.0
+            none     256.0 rare_action        16              0.0097          [0.005, 0.014]       0.0046   0.0017          0.0
+            none    1024.0      nodoze        16              0.0027          [0.001, 0.005]       0.0015   0.0016          0.0
+            none    1024.0 rare_action        16              0.0353          [0.022, 0.050]       0.0167   0.0017          0.0
+            none    4096.0      nodoze        16              0.0187          [0.012, 0.027]       0.0065   0.0016          0.0
+            none    4096.0 rare_action        16              0.1345          [0.098, 0.169]       0.0625   0.0017          0.0

@@ -1,0 +1,23 @@
+ood-attack-h1-m1 done (301305 events)
+ood-attack-h1-m2 done (237499 events)
+ood-attack-h1-m3 done (188974 events)
+ood-attack-h1-m4 done (200563 events)
+ood-attack-h1-m5 done (300806 events)
+ood-attack-h1-m6 done (221476 events)
+ood-attack-h1-s1 done (199957 events)
+ood-attack-h1-s2 done (210729 events)
+ood-attack-h1-s3 done (258548 events)
+ood-attack-h1-s4 done (231973 events)
+           noise  capacity                method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+background-flood     256.0     evictguard_online        10              0.7899          [0.731, 0.835]       0.2631      NaN       0.0730
+background-flood     256.0         evictguard_v2        10              0.5522          [0.414, 0.682]       0.2003   0.1394       0.0270
+background-flood     256.0 online-protected_only        10              0.7539          [0.696, 0.794]       0.2518      NaN       0.0000
+background-flood    1024.0     evictguard_online        10              0.8349          [0.774, 0.883]       0.2731      NaN       0.0221
+background-flood    1024.0         evictguard_v2        10              0.8232          [0.762, 0.873]       0.2726   0.1394       0.0212
+background-flood    1024.0 online-protected_only        10              0.8179          [0.756, 0.865]       0.2671      NaN       0.0010
+            none     256.0     evictguard_online        10              0.7899          [0.731, 0.835]       0.2631      NaN       0.0000
+            none     256.0         evictguard_v2        10              0.5497          [0.412, 0.679]       0.1994   0.1395       0.0000
+            none     256.0 online-protected_only        10              0.7539          [0.696, 0.794]       0.2518      NaN       0.0000
+            none    1024.0     evictguard_online        10              0.8349          [0.774, 0.883]       0.2731      NaN       0.0000
+            none    1024.0         evictguard_v2        10              0.8214          [0.760, 0.871]       0.2723   0.1395       0.0000
+            none    1024.0 online-protected_only        10              0.8179          [0.756, 0.865]       0.2671      NaN       0.0000

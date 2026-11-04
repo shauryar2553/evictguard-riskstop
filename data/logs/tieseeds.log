@@ -1,0 +1,335 @@
+ood-attack-h1-m1 done (301305 events)
+ood-attack-h1-m2 done (237499 events)
+ood-attack-h1-m3 done (188974 events)
+ood-attack-h1-m4 done (200563 events)
+ood-attack-h1-m5 done (300806 events)
+ood-attack-h1-m6 done (221476 events)
+ood-attack-h1-s1 done (199957 events)
+ood-attack-h1-s2 done (210729 events)
+ood-attack-h1-s3 done (258548 events)
+ood-attack-h1-s4 done (231973 events)
+ood-attack-h2-m1 done (300808 events)
+ood-attack-h2-m2 done (300969 events)
+ood-attack-h2-m3 done (155882 events)
+ood-attack-h2-m4 done (152311 events)
+ood-attack-h2-m5 done (140087 events)
+ood-attack-h2-m6 done (161364 events)
+noise  capacity      method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+ none     256.0      nodoze        16              0.0000          [0.000, 0.000]       0.0000   0.0016          0.0
+ none     256.0 rare_action        16              0.0072          [0.003, 0.013]       0.0031   0.0017          0.0
+ none    1024.0      nodoze        16              0.0035          [0.001, 0.007]       0.0017   0.0016          0.0
+ none    1024.0 rare_action        16              0.0332          [0.025, 0.042]       0.0153   0.0017          0.0
+ none    4096.0      nodoze        16              0.0179          [0.010, 0.028]       0.0058   0.0016          0.0
+ none    4096.0 rare_action        16              0.1447          [0.112, 0.175]       0.0669   0.0017          0.0
+otrf_native_test-SDWIN-190319024742_empire_schtasks_creation_standard_user done (1297 events)
+otrf_native_test-SDWIN-190403133337_empire_shell_dcerpc_smb_service_dll_hijack done (6349 events)
+otrf_native_test-SDWIN-190518182022_empire_launcher_vbs done (2067 events)
+otrf_native_test-SDWIN-190518213907_empire_msbuild_dcerpc_wmi_smb done (4559 events)
+otrf_native_test-SDWIN-200609225055_msf_record_mic done (6202 events)
+otrf_native_test-SDWIN-200724174200_covenant_wmi_remote_event_subscription_ActiveScriptEventConsumers done (3719 events)
+otrf_native_test-SDWIN-200806035621_covenant_sharpwmi_create_dcerpc_wmi done (2343 events)
+otrf_native_test-SDWIN-200914080546_empire_wmic_add_user_backdoor done (12278 events)
+otrf_native_test-SDWIN-200921001437_empire_wmi_dcerpc_wmi_IWbemServices_ExecMethod done (6383 events)
+otrf_native_test-SDWIN-200921175806_empire_schtasks_creation_execution_elevated_user done (59399 events)
+otrf_native_test-SDWIN-201009173318_covenant_wmi_wbemcomn_dll_hijack done (8947 events)
+otrf_native_test-SDWIN-201019224718_cmd_userinitmprlogonscript_batch done (122 events)
+otrf_native_test-SDWIN-201021232814_cmd_discover_iexplorer_version_registry done (68 events)
+otrf_native_test-SDWIN-201029202324_cmd_sharpview_pcre_net done (267 events)
+otrf_native_test-SDWIN-201102163918_cmd_seatbelt_group_user done (451 events)
+otrf_native_test-SDWIN-201219070027_schtask_create done (1041 events)
+otrf_native_test-SDWIN-201219075059_schtask_modification done (2657 events)
+noise  capacity      method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+ none      0.01      nodoze        17              0.0735          [0.000, 0.162]       0.0706   0.0248          0.0
+ none      0.01 rare_action        17              0.0147          [0.000, 0.044]       0.0118   0.0524          0.0
+ none      0.05      nodoze        17              0.2794          [0.123, 0.471]       0.2471   0.0248          0.0
+ none      0.05 rare_action        17              0.2990          [0.098, 0.500]       0.2902   0.0524          0.0
+otrf_native_val-SDWIN-190319023812_empire_persistence_registry_modification_run_keys_standard_user done (40569 events)
+otrf_native_val-SDWIN-190518184306_empire_wmi_local_event_subscriptions_elevated_user done (79896 events)
+otrf_native_val-SDWIN-191225045202_empire_monologue_netntlm_downgrade done (1635 events)
+otrf_native_val-SDWIN-200722001847_empire_persistence_registry_modification_run_keys_elevated_user done (657 events)
+otrf_native_val-SDWIN-200904032946_empire_uac_shellapi_fodhelper done (4139 events)
+otrf_native_val-SDWIN-201017061100_wmic_remote_xsl_jscript done (1364 events)
+otrf_native_val-SDWIN-201021001911_cmd_netsh_fw_mod_open_ports done (2366 events)
+otrf_native_val-SDWIN-210611210814_aptsimulator_cobaltstrike done (2611 events)
+otrf_native_val-SDWIN-220630130349_auditpol_system_user_auditpolicy_modification done (13645 events)
+otrf_native_val-SDWIN-220705170038_cmd_wevtutil_modify_security_eventlog_path done (25208 events)
+otrf_native_val-SDWIN-220803205800_reg_stop_event_logging_controlset_minint_key done (6133 events)
+otrf_native_val-SDWIN-220803205800_reg_stop_event_logging_controlset001_minint_key done (4923 events)
+otrf_native_val-SDWIN-220803205800_psh_stop_event_logging_controlset_minint_key done (6367 events)
+otrf_native_val-SDWIN-220803205800_psh_stop_event_logging_controlset001_minint_key done (8285 events)
+otrf_native_val-SDWIN-220803205800_cmd_stop_event_logging_controlset_minint_key done (5778 events)
+otrf_native_val-SDWIN-220803205800_cmd_stop_event_logging_controlset001_minint_key done (16010 events)
+otrf_native_val-APT29-DAY2_apt29_evals_day2_manual done (587286 events)
+noise  capacity      method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+ none      0.01      nodoze        17              0.1104          [0.000, 0.248]       0.1003   0.0174          0.0
+ none      0.01 rare_action        17              0.0076          [0.000, 0.020]       0.0007   0.0116          0.0
+ none      0.05      nodoze        17              0.2414          [0.083, 0.400]       0.1699   0.0174          0.0
+ none      0.05 rare_action        17              0.3096          [0.141, 0.494]       0.2424   0.0116          0.0
+ood-attack-h1-m1 done (301305 events)
+ood-attack-h1-m2 done (237499 events)
+ood-attack-h1-m3 done (188974 events)
+ood-attack-h1-m4 done (200563 events)
+ood-attack-h1-m5 done (300806 events)
+ood-attack-h1-m6 done (221476 events)
+ood-attack-h1-s1 done (199957 events)
+ood-attack-h1-s2 done (210729 events)
+ood-attack-h1-s3 done (258548 events)
+ood-attack-h1-s4 done (231973 events)
+ood-attack-h2-m1 done (300808 events)
+ood-attack-h2-m2 done (300969 events)
+ood-attack-h2-m3 done (155882 events)
+ood-attack-h2-m4 done (152311 events)
+ood-attack-h2-m5 done (140087 events)
+ood-attack-h2-m6 done (161364 events)
+noise  capacity      method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+ none     256.0      nodoze        16              0.0019          [0.000, 0.005]       0.0004   0.0016          0.0
+ none     256.0 rare_action        16              0.0101          [0.006, 0.015]       0.0046   0.0017          0.0
+ none    1024.0      nodoze        16              0.0054          [0.002, 0.010]       0.0023   0.0016          0.0
+ none    1024.0 rare_action        16              0.0321          [0.023, 0.042]       0.0151   0.0017          0.0
+ none    4096.0      nodoze        16              0.0188          [0.011, 0.027]       0.0065   0.0016          0.0
+ none    4096.0 rare_action        16              0.1387          [0.106, 0.169]       0.0642   0.0017          0.0
+otrf_native_test-SDWIN-190319024742_empire_schtasks_creation_standard_user done (1297 events)
+otrf_native_test-SDWIN-190403133337_empire_shell_dcerpc_smb_service_dll_hijack done (6349 events)
+otrf_native_test-SDWIN-190518182022_empire_launcher_vbs done (2067 events)
+otrf_native_test-SDWIN-190518213907_empire_msbuild_dcerpc_wmi_smb done (4559 events)
+otrf_native_test-SDWIN-200609225055_msf_record_mic done (6202 events)
+otrf_native_test-SDWIN-200724174200_covenant_wmi_remote_event_subscription_ActiveScriptEventConsumers done (3719 events)
+otrf_native_test-SDWIN-200806035621_covenant_sharpwmi_create_dcerpc_wmi done (2343 events)
+otrf_native_test-SDWIN-200914080546_empire_wmic_add_user_backdoor done (12278 events)
+otrf_native_test-SDWIN-200921001437_empire_wmi_dcerpc_wmi_IWbemServices_ExecMethod done (6383 events)
+otrf_native_test-SDWIN-200921175806_empire_schtasks_creation_execution_elevated_user done (59399 events)
+otrf_native_test-SDWIN-201009173318_covenant_wmi_wbemcomn_dll_hijack done (8947 events)
+otrf_native_test-SDWIN-201019224718_cmd_userinitmprlogonscript_batch done (122 events)
+otrf_native_test-SDWIN-201021232814_cmd_discover_iexplorer_version_registry done (68 events)
+otrf_native_test-SDWIN-201029202324_cmd_sharpview_pcre_net done (267 events)
+otrf_native_test-SDWIN-201102163918_cmd_seatbelt_group_user done (451 events)
+otrf_native_test-SDWIN-201219070027_schtask_create done (1041 events)
+otrf_native_test-SDWIN-201219075059_schtask_modification done (2657 events)
+noise  capacity      method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+ none      0.01      nodoze        17              0.0490          [0.000, 0.118]       0.0490   0.0248          0.0
+ none      0.01 rare_action        17              0.0980          [0.000, 0.206]       0.0980   0.0524          0.0
+ none      0.05      nodoze        17              0.2598          [0.098, 0.451]       0.2275   0.0248          0.0
+ none      0.05 rare_action        17              0.2941          [0.088, 0.500]       0.2882   0.0524          0.0
+otrf_native_val-SDWIN-190319023812_empire_persistence_registry_modification_run_keys_standard_user done (40569 events)
+otrf_native_val-SDWIN-190518184306_empire_wmi_local_event_subscriptions_elevated_user done (79896 events)
+otrf_native_val-SDWIN-191225045202_empire_monologue_netntlm_downgrade done (1635 events)
+otrf_native_val-SDWIN-200722001847_empire_persistence_registry_modification_run_keys_elevated_user done (657 events)
+otrf_native_val-SDWIN-200904032946_empire_uac_shellapi_fodhelper done (4139 events)
+otrf_native_val-SDWIN-201017061100_wmic_remote_xsl_jscript done (1364 events)
+otrf_native_val-SDWIN-201021001911_cmd_netsh_fw_mod_open_ports done (2366 events)
+otrf_native_val-SDWIN-210611210814_aptsimulator_cobaltstrike done (2611 events)
+otrf_native_val-SDWIN-220630130349_auditpol_system_user_auditpolicy_modification done (13645 events)
+otrf_native_val-SDWIN-220705170038_cmd_wevtutil_modify_security_eventlog_path done (25208 events)
+otrf_native_val-SDWIN-220803205800_reg_stop_event_logging_controlset_minint_key done (6133 events)
+otrf_native_val-SDWIN-220803205800_reg_stop_event_logging_controlset001_minint_key done (4923 events)
+otrf_native_val-SDWIN-220803205800_psh_stop_event_logging_controlset_minint_key done (6367 events)
+otrf_native_val-SDWIN-220803205800_psh_stop_event_logging_controlset001_minint_key done (8285 events)
+otrf_native_val-SDWIN-220803205800_cmd_stop_event_logging_controlset_minint_key done (5778 events)
+otrf_native_val-SDWIN-220803205800_cmd_stop_event_logging_controlset001_minint_key done (16010 events)
+otrf_native_val-APT29-DAY2_apt29_evals_day2_manual done (587286 events)
+noise  capacity      method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+ none      0.01      nodoze        17              0.1042          [0.000, 0.241]       0.0991   0.0174          0.0
+ none      0.01 rare_action        17              0.1398          [0.015, 0.313]       0.1305   0.0116          0.0
+ none      0.05      nodoze        17              0.2120          [0.073, 0.377]       0.1405   0.0174          0.0
+ none      0.05 rare_action        17              0.3602          [0.184, 0.558]       0.3135   0.0116          0.0
+ood-attack-h1-m1 done (301305 events)
+ood-attack-h1-m2 done (237499 events)
+ood-attack-h1-m3 done (188974 events)
+ood-attack-h1-m4 done (200563 events)
+ood-attack-h1-m5 done (300806 events)
+ood-attack-h1-m6 done (221476 events)
+ood-attack-h1-s1 done (199957 events)
+ood-attack-h1-s2 done (210729 events)
+ood-attack-h1-s3 done (258548 events)
+ood-attack-h1-s4 done (231973 events)
+ood-attack-h2-m1 done (300808 events)
+ood-attack-h2-m2 done (300969 events)
+ood-attack-h2-m3 done (155882 events)
+ood-attack-h2-m4 done (152311 events)
+ood-attack-h2-m5 done (140087 events)
+ood-attack-h2-m6 done (161364 events)
+noise  capacity      method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+ none     256.0      nodoze        16              0.0014          [0.000, 0.004]       0.0008   0.0016          0.0
+ none     256.0 rare_action        16              0.0070          [0.003, 0.012]       0.0032   0.0017          0.0
+ none    1024.0      nodoze        16              0.0033          [0.001, 0.006]       0.0017   0.0016          0.0
+ none    1024.0 rare_action        16              0.0344          [0.021, 0.047]       0.0164   0.0017          0.0
+ none    4096.0      nodoze        16              0.0183          [0.011, 0.025]       0.0065   0.0016          0.0
+ none    4096.0 rare_action        16              0.1416          [0.108, 0.173]       0.0652   0.0017          0.0
+otrf_native_test-SDWIN-190319024742_empire_schtasks_creation_standard_user done (1297 events)
+otrf_native_test-SDWIN-190403133337_empire_shell_dcerpc_smb_service_dll_hijack done (6349 events)
+otrf_native_test-SDWIN-190518182022_empire_launcher_vbs done (2067 events)
+otrf_native_test-SDWIN-190518213907_empire_msbuild_dcerpc_wmi_smb done (4559 events)
+otrf_native_test-SDWIN-200609225055_msf_record_mic done (6202 events)
+otrf_native_test-SDWIN-200724174200_covenant_wmi_remote_event_subscription_ActiveScriptEventConsumers done (3719 events)
+otrf_native_test-SDWIN-200806035621_covenant_sharpwmi_create_dcerpc_wmi done (2343 events)
+otrf_native_test-SDWIN-200914080546_empire_wmic_add_user_backdoor done (12278 events)
+otrf_native_test-SDWIN-200921001437_empire_wmi_dcerpc_wmi_IWbemServices_ExecMethod done (6383 events)
+otrf_native_test-SDWIN-200921175806_empire_schtasks_creation_execution_elevated_user done (59399 events)
+otrf_native_test-SDWIN-201009173318_covenant_wmi_wbemcomn_dll_hijack done (8947 events)
+otrf_native_test-SDWIN-201019224718_cmd_userinitmprlogonscript_batch done (122 events)
+otrf_native_test-SDWIN-201021232814_cmd_discover_iexplorer_version_registry done (68 events)
+otrf_native_test-SDWIN-201029202324_cmd_sharpview_pcre_net done (267 events)
+otrf_native_test-SDWIN-201102163918_cmd_seatbelt_group_user done (451 events)
+otrf_native_test-SDWIN-201219070027_schtask_create done (1041 events)
+otrf_native_test-SDWIN-201219075059_schtask_modification done (2657 events)
+noise  capacity      method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+ none      0.01      nodoze        17              0.0490          [0.000, 0.118]       0.0490   0.0248          0.0
+ none      0.01 rare_action        17              0.0392          [0.000, 0.098]       0.0392   0.0524          0.0
+ none      0.05      nodoze        17              0.2304          [0.074, 0.426]       0.1980   0.0248          0.0
+ none      0.05 rare_action        17              0.3627          [0.157, 0.578]       0.3569   0.0524          0.0
+otrf_native_val-SDWIN-190319023812_empire_persistence_registry_modification_run_keys_standard_user done (40569 events)
+otrf_native_val-SDWIN-190518184306_empire_wmi_local_event_subscriptions_elevated_user done (79896 events)
+otrf_native_val-SDWIN-191225045202_empire_monologue_netntlm_downgrade done (1635 events)
+otrf_native_val-SDWIN-200722001847_empire_persistence_registry_modification_run_keys_elevated_user done (657 events)
+otrf_native_val-SDWIN-200904032946_empire_uac_shellapi_fodhelper done (4139 events)
+otrf_native_val-SDWIN-201017061100_wmic_remote_xsl_jscript done (1364 events)
+otrf_native_val-SDWIN-201021001911_cmd_netsh_fw_mod_open_ports done (2366 events)
+otrf_native_val-SDWIN-210611210814_aptsimulator_cobaltstrike done (2611 events)
+otrf_native_val-SDWIN-220630130349_auditpol_system_user_auditpolicy_modification done (13645 events)
+otrf_native_val-SDWIN-220705170038_cmd_wevtutil_modify_security_eventlog_path done (25208 events)
+otrf_native_val-SDWIN-220803205800_reg_stop_event_logging_controlset_minint_key done (6133 events)
+otrf_native_val-SDWIN-220803205800_reg_stop_event_logging_controlset001_minint_key done (4923 events)
+otrf_native_val-SDWIN-220803205800_psh_stop_event_logging_controlset_minint_key done (6367 events)
+otrf_native_val-SDWIN-220803205800_psh_stop_event_logging_controlset001_minint_key done (8285 events)
+otrf_native_val-SDWIN-220803205800_cmd_stop_event_logging_controlset_minint_key done (5778 events)
+otrf_native_val-SDWIN-220803205800_cmd_stop_event_logging_controlset001_minint_key done (16010 events)
+otrf_native_val-APT29-DAY2_apt29_evals_day2_manual done (587286 events)
+noise  capacity      method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+ none      0.01      nodoze        17              0.1166          [0.000, 0.254]       0.1014   0.0174          0.0
+ none      0.01 rare_action        17              0.0950          [0.005, 0.242]       0.0887   0.0116          0.0
+ none      0.05      nodoze        17              0.2151          [0.076, 0.379]       0.1411   0.0174          0.0
+ none      0.05 rare_action        17              0.5014          [0.310, 0.705]       0.4312   0.0116          0.0
+ood-attack-h1-m1 done (301305 events)
+ood-attack-h1-m2 done (237499 events)
+ood-attack-h1-m3 done (188974 events)
+ood-attack-h1-m4 done (200563 events)
+ood-attack-h1-m5 done (300806 events)
+ood-attack-h1-m6 done (221476 events)
+ood-attack-h1-s1 done (199957 events)
+ood-attack-h1-s2 done (210729 events)
+ood-attack-h1-s3 done (258548 events)
+ood-attack-h1-s4 done (231973 events)
+ood-attack-h2-m1 done (300808 events)
+ood-attack-h2-m2 done (300969 events)
+ood-attack-h2-m3 done (155882 events)
+ood-attack-h2-m4 done (152311 events)
+ood-attack-h2-m5 done (140087 events)
+ood-attack-h2-m6 done (161364 events)
+noise  capacity      method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+ none     256.0      nodoze        16              0.0000          [0.000, 0.000]       0.0000   0.0016          0.0
+ none     256.0 rare_action        16              0.0096          [0.004, 0.015]       0.0046   0.0017          0.0
+ none    1024.0      nodoze        16              0.0026          [0.001, 0.005]       0.0011   0.0016          0.0
+ none    1024.0 rare_action        16              0.0441          [0.027, 0.061]       0.0211   0.0017          0.0
+ none    4096.0      nodoze        16              0.0178          [0.011, 0.024]       0.0069   0.0016          0.0
+ none    4096.0 rare_action        16              0.1441          [0.111, 0.175]       0.0664   0.0017          0.0
+otrf_native_test-SDWIN-190319024742_empire_schtasks_creation_standard_user done (1297 events)
+otrf_native_test-SDWIN-190403133337_empire_shell_dcerpc_smb_service_dll_hijack done (6349 events)
+otrf_native_test-SDWIN-190518182022_empire_launcher_vbs done (2067 events)
+otrf_native_test-SDWIN-190518213907_empire_msbuild_dcerpc_wmi_smb done (4559 events)
+otrf_native_test-SDWIN-200609225055_msf_record_mic done (6202 events)
+otrf_native_test-SDWIN-200724174200_covenant_wmi_remote_event_subscription_ActiveScriptEventConsumers done (3719 events)
+otrf_native_test-SDWIN-200806035621_covenant_sharpwmi_create_dcerpc_wmi done (2343 events)
+otrf_native_test-SDWIN-200914080546_empire_wmic_add_user_backdoor done (12278 events)
+otrf_native_test-SDWIN-200921001437_empire_wmi_dcerpc_wmi_IWbemServices_ExecMethod done (6383 events)
+otrf_native_test-SDWIN-200921175806_empire_schtasks_creation_execution_elevated_user done (59399 events)
+otrf_native_test-SDWIN-201009173318_covenant_wmi_wbemcomn_dll_hijack done (8947 events)
+otrf_native_test-SDWIN-201019224718_cmd_userinitmprlogonscript_batch done (122 events)
+otrf_native_test-SDWIN-201021232814_cmd_discover_iexplorer_version_registry done (68 events)
+otrf_native_test-SDWIN-201029202324_cmd_sharpview_pcre_net done (267 events)
+otrf_native_test-SDWIN-201102163918_cmd_seatbelt_group_user done (451 events)
+otrf_native_test-SDWIN-201219070027_schtask_create done (1041 events)
+otrf_native_test-SDWIN-201219075059_schtask_modification done (2657 events)
+noise  capacity      method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+ none      0.01      nodoze        17              0.0637          [0.000, 0.137]       0.0588   0.0248          0.0
+ none      0.01 rare_action        17              0.0539          [0.000, 0.147]       0.0490   0.0524          0.0
+ none      0.05      nodoze        17              0.3529          [0.191, 0.549]       0.3157   0.0248          0.0
+ none      0.05 rare_action        17              0.3431          [0.162, 0.549]       0.3294   0.0524          0.0
+otrf_native_val-SDWIN-190319023812_empire_persistence_registry_modification_run_keys_standard_user done (40569 events)
+otrf_native_val-SDWIN-190518184306_empire_wmi_local_event_subscriptions_elevated_user done (79896 events)
+otrf_native_val-SDWIN-191225045202_empire_monologue_netntlm_downgrade done (1635 events)
+otrf_native_val-SDWIN-200722001847_empire_persistence_registry_modification_run_keys_elevated_user done (657 events)
+otrf_native_val-SDWIN-200904032946_empire_uac_shellapi_fodhelper done (4139 events)
+otrf_native_val-SDWIN-201017061100_wmic_remote_xsl_jscript done (1364 events)
+otrf_native_val-SDWIN-201021001911_cmd_netsh_fw_mod_open_ports done (2366 events)
+otrf_native_val-SDWIN-210611210814_aptsimulator_cobaltstrike done (2611 events)
+otrf_native_val-SDWIN-220630130349_auditpol_system_user_auditpolicy_modification done (13645 events)
+otrf_native_val-SDWIN-220705170038_cmd_wevtutil_modify_security_eventlog_path done (25208 events)
+otrf_native_val-SDWIN-220803205800_reg_stop_event_logging_controlset_minint_key done (6133 events)
+otrf_native_val-SDWIN-220803205800_reg_stop_event_logging_controlset001_minint_key done (4923 events)
+otrf_native_val-SDWIN-220803205800_psh_stop_event_logging_controlset_minint_key done (6367 events)
+otrf_native_val-SDWIN-220803205800_psh_stop_event_logging_controlset001_minint_key done (8285 events)
+otrf_native_val-SDWIN-220803205800_cmd_stop_event_logging_controlset_minint_key done (5778 events)
+otrf_native_val-SDWIN-220803205800_cmd_stop_event_logging_controlset001_minint_key done (16010 events)
+otrf_native_val-APT29-DAY2_apt29_evals_day2_manual done (587286 events)
+noise  capacity      method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+ none      0.01      nodoze        17              0.1104          [0.000, 0.248]       0.1003   0.0174          0.0
+ none      0.01 rare_action        17              0.0884          [0.005, 0.220]       0.0793   0.0116          0.0
+ none      0.05      nodoze        17              0.2120          [0.073, 0.377]       0.1405   0.0174          0.0
+ none      0.05 rare_action        17              0.3563          [0.192, 0.557]       0.2760   0.0116          0.0
+ood-attack-h1-m1 done (301305 events)
+ood-attack-h1-m2 done (237499 events)
+ood-attack-h1-m3 done (188974 events)
+ood-attack-h1-m4 done (200563 events)
+ood-attack-h1-m5 done (300806 events)
+ood-attack-h1-m6 done (221476 events)
+ood-attack-h1-s1 done (199957 events)
+ood-attack-h1-s2 done (210729 events)
+ood-attack-h1-s3 done (258548 events)
+ood-attack-h1-s4 done (231973 events)
+ood-attack-h2-m1 done (300808 events)
+ood-attack-h2-m2 done (300969 events)
+ood-attack-h2-m3 done (155882 events)
+ood-attack-h2-m4 done (152311 events)
+ood-attack-h2-m5 done (140087 events)
+ood-attack-h2-m6 done (161364 events)
+noise  capacity      method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+ none     256.0      nodoze        16              0.0006          [0.000, 0.002]       0.0002   0.0016          0.0
+ none     256.0 rare_action        16              0.0108          [0.006, 0.016]       0.0046   0.0017          0.0
+ none    1024.0      nodoze        16              0.0045          [0.001, 0.008]       0.0017   0.0016          0.0
+ none    1024.0 rare_action        16              0.0392          [0.025, 0.054]       0.0177   0.0017          0.0
+ none    4096.0      nodoze        16              0.0193          [0.011, 0.029]       0.0065   0.0016          0.0
+ none    4096.0 rare_action        16              0.1410          [0.108, 0.173]       0.0649   0.0017          0.0
+otrf_native_test-SDWIN-190319024742_empire_schtasks_creation_standard_user done (1297 events)
+otrf_native_test-SDWIN-190403133337_empire_shell_dcerpc_smb_service_dll_hijack done (6349 events)
+otrf_native_test-SDWIN-190518182022_empire_launcher_vbs done (2067 events)
+otrf_native_test-SDWIN-190518213907_empire_msbuild_dcerpc_wmi_smb done (4559 events)
+otrf_native_test-SDWIN-200609225055_msf_record_mic done (6202 events)
+otrf_native_test-SDWIN-200724174200_covenant_wmi_remote_event_subscription_ActiveScriptEventConsumers done (3719 events)
+otrf_native_test-SDWIN-200806035621_covenant_sharpwmi_create_dcerpc_wmi done (2343 events)
+otrf_native_test-SDWIN-200914080546_empire_wmic_add_user_backdoor done (12278 events)
+otrf_native_test-SDWIN-200921001437_empire_wmi_dcerpc_wmi_IWbemServices_ExecMethod done (6383 events)
+otrf_native_test-SDWIN-200921175806_empire_schtasks_creation_execution_elevated_user done (59399 events)
+otrf_native_test-SDWIN-201009173318_covenant_wmi_wbemcomn_dll_hijack done (8947 events)
+otrf_native_test-SDWIN-201019224718_cmd_userinitmprlogonscript_batch done (122 events)
+otrf_native_test-SDWIN-201021232814_cmd_discover_iexplorer_version_registry done (68 events)
+otrf_native_test-SDWIN-201029202324_cmd_sharpview_pcre_net done (267 events)
+otrf_native_test-SDWIN-201102163918_cmd_seatbelt_group_user done (451 events)
+otrf_native_test-SDWIN-201219070027_schtask_create done (1041 events)
+otrf_native_test-SDWIN-201219075059_schtask_modification done (2657 events)
+noise  capacity      method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+ none      0.01      nodoze        17              0.0637          [0.000, 0.137]       0.0608   0.0248          0.0
+ none      0.01 rare_action        17              0.0931          [0.015, 0.181]       0.0902   0.0524          0.0
+ none      0.05      nodoze        17              0.2794          [0.123, 0.471]       0.2471   0.0248          0.0
+ none      0.05 rare_action        17              0.3382          [0.147, 0.530]       0.3294   0.0524          0.0
+otrf_native_val-SDWIN-190319023812_empire_persistence_registry_modification_run_keys_standard_user done (40569 events)
+otrf_native_val-SDWIN-190518184306_empire_wmi_local_event_subscriptions_elevated_user done (79896 events)
+otrf_native_val-SDWIN-191225045202_empire_monologue_netntlm_downgrade done (1635 events)
+otrf_native_val-SDWIN-200722001847_empire_persistence_registry_modification_run_keys_elevated_user done (657 events)
+otrf_native_val-SDWIN-200904032946_empire_uac_shellapi_fodhelper done (4139 events)
+otrf_native_val-SDWIN-201017061100_wmic_remote_xsl_jscript done (1364 events)
+otrf_native_val-SDWIN-201021001911_cmd_netsh_fw_mod_open_ports done (2366 events)
+otrf_native_val-SDWIN-210611210814_aptsimulator_cobaltstrike done (2611 events)
+otrf_native_val-SDWIN-220630130349_auditpol_system_user_auditpolicy_modification done (13645 events)
+otrf_native_val-SDWIN-220705170038_cmd_wevtutil_modify_security_eventlog_path done (25208 events)
+otrf_native_val-SDWIN-220803205800_reg_stop_event_logging_controlset_minint_key done (6133 events)
+otrf_native_val-SDWIN-220803205800_reg_stop_event_logging_controlset001_minint_key done (4923 events)
+otrf_native_val-SDWIN-220803205800_psh_stop_event_logging_controlset_minint_key done (6367 events)
+otrf_native_val-SDWIN-220803205800_psh_stop_event_logging_controlset001_minint_key done (8285 events)
+otrf_native_val-SDWIN-220803205800_cmd_stop_event_logging_controlset_minint_key done (5778 events)
+otrf_native_val-SDWIN-220803205800_cmd_stop_event_logging_controlset001_minint_key done (16010 events)
+otrf_native_val-APT29-DAY2_apt29_evals_day2_manual done (587286 events)
+noise  capacity      method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+ none      0.01      nodoze        17              0.1042          [0.000, 0.241]       0.0991   0.0174          0.0
+ none      0.01 rare_action        17              0.0216          [0.003, 0.047]       0.0128   0.0116          0.0
+ none      0.05      nodoze        17              0.2445          [0.086, 0.404]       0.1705   0.0174          0.0
+ none      0.05 rare_action        17              0.3516          [0.188, 0.526]       0.2951   0.0116          0.0

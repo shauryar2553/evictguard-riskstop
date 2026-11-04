@@ -1,0 +1,43 @@
+otrf_native_val-SDWIN-190319023812_empire_persistence_registry_modification_run_keys_standard_user done (40569 events)
+otrf_native_val-SDWIN-190518184306_empire_wmi_local_event_subscriptions_elevated_user done (79896 events)
+otrf_native_val-SDWIN-191225045202_empire_monologue_netntlm_downgrade done (1635 events)
+otrf_native_val-SDWIN-200722001847_empire_persistence_registry_modification_run_keys_elevated_user done (657 events)
+otrf_native_val-SDWIN-200904032946_empire_uac_shellapi_fodhelper done (4139 events)
+otrf_native_val-SDWIN-201017061100_wmic_remote_xsl_jscript done (1364 events)
+otrf_native_val-SDWIN-201021001911_cmd_netsh_fw_mod_open_ports done (2366 events)
+otrf_native_val-SDWIN-210611210814_aptsimulator_cobaltstrike done (2611 events)
+otrf_native_val-SDWIN-220630130349_auditpol_system_user_auditpolicy_modification done (13645 events)
+otrf_native_val-SDWIN-220705170038_cmd_wevtutil_modify_security_eventlog_path done (25208 events)
+otrf_native_val-SDWIN-220803205800_reg_stop_event_logging_controlset_minint_key done (6133 events)
+otrf_native_val-SDWIN-220803205800_reg_stop_event_logging_controlset001_minint_key done (4923 events)
+otrf_native_val-SDWIN-220803205800_psh_stop_event_logging_controlset_minint_key done (6367 events)
+otrf_native_val-SDWIN-220803205800_psh_stop_event_logging_controlset001_minint_key done (8285 events)
+otrf_native_val-SDWIN-220803205800_cmd_stop_event_logging_controlset_minint_key done (5778 events)
+otrf_native_val-SDWIN-220803205800_cmd_stop_event_logging_controlset001_minint_key done (16010 events)
+otrf_native_val-APT29-DAY2_apt29_evals_day2_manual done (587286 events)
+           noise  capacity                   method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+background-flood      0.01        evictguard_online        17              0.4720          [0.300, 0.658]       0.3201      NaN       0.1435
+background-flood      0.01     evictguard_online_v2        17              0.6787          [0.511, 0.816]       0.4978      NaN       0.1108
+background-flood      0.01            evictguard_v2        17              0.6107          [0.427, 0.776]       0.4650   0.1090       0.0592
+background-flood      0.01            evictguard_v3        17              0.5650          [0.381, 0.739]       0.4072   0.1121       0.0768
+background-flood      0.01 online_v2-protected_only        17              0.7571          [0.613, 0.883]       0.6032      NaN       0.1028
+background-flood      0.05        evictguard_online        17              0.8594          [0.738, 0.971]       0.6307      NaN       0.1431
+background-flood      0.05     evictguard_online_v2        17              0.9205          [0.841, 0.986]       0.6804      NaN       0.1132
+background-flood      0.05            evictguard_v2        17              0.9351          [0.847, 1.000]       0.6925   0.1090       0.0703
+background-flood      0.05            evictguard_v3        17              0.9396          [0.850, 1.000]       0.6932   0.1121       0.0813
+background-flood      0.05 online_v2-protected_only        17              0.9242          [0.844, 0.986]       0.6714      NaN       0.0908
+            none      0.01        evictguard_online        17              0.3621          [0.201, 0.539]       0.2225      NaN       0.0000
+            none      0.01     evictguard_online_v2        17              0.5342          [0.361, 0.699]       0.3885      NaN       0.0000
+            none      0.01            evictguard_v2        17              0.3030          [0.155, 0.475]       0.1964   0.1062       0.0000
+            none      0.01            evictguard_v3        17              0.3392          [0.189, 0.514]       0.1992   0.1075       0.0000
+            none      0.01 online_v2-protected_only        17              0.5574          [0.399, 0.710]       0.4088      NaN       0.0000
+            none      0.05        evictguard_online        17              0.8509          [0.725, 0.956]       0.6372      NaN       0.0000
+            none      0.05     evictguard_online_v2        17              0.8984          [0.795, 0.980]       0.6824      NaN       0.0000
+            none      0.05            evictguard_v2        17              0.8893          [0.772, 0.977]       0.6653   0.1062       0.0000
+            none      0.05            evictguard_v3        17              0.8822          [0.769, 0.971]       0.6599   0.1075       0.0000
+            none      0.05 online_v2-protected_only        17              0.8555          [0.756, 0.946]       0.6583      NaN       0.0000
+ood-attack-h2-m1 done (300808 events)
+ood-attack-h2-m2 done (300969 events)
+ood-attack-h2-m3 done (155882 events)
+ood-attack-h2-m4 done (152311 events)
+ood-attack-h2-m5 done (140087 events)

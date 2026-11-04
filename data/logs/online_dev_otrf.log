@@ -1,0 +1,63 @@
+otrf_native_train-SDWIN-190301174830_empire_dcsync_dcerpc_drsuapi_DsGetNCChanges done (8465 events)
+otrf_native_train-SDWIN-190319020147_empire_shell_net_localgroup_administrators done (884 events)
+otrf_native_train-SDWIN-190319131123_empire_over_pth_patch_lsass done (10271 events)
+otrf_native_train-SDWIN-190319145126_empire_shell_rubeus_asktgt_ptt done (1179 events)
+otrf_native_train-SDWIN-190518200432_empire_psinject_PEinjection done (5898 events)
+otrf_native_train-SDWIN-190518201207_empire_shell_rpc_samr_smb_group_domain_admins_standard_user done (1749 events)
+otrf_native_train-SDWIN-190518202151_empire_mimikatz_logonpasswords done (6026 events)
+otrf_native_train-SDWIN-190518210125_empire_smbexec_dcerpc_smb_svcctl done (7504 events)
+otrf_native_train-SDWIN-190518210652_empire_psexec_dcerpc_tcp_svcctl done (4348 events)
+otrf_native_train-SDWIN-190518211052_empire_dcom_shellwindows_stager done (32706 events)
+otrf_native_train-SDWIN-190518211456_empire_psremoting_stager done (2744 events)
+otrf_native_train-SDWIN-190518221344_empire_dllinjection_LoadLibrary_CreateRemoteThread done (12200 events)
+otrf_native_train-SDWIN-190518224039_empire_find_localadmin_smb_svcctl_OpenSCManager done (4570 events)
+otrf_native_train-SDWIN-190518230752_empire_mimikatz_extract_keys done (13199 events)
+otrf_native_train-SDWIN-190518235535_empire_mimikatz_backupkeys_dcerpc_smb_lsarpc done (7887 events)
+otrf_native_train-SDWIN-190625103712_empire_mimikatz_sam_access done (12349 events)
+otrf_native_train-SDWIN-190625133822_empire_shell_reg_dump_sam done (738 events)
+otrf_native_train-SDWIN-191027055035_rdp_interactive_taskmanager_lsass_dump done (5489 events)
+otrf_native_train-SDWIN-191027223020_covenant_installutil done (1730 events)
+otrf_native_train-SDWIN-200721232741_empire_launcher_sct_regsvr32 done (2390 events)
+otrf_native_train-SDWIN-200805020926_covenant_dcsync_dcerpc_drsuapi_DsGetNCChanges done (869 events)
+otrf_native_train-SDWIN-200806015757_covenant_copy_smb_CreateRequest done (506 events)
+otrf_native_train-SDWIN-200806030120_covenant_sharpsc_start_dcerpc_smb_svcctl done (6046 events)
+otrf_native_train-SDWIN-200806115603_covenant_psremoting_command done (4284 events)
+otrf_native_train-SDWIN-200807103913_empire_mimikatz_lsadump_patch done (6982 events)
+otrf_native_train-SDWIN-200916232559_mimikatz_CVE-2020-1472_Unauthenticated_NetrServerAuthenticate2 done (790 events)
+otrf_native_train-SDWIN-200921230246_empire_shell_rubeus_asktgt_createnetonly done (3590 events)
+otrf_native_train-SDWIN-200922042230_empire_powerdump_sam_access done (1182 events)
+otrf_native_train-SDWIN-201009183000_covenant_dcom_iertutil_dll_hijack done (37814 events)
+otrf_native_train-SDWIN-201012183248_covenant_lolbin_wuauclt_createremotethread done (1326 events)
+otrf_native_train-SDWIN-201018195009_psh_lsass_memory_dump_comsvcs done (184 events)
+otrf_native_train-SDWIN-201018225619_cmd_lsass_memory_dumpert_syscalls done (118 events)
+otrf_native_train-SDWIN-201019002900_cmd_sam_copy_esentutl done (915 events)
+otrf_native_train-SDWIN-201019033054_cmd_psexec_lsa_secrets_dump done (286 events)
+otrf_native_train-SDWIN-201019232515_psh_mavinject_dll_notepad done (509 events)
+otrf_native_train-SDWIN-201021204544_cmd_service_mod_fax done (437 events)
+otrf_native_train-SDWIN-201022002145_psh_hh_local_html_payload done (1221 events)
+otrf_native_train-SDWIN-201022013121_psh_control_panel_execution done (1291 events)
+otrf_native_train-SDWIN-201022015432_psh_cmstp_execution_bypassuac done (1166 events)
+otrf_native_train-SDWIN-201022022144_cmd_mshta_javascript_getobject_sct done (1151 events)
+otrf_native_train-SDWIN-201022025808_cmd_mshta_vbscript_execute_psh done (1127 events)
+otrf_native_train-SDWIN-201022035214_psh_mshta_html_application_execution done (1553 events)
+otrf_native_train-SDWIN-201022042947_purplesharp_ad_playbook_I done (25993 events)
+otrf_native_train-SDWIN-201023023651_cmd_bitsadmin_download_psh_script done (424 events)
+otrf_native_train-SDWIN-201023031210_purplesharp_pe_injection_createremotethread done (692 events)
+otrf_native_train-SDWIN-201026235835_cmd_process_herpaderping_snippingtool done (282 events)
+otrf_native_train-SDWIN-210314014019_proxylogon_ssrf_rce_poc done (10487 events)
+otrf_native_train-SDWIN-230718151900_cmd_dumping_ntds_dit_file_ntdsutil done (11184 events)
+otrf_native_train-SDWIN-230720004300_empire_ninjacopy_dumping_ntds_dit_file done (13969 events)
+otrf_native_train-APT29-DAY1_apt29_evals_day1_manual done (196081 events)
+           noise  capacity                method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+background-flood      0.01     evictguard_online        50              0.4541          [0.345, 0.564]       0.3988      NaN       0.1666
+background-flood      0.01         evictguard_v2        50              0.5500          [0.438, 0.660]       0.4965   0.2336       0.0557
+background-flood      0.01 online-protected_only        50              0.4613          [0.350, 0.566]       0.4171      NaN       0.1242
+background-flood      0.05     evictguard_online        50              0.7957          [0.695, 0.883]       0.6645      NaN       0.1769
+background-flood      0.05         evictguard_v2        50              0.8324          [0.736, 0.912]       0.7026   0.2336       0.0900
+background-flood      0.05 online-protected_only        50              0.7836          [0.684, 0.878]       0.6572      NaN       0.1503
+            none      0.01     evictguard_online        50              0.3314          [0.233, 0.443]       0.2927      NaN       0.0000
+            none      0.01         evictguard_v2        50              0.4359          [0.319, 0.560]       0.4052   0.2151       0.0000
+            none      0.01 online-protected_only        50              0.3959          [0.285, 0.518]       0.3663      NaN       0.0000
+            none      0.05     evictguard_online        50              0.7234          [0.628, 0.810]       0.6134      NaN       0.0000
+            none      0.05         evictguard_v2        50              0.7447          [0.635, 0.839]       0.6418   0.2151       0.0000
+            none      0.05 online-protected_only        50              0.7122          [0.607, 0.809]       0.6122      NaN       0.0000

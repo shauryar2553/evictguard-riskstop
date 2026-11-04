@@ -1,0 +1,19 @@
+ood-attack-h2-m1 done (300808 events)
+ood-attack-h2-m2 done (300969 events)
+ood-attack-h2-m3 done (155882 events)
+ood-attack-h2-m4 done (152311 events)
+ood-attack-h2-m5 done (140087 events)
+ood-attack-h2-m6 done (161364 events)
+           noise  capacity                method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+background-flood     256.0     evictguard_online         6              0.9616          [0.949, 0.971]       0.5029      NaN       0.0599
+background-flood     256.0         evictguard_v2         6              0.7901          [0.596, 0.893]       0.4480   0.3767       0.0299
+background-flood     256.0 online-protected_only         6              0.9616          [0.949, 0.971]       0.5029      NaN       0.0000
+background-flood    1024.0     evictguard_online         6              0.9732          [0.960, 0.982]       0.5029      NaN       0.0158
+background-flood    1024.0         evictguard_v2         6              0.9732          [0.960, 0.982]       0.5074   0.3767       0.0254
+background-flood    1024.0 online-protected_only         6              0.9732          [0.960, 0.982]       0.5029      NaN       0.0005
+            none     256.0     evictguard_online         6              0.9616          [0.949, 0.971]       0.5029      NaN       0.0000
+            none     256.0         evictguard_v2         6              0.7901          [0.596, 0.893]       0.4480   0.3766       0.0000
+            none     256.0 online-protected_only         6              0.9616          [0.949, 0.971]       0.5029      NaN       0.0000
+            none    1024.0     evictguard_online         6              0.9732          [0.960, 0.982]       0.5029      NaN       0.0000
+            none    1024.0         evictguard_v2         6              0.9732          [0.960, 0.982]       0.5074   0.3766       0.0000
+            none    1024.0 online-protected_only         6              0.9732          [0.960, 0.982]       0.5029      NaN       0.0000
