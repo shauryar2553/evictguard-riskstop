@@ -1,0 +1,26 @@
+                    episodes  mean_events  mean_core
+split gold_verdict                                  
+test  ATTACK              40       3418.7        5.0
+      BENIGN              20       2972.3        0.0
+train ATTACK             120       5196.2       38.4
+      BENIGN              60       2612.4        0.0
+val   ATTACK              40      13020.8      451.7
+      BENIGN              20       3008.3        0.0
+       31.07 real        30.91 user         2.22 sys
+          3986653184  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              290162  page reclaims
+                 146  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 417  voluntary context switches
+               70598  involuntary context switches
+        634504039360  instructions retired
+        139847759764  cycles elapsed
+          3095252520  peak memory footprint
