@@ -1,0 +1,29 @@
+ood-attack-h1-m1 done (301305 events)
+ood-attack-h1-m2 done (237499 events)
+ood-attack-h1-m3 done (188974 events)
+ood-attack-h1-m4 done (200563 events)
+ood-attack-h1-m5 done (300806 events)
+ood-attack-h1-m6 done (221476 events)
+ood-attack-h1-s1 done (199957 events)
+ood-attack-h1-s2 done (210729 events)
+ood-attack-h1-s3 done (258548 events)
+ood-attack-h1-s4 done (231973 events)
+ood-attack-h2-m1 done (300808 events)
+ood-attack-h2-m2 done (300969 events)
+ood-attack-h2-m3 done (155882 events)
+ood-attack-h2-m4 done (152311 events)
+ood-attack-h2-m5 done (140087 events)
+ood-attack-h2-m6 done (161364 events)
+           noise  capacity     method  episodes  core_recall core_recall_ci95  attack_recall  noise_share
+background-flood      1024 evictguard        16       0.0068   [0.003, 0.011]         0.0021       0.1306
+background-flood      1024       fifo        16       0.0002   [0.000, 0.001]         0.0008       0.5041
+background-flood      1024     random        16       0.0037   [0.002, 0.006]         0.0034       0.3024
+background-flood      4096 evictguard        16       0.0184   [0.012, 0.025]         0.0090       0.1467
+background-flood      4096       fifo        16       0.0002   [0.000, 0.001]         0.0017       0.3540
+background-flood      4096     random        16       0.0123   [0.009, 0.016]         0.0132       0.3320
+            none      1024 evictguard        16       0.0070   [0.003, 0.011]         0.0022       0.0000
+            none      1024       fifo        16       0.0002   [0.000, 0.001]         0.0009       0.0000
+            none      1024     random        16       0.0059   [0.004, 0.008]         0.0048       0.0000
+            none      4096 evictguard        16       0.0219   [0.017, 0.028]         0.0104       0.0000
+            none      4096       fifo        16       0.0002   [0.000, 0.001]         0.0019       0.0000
+            none      4096     random        16       0.0174   [0.012, 0.022]         0.0196       0.0000

@@ -1,0 +1,47 @@
+ood-attack-h1-s1 done (100453 events)
+             noise  capacity     method  episodes  core_recall core_recall_ci95  attack_recall  noise_share
+  background-flood       256 evictguard         1       0.0136   [0.014, 0.014]         0.0002       0.1914
+  background-flood       256       fifo         1       0.0000   [0.000, 0.000]         0.0002       0.2461
+  background-flood       256     random         1       0.0000   [0.000, 0.000]         0.0013       0.4727
+  background-flood       512 evictguard         1       0.0169   [0.017, 0.017]         0.0007       0.2012
+  background-flood       512       fifo         1       0.0034   [0.003, 0.003]         0.0010       0.1289
+  background-flood       512     random         1       0.0000   [0.000, 0.000]         0.0025       0.4785
+  background-flood      1024 evictguard         1       0.0169   [0.017, 0.017]         0.0031       0.1963
+  background-flood      1024       fifo         1       0.0034   [0.003, 0.003]         0.0019       0.3701
+  background-flood      1024     random         1       0.0034   [0.003, 0.003]         0.0050       0.4873
+duplicate-flooding       256 evictguard         1       0.0136   [0.014, 0.014]         0.0003       0.0000
+duplicate-flooding       256       fifo         1       0.0000   [0.000, 0.000]         0.0002       0.3906
+duplicate-flooding       256     random         1       0.0000   [0.000, 0.000]         0.0026       0.2656
+duplicate-flooding       512 evictguard         1       0.0169   [0.017, 0.017]         0.0010       0.0000
+duplicate-flooding       512       fifo         1       0.0000   [0.000, 0.000]         0.0004       0.3535
+duplicate-flooding       512     random         1       0.0034   [0.003, 0.003]         0.0050       0.2773
+duplicate-flooding      1024 evictguard         1       0.0169   [0.017, 0.017]         0.0021       0.0000
+duplicate-flooding      1024       fifo         1       0.0034   [0.003, 0.003]         0.0021       0.3379
+duplicate-flooding      1024     random         1       0.0068   [0.007, 0.007]         0.0101       0.2998
+       mimic-flood       256 evictguard         1       0.0136   [0.014, 0.014]         0.0003       0.0000
+       mimic-flood       256       fifo         1       0.0000   [0.000, 0.000]         0.0002       0.0352
+       mimic-flood       256     random         1       0.0000   [0.000, 0.000]         0.0023       0.1133
+       mimic-flood       512 evictguard         1       0.0169   [0.017, 0.017]         0.0010       0.0000
+       mimic-flood       512       fifo         1       0.0034   [0.003, 0.003]         0.0016       0.0176
+       mimic-flood       512     random         1       0.0068   [0.007, 0.007]         0.0044       0.1387
+       mimic-flood      1024 evictguard         1       0.0169   [0.017, 0.017]         0.0021       0.0000
+       mimic-flood      1024       fifo         1       0.0034   [0.003, 0.003]         0.0022       0.2236
+       mimic-flood      1024     random         1       0.0034   [0.003, 0.003]         0.0087       0.1592
+  missing-critical       256 evictguard         1       0.0143   [0.014, 0.014]         0.0004       0.0000
+  missing-critical       256       fifo         1       0.0000   [0.000, 0.000]         0.0003       0.0000
+  missing-critical       256     random         1       0.0000   [0.000, 0.000]         0.0034       0.0000
+  missing-critical       512 evictguard         1       0.0190   [0.019, 0.019]         0.0013       0.0000
+  missing-critical       512       fifo         1       0.0000   [0.000, 0.000]         0.0019       0.0000
+  missing-critical       512     random         1       0.0048   [0.005, 0.005]         0.0069       0.0000
+  missing-critical      1024 evictguard         1       0.0190   [0.019, 0.019]         0.0028       0.0000
+  missing-critical      1024       fifo         1       0.0000   [0.000, 0.000]         0.0022       0.0000
+  missing-critical      1024     random         1       0.0190   [0.019, 0.019]         0.0132       0.0000
+              none       256 evictguard         1       0.0136   [0.014, 0.014]         0.0003       0.0000
+              none       256       fifo         1       0.0000   [0.000, 0.000]         0.0003       0.0000
+              none       256     random         1       0.0034   [0.003, 0.003]         0.0028       0.0000
+              none       512 evictguard         1       0.0169   [0.017, 0.017]         0.0010       0.0000
+              none       512       fifo         1       0.0034   [0.003, 0.003]         0.0017       0.0000
+              none       512     random         1       0.0068   [0.007, 0.007]         0.0054       0.0000
+              none      1024 evictguard         1       0.0169   [0.017, 0.017]         0.0021       0.0000
+              none      1024       fifo         1       0.0034   [0.003, 0.003]         0.0022       0.0000
+              none      1024     random         1       0.0136   [0.014, 0.014]         0.0104       0.0000
