@@ -20,6 +20,7 @@
 ## Setup (macOS / Linux)
 ```bash
 python3 -m venv .venv_mac && .venv_mac/bin/pip install -r requirements.txt
+./scripts/reassemble_large_files.sh                      # rejoins 4 large files uploaded in 15 MB parts (checksum-verified)
 unzip data/cdb_sample/sample.zip -d data/cdb_sample      # restores the CDB JSON files (too large for GitHub)
 .venv_mac/bin/python -m pytest -q
 ./run_pipeline.sh atlasv2                                # rebuilds everything (skips steps already done)
