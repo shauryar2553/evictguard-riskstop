@@ -1,0 +1,81 @@
+attack data/attack/h2/msft-security/msft-security-h2-m5.xml: 139531 events (offset 0.00 GB)
+attack data/attack/h2/msft-security/msft-security-h2-m6.xml: 160789 events (offset 0.01 GB)
+attack data/attack/h2/msft-security/msft-security-h2-m3.xml: 155399 events (offset 0.01 GB)
+attack data/attack/h2/msft-security/msft-security-h2-m4.xml: 151732 events (offset 0.01 GB)
+attack data/attack/h2/msft-security/msft-security-h2-m2.xml: 300000 events (offset 0.02 GB)
+attack data/attack/h2/msft-security/msft-security-h2-m1.xml: 300000 events (offset 0.03 GB)
+attack data/attack/h2/sysmon/sysmon-h2-m4.xml: 579 events (offset 0.03 GB)
+attack data/attack/h2/sysmon/sysmon-h2-m1.xml: 808 events (offset 0.03 GB)
+attack data/attack/h2/sysmon/sysmon-h2-m2.xml: 969 events (offset 0.03 GB)
+attack data/attack/h2/sysmon/sysmon-h2-m6.xml: 575 events (offset 0.03 GB)
+attack data/attack/h2/sysmon/sysmon-h2-m3.xml: 483 events (offset 0.03 GB)
+attack data/attack/h2/sysmon/sysmon-h2-m5.xml: 556 events (offset 0.03 GB)
+attack data/attack/h1/msft-security/msft-security-h1-m2.xml: 236911 events (offset 1.09 GB)
+attack data/attack/h1/msft-security/msft-security-h1-s3.xml: 257887 events (offset 1.09 GB)
+attack data/attack/h1/msft-security/msft-security-h1-s4.xml: 231335 events (offset 1.10 GB)
+attack data/attack/h1/msft-security/msft-security-h1-m3.xml: 188392 events (offset 1.10 GB)
+attack data/attack/h1/msft-security/msft-security-h1-m4.xml: 200015 events (offset 1.11 GB)
+attack data/attack/h1/msft-security/msft-security-h1-m1.xml: 300000 events (offset 1.11 GB)
+attack data/attack/h1/msft-security/msft-security-h1-m6.xml: 220858 events (offset 1.12 GB)
+attack data/attack/h1/msft-security/msft-security-h1-s1.xml: 199504 events (offset 1.13 GB)
+attack data/attack/h1/msft-security/msft-security-h1-m5.xml: 300000 events (offset 1.13 GB)
+attack data/attack/h1/msft-security/msft-security-h1-s2.xml: 210109 events (offset 1.14 GB)
+attack data/attack/h1/sysmon/sysmon-h1-s3.xml: 661 events (offset 1.14 GB)
+attack data/attack/h1/sysmon/sysmon-h1-m3.xml: 582 events (offset 1.14 GB)
+attack data/attack/h1/sysmon/sysmon-h1-m1.xml: 1305 events (offset 1.14 GB)
+attack data/attack/h1/sysmon/sysmon-h1-m2.xml: 588 events (offset 1.14 GB)
+attack data/attack/h1/sysmon/sysmon-h1-m4.xml: 548 events (offset 1.14 GB)
+attack data/attack/h1/sysmon/sysmon-h1-s2.xml: 620 events (offset 1.14 GB)
+attack data/attack/h1/sysmon/sysmon-h1-s1.xml: 453 events (offset 1.14 GB)
+attack data/attack/h1/sysmon/sysmon-h1-m5.xml: 806 events (offset 1.14 GB)
+attack data/attack/h1/sysmon/sysmon-h1-m6.xml: 618 events (offset 1.14 GB)
+attack data/attack/h1/sysmon/sysmon-h1-s4.xml: 638 events (offset 1.14 GB)
+Attack section passed; stopping download early.
+scenario h1-m1: 301305 events
+scenario h1-m2: 237499 events
+scenario h1-m3: 188974 events
+scenario h1-m4: 200563 events
+scenario h1-m5: 300806 events
+scenario h1-m6: 221476 events
+scenario h1-s1: 199957 events
+scenario h1-s2: 210729 events
+scenario h1-s3: 258548 events
+scenario h1-s4: 231973 events
+scenario h2-m1: 300808 events
+scenario h2-m2: 300969 events
+scenario h2-m3: 155882 events
+scenario h2-m4: 152311 events
+scenario h2-m5: 140087 events
+scenario h2-m6: 161364 events
+h1-m1: ATLAS ground truth lists 298 record IDs, 298 found in the kept events
+h1-m1: 79446 REAPr-attributed events, 298 core
+h1-m2: ATLAS ground truth lists 288 record IDs, 288 found in the kept events
+h1-m2: 99732 REAPr-attributed events, 288 core
+h1-m3: ATLAS ground truth lists 287 record IDs, 287 found in the kept events
+h1-m3: 63773 REAPr-attributed events, 287 core
+h1-m4: ATLAS ground truth lists 339 record IDs, 339 found in the kept events
+h1-m4: 72481 REAPr-attributed events, 340 core
+h1-m5: ATLAS ground truth lists 313 record IDs, 313 found in the kept events
+h1-m5: 77188 REAPr-attributed events, 315 core
+h1-m6: ATLAS ground truth lists 297 record IDs, 297 found in the kept events
+h1-m6: 89715 REAPr-attributed events, 299 core
+h1-s1: ATLAS ground truth lists 309 record IDs, 309 found in the kept events
+h1-s1: 92718 REAPr-attributed events, 309 core
+h1-s2: ATLAS ground truth lists 285 record IDs, 285 found in the kept events
+h1-s2: 75101 REAPr-attributed events, 285 core
+h1-s3: ATLAS ground truth lists 292 record IDs, 292 found in the kept events
+h1-s3: 99442 REAPr-attributed events, 295 core
+h1-s4: ATLAS ground truth lists 478 record IDs, 478 found in the kept events
+h1-s4: 76665 REAPr-attributed events, 480 core
+h2-m1: ATLAS ground truth lists 149 record IDs, 149 found in the kept events
+h2-m1: 84864 REAPr-attributed events, 149 core
+h2-m2: ATLAS ground truth lists 146 record IDs, 146 found in the kept events
+h2-m2: 110078 REAPr-attributed events, 146 core
+h2-m3: ATLAS ground truth lists 149 record IDs, 149 found in the kept events
+h2-m3: 63725 REAPr-attributed events, 149 core
+h2-m4: ATLAS ground truth lists 149 record IDs, 149 found in the kept events
+h2-m4: 63022 REAPr-attributed events, 149 core
+h2-m5: ATLAS ground truth lists 149 record IDs, 149 found in the kept events
+h2-m5: 55514 REAPr-attributed events, 149 core
+h2-m6: ATLAS ground truth lists 153 record IDs, 153 found in the kept events
+h2-m6: 71271 REAPr-attributed events, 153 core
