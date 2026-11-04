@@ -1,0 +1,140 @@
+row,attack_simulated_in_this_recording,time,host,log,process,details,reviewer_is_attack,reviewer_notes,auto_label_DO_NOT_LOOK,record_id
+1,APT29 evaluation day 2 (manual): ,2020-05-02T08:01:56.419000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value="".""
+ParameterBinding(Get-Random): name=""InputObj",,,supporting,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#155733
+2,APT29 evaluation day 2 (manual): ,2020-05-02T08:22:23.822000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Out-Null): ""Out-Null""
+CommandInvocation(Out-Null): ""Out-Null""
+",,,supporting,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#498931
+3,APT29 evaluation day 2 (manual): ,2020-05-02T08:08:23.361000Z,utica,microsoft-windows-sysmon/operational / EventID 12,C:\windows\system32\svchost.exe,TargetObject=HKCR\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppModel\Deployment\Package\*\S-1-5-21-1719095684-3458891352-3955206944-1108\{53DD7D65-3,,,background,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#278543
+4,APT29 evaluation day 2 (manual): ,2020-05-02T08:16:05.737000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value="".""
+ParameterBinding(Get-Random): name=""InputObj",,,core,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#396385
+5,APT29 evaluation day 2 (manual): ,2020-05-02T08:16:05.734000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value="".""
+ParameterBinding(Get-Random): name=""InputObj",,,core,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#396259
+6,APT29 evaluation day 2 (manual): ,2020-05-02T08:24:56.357000Z,newyork,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Split-Path): ""Split-Path""
+ParameterBinding(Split-Path): name=""Path""; value=""C:\Program Files\WindowsPowerShell\Modules\xStorage\Dsc",,,ambiguous,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#548735
+7,APT29 evaluation day 2 (manual): ,2020-05-02T08:14:29.195000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value="".""
+ParameterBinding(Get-Random): name=""InputObj",,,supporting,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#368043
+8,APT29 evaluation day 2 (manual): ,2020-05-02T08:16:13.333000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value="".""
+ParameterBinding(Get-Random): name=""InputObj",,,core,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#397073
+9,APT29 evaluation day 2 (manual): ,2020-05-02T08:01:25.502000Z,utica,microsoft-windows-sysmon/operational / EventID 7,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,,,,supporting,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#149400
+10,APT29 evaluation day 2 (manual): ,2020-05-02T08:14:18.042000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value="".""
+ParameterBinding(Get-Random): name=""InputObj",,,supporting,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#365314
+11,Empire Elevated WMI Eventing: This dataset represents adversaries leveraging WMI subscriptions locally for persistence.,2020-09-04T20:48:42.953000Z,workstation5,microsoft-windows-sysmon/operational / EventID 7,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,,,,supporting,otrf_native_val-SDWIN-190518184306_empire_wmi_local_event_subscriptions_elevated_user:SDWIN-190518184306:empire_wmi_local_event_subscriptions_elevated_user#78046
+12,APT29 evaluation day 2 (manual): ,2020-05-02T08:00:22.812000Z,utica,microsoft-windows-sysmon/operational / EventID 1,C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe,"CommandLine=""C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe"" /noconfig /fullpaths @""C:\Users\dschrute\AppData\Local\Temp\n4ts3aae.cmdline"" | ParentImage=C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe",,,ambiguous,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#138507
+13,Invoke BypassUAC FodHelper: This dataset represents adversaries elevating privileges (bypassing uac) by performing an registry modification for FodHelper.,2020-09-04T07:31:00.820000Z,workstation5,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value=""/admin/get.php""
+ParameterBinding(Get-Random): n",,,core,otrf_native_val-SDWIN-200904032946_empire_uac_shellapi_fodhelper:SDWIN-200904032946:empire_uac_shellapi_fodhelper#3953
+14,Empire Elevated WMI Eventing: This dataset represents adversaries leveraging WMI subscriptions locally for persistence.,2020-09-04T20:43:12.183000Z,workstation5,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Start-Sleep): ""Start-Sleep""
+ParameterBinding(Start-Sleep): name=""Seconds""; value=""5""
+",,,core,otrf_native_val-SDWIN-190518184306_empire_wmi_local_event_subscriptions_elevated_user:SDWIN-190518184306:empire_wmi_local_event_subscriptions_elevated_user#73
+15,APT29 evaluation day 2 (manual): ,2020-05-02T08:15:08.777000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Out-Null): ""Out-Null""
+CommandInvocation(Out-Null): ""Out-Null""
+",,,supporting,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#376684
+16,APT29 evaluation day 2 (manual): ,2020-05-02T08:16:05.040000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value="".""
+ParameterBinding(Get-Random): name=""InputObj",,,core,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#395919
+17,APT29 evaluation day 2 (manual): ,2020-05-02T08:14:29.195000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value="".""
+ParameterBinding(Get-Random): name=""InputObj",,,supporting,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#368032
+18,APT29 evaluation day 2 (manual): ,2020-05-02T08:16:14.048000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value="".""
+ParameterBinding(Get-Random): name=""InputObj",,,core,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#397577
+19,APT29 evaluation day 2 (manual): ,2020-05-02T08:15:56.432000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value="".""
+ParameterBinding(Get-Random): name=""InputObj",,,core,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#393567
+20,APT29 evaluation day 2 (manual): ,2020-05-02T08:22:42.996000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value="".""
+ParameterBinding(Get-Random): name=""InputObj",,,supporting,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#503596
+21,APT29 evaluation day 2 (manual): ,2020-05-02T08:25:05.086000Z,newyork,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Set-Alias): ""Set-Alias""
+ParameterBinding(Set-Alias): name=""Name""; value=""gcls""
+ParameterBinding(Set-Alias): name=""Value""; value=""G",,,ambiguous,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#551390
+22,APT29 evaluation day 2 (manual): ,2020-05-02T08:22:33.233000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Out-Null): ""Out-Null""
+CommandInvocation(Out-Null): ""Out-Null""
+",,,supporting,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#500909
+23,APT29 evaluation day 2 (manual): ,2020-05-02T07:58:31.311000Z,utica,windows powershell / EventID 800,,,,,background,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#113459
+24,"Stopping Event Logging via Creation of MiniNt Registry Key: After getting an elevated meterpreter session, we added the MiniNt registry key in the following hives HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control and HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control. After rebooting the system and trying to access event logs trough the Event Viewer applicati",2022-08-03T04:56:44.424000Z,pedro01,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Invoke-Expression): ""Invoke-Expression""
+ParameterBinding(Invoke-Expression): name=""Command""; value=""
+function Invoke-DcSyncAll {
+  <",,,ambiguous,otrf_native_val-SDWIN-220803205800_psh_stop_event_logging_controlset001_minint_key:SDWIN-220803205800:psh_stop_event_logging_controlset001_minint_key#8225
+25,APT29 evaluation day 2 (manual): ,2020-05-02T08:24:53.411000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(New-Object): ""New-Object""
+ParameterBinding(New-Object): name=""TypeName""; value=""System.Net.WebClient""
+",,,supporting,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#544748
+26,Empire Elevated WMI Eventing: This dataset represents adversaries leveraging WMI subscriptions locally for persistence.,2020-09-04T20:44:06.983000Z,mordordc,microsoft-windows-sysmon/operational / EventID 10,C:\WindowsAzure\GuestAgent_2.7.41491.993_2020-09-04_183104\CollectGuestLogs.exe,TargetImage=C:\windows\system32\svchost.exe,,,background,otrf_native_val-SDWIN-190518184306_empire_wmi_local_event_subscriptions_elevated_user:SDWIN-190518184306:empire_wmi_local_event_subscriptions_elevated_user#3565
+27,Empire Invoke WMI: This dataset represents an adversary remotely executing code via WMI. This dataset focuses on the use of the WMI Win32_Process class and method Create to execute code remotely.,2020-09-21T04:15:17.060000Z,mordordc,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Export-ModuleMember): ""Export-ModuleMember""
+ParameterBinding(Export-ModuleMember): name=""Function""; value=""""
+",,,ambiguous,otrf_native_test-SDWIN-200921001437_empire_wmi_dcerpc_wmi_IWbemServices_ExecMethod:SDWIN-200921001437:empire_wmi_dcerpc_wmi_IWbemServices_ExecMethod#2506
+28,APT29 evaluation day 2 (manual): ,2020-05-02T08:18:36.753000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value=""6""
+ParameterBinding(Get-Random): name=""InputObj",,,supporting,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#437048
+29,Empire Elevated WMI Eventing: This dataset represents adversaries leveraging WMI subscriptions locally for persistence.,2020-09-04T20:46:14.009000Z,workstation5,microsoft-windows-sysmon/operational / EventID 13,C:\windows\system32\svchost.exe,TargetObject=HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModel\StateRepository\Cache\ApplicationUser\Data\106\ApplicationUserModelId,,,background,otrf_native_val-SDWIN-190518184306_empire_wmi_local_event_subscriptions_elevated_user:SDWIN-190518184306:empire_wmi_local_event_subscriptions_elevated_user#46201
+30,APT29 evaluation day 2 (manual): ,2020-05-02T08:15:17.888000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value="".""
+ParameterBinding(Get-Random): name=""InputObj",,,core,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#379122
+31,APT29 evaluation day 2 (manual): ,2020-05-02T08:28:03.477000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""Maximum""; value=""GoPro5/black/2018/, vssf/wppo/site/bgroup/visitor/, ",,,supporting,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#581578
+32,APT29 evaluation day 2 (manual): ,2020-05-02T08:16:02.923000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value="".""
+ParameterBinding(Get-Random): name=""InputObj",,,core,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#394040
+33,Empire Elevated WMI Eventing: This dataset represents adversaries leveraging WMI subscriptions locally for persistence.,2020-09-04T20:46:53.249000Z,workstation5,microsoft-windows-sysmon/operational / EventID 10,C:\WindowsAzure\GuestAgent_2.7.41491.993_2020-09-04_183615\WaAppAgent.exe,TargetImage=C:\windows\Sysmon.exe,,,ambiguous,otrf_native_val-SDWIN-190518184306_empire_wmi_local_event_subscriptions_elevated_user:SDWIN-190518184306:empire_wmi_local_event_subscriptions_elevated_user#63735
+34,APT29 evaluation day 2 (manual): ,2020-05-02T08:14:18.462000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value="".""
+ParameterBinding(Get-Random): name=""InputObj",,,supporting,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#365655
+35,APT29 evaluation day 2 (manual): ,2020-05-02T08:15:16.943000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value="".""
+ParameterBinding(Get-Random): name=""InputObj",,,core,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#378585
+36,APT29 evaluation day 2 (manual): ,2020-05-02T08:05:48.085000Z,newyork,security / EventID 4656,C:\Windows\System32\svchost.exe,ObjectName=\REGISTRY\MACHINE\SYSTEM\ControlSet001\Control\Lsa,,,background,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#211973
+37,APT29 evaluation day 2 (manual): ,2020-05-02T08:16:05.044000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value="".""
+ParameterBinding(Get-Random): name=""InputObj",,,core,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#396067
+38,APT29 evaluation day 2 (manual): ,2020-05-02T08:16:14.043000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value="".""
+ParameterBinding(Get-Random): name=""InputObj",,,core,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#397447
+39,APT29 evaluation day 2 (manual): ,2020-05-02T08:15:17.892000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value="".""
+ParameterBinding(Get-Random): name=""InputObj",,,core,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#379213
+40,Empire Elevated WMI Eventing: This dataset represents adversaries leveraging WMI subscriptions locally for persistence.,2020-09-04T20:49:16.449000Z,workstation5,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(ForEach-Object): ""ForEach-Object""
+ParameterBinding(ForEach-Object): name=""Process""; value=""$f94e.Headers.Add($_.Name, $_.Value)""
+",,,core,otrf_native_val-SDWIN-190518184306_empire_wmi_local_event_subscriptions_elevated_user:SDWIN-190518184306:empire_wmi_local_event_subscriptions_elevated_user#78855
+41,APT29 evaluation day 2 (manual): ,2020-05-02T08:06:57.718000Z,scranton,microsoft-windows-sysmon/operational / EventID 10,C:\windows\system32\svchost.exe,TargetImage=C:\windows\System32\svchost.exe,,,background,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#239464
+42,APT29 evaluation day 2 (manual): ,2020-05-02T08:23:23.949000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value="".""
+ParameterBinding(Get-Random): name=""InputObj",,,supporting,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#509723
+43,"Stopping Event Logging via Creation of MiniNt Registry Key: After getting an elevated meterpreter session, we added the MiniNt registry key in the following hives HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control and HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control. After rebooting the system and trying to access event logs trough the Event Viewer applicati",2022-08-03T07:30:12.704000Z,pedro01,microsoft-windows-sysmon/operational / EventID 7,C:\Windows\SystemApps\Microsoft.Windows.AppRep.ChxApp_cw5n1h2txyewy\CHXSmartScreen.exe,,,,background,otrf_native_val-SDWIN-220803205800_cmd_stop_event_logging_controlset001_minint_key:SDWIN-220803205800:cmd_stop_event_logging_controlset001_minint_key#2682
+44,APT29 evaluation day 2 (manual): ,2020-05-02T08:24:56.969000Z,newyork,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Export-ModuleMember): ""Export-ModuleMember""
+ParameterBinding(Export-ModuleMember): name=""Function""; value=""Get-DnsClientCache""
+Par",,,ambiguous,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#549732
+45,APT29 evaluation day 2 (manual): ,2020-05-02T08:18:48.165000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(New-Object): ""New-Object""
+ParameterBinding(New-Object): name=""TypeName""; value=""System.Security.Cryptography.RijndaelManaged""
+",,,supporting,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#443551
+46,Empire Elevated WMI Eventing: This dataset represents adversaries leveraging WMI subscriptions locally for persistence.,2020-09-04T20:43:40.933000Z,mordordc,security / EventID 4624,-,,,,ambiguous,otrf_native_val-SDWIN-190518184306_empire_wmi_local_event_subscriptions_elevated_user:SDWIN-190518184306:empire_wmi_local_event_subscriptions_elevated_user#1552
+47,APT29 evaluation day 2 (manual): ,2020-05-02T08:25:04.628000Z,newyork,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Export-ModuleMember): ""Export-ModuleMember""
+ParameterBinding(Export-ModuleMember): name=""Function""; value=""Get-StorageDiagnosticInf",,,ambiguous,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#551045
+48,APT29 evaluation day 2 (manual): ,2020-05-02T08:19:44.427000Z,utica,microsoft-windows-sysmon/operational / EventID 10,C:\windows\system32\svchost.exe,TargetImage=C:\windows\System32\svchost.exe,,,background,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#457684
+49,APT29 evaluation day 2 (manual): ,2020-05-02T08:15:55.105000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value="".""
+ParameterBinding(Get-Random): name=""InputObj",,,core,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#392521
+50,APT29 evaluation day 2 (manual): ,2020-05-02T08:07:24.896000Z,utica,microsoft-windows-sysmon/operational / EventID 13,C:\windows\system32\svchost.exe,TargetObject=HKCR\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppModel\Deployment\Package\*\S-1-5-21-1719095684-3458891352-3955206944-1108\{638E6524-7,,,background,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#255485
+51,APT29 evaluation day 2 (manual): ,2020-05-02T08:16:14.040000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value="".""
+ParameterBinding(Get-Random): name=""InputObj",,,core,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#397353
+52,Empire Invoke WMI: This dataset represents an adversary remotely executing code via WMI. This dataset focuses on the use of the WMI Win32_Process class and method Create to execute code remotely.,2020-09-21T04:14:57.409000Z,workstation6,microsoft-windows-sysmon/operational / EventID 12,C:\Windows\System32\WindowsPowershell\v1.0\powershell.exe,TargetObject=HKU\.DEFAULT\Software\Microsoft\SystemCertificates\Disallowed\CTLs,,,supporting,otrf_native_test-SDWIN-200921001437_empire_wmi_dcerpc_wmi_IWbemServices_ExecMethod:SDWIN-200921001437:empire_wmi_dcerpc_wmi_IWbemServices_ExecMethod#1036
+53,Empire Elevated WMI Eventing: This dataset represents adversaries leveraging WMI subscriptions locally for persistence.,2020-09-04T20:43:46.076000Z,workstation5,microsoft-windows-sysmon/operational / EventID 12,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,TargetObject=HKU\S-1-5-21-2079883792-3656946353-945924832-1104\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections,,,supporting,otrf_native_val-SDWIN-190518184306_empire_wmi_local_event_subscriptions_elevated_user:SDWIN-190518184306:empire_wmi_local_event_subscriptions_elevated_user#1820
+54,APT29 evaluation day 2 (manual): ,2020-05-02T08:26:09.362000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value=""6""
+ParameterBinding(Get-Random): name=""InputObj",,,supporting,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#575003
+55,SharpView PCRE.NET: This dataset represents a threat actor leveraging SharpView and specific functions such as Get-ObjectAcl creating files and loading dlls related to PCRE.NET use.,2020-10-29T08:23:20.534000Z,workstation5,microsoft-windows-sysmon/operational / EventID 1,C:\ProgramData\SharpView.exe,"CommandLine=SharpView.exe  Get-ObjectAcl -SamAccountName ""Domain Admins"" | ParentImage=C:\Windows\System32\cmd.exe",,,core,otrf_native_test-SDWIN-201029202324_cmd_sharpview_pcre_net:SDWIN-201029202324:cmd_sharpview_pcre_net#120
+56,APT29 evaluation day 2 (manual): ,2020-05-02T08:16:04.071000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value="".""
+ParameterBinding(Get-Random): name=""InputObj",,,core,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#395007
+57,APT29 evaluation day 2 (manual): ,2020-05-02T08:05:18.301000Z,utica,microsoft-windows-sysmon/operational / EventID 12,C:\windows\system32\svchost.exe,TargetObject=HKU\S-1-5-21-1719095684-3458891352-3955206944-1108_Classes\Local Settings\Software,,,background,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#198722
+58,Remote Scheduled Task Creation: This dataset represents a threat actor creating a scheduled task remotely using schtasks.,2020-12-19T07:00:23.031000Z,workstation6,microsoft-windows-sysmon/operational / EventID 7,C:\Windows\System32\conhost.exe,,,,supporting,otrf_native_test-SDWIN-201219070027_schtask_create:SDWIN-201219070027:schtask_create#922
+59,APT29 evaluation day 2 (manual): ,2020-05-02T08:15:55.674000Z,utica,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Get-Random): ""Get-Random""
+ParameterBinding(Get-Random): name=""InputObject""; value="".""
+ParameterBinding(Get-Random): name=""InputObj",,,core,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#392835
+60,APT29 evaluation day 2 (manual): ,2020-05-02T08:11:06.282000Z,newyork,microsoft-windows-powershell/operational / EventID 4103,,"Payload=CommandInvocation(Export-ModuleMember): ""Export-ModuleMember""
+ParameterBinding(Export-ModuleMember): name=""Function""; value=""Reset-StorageReliability",,,ambiguous,otrf_native_val-APT29-DAY2_apt29_evals_day2_manual:APT29-DAY2:apt29_evals_day2_manual#315480

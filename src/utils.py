@@ -17,7 +17,9 @@ def load_records(path: str | Path) -> list[dict[str, Any]]:
     suffix = source.suffix.lower()
     if suffix == ".zip":
         with zipfile.ZipFile(source) as archive:
-            names = [n for n in archive.namelist() if Path(n).suffix.lower() in {".jsonl", ".ndjson", ".json", ".csv"}]
+            # Skip macOS resource-fork entries (__MACOSX/._name.json): they are binary, not event data.
+            names = [n for n in archive.namelist() if Path(n).suffix.lower() in {".jsonl", ".ndjson", ".json", ".csv"}
+                     and not n.startswith("__MACOSX/") and not Path(n).name.startswith("._")]
             if not names: raise ValueError("ZIP contains no JSON/JSONL/CSV data file")
             # OTRF scenario archives contain one JSONL event file.
             name = sorted(names)[0]

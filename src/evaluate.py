@@ -89,7 +89,8 @@ def _sync_ledger(database: str | Path, result: SelectionResult, candidate_to_evi
         reasons[candidate_id] = ("evicted", "Outside configured EVICTGuard context capacity")
     for candidate_id in result.protected_ids:
         reasons[candidate_id] = ("protected", "Selected in protected high-score set by EVICTGuard policy")
-    selected_ids = set(result.selected.get("_stable_id", pd.Series(dtype=str)).astype(str))
+    id_col = "_stable_id" if "_stable_id" in result.selected else "record_id"
+    selected_ids = set(result.selected.get(id_col, pd.Series(dtype=str)).astype(str))
     for candidate_id in selected_ids:
         if candidate_id not in reasons:
             reasons[candidate_id] = ("available", "Selected in context; below protected-set threshold")
@@ -188,8 +189,13 @@ def run_comparison(
     ground_truth_column: str | None = None,
     positive_values: set[str] | None = None,
     ground_truth_reliable: bool = False,
+    method: str = "v1",
 ) -> dict[str, Any]:
-    """Create a noisy experimental copy and compare all three selectors."""
+    """Create a noisy experimental copy and compare all three selectors.
+
+    ``method`` chooses the EVICTGuard scorer whose decisions are written to the ledger:
+    ``v1`` (original) or ``v2`` (provenance- and prevalence-aware, src/evictguard_v2.py).
+    """
     if capacity < 0:
         raise ValueError("capacity must be non-negative")
     clean = pd.read_csv(episode)
@@ -213,7 +219,13 @@ def run_comparison(
     # Runtime measures selection only; ledger I/O and noise creation are kept
     # separate so methods are comparable on the same candidate frame.
     start = time.perf_counter()
-    evict_result = select_evictguard(experimental, capacity, weights=weight_config, protected_fraction=protected_fraction, seed=seed)
+    if method == "v2":
+        from .evictguard_v2 import PrevalenceProfile, select_evictguard_v2
+        profile_path = Path("data/benchmark/prevalence_train.json")
+        profile = PrevalenceProfile.load(profile_path) if profile_path.exists() else None
+        evict_result = select_evictguard_v2(experimental, capacity, profile=profile, protected_fraction=protected_fraction, seed=seed)
+    else:
+        evict_result = select_evictguard(experimental, capacity, weights=weight_config, protected_fraction=protected_fraction, seed=seed)
     evict_runtime = time.perf_counter() - start
     start = time.perf_counter()
     fifo_result = select_fifo(experimental, capacity)
@@ -259,13 +271,14 @@ def main() -> None:
     parser.add_argument("--noise-type", choices=["benign-looking", "duplicate-flooding", "missing-evidence"], default="duplicate-flooding")
     parser.add_argument("--noise-proportion", type=float, default=0.20)
     parser.add_argument("--protected-fraction", type=float, default=0.25)
+    parser.add_argument("--method", choices=["v1", "v2"], default="v1", help="EVICTGuard scorer whose decisions update the ledger")
     parser.add_argument("--weight-rarity", type=float, default=DEFAULT_WEIGHTS["rarity"])
     parser.add_argument("--weight-corroboration", type=float, default=DEFAULT_WEIGHTS["corroboration"])
     parser.add_argument("--weight-non-redundancy", type=float, default=DEFAULT_WEIGHTS["non_redundancy"])
     args = parser.parse_args()
     try:
         weights = {"rarity": args.weight_rarity, "corroboration": args.weight_corroboration, "non_redundancy": args.weight_non_redundancy}
-        report = run_comparison(args.database, args.episode, args.output, capacity=args.capacity, seed=args.seed, noise_type=args.noise_type, noise_proportion=args.noise_proportion, protected_fraction=args.protected_fraction, weights=weights)
+        report = run_comparison(args.database, args.episode, args.output, capacity=args.capacity, seed=args.seed, noise_type=args.noise_type, noise_proportion=args.noise_proportion, protected_fraction=args.protected_fraction, weights=weights, method=args.method)
     except Exception as exc:
         parser.error(str(exc))
     print(json.dumps({"input_records": report["input_records"], "methods": report["methods"], "output": args.output}, indent=2))

@@ -1,0 +1,26 @@
+{
+  "all_cdb_labels": {
+    "events": 154300,
+    "agreement": 0.9357,
+    "cohens_kappa": 0.076,
+    "our_precision_vs_cdb": 0.204,
+    "our_recall_vs_cdb": 0.067,
+    "our_attack_events": 2711,
+    "cdb_attack_events": 8321
+  },
+  "excluding_azure_agent": {
+    "events": 144958,
+    "agreement": 0.97,
+    "cohens_kappa": 0.188,
+    "our_precision_vs_cdb": 0.204,
+    "our_recall_vs_cdb": 0.202,
+    "our_attack_events": 2711,
+    "cdb_attack_events": 2739
+  },
+  "our_label_summary": {
+    "n_core": 32,
+    "n_supporting": 2679,
+    "n_ambiguous": 1050,
+    "n_background": 151589
+  }
+}

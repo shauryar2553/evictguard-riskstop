@@ -1,0 +1,108 @@
+{
+  "input_episode": "data/episodes/demo_episode.csv",
+  "experimental_input": "results\\phase3_comparison_input.csv",
+  "input_records": 18,
+  "noise_configuration": {
+    "created_at_utc": "2026-11-02T06:03:46.966431+00:00",
+    "noise_type": "duplicate-flooding",
+    "proportion": 0.2,
+    "seed": 17,
+    "input_records": 15,
+    "output_records": 18,
+    "added_records": 3,
+    "removed_record_ids": [],
+    "label_note": "Synthetic events are not source ground truth; source label fields are preserved."
+  },
+  "selection_configuration": {
+    "capacity": 8,
+    "seed": 17,
+    "protected_fraction": 0.25,
+    "weights": {
+      "rarity": 0.45,
+      "corroboration": 0.35,
+      "non_redundancy": 0.2
+    }
+  },
+  "features_unavailable": {
+    "asset_sensitivity": "The current dataset has no documented asset criticality field.",
+    "attack_stage_relevance": "No event-level attack-stage annotation is available."
+  },
+  "ground_truth_limitation": "The selected OTRF corpus does not provide verified event-level labels; critical retention is unreported unless the caller explicitly supplies reliable labels.",
+  "methods": [
+    {
+      "method": "evictguard",
+      "selected_records": 8,
+      "capacity": 8,
+      "capacity_utilization": 1.0,
+      "duplicate_rows_in_input": 3,
+      "duplicate_rows_selected": 0,
+      "duplicate_reduction_rows": 3,
+      "duplicate_reduction_fraction": 1.0,
+      "diversity": {
+        "unique_hosts": 1,
+        "unique_event_categories": 5,
+        "unique_sources": 1,
+        "unique_host_event_strata": 5
+      },
+      "critical_evidence_retention": null,
+      "critical_evidence_note": "Unavailable: no reliable event-level ground truth was declared.",
+      "selection_runtime_seconds": 0.007466900000054011
+    },
+    {
+      "method": "fifo",
+      "selected_records": 8,
+      "capacity": 8,
+      "capacity_utilization": 1.0,
+      "duplicate_rows_in_input": 3,
+      "duplicate_rows_selected": 2,
+      "duplicate_reduction_rows": 1,
+      "duplicate_reduction_fraction": 0.3333333333333333,
+      "diversity": {
+        "unique_hosts": 1,
+        "unique_event_categories": 4,
+        "unique_sources": 1,
+        "unique_host_event_strata": 4
+      },
+      "critical_evidence_retention": null,
+      "critical_evidence_note": "Unavailable: no reliable event-level ground truth was declared.",
+      "selection_runtime_seconds": 0.0023669000001973473
+    },
+    {
+      "method": "random",
+      "selected_records": 8,
+      "capacity": 8,
+      "capacity_utilization": 1.0,
+      "duplicate_rows_in_input": 3,
+      "duplicate_rows_selected": 1,
+      "duplicate_reduction_rows": 2,
+      "duplicate_reduction_fraction": 0.6666666666666666,
+      "diversity": {
+        "unique_hosts": 1,
+        "unique_event_categories": 4,
+        "unique_sources": 1,
+        "unique_host_event_strata": 4
+      },
+      "critical_evidence_retention": null,
+      "critical_evidence_note": "Unavailable: no reliable event-level ground truth was declared.",
+      "selection_runtime_seconds": 0.0003289999999651627
+    }
+  ],
+  "evictguard_protected_evidence_ids": [
+    "2901e9d8676ee2401bdb2127fea95a89",
+    "30e649b81304bd20f19d4d891b624c70"
+  ],
+  "evictguard_redundant_evidence_ids": [
+    "synthetic-17-0",
+    "synthetic-17-1",
+    "synthetic-17-2"
+  ],
+  "evictguard_evicted_evidence_ids": [
+    "5c27b6daac2adb4c61414bcc437b63fa",
+    "695ecf73a96132dab65d1e7ebd9b6ea4",
+    "9c345e44e05cab2dd409217aceff5166",
+    "683b2a93b271151d92bda42287181f68",
+    "825424ddd8d889571f15bdde0741d203",
+    "40debb9e18fcc4157284808a5e1212ad",
+    "c48895738a3258b4d2b3c73bdfeb605f"
+  ]
+}

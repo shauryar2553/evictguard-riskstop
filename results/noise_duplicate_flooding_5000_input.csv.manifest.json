@@ -1,0 +1,12 @@
+{
+  "created_at_utc": "2026-11-02T13:05:18.353188+00:00",
+  "noise_type": "duplicate-flooding",
+  "proportion": 0.05,
+  "seed": 17,
+  "input_records": 5000,
+  "output_records": 5250,
+  "added_records": 250,
+  "removed_record_ids": [],
+  "label_note": "Synthetic events are not source ground truth; source label fields are preserved.",
+  "synthetic_field_note": null
+}
