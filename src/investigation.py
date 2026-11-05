@@ -222,7 +222,7 @@ def score_context(engine: QueryEngine, rows: list[int], profile) -> pd.DataFrame
 
 def run_investigation(episode: pd.DataFrame, decide: Callable, *, budget: int = 20, capacity: int = 256, memory_policy: str = "evictguard",
                       profile: PrevalenceProfile | None = None, investigator: Investigator | None = None, per_query: int = 150,
-                      record: bool = True) -> dict[str, Any]:
+                      record: bool = True, seed_rows: list[int] | None = None, alert: dict | None = None) -> dict[str, Any]:
     """Run one investigation. ``decide(features, state) -> (action, info)`` is the stopping policy
     (RISKSTOP or a baseline). Returns the trajectory (features per step), final action and certificate inputs."""
     from .riskstop import state_features
@@ -230,9 +230,10 @@ def run_investigation(episode: pd.DataFrame, decide: Callable, *, budget: int = 
     investigator = investigator or HeuristicInvestigator()
     memory = Memory(capacity, memory_policy, profile)
     state = InvestigationState()
-    seed = seed_alert(engine, profile)
-    engine.returned[seed] = True
-    memory.update(engine, [seed])
+    state.alert = alert or {}
+    seeds = list(seed_rows) if seed_rows else [seed_alert(engine, profile)]
+    engine.returned[seeds] = True
+    memory.update(engine, seeds)
     trajectory = []
     gains: list[float] = []
     action, info = "CONTINUE", {}

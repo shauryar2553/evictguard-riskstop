@@ -29,7 +29,10 @@ import pandas as pd
 
 FEATURES = ["ctx_value_max", "ctx_value_top5", "ctx_value_mean", "n_susp_procs", "max_actor", "n_high", "sens_hits", "tloc_user",
             "lineage_depth", "unresolved", "host_coverage", "missing_telemetry", "budget_used_frac", "budget_left", "recent_gain",
-            "novelty_mean", "n_retrieved_log", "steps"]
+            "novelty_mean", "n_retrieved_log", "steps",
+            # alert metadata (alert-driven benchmark) and kill-chain progression (Sigma ATT&CK tags; label-independent)
+            "alert_severity", "alert_attack_watchlist", "alert_tactic_execution", "alert_tactic_discovery", "alert_tactic_other",
+            "killchain_tactics", "sigma_max_rank", "sigma_hits"]
 
 
 def state_features(ctx: pd.DataFrame, engine, memory, state, budget: int, gains: list[float]) -> dict[str, float]:
@@ -59,6 +62,22 @@ def state_features(ctx: pd.DataFrame, engine, memory, state, budget: int, gains:
         f["lineage_depth"] = float(depth)
         f["unresolved"] = float(sum(1 for k in susp_keys if ("process", k) not in state.leads_queried or ("children", k) not in state.leads_queried))
         f["novelty_mean"] = float(ctx.f_novel.mean())
+    alert = getattr(state, "alert", {}) or {}
+    f["alert_severity"] = float(alert.get("severity") or 0)
+    f["alert_attack_watchlist"] = 1.0 if "ATT&CK" in str(alert.get("watchlists", "")) else 0.0
+    rep = str(alert.get("report_name", "")).lower()
+    f["alert_tactic_execution"] = 1.0 if rep.startswith("execution") else 0.0
+    f["alert_tactic_discovery"] = 1.0 if rep.startswith("discovery") else 0.0
+    f["alert_tactic_other"] = 1.0 if rep and not (rep.startswith("execution") or rep.startswith("discovery")) else 0.0
+    if ctx is not None and not ctx.empty and "sigma_rank" in engine.frame:
+        rows = ctx._row.to_numpy()
+        ranks = engine.frame.sigma_rank.to_numpy()[rows]
+        tacs = engine.frame.sigma_tactics.to_numpy()[rows]
+        f["killchain_tactics"] = float(len({t for x in tacs for t in str(x).split(";") if t}))
+        f["sigma_max_rank"] = float(ranks.max())
+        f["sigma_hits"] = float((ranks >= 2).sum())
+    else:
+        f["killchain_tactics"] = f["sigma_max_rank"] = f["sigma_hits"] = 0.0
     hosts_all = len(set(engine.hosts))
     hosts_seen = len(set(engine.hosts[memory.retrieved])) if memory.retrieved else 0
     f["host_coverage"] = hosts_seen / max(hosts_all, 1)

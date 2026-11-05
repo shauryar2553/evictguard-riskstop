@@ -39,6 +39,10 @@ run ./scripts/reassemble_large_files.sh after cloning.
   (state features, risk models, policy, certificate, baselines), `src/run_riskstop.py` (collect/evaluate). Results and
   honest assessment: `docs/RISKSTOP.md`. Trajectories: `data/riskstop/`.
 
+* RISKSTOP upgraded: alert-driven benchmark on real Carbon Black alerts (`src/alert_benchmark.py`, data in `data/alert_bench/`)
+  + fixed-sequence Learn-then-Test risk control, cost model, oracle regret, ablations (`src/run_alert_riskstop.py`).
+  Test: missed attacks 0-5% vs 16-36% for baselines, ~10% budget, lowest cost; defers 34-48%. Details in docs/RISKSTOP.md section A.
+
 ## Next (needs the API key)
 1. LLM investigator implementing `Investigator.next_query` (and reading the context semantically), then re-run
    `python -m src.run_riskstop collect` + `evaluate` with it; compare to the heuristic investigator.

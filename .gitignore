@@ -14,3 +14,5 @@ deliverables/EVICTGuard_original_phase1-3.zip
 data/benchmark/episodes/otrf_native_val-APT29-DAY2_apt29_evals_day2_manual.parquet
 data/labels/events/APT29-DAY2_apt29_evals_day2_manual.parquet
 data/otrf/raw/APT29-DAY2/apt29_evals_day2_manual.zip
+data/alert_bench/sources/h2-benign.parquet
+data/atlasv2/standardized/cbc_alerts/benign__h2__cbc-edr__edr-h2-benign.jsonl.gz

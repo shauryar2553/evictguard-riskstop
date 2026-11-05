@@ -156,6 +156,7 @@ def main() -> None:
     p.add_argument("--fetch-reapr", action="store_true")
     p.add_argument("--stream", action="store_true", help="stream only the needed files from the 12 GB Box archive (no raw XML stored)")
     p.add_argument("--stream-attacks", action="store_true", help="stream all 16 attack scenarios (Sysmon + Security + ATLAS ground truth)")
+    p.add_argument("--stream-alerts", action="store_true", help="stream Carbon Black alerts (attack + benign days) and benign-period EDR for h2")
     p.add_argument("--stream-cbc", action="store_true", help="stream the Carbon Black EDR telemetry of all attack scenarios (fresh test sensor)")
     p.add_argument("--host", default="h1")
     p.add_argument("--scenario", default="s1")
@@ -163,6 +164,11 @@ def main() -> None:
     a = p.parse_args()
     if a.fetch_reapr:
         fetch_reapr(a.reapr); return
+    if a.stream_alerts:
+        dirs = {f"data/{ph}/{h}/{k}" for ph in ("attack", "benign") for h in ("h1", "h2") for k in ("cbc-edr-alerts", "cbc-ngav-alerts")}
+        dirs |= {"data/benign/h2/cbc-edr"}
+        stream_members(BOX_URL, a.out / "cbc_alerts", dirs)
+        return
     if a.stream_cbc:
         stream_cbc_edr(BOX_URL, a.out)
         return
@@ -465,6 +471,42 @@ def stream_cbc_edr(url: str, out_root: Path, max_lines: int = 400_000) -> list[s
                         break
             saved.append(scen)
             print(f"cbc-edr {scen}: {n} lines (offset {resp.offset/1e9:.2f} GB)", flush=True)
+    resp.close()
+    return saved
+
+def stream_members(url: str, out_dir: Path, wanted_dirs: set[str], max_lines: int | None = None) -> list[str]:
+    """Generic resumable streamer: save every file under ``wanted_dirs`` (gzip-compressed, raw lines),
+    stop once all wanted folders have passed. Used for Carbon Black alerts and benign-period EDR."""
+    import gzip
+    import tarfile
+    out_dir.mkdir(parents=True, exist_ok=True)
+    seen, done, saved = set(), set(), []
+    resp = ResumableHTTP(url)
+    with tarfile.open(fileobj=resp, mode="r|gz") as archive:
+        for member in archive:
+            rel = member.name.split("/", 1)[1] if "/" in member.name else member.name
+            parent = rel.rsplit("/", 1)[0] if "/" in rel else ""
+            for d in list(seen - done):
+                if parent != d:
+                    done.add(d)
+            required = {d for d in wanted_dirs if not d.startswith("data/benign/h1")}   # benign/h1 alerts are tiny and ~6 GB in; skip
+            if required <= done:
+                print("all wanted folders passed; stopping early", flush=True)
+                break
+            if parent not in wanted_dirs or not member.isfile():
+                continue
+            seen.add(parent)
+            name = rel.replace("data/", "").replace("/", "__")
+            src = archive.extractfile(member)
+            n = 0
+            with gzip.open(out_dir / f"{name}.gz", "wb") as out:
+                for line in src:
+                    out.write(line)
+                    n += 1
+                    if max_lines and n >= max_lines:
+                        break
+            saved.append(name)
+            print(f"saved {rel}: {n} lines (offset {resp.offset/1e9:.2f} GB)", flush=True)
     resp.close()
     return saved
 

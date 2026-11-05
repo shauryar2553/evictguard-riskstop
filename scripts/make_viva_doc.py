@@ -286,7 +286,7 @@ table([
     ["EVICTGuard completion", "Done", "Second and third datasets, literature baselines, streaming version, robustness, ledger + context assembly"],
     ["Caveat fixes (v3, Online v2, coverage, tie-break seeds)", "Done", "Each frozen before its fresh test; results in 11.10"],
     ["End-to-end LLM verdict test", "Open", "Needs an LLM (API key or local model)"],
-    ["RISKSTOP", "Built end to end (no LLM)", "Zero false alarms on ATLASv2 with 15% budget; not yet better than simple stopping; see 11b"],
+    ["RISKSTOP", "Built end to end (no LLM) with guaranteed error rates", "Real-alert benchmark: missed attacks 0–5% vs 16–36% for baselines, ~10% budget, lowest cost; see 11b"],
     ["EVICTGuard v4 + Carbon Black fresh test", "Done", "v4 no gain (negative result); EVICTGuard leads on a new sensor"],
 ], ["Part", "Status", "Notes"])
 h("Honest limitations", 2)
@@ -453,6 +453,22 @@ bullets([
     ("What will improve it: ", "the LLM investigator (reads evidence semantically; needs the API key), reliable benign data from the same environment, and more test attacks."),
 ])
 box("RISKSTOP works as designed and is safe (it defers rather than guessing), but proving it beats simple stopping rules needs the LLM step and better benign data.")
+h("RISKSTOP, upgraded: real alerts and guaranteed error rates", 2)
+p("We rebuilt the RISKSTOP benchmark to be realistic: every investigation starts from a real Carbon Black security alert (528 alerts: 59 real attacks, 170 false alarms raised during the attack day, 299 from normal days), on the same computers and the same sensor, with exact expert labels.")
+p("We also gave RISKSTOP a statistical guarantee using a method called Learn-then-Test: its thresholds are only accepted if validation data proves, with 90% confidence, that missed attacks and false alarms stay at or below 10%.")
+table([
+    ["RISKSTOP (guaranteed)", "0–5%", "2–10%", "8–12%", "lowest (0.60–0.74)"],
+    ["Stop when evidence stalls (BAGEN-style)", "28–32%", "3–4%", "23%", "0.80–0.86"],
+    ["Stop when confident", "33–36%", "1–2%", "5%", "0.75–0.82"],
+    ["Conformal deferral at the end", "9–16%", "3–5%", "97%", "1.11"],
+    ["Use the whole budget", "27–35%", "6–7%", "97%", "1.21–1.36"],
+], ["371 test investigations", "Missed attacks", "False alarms", "Budget used", "Expected cost"])
+bullets([
+    ("Headline: ", "RISKSTOP cuts missed attacks from 16–36% to 0–5% while using only about 10% of the investigation budget, and has the lowest overall cost."),
+    ("The price: ", "it hands 34–48% of alerts to a human analyst when unsure. That's how the guarantee is kept."),
+    ("Honest details: ", "the guarantee held fully with one memory type and was right on the boundary with the other (false alarms 10.1% vs a 10% target), because the test set includes a computer the validation set didn't. One component (the residual-risk cap) turned out unused. Calibration and the query-value rule both clearly matter."),
+])
+box("This is a publishable claim: on real vendor alerts, risk-controlled stopping reduces missed attacks by roughly 5× or more at about 10% of the investigation cost, with a statistical guarantee, at the price of escalating uncertain alerts.")
 
 # ------------------------------------------------------------------ 11
 h("12. Likely viva questions and answers")
@@ -475,6 +491,8 @@ qa("Does it work on a different environment?", "Yes. On 84 native Windows 10 OTR
 qa("Does it work as a real streaming system?", "The online version decides event by event with fixed memory and no look-ahead: 96–97% on held-out ATLASv2, 48–80% on OTRF. It's slightly below batch on the small OTRF episodes.")
 qa("Did you test on data labelled by someone else?", "Yes: the CDB public campaign, with CDB's own labels. We found that 70% of its core labels are an Azure cloud agent (very likely false alarms), and on CDB EVICTGuard is only comparable to a simple rare-event baseline. We report that openly as a limitation.")
 qa("How reliable are your labels?", "ATLASv2's labels come from the dataset's experts and are the most reliable. For OTRF we built our own; when compared with CDB's independent labeller on the same events, agreement was only slight (kappa 0.08–0.19), which shows how uncertain automatic labels are. A human check is prepared.")
+qa("What is RISKSTOP's main result?", "On 371 test investigations that start from real Carbon Black alerts, RISKSTOP misses 0–5% of attacks versus 16–36% for every baseline, uses about 10% of the investigation budget, and has the lowest expected cost. Its thresholds are certified by Learn-then-Test so error rates stay at or below 10% with 90% confidence; the trade-off is that it escalates 34–48% of alerts to a human.")
+qa("Does the guarantee always hold?", "It held fully with FIFO memory. With EVICTGuard memory the false-alarm rate was 10.1% against a 10% target (inside the statistical margin), because the test set includes a host the validation set didn't. Distribution-free guarantees assume validation and test look alike; we state that limitation.")
 qa("How big is the data and can it run on a laptop?", "About 1.5M OTRF events and about 460k ATLASv2 benign events plus 16 attack scenarios. Disk use is under 1 GB, peak RAM about 3.6 GB, and ATLASv2 is streamed so its 160 GB is never stored.")
 
 # ------------------------------------------------------------------ 12

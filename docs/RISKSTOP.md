@@ -1,4 +1,57 @@
-# RISKSTOP: design, implementation and first (no-LLM) results
+# RISKSTOP: design, implementation and results (no LLM yet)
+
+> **Primary result: the alert-driven benchmark (section A).** The episode-based results that follow it (section B) were the first attempt;
+> they motivated the redesign of the benchmark.
+
+## A. Alert-driven benchmark with risk-controlled stopping (primary)
+
+**Benchmark** (`src/alert_benchmark.py`).
+* Every investigation starts from a **real Carbon Black vendor alert** on ATLASv2 and investigates the same host's Carbon Black EDR
+  telemetry within ±15 minutes.
+* Same sensor and same hosts for attack and benign cases.
+* 528 alerts: 59 ATTACK (the alerted process is a REAPr attack process; exact `process_guid` join), 170 vendor false positives on
+  attack days (hard negatives), and 299 alerts from the benign period.
+* Splits by attack scenario and by benign day (train 277 / val 78 / test 173 alerts). Each alert runs under no noise, a heavy
+  background flood and (ATTACK only) missing critical evidence, giving 371 test investigations per memory type.
+* Side information: Sigma ATT&CK tactic tags per event (kill-chain progression) and alert metadata (severity, watchlist, tactic),
+  both independent of the REAPr labels.
+
+**Risk control** (`src/run_alert_riskstop.py`).
+* Thresholds are calibrated with **fixed-sequence Learn-then-Test** on validation investigations, with exact binomial p-values and
+  Bonferroni over 3 residual caps × 2 risks.
+* Target: missed-attack rate ≤ 0.10 and false-alarm rate ≤ 0.10, each with probability ≥ 0.90.
+* Cost model, fixed in advance: missed attack 10, false alarm 3, unnecessary defer 1, full budget 0.5.
+* Regret is measured against a hindsight-optimal stopping oracle for the same classifier.
+
+**TEST results** (`results/paper/table13_alert_riskstop.md`):
+
+| Memory / policy | Missed attacks [95% CI] | False alarms [95% CI] | Defer | Budget | Expected cost |
+|---|---|---|---|---|---|
+| EVICTGuard / **RISKSTOP (LTT)** | **0.053** [0.015, 0.131] | 0.101 [0.069, 0.142] | 0.34 | **0.08** | **0.744** |
+| EVICTGuard / BAGEN-style | 0.280 | 0.037 | 0 | 0.23 | 0.795 |
+| EVICTGuard / confidence stop | 0.360 | 0.020 | 0 | 0.05 | 0.823 |
+| EVICTGuard / conformal deferral (end) | 0.160 | 0.054 | 0.16 | 0.97 | 1.110 |
+| EVICTGuard / fixed budget | 0.267 | 0.068 | 0 | 0.97 | 1.209 |
+| FIFO / **RISKSTOP (LTT)** | **0.000** [0.000, 0.048] | **0.024** [0.010, 0.048] | 0.48 | 0.12 | **0.600** |
+| FIFO / BAGEN-style | 0.320 | 0.030 | 0 | 0.24 | 0.861 |
+| FIFO / fixed budget | 0.347 | 0.064 | 0 | 0.97 | 1.363 |
+
+**Findings**
+1. **Missed attacks fall from 16–36% (every baseline) to 0–5%**, using 8–12% of the investigation budget.
+2. **RISKSTOP has the lowest expected cost of all policies.** Paired bootstrap on per-investigation cost
+   (`table13_alert_riskstop_significance.md`): significantly cheaper than fixed budget and conformal deferral for both memories, and
+   than BAGEN-style with FIFO memory. Not significantly different from BAGEN-style or confidence stop with EVICTGuard memory.
+3. **The guarantee holds with FIFO memory** (both risks ≤ 0.10, CIs inside the target). **With EVICTGuard memory the false-alarm rate is
+   0.101**, on the boundary (CI 0.069–0.142). Validation and test aren't fully exchangeable: the test set adds host h2's vendor false
+   positives, which validation doesn't contain. That is a stated limitation of distribution-free guarantees under shift.
+4. **The price is deferral.** 34–48% of alerts are escalated to an analyst. The guarantee buys safety by handing over uncertain cases.
+5. **Ablations.** Calibration is essential: uncalibrated defaults miss 37% of attacks. The query-value rule helps: removing it
+   significantly raises cost. The residual-risk cap was **not used** (LTT picked ρ = 1.0), so that component currently adds nothing.
+6. **Memory.** In these short alert windows (about 4–5k events), FIFO memory plus RISKSTOP did best overall. EVICTGuard's advantage shows in
+   large investigations (section B and the EVICTGuard results), not small ones.
+
+## B. Episode-based benchmark (first attempt)
+
 
 ## What was built (proposal slides 12–17)
 | Component | File | Status |

@@ -63,3 +63,16 @@ def test_replay_and_baselines_are_deterministic():
     assert replay(traj, p, r, make_riskstop(RiskStopParams()))[0] == "ATTACK"
     assert replay(traj, p, r, baseline_fixed_budget())[1] == 3
     assert replay(traj, np.full(4, 0.5), r, baseline_conformal_deferral(0.8, 0.2))[0] == "DEFER"
+
+
+def test_ltt_binomial_pvalues_and_cost_model():
+    from math import isclose
+    from src.run_alert_riskstop import binom_cdf, expected_cost
+    assert isclose(binom_cdf(0, 30, 0.1), 0.9 ** 30)                     # P(no misses in 30 | risk 0.1)
+    assert binom_cdf(30, 30, 0.1) > 0.999
+    assert binom_cdf(2, 40, 0.1) < binom_cdf(5, 40, 0.1)
+    df = pd.DataFrame([{"gold": "ATTACK", "action": "BENIGN", "budget_used_frac": 0.0},
+                       {"gold": "BENIGN", "action": "ATTACK", "budget_used_frac": 0.0},
+                       {"gold": "BENIGN", "action": "DEFER", "budget_used_frac": 1.0},
+                       {"gold": "DEFER", "action": "DEFER", "budget_used_frac": 0.0}])
+    assert expected_cost(df).tolist() == [10.0, 3.0, 1.5, 0.0]
