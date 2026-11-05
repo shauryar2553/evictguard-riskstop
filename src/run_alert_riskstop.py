@@ -48,7 +48,12 @@ def _profile():
 
 
 def _one(args):
-    alert, noise, memory, budget, capacity = args
+    alert, noise, memory, budget, capacity = args[:5]
+    investigator_kind = args[5] if len(args) > 5 else "heuristic"
+    if investigator_kind.startswith("heuristic"):
+        investigator_kind_run = "heuristic"
+    else:
+        investigator_kind_run = investigator_kind
     from .alert_benchmark import episode_for
     from .evictguard_v2 import action_keys
     from .investigation import run_investigation
@@ -71,8 +76,12 @@ def _one(args):
             e, _ = inject_noise(e, noise, NOISE[noise], 17)
             e = e.reset_index(drop=True)
         prof = _profile()
+        investigator = None
+        if investigator_kind_run.startswith("llm"):
+            from .llm_investigator import LLMInvestigator, make_client
+            investigator = LLMInvestigator(client=make_client(investigator_kind_run))
         res = run_investigation(e, lambda f, s: ("CONTINUE", {}), budget=budget, capacity=capacity, memory_policy=memory,
-                                profile=prof, seed_rows=seed or None, alert=alert)
+                                profile=prof, seed_rows=seed or None, alert=alert, investigator=investigator)
         attack_mask = e.gt_label.eq("attack").to_numpy()
         attack_procs = set(e.process_guid_cbc.to_numpy()[attack_mask])
         retrieved = res["retrieved_rows"]
@@ -87,17 +96,26 @@ def _one(args):
                          "_cites_core": bool(attack_mask[top].any()) if top else False})
         return {"id": alert["alert_id"], "domain": alert["kind"], "split": alert["split"], "noise": noise, "memory": memory, "gold": gold,
                 "events": len(e), "trajectory": traj, "queries": res["queries"], "budget_used": res["budget_used"],
-                "report": alert.get("report_name"), "severity": alert.get("severity")}
+                "report": alert.get("report_name"), "severity": alert.get("severity"), "investigator": investigator_kind,
+                "llm_log": getattr(investigator, "log", None)}
     except Exception as exc:
         return {"id": alert.get("alert_id"), "error": repr(exc), "noise": noise, "memory": memory}
 
 
-def collect(budget: int, capacity: int, workers: int) -> None:
+def collect(budget: int, capacity: int, workers: int, investigator: str = "heuristic", noises=None, memories=None,
+            splits=None, append: bool = False) -> None:
     al = pd.read_csv(OUT / "alerts.csv", parse_dates=["time"])
+    if splits:
+        al = al[al.split.isin(splits)]
     _profile()
-    jobs = [(a, n, m, budget, capacity) for a in al.to_dict("records") for n in NOISE for m in ("evictguard", "fifo")]
-    path = OUT / "trajectories.pkl"
-    path.unlink(missing_ok=True)
+    noises = noises or list(NOISE)
+    memories = memories or ["evictguard", "fifo"]
+    jobs = [(a, n, m, budget, capacity, investigator) for a in al.to_dict("records") for n in noises for m in memories]
+    path = OUT / ("trajectories.pkl" if investigator == "heuristic" else f"trajectories_{investigator}.pkl")
+    if investigator.startswith("heuristic_"):
+        path = OUT / f"trajectories_{investigator}.pkl"
+    if not append:
+        path.unlink(missing_ok=True)
     done = 0
     with ProcessPoolExecutor(max_workers=workers) as ex, open(path, "ab") as fh:
         for fut in as_completed([ex.submit(_one, j) for j in jobs]):
@@ -110,9 +128,9 @@ def collect(budget: int, capacity: int, workers: int) -> None:
     print(f"collected {done}")
 
 
-def load() -> list[dict]:
+def load(investigator: str = "heuristic") -> list[dict]:
     out = []
-    with open(OUT / "trajectories.pkl", "rb") as fh:
+    with open(OUT / ("trajectories.pkl" if investigator == "heuristic" else f"trajectories_{investigator}.pkl"), "rb") as fh:
         while True:
             try:
                 out.append(pickle.load(fh))
@@ -153,7 +171,7 @@ def oracle_cost(recs, models) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def ltt_calibrate(recs, models, alpha: float, delta: float):
+def ltt_calibrate(recs, models, alpha: float, delta: float, policy_factory=None):
     """Fixed-sequence Learn-then-Test (valid family-wise error control without a Bonferroni penalty over the path).
 
     For each residual-risk cap rho in a small set R (Bonferroni over |R| and the two risks):
@@ -168,6 +186,7 @@ def ltt_calibrate(recs, models, alpha: float, delta: float):
     """
     from .riskstop import RiskStopParams, make_riskstop
     from .run_riskstop import evaluate_policy
+    make_riskstop = policy_factory or make_riskstop
     R = (0.5, 0.7, 1.0)
     thr = delta / (2 * len(R))
     TA = (0.99, 0.98, 0.95, 0.9, 0.85, 0.8, 0.7, 0.6, 0.5)
@@ -216,16 +235,21 @@ def clopper_pearson(k: int, n: int, conf: float = 0.95) -> tuple[float, float]:
     return float(lo), float(hi)
 
 
-def evaluate(alpha: float, delta: float) -> None:
+def evaluate(alpha: float, delta: float, investigator: str = "heuristic", train_from: str | None = None) -> None:
+    """train_from: take the TRAIN investigations from another investigator's file (e.g. heuristic_b12), so an expensive
+    LLM only has to be run on VAL and TEST. Only the evidence-risk models are trained on them; calibration (VAL) and
+    evaluation (TEST) always use the investigator's own trajectories."""
     from .riskstop import (RiskModels, RiskStopParams, baseline_bagen, baseline_confidence_stop, baseline_conformal_deferral, baseline_fixed_budget,
                            make_riskstop)
     from .run_riskstop import _labels, calibrate_conformal, evaluate_policy, metrics
-    recs = [r for r in load() if "error" not in r and r.get("trajectory")]
-    errs = [r for r in load() if "error" in r]
+    recs = [r for r in load(investigator) if "error" not in r and r.get("trajectory")]
+    errs = [r for r in load(investigator) if "error" in r]
+    tag = "" if investigator == "heuristic" else f"_{investigator}"
     print(f"{len(recs)} investigations, {len(errs)} errors")
     report, tables, decisions = {}, [], []
-    for memory in ("evictguard", "fifo"):
-        tr = [r for r in recs if r["memory"] == memory and r["split"] == "train"]
+    for memory in sorted({r["memory"] for r in recs}):
+        tr_src = recs if train_from is None else [r for r in load(train_from) if "error" not in r and r.get("trajectory")]
+        tr = [r for r in tr_src if r["memory"] == memory and r["split"] == "train"]
         va = [r for r in recs if r["memory"] == memory and r["split"] == "val"]
         te = [r for r in recs if r["memory"] == memory and r["split"] == "test"]
         rows, ya, yr = [], [], []
@@ -243,8 +267,19 @@ def evaluate(alpha: float, delta: float) -> None:
             policies["RISKSTOP - no residual risk"] = make_riskstop(RiskStopParams(params.tau_attack, params.tau_benign, 1.0, params.lam))
             policies["RISKSTOP - no query value"] = make_riskstop(RiskStopParams(params.tau_attack, params.tau_benign, params.rho, 0.0))
         policies["RISKSTOP - uncalibrated defaults"] = make_riskstop(RiskStopParams())
+        report.setdefault(memory, {}).update({"ltt": info, "params": params.__dict__ if params else None, "conformal": (cta, ctb)})
+        if investigator.startswith("llm"):
+            from .riskstop import baseline_llm_confidence_stop, baseline_llm_verdict_at_end, riskstop_policy
+            policies["LLM verdict at end (no RISKSTOP)"] = baseline_llm_verdict_at_end()
+            policies["LLM confidence stop (no RISKSTOP)"] = baseline_llm_confidence_stop()
+
+            def llm_factory(prm):   # RISKSTOP driven by the LLM's own attack likelihood (falls back to the classifier)
+                return lambda p, r, f, i: riskstop_policy(f.get("llm_attack_score", 0.5) if f.get("llm_available", 0) > 0 else p, r, f, prm)
+            lparams, linfo = ltt_calibrate(va, models, alpha, delta, policy_factory=llm_factory)
+            report[memory].update({"ltt_llm": linfo, "params_llm": lparams.__dict__ if lparams else None})
+            if lparams is not None:
+                policies["RISKSTOP-LLM (LTT-certified)"] = llm_factory(lparams)
         orc = oracle_cost(te, models)
-        report[memory] = {"ltt": info, "params": params.__dict__ if params else None, "conformal": (cta, ctb)}
         for name, pol in policies.items():
             d = evaluate_policy(te, models, pol, name)
             d["cost"] = expected_cost(d).to_numpy()
@@ -258,12 +293,12 @@ def evaluate(alpha: float, delta: float) -> None:
                       "miss_CI95": clopper_pearson(k1, n1), "fa_CI95": clopper_pearson(k2, n2)})
             tables.append(m)
     dec = pd.concat(decisions, ignore_index=True)
-    dec.to_csv(OUT / "test_decisions.csv", index=False)
+    dec.to_csv(OUT / f"test_decisions{tag}.csv", index=False)
     t = pd.DataFrame(tables)
-    t.to_csv(OUT / "test_metrics.csv", index=False)
+    t.to_csv(OUT / f"test_metrics{tag}.csv", index=False)
     # significance: RISKSTOP vs each baseline on per-investigation cost (paired sign-flip / bootstrap)
     sig = []
-    for memory in ("evictguard", "fifo"):
+    for memory in sorted(dec.memory.unique()):
         d = dec[dec.memory == memory].pivot_table(index=["id", "noise"], columns="policy", values="cost")
         if "RISKSTOP (LTT-certified)" not in d:
             continue
@@ -277,8 +312,8 @@ def evaluate(alpha: float, delta: float) -> None:
             sig.append({"memory": memory, "vs": b, "n": len(diff), "mean_cost_diff": float(diff.mean()),
                         "CI95": (float(np.percentile(boots, 2.5)), float(np.percentile(boots, 97.5))),
                         "riskstop_better_share": float((diff < 0).mean()), "worse_share": float((diff > 0).mean())})
-    pd.DataFrame(sig).to_csv(OUT / "significance.csv", index=False)
-    (OUT / "report.json").write_text(json.dumps(report, indent=2, default=str))
+    pd.DataFrame(sig).to_csv(OUT / f"significance{tag}.csv", index=False)
+    (OUT / f"report{tag}.json").write_text(json.dumps(report, indent=2, default=str))
     cols = ["memory", "policy", "n", "accuracy", "missed_attack_rate", "false_alarm_rate", "defer_rate", "budget_used", "grounded_attack_rate", "expected_cost", "regret_vs_oracle"]
     with pd.option_context("display.width", 250, "display.max_columns", 20):
         print(t[cols].round(3).to_string(index=False))
@@ -294,8 +329,17 @@ def main() -> None:
     ap.add_argument("--workers", type=int, default=3)
     ap.add_argument("--alpha", type=float, default=0.10, help="target missed-attack and false-alarm rate")
     ap.add_argument("--delta", type=float, default=0.10, help="LTT failure probability")
+    ap.add_argument("--investigator", default="heuristic", help="heuristic | llm (local) | llm_opus (Claude) | heuristic_<name> (separate output file)")
+    ap.add_argument("--noises", nargs="+", default=None)
+    ap.add_argument("--memories", nargs="+", default=None)
+    ap.add_argument("--splits", nargs="+", default=None)
+    ap.add_argument("--train-from", default=None, help="evaluate: use another investigator's TRAIN trajectories for the risk models")
+    ap.add_argument("--append", action="store_true", help="append to the existing trajectory file")
     a = ap.parse_args()
-    collect(a.budget, a.capacity, a.workers) if a.stage == "collect" else evaluate(a.alpha, a.delta)
+    if a.stage == "collect":
+        collect(a.budget, a.capacity, a.workers, a.investigator, a.noises, a.memories, a.splits, a.append)
+    else:
+        evaluate(a.alpha, a.delta, a.investigator, a.train_from)
 
 
 if __name__ == "__main__":

@@ -32,7 +32,9 @@ FEATURES = ["ctx_value_max", "ctx_value_top5", "ctx_value_mean", "n_susp_procs",
             "novelty_mean", "n_retrieved_log", "steps",
             # alert metadata (alert-driven benchmark) and kill-chain progression (Sigma ATT&CK tags; label-independent)
             "alert_severity", "alert_attack_watchlist", "alert_tactic_execution", "alert_tactic_discovery", "alert_tactic_other",
-            "killchain_tactics", "sigma_max_rank", "sigma_hits"]
+            "killchain_tactics", "sigma_max_rank", "sigma_hits",
+            # LLM investigator's own attack-likelihood estimate (0.5 / unavailable for the rule-based investigator)
+            "llm_attack_score", "llm_available"]
 
 
 def state_features(ctx: pd.DataFrame, engine, memory, state, budget: int, gains: list[float]) -> dict[str, float]:
@@ -62,6 +64,10 @@ def state_features(ctx: pd.DataFrame, engine, memory, state, budget: int, gains:
         f["lineage_depth"] = float(depth)
         f["unresolved"] = float(sum(1 for k in susp_keys if ("process", k) not in state.leads_queried or ("children", k) not in state.leads_queried))
         f["novelty_mean"] = float(ctx.f_novel.mean())
+    llm = getattr(state, "llm_attack_score", None)
+    f["llm_attack_score"] = float(llm) if llm is not None else 0.5
+    f["llm_available"] = 1.0 if llm is not None else 0.0
+    f["_llm_hypothesis"] = getattr(state, "llm_hypothesis", "")
     alert = getattr(state, "alert", {}) or {}
     f["alert_severity"] = float(alert.get("severity") or 0)
     f["alert_attack_watchlist"] = 1.0 if "ATT&CK" in str(alert.get("watchlists", "")) else 0.0
@@ -215,3 +221,27 @@ class Certificate:
 
     def to_json(self) -> str:
         return json.dumps(asdict(self), indent=2)
+
+
+# ---------------------------------------------------------------- LLM-only baselines (use the LLM's own attack likelihood)
+def baseline_llm_verdict_at_end(threshold: float = 0.5):
+    """LLM agent without RISKSTOP: investigate with the full budget, then trust the LLM's attack likelihood."""
+    def pol(p, r, f, i):
+        if f.get("forced_final", 0) > 0:
+            return ("ATTACK" if f.get("llm_attack_score", 0.5) >= threshold else "BENIGN"), "LLM verdict at end of budget"
+        return "CONTINUE", ""
+    return pol
+
+
+def baseline_llm_confidence_stop(hi: float = 0.9, lo: float = 0.1):
+    """LLM agent that stops as soon as it is confident (typical agentic triage)."""
+    def pol(p, r, f, i):
+        s = f.get("llm_attack_score", 0.5)
+        if f.get("llm_available", 0) > 0 and s >= hi:
+            return "ATTACK", "LLM confident: attack"
+        if f.get("llm_available", 0) > 0 and s <= lo:
+            return "BENIGN", "LLM confident: benign"
+        if f.get("forced_final", 0) > 0:
+            return ("ATTACK" if s >= 0.5 else "BENIGN"), "budget spent"
+        return "CONTINUE", ""
+    return pol

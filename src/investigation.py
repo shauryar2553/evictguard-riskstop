@@ -245,6 +245,7 @@ def run_investigation(episode: pd.DataFrame, decide: Callable, *, budget: int = 
         action, info = decide(feats, state)
         if action != "CONTINUE":
             break
+        state._budget_left = budget - state.budget_used
         q = investigator.next_query(engine, ctx, state)
         if q is None or state.budget_used + q.cost > budget:
             action, info = decide({**feats, "forced_final": 1.0, "budget_left": 0.0}, state)

@@ -57,3 +57,10 @@ CDB: not better than rare-action (limitation). Details: docs/RESULTS_EVICTGUARD_
 * Never tune on held-out data (h2 OOD, OTRF test split). Develop on ATLASv2 h1 + OTRF train split; OTRF val/test and ATLASv2 h2 are held-out.
 * The scorer must never read gt_* / is_synthetic / noise_type / dup_of (a test enforces this).
 * Don't use SigmaHQ releases newer than r2026-04-01 (they use renumbered ATT&CK IDs).
+
+## Free LLM run (in progress, 2026-11-05)
+* Paid Claude run stopped after 695 calls ($6.86; responses cached in data/llm_cache, reusable).
+* Running instead: local Qwen2.5-7B, VAL+TEST alerts, all noise conditions, EVICTGuard memory, budget 12 (~9-10 h).
+  Risk models trained on the rule-based TRAIN runs (`evaluate --train-from heuristic_b12`); calibration and test use Qwen's own runs.
+* Resume/restart any time: `./scripts/resume_qwen.sh` (cached answers make finished work free). Results: data/logs/qwen_eval.log.
+* Budget-12 rule-based RISKSTOP could not be certified (negative result; document it).

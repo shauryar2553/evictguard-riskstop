@@ -1,4 +1,4 @@
-# RISKSTOP: design, implementation and results (no LLM yet)
+# RISKSTOP: design, implementation and results
 
 > **Primary result: the alert-driven benchmark (section A).** The episode-based results that follow it (section B) were the first attempt;
 > they motivated the redesign of the benchmark.
@@ -49,6 +49,23 @@
    significantly raises cost. The residual-risk cap was **not used** (LTT picked ρ = 1.0), so that component currently adds nothing.
 6. **Memory.** In these short alert windows (about 4–5k events), FIFO memory plus RISKSTOP did best overall. EVICTGuard's advantage shows in
    large investigations (section B and the EVICTGuard results), not small ones.
+
+### A2. Small budget (12 units), rule-based investigator: not certifiable (negative result)
+* Same benchmark, budget cut from 20 to 12 units. Training data was extended with background-flood and missing-critical runs.
+* **LTT certified no threshold setting** at α = δ = 0.10, nor at α = 0.15 / δ = 0.20. On validation, 7 of 45 attack investigations are
+  confidently wrong, and the 18 summary features can't separate them at this budget.
+* Best baseline on TEST (EVICTGuard memory, 173 alerts): confidence stop, missed 0.24 / false alarms 0.04 / budget 0.05 / cost 0.48.
+  Fixed budget: 0.16 / 0.09 / 0.96 / 0.94.
+* Interpretation: a guarantee needs a score that is reliable on validation. That is what the LLM investigator is meant to supply.
+
+### A3. LLM investigator (in progress)
+* `src/llm_investigator.py`: the LLM picks the next query from numbered candidate leads and outputs a hypothesis plus an attack likelihood.
+  Every response is cached on disk.
+* Backends: local Qwen2.5-7B via Ollama (free, reproducible; `--investigator llm`) or Claude via the Anthropic SDK (`--investigator llm_opus`).
+* **RISKSTOP-LLM**: the same LTT-certified policy, but driven by the LLM's attack likelihood.
+* Run: Qwen, budget 12, VAL+TEST alerts × all noise conditions, EVICTGuard memory. The risk models are trained on the rule-based TRAIN
+  runs (`evaluate --train-from heuristic_b12`). Calibration and test use Qwen's own trajectories, so the guarantee is unaffected.
+* Resume: `./scripts/resume_qwen.sh`. Results: `data/alert_bench/test_metrics_llm.csv`, `report_llm.json`.
 
 ## B. Episode-based benchmark (first attempt)
 
