@@ -20,8 +20,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
----
-This licence covers the project's own code and documentation. Third-party datasets
-and rules under data/ (OTRF Security-Datasets, ATLASv2-derived data and REAPr labels,
-the Cyber Defense Benchmark sample, SigmaHQ rules) remain under their original terms;
-see README.md.
