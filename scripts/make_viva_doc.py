@@ -286,7 +286,8 @@ table([
     ["EVICTGuard completion", "Done", "Second and third datasets, literature baselines, streaming version, robustness, ledger + context assembly"],
     ["Caveat fixes (v3, Online v2, coverage, tie-break seeds)", "Done", "Each frozen before its fresh test; results in 11.10"],
     ["End-to-end LLM verdict test", "Open", "Needs an LLM (API key or local model)"],
-    ["RISKSTOP", "Not started", "Gold verdicts already defined and computed"],
+    ["RISKSTOP", "Built end to end (no LLM)", "Zero false alarms on ATLASv2 with 15% budget; not yet better than simple stopping; see 11b"],
+    ["EVICTGuard v4 + Carbon Black fresh test", "Done", "v4 no gain (negative result); EVICTGuard leads on a new sensor"],
 ], ["Part", "Status", "Notes"])
 h("Honest limitations", 2)
 bullets([
@@ -299,7 +300,7 @@ h("Next steps", 2)
 bullets([
     "Do the human label check (about 30 minutes) and report agreement.",
     "End-to-end test: an LLM investigator reads EVICTGuard's memory vs FIFO's; compare verdicts.",
-    "Build RISKSTOP using the gold verdicts already in the benchmark output.",
+    "Add the LLM investigator (API key) and re-run RISKSTOP end to end.",
     "Speed up Online v2 on very large streams (about 900k events).",
 ], "List Number")
 
@@ -416,6 +417,42 @@ bullets([
 ])
 box("EVICTGuard is complete: tested on two environments, against literature baselines, in batch and streaming form, with robustness and ablation evidence. The remaining step for a full paper is the end-to-end LLM + RISKSTOP evaluation.")
 p("Full tables, LaTeX, figures and significance tests: results/paper/. Write-up: docs/RESULTS_EVICTGUARD_V2.md.", italic=True)
+
+h("11b. Optimisations and RISKSTOP (latest round)")
+h("Faster streaming EVICTGuard", 2)
+p("The streaming version is now 2–2.5× faster and makes exactly the same decisions. We checked this on 8 episodes, and a permanent test enforces it.")
+h("EVICTGuard v4: an idea that didn't pan out", 2)
+bullets([
+    ("Idea: ", "reserve part of the memory for side effects (DLL loads, registry and file changes) of suspicious processes, because v2/v3 keep almost none of this supporting context."),
+    ("Development result: ", "a small gain (OTRF supporting evidence 0.34 → 0.44)."),
+    ("Fresh-data result: ", "no gain (0.09 vs 0.08 on Carbon Black). We report it as a negative result; v3 stays the best version."),
+])
+h("A brand-new sensor: Carbon Black EDR", 2)
+p("To test on data no method had ever seen, we streamed ATLASv2's Carbon Black EDR telemetry (16 attacks) and joined it exactly to the REAPr expert process labels.")
+table([
+    ["EVICTGuard v3", "0.65", "0.87"], ["EVICTGuard v2", "0.65", "0.85"], ["Random", "0.50", "0.74"], ["Old v1", "0.49", "0.74"],
+    ["Rare-action", "0.47", "0.59"], ["FIFO", "0.07", "0.36"], ["NoDoze-style", "0.12", "0.12"],
+], ["Method", "Attack processes covered, keep 1%", "Keep 5%"])
+p("EVICTGuard works on a sensor it was never designed on and leads. The margin over random is smaller here because REAPr's attack processes include common ones like explorer.exe.")
+h("RISKSTOP: built end to end (without an LLM)", 2)
+bullets([
+    ("What it is: ", "at every step of an investigation it reads the evidence memory and decides CONTINUE, ATTACK, BENIGN or DEFER, and writes a decision certificate (verdict, reasons, cited evidence, open questions, budget used)."),
+    ("How it was built: ", "a query layer with costs, a rule-based investigator standing in for the LLM, EVICTGuard memory, 18 label-free state features, two models trained on training data only, and thresholds calibrated on validation under error budgets (≤ 5% false alarms, ≤ 5% missed attacks)."),
+    ("Tested against: ", "fixed budget, confidence stop, BAGEN-style 'stop when evidence stalls', and conformal deferral at the end (both ideas from our literature survey)."),
+])
+table([
+    ["RISKSTOP (EVICTGuard memory)", "0.73", "0.00", "15%", "100%"],
+    ["Stop when evidence stalls (BAGEN-style)", "0.77", "0.00", "22%", "100%"],
+    ["Fixed budget (EVICTGuard memory)", "0.69", "0.25", "99%", "100%"],
+    ["Fixed budget (FIFO memory)", "0.58", "0.62", "99%", "11%"],
+], ["ATLASv2 test (reliable labels)", "Accuracy", "False alarms", "Budget used", "ATTACK verdicts citing real evidence"])
+bullets([
+    ("Good news: ", "where labels are reliable, RISKSTOP gives zero false alarms using about 15% of the budget, and its certificates always cite real attack evidence."),
+    ("Memory matters for verdicts: ", "with FIFO memory, 62% of benign cases became false alarms and only 11% of attack verdicts cited real evidence; with EVICTGuard memory it was 25% and 100%."),
+    ("Honest news: ", "RISKSTOP isn't yet better than the simple 'stop when evidence stalls' rule, and on OTRF/CDB it defers most cases (80–97%). The cause: our OTRF 'benign twins' probably still contain unlabelled attacker activity, so their BENIGN answers are unreliable, and CDB has only 4 benign windows."),
+    ("What will improve it: ", "the LLM investigator (reads evidence semantically; needs the API key), reliable benign data from the same environment, and more test attacks."),
+])
+box("RISKSTOP works as designed and is safe (it defers rather than guessing), but proving it beats simple stopping rules needs the LLM step and better benign data.")
 
 # ------------------------------------------------------------------ 11
 h("12. Likely viva questions and answers")

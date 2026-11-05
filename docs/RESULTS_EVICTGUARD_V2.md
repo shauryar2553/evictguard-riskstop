@@ -212,3 +212,19 @@ New frozen methods (hashes in `results/`):
    and its stratified reservoirs raise evidence diversity about 9× at no recall cost.
 4. Under a broad, automatically generated evidence definition (CDB), EVICTGuard is not better than
    simple rare-event ranking. This is a stated limitation and a direction for future work.
+
+## 13. Optimisation round (2026-11-05)
+* **Faster Online v2** (`src/evictguard_online_v2_fast.py`): 2–2.5× faster, with **identical decisions**. Verified on 8
+  episodes and enforced by a test. The frozen original is unchanged.
+* **EVICTGuard v4 = v3 + a supporting-evidence quota** (`src/evictguard_v4.py`, frozen params σ = 0.4, θ = 0.4,
+  `results/evictguard_v4.json`, chosen on dev only). Dev gain was modest (OTRF 5% supporting recall 0.34 → 0.44).
+  **On fresh data it did not help**: Carbon Black supporting recall 0.092 vs v3 0.083. A negative result; v3 remains the best EVICTGuard.
+* **Fresh test: ATLASv2 Carbon Black EDR** (a sensor never used before by any method; 16 scenarios; REAPr process labels
+  joined exactly on `process_guid`; `results/paper/table12_cbc_fresh.md`). Attack-process coverage (REAPr's unit), no noise, 1% / 5%:
+  **v3 0.65 / 0.87**, v2 0.65 / 0.85, v4 0.64 / 0.85, Random 0.50 / 0.74, v1 0.49 / 0.74, rare-action 0.47 / 0.59,
+  FIFO 0.07 / 0.36, NoDoze-style 0.12 / 0.12. Under flooding: v3 0.73 / 0.92.
+  EVICTGuard generalises to a new sensor and leads on coverage. The margin over random (+0.13–0.15) is smaller than on
+  ATLASv2 Security logs, because REAPr labels include common hijacked processes (explorer.exe, firefox.exe).
+  For *all* attack events, the NoDoze-style baseline keeps the most (0.22 vs about 0.09 at 5%), because it retains everything
+  from anomalous processes.
+* **RISKSTOP results** are in `docs/RISKSTOP.md`.

@@ -1,0 +1,36 @@
+{
+  "evictguard": {
+    "riskstop": {
+      "tau_attack": 0.95,
+      "tau_benign": 0.4,
+      "rho": 0.5,
+      "lam": 0.005,
+      "min_budget_frac": 0.25
+    },
+    "calibration_violation_utility": [
+      0,
+      -0.22612903225806452
+    ],
+    "conformal": [
+      0.95,
+      0.4
+    ]
+  },
+  "fifo": {
+    "riskstop": {
+      "tau_attack": 0.9,
+      "tau_benign": 0.3,
+      "rho": 0.35,
+      "lam": 0.001,
+      "min_budget_frac": 0.25
+    },
+    "calibration_violation_utility": [
+      0,
+      -0.21903225806451612
+    ],
+    "conformal": [
+      0.9,
+      0.3
+    ]
+  }
+}

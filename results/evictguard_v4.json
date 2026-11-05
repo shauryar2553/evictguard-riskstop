@@ -1,0 +1,6 @@
+{"method": "evictguard_v4",
+ "code": "src/evictguard_v4.py (SHA-256 5ef6561cae6711c38e259a67a6af23ce6b592b7d1616f88bec35df4a67121ced)",
+ "frozen_params": {"sigma": 0.4, "theta": 0.4, "eps": 0.1},
+ "decided_on": "dev sweep (results/paper/v4_dev_sweep.csv): ATLASv2 h1 + OTRF native train; criterion = mean(core + supporting action recall) over 4 dev conditions",
+ "fresh_test": "ATLASv2 Carbon Black EDR stream (16 scenarios, REAPr labels): sensor never used before by any method",
+ "frozen_at": "2026-11-05T08:27:30Z"}

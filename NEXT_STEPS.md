@@ -31,14 +31,19 @@ https://github.com/shauryar2553/evictguard-riskstop (collaborators: Ankitaashok2
 gh CLI at ~/.local/bin/gh (logged in as shauryar2553). Large files are uploaded in 15 MB parts:
 run ./scripts/reassemble_large_files.sh after cloning.
 
-## Next (decided 2026-11-04)
-1. (Optional, recommended) EVICTGuard improvement: supporting-evidence capture. Supporting action recall is only
-   0.01-0.05, which likely explains the CDB gap. Needs FRESH test data (every held-out set has been seen once):
-   ATLASv2 Carbon Black EDR stream, more CDB campaigns, or DARPA OpTC.
-2. Other improvement options: learned scorer (EVICTGuard-L), robustness to renamed entities, Online v2 speed.
-3. RISKSTOP (slides 16-17): nothing blocks it; gold verdicts are in the benchmark output (gold_verdict_after_noise).
-4. End-to-end LLM verdict test + hypothesis relevance: needs an API key (user's decision), best done with RISKSTOP.
-5. Human label check: fill deliverables/EVICTGuard_label_review.csv, then `python -m scripts.label_review_kit score`.
+## Done 2026-11-05 (no-LLM round)
+* Online v2 fast implementation (identical decisions, ~2x faster): `src/evictguard_online_v2_fast.py`.
+* EVICTGuard v4 (supporting-evidence quota, frozen `results/evictguard_v4.json`): no gain on fresh data (negative result).
+* Fresh test set: ATLASv2 Carbon Black EDR (`--split cbc`, data in `data/atlasv2/standardized/cbc_edr/`): EVICTGuard v3 leads.
+* RISKSTOP built end to end: `src/investigation.py` (query layer, heuristic investigator, memory), `src/riskstop.py`
+  (state features, risk models, policy, certificate, baselines), `src/run_riskstop.py` (collect/evaluate). Results and
+  honest assessment: `docs/RISKSTOP.md`. Trajectories: `data/riskstop/`.
+
+## Next (needs the API key)
+1. LLM investigator implementing `Investigator.next_query` (and reading the context semantically), then re-run
+   `python -m src.run_riskstop collect` + `evaluate` with it; compare to the heuristic investigator.
+2. End-to-end: LLM verdicts with EVICTGuard memory vs FIFO memory; hypothesis relevance in EVICTGuard scoring.
+3. Still open without the LLM: human label check; reliable benign data for the OTRF environment.
 
 ## Headline results (for quick reference)
 ATLASv2 held-out: EVICTGuard 0.96-0.97 vs best baseline 0.014-0.048 (~20-70x). OTRF: 0.53-0.90 vs 0.07-0.34 (~2.6-8x).

@@ -1,0 +1,57 @@
+cbc-h1-m1 done (36688 events)
+cbc-h1-m2 done (20333 events)
+cbc-h1-m3 done (11981 events)
+cbc-h1-m4 done (14916 events)
+cbc-h1-m5 done (18523 events)
+cbc-h1-m6 done (16504 events)
+cbc-h1-s1 done (19307 events)
+cbc-h1-s2 done (15102 events)
+cbc-h1-s3 done (20550 events)
+cbc-h1-s4 done (15659 events)
+cbc-h2-m1 done (23341 events)
+cbc-h2-m2 done (26370 events)
+cbc-h2-m3 done (9223 events)
+cbc-h2-m4 done (12043 events)
+cbc-h2-m5 done (9910 events)
+cbc-h2-m6 done (10542 events)
+           noise  capacity               method  episodes  core_action_recall core_action_recall_ci95  core_recall  core_ap  noise_share
+background-flood      0.01 evictguard_online_v2        16                 NaN                                  NaN      NaN       0.1408
+background-flood      0.01        evictguard_v1        16                 NaN                                  NaN      NaN       0.0084
+background-flood      0.01        evictguard_v2        16                 NaN                                  NaN      NaN       0.0465
+background-flood      0.01        evictguard_v3        16                 NaN                                  NaN      NaN       0.0955
+background-flood      0.01        evictguard_v4        16                 NaN                                  NaN      NaN       0.0614
+background-flood      0.01                 fifo        16                 NaN                                  NaN      NaN       0.2527
+background-flood      0.01               nodoze        16                 NaN                                  NaN      NaN       0.0000
+background-flood      0.01               random        16                 NaN                                  NaN      NaN       0.2688
+background-flood      0.01          rare_action        16                 NaN                                  NaN      NaN       0.0000
+background-flood      0.01        recency_dedup        16                 NaN                                  NaN      NaN       0.2458
+background-flood      0.05 evictguard_online_v2        16                 NaN                                  NaN      NaN       0.1145
+background-flood      0.05        evictguard_v1        16                 NaN                                  NaN      NaN       0.1258
+background-flood      0.05        evictguard_v2        16                 NaN                                  NaN      NaN       0.0956
+background-flood      0.05        evictguard_v3        16                 NaN                                  NaN      NaN       0.1183
+background-flood      0.05        evictguard_v4        16                 NaN                                  NaN      NaN       0.1191
+background-flood      0.05                 fifo        16                 NaN                                  NaN      NaN       0.2714
+background-flood      0.05               nodoze        16                 NaN                                  NaN      NaN       0.0000
+background-flood      0.05               random        16                 NaN                                  NaN      NaN       0.3051
+background-flood      0.05          rare_action        16                 NaN                                  NaN      NaN       0.0000
+background-flood      0.05        recency_dedup        16                 NaN                                  NaN      NaN       0.3024
+            none      0.01 evictguard_online_v2        16                 NaN                                  NaN      NaN       0.0000
+            none      0.01        evictguard_v1        16                 NaN                                  NaN      NaN       0.0000
+            none      0.01        evictguard_v2        16                 NaN                                  NaN      NaN       0.0000
+            none      0.01        evictguard_v3        16                 NaN                                  NaN      NaN       0.0000
+            none      0.01        evictguard_v4        16                 NaN                                  NaN      NaN       0.0000
+            none      0.01                 fifo        16                 NaN                                  NaN      NaN       0.0000
+            none      0.01               nodoze        16                 NaN                                  NaN      NaN       0.0000
+            none      0.01               random        16                 NaN                                  NaN      NaN       0.0000
+            none      0.01          rare_action        16                 NaN                                  NaN      NaN       0.0000
+            none      0.01        recency_dedup        16                 NaN                                  NaN      NaN       0.0000
+            none      0.05 evictguard_online_v2        16                 NaN                                  NaN      NaN       0.0000
+            none      0.05        evictguard_v1        16                 NaN                                  NaN      NaN       0.0000
+            none      0.05        evictguard_v2        16                 NaN                                  NaN      NaN       0.0000
+            none      0.05        evictguard_v3        16                 NaN                                  NaN      NaN       0.0000
+            none      0.05        evictguard_v4        16                 NaN                                  NaN      NaN       0.0000
+            none      0.05                 fifo        16                 NaN                                  NaN      NaN       0.0000
+            none      0.05               nodoze        16                 NaN                                  NaN      NaN       0.0000
+            none      0.05               random        16                 NaN                                  NaN      NaN       0.0000
+            none      0.05          rare_action        16                 NaN                                  NaN      NaN       0.0000
+            none      0.05        recency_dedup        16                 NaN                                  NaN      NaN       0.0000

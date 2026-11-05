@@ -1,0 +1,27 @@
+{
+  "no_history": true,
+  "split": "cbc",
+  "noise": [
+    "none:0",
+    "background-flood:0.5"
+  ],
+  "capacity": [
+    0.01,
+    0.05
+  ],
+  "seed": 17,
+  "methods": [
+    "evictguard_v4",
+    "evictguard_v3",
+    "evictguard_v2",
+    "evictguard_online_v2",
+    "evictguard_v1",
+    "fifo",
+    "random",
+    "recency_dedup",
+    "rare_action",
+    "nodoze"
+  ],
+  "episode_filter": null,
+  "gold_defer_core_coverage": 0.5
+}

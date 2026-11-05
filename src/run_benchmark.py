@@ -115,11 +115,14 @@ def _select(method: str, noisy: pd.DataFrame, cap: int, seed: int, profile):
         return B.select_nodoze(noisy, cap, profile=profile, seed=seed), "baseline_score"
     if method == "sigma_priority":
         return B.select_sigma_priority(noisy, cap), "baseline_score"
+    if method == "evictguard_v4":   # frozen: results/evictguard_v4.json
+        from .evictguard_v4 import select_evictguard_v4
+        return select_evictguard_v4(noisy, cap, profile=profile, seed=seed, sigma=0.4, theta=0.4), None
     if method == "evictguard_v3":   # frozen: v2 without redundancy weighting (results/evictguard_v3.json)
         return select_evictguard_v2(noisy, cap, profile=profile, seed=seed, disable={"redundancy"}), "eg_value"
     if method == "evictguard_online_v2":
-        from .evictguard_online_v2 import select_evictguard_online_v2
-        return select_evictguard_online_v2(noisy, cap, profile=profile, seed=seed), None
+        from .evictguard_online_v2_fast import select_evictguard_online_v2_fast   # identical decisions, ~2x faster (tested)
+        return select_evictguard_online_v2_fast(noisy, cap, profile=profile, seed=seed), None
     if method == "online_v2-protected_only":
         from .evictguard_online_v2 import OnlineConfig as OC2, select_evictguard_online_v2
         return select_evictguard_online_v2(noisy, cap, profile=profile, seed=seed, config=OC2(protected=1.0, entity=0.0, exploration=0.0)), None
@@ -148,7 +151,7 @@ def run(bench_dir: Path, split: str, noise_specs: list[str], capacities: list[fl
         episodes = episodes[episodes.episode_id.str.contains(episode_filter, regex=True)]
     if limit:
         episodes = episodes.head(limit)
-    needs = any(m.startswith(("evictguard_v2", "evictguard_v3", "v2-", "nodoze", "evictguard_online", "online-", "online_v2")) and m != "v2-no_history" for m in methods)
+    needs = any(m.startswith(("evictguard_v2", "evictguard_v3", "evictguard_v4", "v2-", "nodoze", "evictguard_online", "online-", "online_v2")) and m != "v2-no_history" for m in methods)
     profile = load_profile(bench_dir) if needs and not no_history else None
     rows = []
     for ep in episodes.itertuples():
@@ -222,7 +225,7 @@ def summarize(results: pd.DataFrame) -> pd.DataFrame:
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--bench", type=Path, default=Path("data/benchmark"))
-    p.add_argument("--split", default="val", choices=["train", "val", "test", "ood", "otrf_native_train", "otrf_native_val", "otrf_native_test", "cdb", "cdb_filtered"])
+    p.add_argument("--split", default="val", choices=["train", "val", "test", "ood", "otrf_native_train", "otrf_native_val", "otrf_native_test", "cdb", "cdb_filtered", "cbc"])
     p.add_argument("--noise", nargs="+", default=DEFAULT_NOISE, help="type:proportion, e.g. duplicate-flooding:0.5")
     p.add_argument("--capacity", nargs="+", type=float, default=[256, 512], help="events kept; values < 1 are a fraction of each episode")
     p.add_argument("--no-history", action="store_true", help="cold start: no historical prevalence profile (e.g. OTRF native)")

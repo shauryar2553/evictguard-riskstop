@@ -1,12 +1,12 @@
 # EVICTGuard + RISKSTOP (NITK B.Tech Major Project)
 
 **Start here:** `NEXT_STEPS.md` (status and next steps), `docs/RESULTS_EVICTGUARD_V2.md` (final results and caveats),
-`docs/DATASET.md` (dataset design), `deliverables/EVICTGuard_Viva_Guide.docx` (plain-language guide).
+`docs/DATASET.md` (dataset design), `docs/RISKSTOP.md` (RISKSTOP), `deliverables/EVICTGuard_Viva_Guide.docx` (plain-language guide).
 
 ## Repository map
 | Path | Contents |
 |---|---|
-| `src/` | All code: datasets, labelling, episodes, noise, EVICTGuard v1/v2/v3/Online/Online v2, baselines, ledger, context assembly, benchmark |
+| `src/` | All code: datasets, labelling, episodes, noise, EVICTGuard v1/v2/v3/v4/Online/Online v2, baselines, ledger, context assembly, benchmark, investigation + RISKSTOP |
 | `tests/` | 38 tests (`.venv_mac/bin/python -m pytest -q`) |
 | `scripts/` | Paper tables/figures, weight sensitivity, label review kit, viva guide generator, tie-break seeds |
 | `results/paper/` | Publication tables (Markdown + LaTeX), figures (PNG + PDF), significance tests |

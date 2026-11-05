@@ -156,12 +156,16 @@ def main() -> None:
     p.add_argument("--fetch-reapr", action="store_true")
     p.add_argument("--stream", action="store_true", help="stream only the needed files from the 12 GB Box archive (no raw XML stored)")
     p.add_argument("--stream-attacks", action="store_true", help="stream all 16 attack scenarios (Sysmon + Security + ATLAS ground truth)")
+    p.add_argument("--stream-cbc", action="store_true", help="stream the Carbon Black EDR telemetry of all attack scenarios (fresh test sensor)")
     p.add_argument("--host", default="h1")
     p.add_argument("--scenario", default="s1")
     p.add_argument("--cap", type=int, default=100_000, help="max events kept per XML file")
     a = p.parse_args()
     if a.fetch_reapr:
         fetch_reapr(a.reapr); return
+    if a.stream_cbc:
+        stream_cbc_edr(BOX_URL, a.out)
+        return
     if a.stream_attacks:
         stream_attacks(BOX_URL, a.out, cap=max(a.cap, 300_000))
         label_attack_segments(a.out, a.reapr, a.rules)
@@ -423,6 +427,46 @@ def stream_attacks(url: str, out_root: Path, cap: int = 300_000) -> list[str]:
             p.unlink()
         print(f"scenario {scenario}: {len(std)} events")
     return sorted(scenarios)
+
+def stream_cbc_edr(url: str, out_root: Path, max_lines: int = 400_000) -> list[str]:
+    """Stream the ATLASv2 Carbon Black Cloud EDR telemetry for every attack scenario (raw JSONL lines kept as-is,
+    gzip-compressed, one file per scenario). Stops once both hosts' attack/cbc-edr folders have passed."""
+    import gzip
+    import tarfile
+    target = out_root / "cbc_edr"
+    target.mkdir(parents=True, exist_ok=True)
+    wanted = {"data/attack/h1/cbc-edr", "data/attack/h2/cbc-edr"}
+    seen, done, saved = set(), set(), []
+    resp = ResumableHTTP(url)
+    with tarfile.open(fileobj=resp, mode="r|gz") as archive:
+        for member in archive:
+            rel = member.name.split("/", 1)[1] if "/" in member.name else member.name
+            parent = rel.rsplit("/", 1)[0] if "/" in rel else ""
+            for d in list(seen - done):
+                if parent != d:
+                    done.add(d)
+            if wanted <= done or rel.startswith("data/benign"):
+                print("CBC EDR folders passed; stopping download early.", flush=True)
+                break
+            if parent not in wanted or not member.isfile():
+                continue
+            seen.add(parent)
+            m = re.search(r"(h[12])[-_]([sm]\d)", rel.lower())
+            if not m:
+                continue
+            scen = f"{m.group(1)}-{m.group(2)}"
+            src = archive.extractfile(member)
+            n = 0
+            with gzip.open(target / f"{scen}.jsonl.gz", "wb") as out:
+                for line in src:
+                    out.write(line)
+                    n += 1
+                    if n >= max_lines:
+                        break
+            saved.append(scen)
+            print(f"cbc-edr {scen}: {n} lines (offset {resp.offset/1e9:.2f} GB)", flush=True)
+    resp.close()
+    return saved
 
 
 if __name__ == "__main__":

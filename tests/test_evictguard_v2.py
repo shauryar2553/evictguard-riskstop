@@ -90,3 +90,23 @@ def test_baselines_respect_capacity_and_ignore_labels():
     for fn in (select_recency_dedup, select_rare_action, select_nodoze):
         a, b = fn(base, 4), fn(marked, 4)
         assert len(a.selected) <= 4 and a.selected.record_id.tolist() == b.selected.record_id.tolist()
+
+
+def test_fast_online_v2_makes_identical_decisions():
+    import numpy as np
+    from src.evictguard_online_v2 import select_evictguard_online_v2
+    from src.evictguard_online_v2_fast import select_evictguard_online_v2_fast
+    rng = np.random.default_rng(3)
+    rows = []
+    for i in range(400):
+        host = f"h{i % 3}"
+        img = rng.choice(["C:\\\\Windows\\\\System32\\\\svchost.exe", "C:\\\\Users\\\\bob\\\\x.exe", "C:\\\\Windows\\\\System32\\\\cmd.exe"])
+        rows.append(ev(i % 60, SEC if i % 2 else SYS, int(rng.choice([4663, 4656, 1, 3, 11])),
+                       {"ProcessName": img, "Image": img, "ProcessId": int(rng.integers(1, 20)), "ObjectName": f"C:\\\\Users\\\\bob\\\\f{rng.integers(0, 50)}.txt",
+                        "TargetFilename": f"C:\\\\Temp\\\\{rng.integers(0, 30)}.tmp", "ParentImage": "C:\\\\Windows\\\\explorer.exe", "ParentProcessId": 1}, host=host))
+    frame = pd.DataFrame(rows)
+    frame["record_id"] = [f"r{i}" for i in range(len(frame))]
+    for cap in (5, 40, 120):
+        a = select_evictguard_online_v2(frame, cap).selected.record_id.tolist()
+        b = select_evictguard_online_v2_fast(frame, cap).selected.record_id.tolist()
+        assert a == b

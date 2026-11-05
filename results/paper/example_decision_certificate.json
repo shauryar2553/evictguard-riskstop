@@ -1,0 +1,23 @@
+{
+  "episode_id": "ood-attack-h2-m1",
+  "verdict": "ATTACK",
+  "rationale": "attack confidence 0.97 >= 0.95; residual risk 0.42",
+  "supporting_evidence": [
+    "ood-attack-h2-m1:atlasv2:attack:h2-m1#144854",
+    "ood-attack-h2-m1:atlasv2:attack:h2-m1#144857",
+    "ood-attack-h2-m1:atlasv2:attack:h2-m1#146050",
+    "ood-attack-h2-m1:atlasv2:attack:h2-m1#146541",
+    "ood-attack-h2-m1:atlasv2:attack:h2-m1#146475",
+    "ood-attack-h2-m1:atlasv2:attack:h2-m1#146409",
+    "ood-attack-h2-m1:atlasv2:attack:h2-m1#146337",
+    "ood-attack-h2-m1:atlasv2:attack:h2-m1#146267"
+  ],
+  "open_questions": [
+    "2 suspicious process(es) not fully expanded"
+  ],
+  "queries_used": 2,
+  "budget_used": 2,
+  "steps": 2,
+  "attack_confidence": 0.972,
+  "residual_risk": 0.425
+}

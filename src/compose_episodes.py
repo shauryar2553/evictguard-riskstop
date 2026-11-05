@@ -344,6 +344,70 @@ def compose_cdb_filtered(out_dir: Path) -> list[dict[str, Any]]:
              "excluded_flag_timestamps": len(pure)}]
 
 
+def compose_cbc(cbc_dir: Path, reapr_dir: Path, out_dir: Path) -> list[dict[str, Any]]:
+    """ATLASv2 Carbon Black Cloud EDR telemetry (a sensor never used before) as fresh test episodes.
+
+    Carbon Black event types are mapped to their Sysmon equivalents so every method sees a familiar schema:
+    procstart->1, netconn->3, procend->5, moduleload/scriptload->7, crossproc->10, filemod->11, regmod->13.
+    Labels: REAPr expert process labels joined on Carbon Black ``process_guid`` (exact). REAPr labels whole
+    processes, so all events of an attack process are ``supporting`` (there is no record-level core tier);
+    the natural metric is attack-process coverage (REAPr's own unit).
+    """
+    import gzip
+    import json as _json
+    from .label import standardize
+    emap = {"procstart": 1, "netconn": 3, "procend": 5, "moduleload": 7, "scriptload": 7, "crossproc": 10, "filemod": 11, "regmod": 13}
+    rows_out = []
+    for path in sorted(Path(cbc_dir).glob("*.jsonl.gz")):
+        scen = path.name.split(".")[0]
+        lab = pd.read_csv(Path(reapr_dir) / f"{scen}.labels", skipinitialspace=True)
+        lab.columns = [c.strip() for c in lab.columns]
+        attack = set(lab.process_uuid.astype(str).str.strip())
+        recs, guids = [], []
+        for line in gzip.open(path):
+            r = _json.loads(line)
+            kind = str(r.get("type", "")).rsplit(".", 1)[-1]
+            eid = emap.get(kind)
+            if eid is None:
+                continue
+            ts = str(r.get("device_timestamp", "")).replace(" +0000 UTC", "Z").replace(" ", "T")
+            ev = {"Channel": "Microsoft-Windows-Sysmon/Operational", "EventID": eid, "Hostname": r.get("device_name"), "@timestamp": ts,
+                  "Image": r.get("process_path"), "ProcessId": r.get("process_pid"), "ProcessGuid": r.get("process_guid"),
+                  "ParentImage": r.get("parent_path"), "ParentProcessId": r.get("parent_pid"), "ParentProcessGuid": r.get("parent_guid"),
+                  "CommandLine": r.get("process_cmdline"), "User": r.get("process_username"), "cbc_type": kind}
+            if eid == 11:
+                ev["TargetFilename"] = r.get("filemod_name")
+            elif eid == 7:
+                ev["ImageLoaded"] = r.get("modload_name") or r.get("scriptload_name")
+            elif eid == 13:
+                ev["TargetObject"] = r.get("regmod_name")
+            elif eid == 3:
+                ev["DestinationIp"], ev["DestinationPort"] = r.get("remote_ip"), r.get("remote_port")
+            elif eid == 10:
+                ev["SourceImage"], ev["SourceProcessId"], ev["TargetImage"] = r.get("process_path"), r.get("process_pid"), r.get("crossproc_name")
+            elif eid == 1:   # procstart: the event's process is the new one; express it as parent -> child
+                pass
+            recs.append(ev)
+            guids.append(str(r.get("process_guid", "")).strip())
+        std = standardize(pd.DataFrame(recs), f"cbc:{scen}")
+        is_attack = np.array([g in attack for g in guids])
+        std["gt_tier"] = np.where(is_attack, "supporting", "background")
+        std["gt_label"] = np.where(is_attack, "attack", "benign")
+        std["label_source"] = np.where(is_attack, "reapr_process_guid", None)
+        std = std.sort_values("timestamp", kind="stable").reset_index(drop=True)
+        episode_id = f"cbc-{scen}"
+        std["record_id"] = [f"{episode_id}:{r}" for r in std.record_id]
+        std["episode_id"], std["origin"], std["attack_recording"] = episode_id, "atlasv2_cbc", f"atlasv2:{scen}"
+        std["event_type"], std["source"], std["is_synthetic"] = std.event_id.astype(str), std.channel, False
+        std["timestamp"] = std.timestamp.map(lambda t: t.isoformat().replace("+00:00", "Z") if pd.notna(t) else None)
+        std.to_parquet(out_dir / "episodes" / f"{episode_id}.parquet", index=False, compression="zstd")
+        rows_out.append({"episode_id": episode_id, "split": "cbc", "gold_verdict": "ATTACK", "background_source": "atlasv2_cbc_native",
+                         "background_segment": scen, "background_verified_benign": False, "attack_recordings": f"atlasv2:{scen}", "techniques": "",
+                         "events": len(std), "n_core": 0, "n_supporting": int(is_attack.sum()), "n_ambiguous": 0,
+                         "attack_processes_labelled": len(attack), "attack_processes_present": len(attack & set(guids))})
+    return rows_out
+
+
 def compose(labels_dir: Path, out_dir: Path, background_source: str, atlas_dir: Path, per_split: dict[str, tuple[int, int]],
             window_events: int, max_attacks: int, seed: int, harmonize: bool = False) -> pd.DataFrame:
     rng = np.random.default_rng(seed)
