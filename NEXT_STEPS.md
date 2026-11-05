@@ -58,9 +58,12 @@ CDB: not better than rare-action (limitation). Details: docs/RESULTS_EVICTGUARD_
 * The scorer must never read gt_* / is_synthetic / noise_type / dup_of (a test enforces this).
 * Don't use SigmaHQ releases newer than r2026-04-01 (they use renumbered ATT&CK IDs).
 
-## Free LLM run (in progress, 2026-11-05)
+## Free LLM run (done 2026-11-06; results in docs/RISKSTOP.md A3)
 * Paid Claude run stopped after 695 calls ($6.86; responses cached in data/llm_cache, reusable).
 * Running instead: local Qwen2.5-7B, VAL+TEST alerts, all noise conditions, EVICTGuard memory, budget 12 (~9-10 h).
   Risk models trained on the rule-based TRAIN runs (`evaluate --train-from heuristic_b12`); calibration and test use Qwen's own runs.
 * Resume/restart any time: `./scripts/resume_qwen.sh` (cached answers make finished work free). Results: data/logs/qwen_eval.log.
 * Budget-12 rule-based RISKSTOP could not be certified (negative result; document it).
+* Result: RISKSTOP-LLM is certified on VAL; on TEST, false alarms 1.4% and lowest cost, but misses 16% (target 10%) because the VAL and TEST
+  attack scenarios differ. Next: re-split the h1 attack scenarios so VAL contains every attack type (or use cross-validated LTT), then re-evaluate.
+  No new LLM calls are needed for alerts already cached.

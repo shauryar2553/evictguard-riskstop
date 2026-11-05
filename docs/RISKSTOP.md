@@ -58,14 +58,50 @@
   Fixed budget: 0.16 / 0.09 / 0.96 / 0.94.
 * Interpretation: a guarantee needs a score that is reliable on validation. That is what the LLM investigator is meant to supply.
 
-### A3. LLM investigator (in progress)
+### A3. LLM investigator: local Qwen2.5-7B, budget 12 (all noise conditions)
+**Setup.**
 * `src/llm_investigator.py`: the LLM picks the next query from numbered candidate leads and outputs a hypothesis plus an attack likelihood.
   Every response is cached on disk.
 * Backends: local Qwen2.5-7B via Ollama (free, reproducible; `--investigator llm`) or Claude via the Anthropic SDK (`--investigator llm_opus`).
-* **RISKSTOP-LLM**: the same LTT-certified policy, but driven by the LLM's attack likelihood.
-* Run: Qwen, budget 12, VAL+TEST alerts × all noise conditions, EVICTGuard memory. The risk models are trained on the rule-based TRAIN
-  runs (`evaluate --train-from heuristic_b12`). Calibration and test use Qwen's own trajectories, so the guarantee is unaffected.
-* Resume: `./scripts/resume_qwen.sh`. Results: `data/alert_bench/test_metrics_llm.csv`, `report_llm.json`.
+* **RISKSTOP-LLM**: the same fixed-sequence LTT policy, with the LLM's attack likelihood as its attack score.
+* 542 investigations: VAL + TEST alerts × {no noise, background flood, missing critical}, EVICTGuard memory.
+* The risk models (residual risk, classifier fallback) are trained on the rule-based TRAIN runs (`--train-from heuristic_b12`).
+  Calibration and test use Qwen's own trajectories, so the validity of the guarantee is unaffected.
+
+**TEST results** (371 investigations; `data/alert_bench/test_metrics_llm.csv`):
+
+| Policy | Missed attacks [95% CI] | False alarms [95% CI] | Defer | Budget | Expected cost |
+|---|---|---|---|---|---|
+| **RISKSTOP-LLM (LTT-certified)** | 0.160 [0.086, 0.263] | **0.014** [0.004, 0.034] | 0.26 | **0.09** | **0.678** |
+| Confidence stop | 0.280 [0.182, 0.396] | 0.057 [0.034, 0.090] | 0 | 0.12 | 0.788 |
+| BAGEN-style (gain stall) | 0.240 [0.149, 0.353] | 0.101 [0.069, 0.142] | 0 | 0.37 | 0.938 |
+| RISKSTOP, uncalibrated defaults | 0.360 [0.252, 0.479] | 0.034 | 0.01 | 0.21 | 0.940 |
+| Conformal deferral (end) | 0.147 [0.076, 0.247] | 0.064 | 0.15 | 0.99 | 1.098 |
+| Fixed budget | 0.227 [0.138, 0.338] | 0.105 | 0 | 0.99 | 1.227 |
+| LLM confidence stop (no RISKSTOP) | 0.013 | 0.767 | 0 | 0.49 | 2.142 |
+| LLM verdict at end (no RISKSTOP) | 0.013 | 0.858 | 0 | 0.99 | 2.606 |
+
+Paired bootstrap on per-investigation cost, RISKSTOP-LLM minus baseline [95% CI]:
+* fixed budget −0.55 [−0.73, −0.39]; conformal −0.42 [−0.59, −0.24]; BAGEN −0.26 [−0.47, −0.04]; uncalibrated −0.26 [−0.47, −0.07];
+* LLM-only −1.46 to −1.93;
+* confidence stop −0.11 [−0.27, +0.04] (not significant).
+
+**Findings**
+1. **The LLM alone is a poor triager.** It flags 77–86% of benign alerts as attacks, so it misses almost nothing but is useless in practice.
+2. **RISKSTOP turns it into the cheapest policy.** False alarms drop to 1.4% (inside the 10% target), using 9% of the budget. Cost is
+   significantly lower than every baseline except confidence stop.
+3. **The LLM makes certification possible at a small budget.** Rule-based RISKSTOP at budget 12 certified nothing (A2). RISKSTOP-LLM was
+   certified for all three residual caps (validation: miss 0.00, false alarms 0.016).
+4. **The missed-attack guarantee did not transfer to TEST** (0.16 vs target 0.10). The validation attacks (h1-s4, h1-m4) and the test attacks
+   (h1-m5, h1-m6) come from different scenarios, so they aren't exchangeable. As in A, this is the main limitation; the fix is validation
+   attacks drawn from the same scenario mix as test.
+5. **Noise had no effect, for a trivial reason.** The median decision is made at step 0 (on the alert and its seed process), before the
+   injected events matter. Decisions under no noise and under a background flood are identical. This is a result about alert triage, not
+   about robustness of long investigations.
+6. **Cost:** $0 (local model, about 12 h on a laptop). A paid Claude run was started and stopped after 695 calls ($6.86). Those
+   responses are cached and can be resumed.
+
+Reproduce: `./scripts/resume_qwen.sh` (collect plus evaluate; cached answers make reruns fast).
 
 ## B. Episode-based benchmark (first attempt)
 

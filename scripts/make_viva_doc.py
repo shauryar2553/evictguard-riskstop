@@ -469,6 +469,24 @@ bullets([
     ("Honest details: ", "the guarantee held fully with one memory type and was right on the boundary with the other (false alarms 10.1% vs a 10% target), because the test set includes a computer the validation set didn't. One component (the residual-risk cap) turned out unused. Calibration and the query-value rule both clearly matter."),
 ])
 box("This is a publishable claim: on real vendor alerts, risk-controlled stopping reduces missed attacks by roughly 5× or more at about 10% of the investigation cost, with a statistical guarantee, at the price of escalating uncertain alerts.")
+h("RISKSTOP with an LLM investigator (free, local Qwen2.5-7B)", 2)
+p("We replaced the rule-based investigator with an LLM that reads the evidence, picks the next query and gives an attack likelihood. To keep it free and reproducible we ran an open model (Qwen2.5-7B) on the laptop. It covered all validation and test alerts under all three noise conditions (542 investigations), with a smaller budget of 12 units.")
+table([
+    ["RISKSTOP-LLM (guaranteed)", "16%", "1.4%", "26%", "9%", "0.68 (lowest)"],
+    ["Stop when confident", "28%", "5.7%", "0%", "12%", "0.79"],
+    ["Stop when evidence stalls (BAGEN-style)", "24%", "10.1%", "0%", "37%", "0.94"],
+    ["Conformal deferral at the end", "15%", "6.4%", "15%", "99%", "1.10"],
+    ["Use the whole budget", "23%", "10.5%", "0%", "99%", "1.23"],
+    ["LLM's own verdict (no RISKSTOP)", "1%", "86%", "0%", "99%", "2.61"],
+], ["371 test investigations, budget 12", "Missed attacks", "False alarms", "Escalated", "Budget used", "Expected cost"])
+bullets([
+    ("The LLM alone is unusable: ", "it calls almost everything an attack (86% false alarms)."),
+    ("RISKSTOP makes it usable: ", "calibrating the LLM's score with Learn-then-Test cuts false alarms to 1.4% and gives the lowest cost of every policy. It is significantly cheaper than every baseline except 'stop when confident' (the difference there is not significant)."),
+    ("Rule-based vs LLM: ", "at this small budget the rule-based RISKSTOP could not be certified at all, whereas the LLM version was certified on validation."),
+    ("Honest limits: ", "the missed-attack guarantee did not transfer to test (16%, target 10%), because the test attacks come from different attack scenarios than validation. Decisions are made almost immediately (median: at the alert itself), so background noise did not change them. The risk models were trained on rule-based runs to save compute."),
+])
+box("An LLM on its own is a poor alert triager (86% false alarms); wrapped in RISKSTOP it becomes the cheapest policy with 1.4% false alarms. The missed-attack guarantee needs validation data that matches the test attacks.")
+
 
 # ------------------------------------------------------------------ 11
 h("12. Likely viva questions and answers")
