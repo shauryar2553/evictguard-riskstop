@@ -26,12 +26,23 @@
 * Labeller-vs-CDB agreement: `results/paper/labeller_vs_cdb_agreement.json` (kappa 0.08 / 0.19).
 * Human review sheet: `~/Desktop/EVICTGuard_label_review.csv`. Fill `reviewer_is_attack`, then run `python -m scripts.label_review_kit score`.
 
-## Next
-1. Human label check (above), about 30 minutes for one person.
-2. End-to-end LLM verdict test (needs an API key or a local model; user's decision), then RISKSTOP.
-3. Performance: Online v2 re-scoring is slow on ~900k-event streams (vectorise or scale rescore_every with memory; that would be a new version).
-4. Future work: EVICTGuard under broad evidence definitions (CDB), where it only matches rare-action ranking.
-5. Any new version must be judged on data it was not designed on.
+## GitHub (shared, private)
+https://github.com/shauryar2553/evictguard-riskstop (collaborators: Ankitaashok20, thanmayasrii).
+gh CLI at ~/.local/bin/gh (logged in as shauryar2553). Large files are uploaded in 15 MB parts:
+run ./scripts/reassemble_large_files.sh after cloning.
+
+## Next (decided 2026-11-04)
+1. (Optional, recommended) EVICTGuard improvement: supporting-evidence capture. Supporting action recall is only
+   0.01-0.05, which likely explains the CDB gap. Needs FRESH test data (every held-out set has been seen once):
+   ATLASv2 Carbon Black EDR stream, more CDB campaigns, or DARPA OpTC.
+2. Other improvement options: learned scorer (EVICTGuard-L), robustness to renamed entities, Online v2 speed.
+3. RISKSTOP (slides 16-17): nothing blocks it; gold verdicts are in the benchmark output (gold_verdict_after_noise).
+4. End-to-end LLM verdict test + hypothesis relevance: needs an API key (user's decision), best done with RISKSTOP.
+5. Human label check: fill deliverables/EVICTGuard_label_review.csv, then `python -m scripts.label_review_kit score`.
+
+## Headline results (for quick reference)
+ATLASv2 held-out: EVICTGuard 0.96-0.97 vs best baseline 0.014-0.048 (~20-70x). OTRF: 0.53-0.90 vs 0.07-0.34 (~2.6-8x).
+CDB: not better than rare-action (limitation). Details: docs/RESULTS_EVICTGUARD_V2.md.
 
 ## Rules we follow
 * Never tune on held-out data (h2 OOD, OTRF test split). Develop on ATLASv2 h1 + OTRF train split; OTRF val/test and ATLASv2 h2 are held-out.

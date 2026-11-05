@@ -27,7 +27,13 @@ unzip data/cdb_sample/sample.zip -d data/cdb_sample      # restores the CDB JSON
 ```
 (Windows: create the venv with `py -3 -m venv .venv` and use `.venv\Scripts\python.exe`.)
 
-## Third-party data and licences (private repository; do not make public without checking these)
+## Licences
+
+**Our code and documentation** (everything outside `data/`, plus the derived results in `results/`) are released under
+the MIT License; see `LICENSE`. Copyright (c) 2026 Ankita A, Nelluri Thanmaya Sri, Shaurya Rohiet.
+
+**Third-party data in `data/` keeps its own terms.** It is redistributed here for reproducibility only. If you use it,
+cite and credit the original authors as listed below. If you are a rights holder and want material removed, please open an issue.
 * **OTRF Security-Datasets** (`data/otrf/`): MIT per GitHub metadata. Roberto Rodriguez, https://github.com/OTRF/Security-Datasets
 * **ATLASv2** (`data/atlasv2/`, derived parquet only): the authors "encourage" research use with citation; licence not stated.
   Cite Alsaheel et al. (USENIX Security 2021) and Riddle, Westfall & Bates (arXiv:2401.01341). REAPr labels: https://bitbucket.org/sts-lab/reapr-ground-truth
