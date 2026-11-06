@@ -177,6 +177,23 @@ def episode_for(alert: dict, window_s: int = 900, cap: int = 20_000) -> tuple[pd
     return win, seed[:1]
 
 
+def resplit_attacks(seed: int = 17) -> pd.DataFrame:
+    """Second evaluation setting, 'alert split': ATTACK alerts are assigned to train/val/test at ALERT level, stratified by scenario
+    (shuffle within each scenario, deal round-robin with a rotating start), so val and test are exchangeable as Learn-then-Test
+    assumes. BENIGN alerts keep their scenario/day split. The scenario split (column 'split') stays the primary, shift-robust setting."""
+    al = pd.read_csv(OUT / "alerts.csv", parse_dates=["time"])
+    al["split_alert"] = al["split"]
+    rng = np.random.default_rng(seed)
+    order, k = ["train", "val", "test"], 0
+    for _, g in sorted(al[al.gold == "ATTACK"].groupby("source"), key=lambda t: t[0]):
+        idx = rng.permutation(g.index.to_numpy())
+        for j, i in enumerate(idx):
+            al.loc[i, "split_alert"] = order[(k + j) % 3]
+        k += len(idx)
+    al.to_csv(OUT / "alerts.csv", index=False)
+    return al
+
+
 def main() -> None:
     import argparse
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)

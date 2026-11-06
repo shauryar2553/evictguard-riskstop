@@ -103,14 +103,20 @@ def _one(args):
 
 
 def collect(budget: int, capacity: int, workers: int, investigator: str = "heuristic", noises=None, memories=None,
-            splits=None, append: bool = False) -> None:
+            splits=None, append: bool = False, scheme: str = "scenario", only_missing: bool = False) -> None:
     al = pd.read_csv(OUT / "alerts.csv", parse_dates=["time"])
     if splits:
-        al = al[al.split.isin(splits)]
+        al = al[al[_split_col(scheme)].isin(splits)]
     _profile()
     noises = noises or list(NOISE)
     memories = memories or ["evictguard", "fifo"]
     jobs = [(a, n, m, budget, capacity, investigator) for a in al.to_dict("records") for n in noises for m in memories]
+    if only_missing:
+        have = {(r.get("id"), r.get("noise"), r.get("memory")) for r in load(investigator) if "error" not in r}
+        jobs = [j for j in jobs if (j[0]["alert_id"], j[1], j[2]) not in have
+                and not (j[1] == "missing-critical" and j[0]["gold"] != "ATTACK")]
+        append = True
+        print(f"{len(jobs)} missing jobs")
     path = OUT / ("trajectories.pkl" if investigator == "heuristic" else f"trajectories_{investigator}.pkl")
     if investigator.startswith("heuristic_"):
         path = OUT / f"trajectories_{investigator}.pkl"
@@ -126,6 +132,10 @@ def collect(budget: int, capacity: int, workers: int, investigator: str = "heuri
             if done % 50 == 0:
                 print(f"{done}/{len(jobs)}", flush=True)
     print(f"collected {done}")
+
+
+def _split_col(scheme: str) -> str:
+    return {"scenario": "split", "alert": "split_alert"}[scheme]
 
 
 def load(investigator: str = "heuristic") -> list[dict]:
@@ -235,20 +245,24 @@ def clopper_pearson(k: int, n: int, conf: float = 0.95) -> tuple[float, float]:
     return float(lo), float(hi)
 
 
-def evaluate(alpha: float, delta: float, investigator: str = "heuristic", train_from: str | None = None) -> None:
+def evaluate(alpha: float, delta: float, investigator: str = "heuristic", train_from: str | None = None, scheme: str = "scenario") -> None:
     """train_from: take the TRAIN investigations from another investigator's file (e.g. heuristic_b12), so an expensive
     LLM only has to be run on VAL and TEST. Only the evidence-risk models are trained on them; calibration (VAL) and
     evaluation (TEST) always use the investigator's own trajectories."""
     from .riskstop import (RiskModels, RiskStopParams, baseline_bagen, baseline_confidence_stop, baseline_conformal_deferral, baseline_fixed_budget,
                            make_riskstop)
     from .run_riskstop import _labels, calibrate_conformal, evaluate_policy, metrics
+    smap = pd.read_csv(OUT / "alerts.csv").set_index("alert_id")[_split_col(scheme)].to_dict()
     recs = [r for r in load(investigator) if "error" not in r and r.get("trajectory")]
     errs = [r for r in load(investigator) if "error" in r]
-    tag = "" if investigator == "heuristic" else f"_{investigator}"
+    for r in recs:
+        r["split"] = smap.get(r["id"], r["split"])
+    tag = ("" if investigator == "heuristic" else f"_{investigator}") + ("" if scheme == "scenario" else f"_{scheme}split")
     print(f"{len(recs)} investigations, {len(errs)} errors")
     report, tables, decisions = {}, [], []
     for memory in sorted({r["memory"] for r in recs}):
-        tr_src = recs if train_from is None else [r for r in load(train_from) if "error" not in r and r.get("trajectory")]
+        tr_src = recs if train_from is None else [dict(r, split=smap.get(r["id"], r["split"])) for r in load(train_from)
+                                                  if "error" not in r and r.get("trajectory")]
         tr = [r for r in tr_src if r["memory"] == memory and r["split"] == "train"]
         va = [r for r in recs if r["memory"] == memory and r["split"] == "val"]
         te = [r for r in recs if r["memory"] == memory and r["split"] == "test"]
@@ -334,12 +348,14 @@ def main() -> None:
     ap.add_argument("--memories", nargs="+", default=None)
     ap.add_argument("--splits", nargs="+", default=None)
     ap.add_argument("--train-from", default=None, help="evaluate: use another investigator's TRAIN trajectories for the risk models")
+    ap.add_argument("--scheme", choices=["scenario", "alert"], default="scenario", help="split setting (see alert_benchmark.resplit_attacks)")
+    ap.add_argument("--only-missing", action="store_true", help="collect: run only (alert, noise, memory) not yet in the trajectory file")
     ap.add_argument("--append", action="store_true", help="append to the existing trajectory file")
     a = ap.parse_args()
     if a.stage == "collect":
-        collect(a.budget, a.capacity, a.workers, a.investigator, a.noises, a.memories, a.splits, a.append)
+        collect(a.budget, a.capacity, a.workers, a.investigator, a.noises, a.memories, a.splits, a.append, a.scheme, a.only_missing)
     else:
-        evaluate(a.alpha, a.delta, a.investigator, a.train_from)
+        evaluate(a.alpha, a.delta, a.investigator, a.train_from, a.scheme)
 
 
 if __name__ == "__main__":

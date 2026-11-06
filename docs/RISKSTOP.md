@@ -103,6 +103,44 @@ Paired bootstrap on per-investigation cost, RISKSTOP-LLM minus baseline [95% CI]
 
 Reproduce: `./scripts/resume_qwen.sh` (collect plus evaluate; cached answers make reruns fast).
 
+### A4. Second setting: alert-level split (validation matches test)
+**Why.** In A3 the validation and test attacks came from different scenarios, so the missed-attack guarantee didn't transfer.
+`alert_benchmark.resplit_attacks()` deals the 59 ATTACK alerts into train/val/test **within each scenario** (20 / 20 / 19, seed 17).
+That makes val and test exchangeable, which is what Learn-then-Test assumes. BENIGN alerts keep their split. Flag: `--scheme alert`.
+The scenario split (A3) is kept as the "unseen attack scenario" setting; both are reported.
+
+**TEST, Qwen2.5-7B trajectories, budget 12, all noise conditions** (353 investigations; `test_metrics_llm_alertsplit.csv`):
+
+| Policy | Missed attacks [95% CI] | False alarms [95% CI] | Defer | Budget | Expected cost |
+|---|---|---|---|---|---|
+| **RISKSTOP-LLM (LTT)** | **0.000** [0.000, 0.063] | **0.007** [0.001, 0.024] | 0.48 | 0.17 | 0.563 |
+| **RISKSTOP (LTT, classifier)** | **0.000** [0.000, 0.063] | 0.061 [0.036, 0.094] | 0.32 | 0.15 | 0.575 |
+| Confidence stop | 0.035 [0.004, 0.121] | 0.074 [0.047, 0.110] | 0 | 0.19 | **0.364** |
+| RISKSTOP, uncalibrated | 0.140 | 0.044 | 0.05 | 0.24 | 0.518 |
+| RISKSTOP, no query value | 0.035 | 0.095 | 0.26 | 0.33 | 0.744 |
+| BAGEN-style | 0.246 | 0.084 | 0 | 0.36 | 0.814 |
+| Fixed budget | 0.070 | 0.081 | 0 | 0.99 | 0.834 |
+| Conformal deferral (end) | 0.070 | 0.034 | 0.17 | 0.99 | 0.865 |
+| LLM verdict at end / LLM confidence stop | 0.000 | 0.858 / 0.767 | 0 | 0.99 / 0.49 | 2.68 / 2.20 |
+
+**Findings**
+1. **Both guarantees hold on TEST when validation matches deployment.** Missed attacks are 0 for both RISKSTOP variants (upper CI 6.3%).
+   False alarms are 0.7% (LLM) and 6.1% (classifier), all inside the 10% target.
+2. **The LLM's main value is fewer false alarms:** 0.7% vs 6.1% for the classifier. It pays for this with more deferrals (48% vs 32%),
+   so overall cost is the same (difference +0.01, CI [−0.05, +0.08]).
+3. **RISKSTOP is not the cheapest policy under this cost model.** Confidence stop is cheaper (0.36 vs 0.56–0.58, significant). It defers
+   nothing, but it has no guarantee: its missed-attack CI reaches 12%. RISKSTOP buys a certified error rate with deferrals. Whether that
+   trade is worth it depends on the defer cost (fixed at 1 here, a tenth of a miss).
+4. **RISKSTOP is significantly cheaper than** fixed budget, BAGEN-style, conformal deferral and both LLM-only policies.
+5. **Ablations:** the query-value rule matters (removing it adds +0.17 cost). The residual-risk cap was again unused (LTT picked ρ = 1).
+6. **Rule-based investigator, same split** (`test_metrics_heuristic_b12_alertsplit.csv`; TEST has no-noise runs only, n = 187):
+   RISKSTOP is now certified (it wasn't under the scenario split). Test: misses 0.000 [0, 0.090], false alarms 0.054, cost 0.543.
+   Confidence stop: 0.360.
+
+**Summary of the two settings.** Same scenarios in validation and test: the guarantee holds (0% misses, ≤ 6% false alarms).
+Unseen attack scenarios: false alarms stay controlled, but misses rise to 16%. Distribution-free guarantees need representative validation
+data. This is the honest headline.
+
 ## B. Episode-based benchmark (first attempt)
 
 

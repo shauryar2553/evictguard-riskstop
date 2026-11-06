@@ -487,6 +487,22 @@ bullets([
 ])
 box("An LLM on its own is a poor alert triager (86% false alarms); wrapped in RISKSTOP it becomes the cheapest policy with 1.4% false alarms. The missed-attack guarantee needs validation data that matches the test attacks.")
 
+h("Second setting: validation that matches the test alerts", 2)
+p("We re-split the 59 attack alerts so that validation and test contain alerts from the same attack scenarios (20 / 20 / 19). This is the condition the guarantee assumes. The earlier split, where test attacks come from unseen scenarios, is kept and reported too.")
+table([
+    ["RISKSTOP-LLM (guaranteed)", "0%", "0.7%", "48%", "0.56"],
+    ["RISKSTOP, classifier (guaranteed)", "0%", "6.1%", "32%", "0.58"],
+    ["Stop when confident", "3.5%", "7.4%", "0%", "0.36"],
+    ["Use the whole budget", "7.0%", "8.1%", "0%", "0.83"],
+    ["LLM's own verdict", "0%", "86%", "0%", "2.68"],
+], ["353 test investigations (Qwen, budget 12)", "Missed attacks", "False alarms", "Escalated", "Expected cost"])
+bullets([
+    ("Guarantee holds: ", "with matching validation data, both RISKSTOP versions miss no attacks and keep false alarms under 10%."),
+    ("What the LLM adds: ", "far fewer false alarms (0.7% vs 6.1%), but it escalates more alerts, so the overall cost is the same."),
+    ("Honest trade-off: ", "'stop when confident' is cheaper under our cost model because it never escalates, but it has no guarantee (its missed-attack rate could be up to 12%)."),
+    ("Two-setting headline: ", "same scenarios: guarantee holds. Unseen attack scenarios: false alarms stay controlled, missed attacks rise to 16%."),
+])
+
 
 # ------------------------------------------------------------------ 11
 h("12. Likely viva questions and answers")

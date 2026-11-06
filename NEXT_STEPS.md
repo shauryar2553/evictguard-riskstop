@@ -67,3 +67,7 @@ CDB: not better than rare-action (limitation). Details: docs/RESULTS_EVICTGUARD_
 * Result: RISKSTOP-LLM is certified on VAL; on TEST, false alarms 1.4% and lowest cost, but misses 16% (target 10%) because the VAL and TEST
   attack scenarios differ. Next: re-split the h1 attack scenarios so VAL contains every attack type (or use cross-validated LTT), then re-evaluate.
   No new LLM calls are needed for alerts already cached.
+* Re-split done (docs/RISKSTOP.md A4, `--scheme alert`): with val matching test, both RISKSTOP variants hold the guarantee
+  (0% misses; false alarms 0.7% LLM / 6.1% classifier). Confidence stop is cheaper (no deferrals, no guarantee).
+* Remaining: rule-based TEST noise runs for the alert split (`collect --investigator heuristic_b12 --splits test --scheme alert --only-missing`, fast);
+  human label check; push.
