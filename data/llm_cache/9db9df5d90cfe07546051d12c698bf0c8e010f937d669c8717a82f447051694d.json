@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The cmd.exe process ended at 20:00:42, and we need to determine if it was initiated by a suspicious parent process.\", \"attack_likelihood\": 0.7, \"choice\": 1}"}

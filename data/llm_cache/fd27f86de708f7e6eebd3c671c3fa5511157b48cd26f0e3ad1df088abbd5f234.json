@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process cmd.exe loaded a suspicious DLL, which is a common indicator of a phishing attack.\", \"attack_likelihood\": 0.9, \"choice\": 0}"}

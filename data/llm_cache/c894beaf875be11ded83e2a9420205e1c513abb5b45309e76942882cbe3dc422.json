@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process update.exe is creating multiple instances of discord.exe, which is suspicious.\", \"attack_likelihood\": 0.8, \"choice\": 7}"}

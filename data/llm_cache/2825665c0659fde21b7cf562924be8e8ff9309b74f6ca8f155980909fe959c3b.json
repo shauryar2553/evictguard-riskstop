@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The cmd.exe process was spawned by the plugin_host.exe process, which itself was spawned by sublime_text.exe.\", \"attack_likelihood\": 0.8, \"choice\": 3}"}

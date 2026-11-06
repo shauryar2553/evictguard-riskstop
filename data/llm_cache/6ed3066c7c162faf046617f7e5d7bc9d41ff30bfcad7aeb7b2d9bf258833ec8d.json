@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process dllhost.exe loaded a suspicious module, which is a common behavior for CobaltStrike.\", \"attack_likelihood\": 0.9, \"choice\": 0}"}

@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The PowerShell activity is likely malicious as it involves registry modifications and file writes in suspicious locations, and creates a payload.\", \"attack_likelihood\": 0.9, \"choice\": 0}"}

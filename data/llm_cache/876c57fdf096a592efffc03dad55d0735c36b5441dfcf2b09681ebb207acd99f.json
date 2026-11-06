@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The PowerShell process created an executable file in the user's directory, which is a common tactic for malware to deploy payloads.\", \"attack_likelihood\": 0.9, \"choice\": 6}"}

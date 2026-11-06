@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The execution of Sysinternals tools might indicate an attacker trying to gather system information.\", \"attack_likelihood\": 0.7, \"choice\": 6}"}

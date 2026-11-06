@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The execution of PowerShell with Invoke-Expression suggests potential malicious activity, as this cmdlet can execute arbitrary code.\", \"attack_likelihood\": 0.9, \"choice\": 6}"}

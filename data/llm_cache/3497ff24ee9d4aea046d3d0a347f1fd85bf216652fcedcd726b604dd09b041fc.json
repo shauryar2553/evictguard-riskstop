@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process winword.exe might be spawning a malicious command.\", \"attack_likelihood\": 0.9, \"choice\": 1}"}

@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process is writing suspicious files to temporary directories, which is a common behavior for malware to evade detection.\", \"attack_likelihood\": 0.8, \"choice\": 0}"}

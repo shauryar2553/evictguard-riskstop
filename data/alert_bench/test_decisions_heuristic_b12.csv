@@ -1,0 +1,866 @@
+id,domain,noise,memory,gold,policy,action,step,budget_used_frac,core_seen,cites_attack,cites_core,p_attack,residual,why,cost,oracle_cost
+A0043,attack_day,none,evictguard,ATTACK,Fixed budget,ATTACK,8,1.0,0.5714285714285714,True,True,0.6283424505795218,0.4123914383570978,fixed budget spent,0.5,0.0
+A0044,attack_day,none,evictguard,ATTACK,Fixed budget,ATTACK,8,1.0,0.5428571428571428,True,True,0.9961646266845379,0.5761551273604135,fixed budget spent,0.5,0.0
+A0045,attack_day,none,evictguard,ATTACK,Fixed budget,BENIGN,9,1.0,0.11428571428571428,True,True,0.08101151241422438,0.07035110549083613,fixed budget spent,10.5,1.0
+A0046,attack_day,none,evictguard,ATTACK,Fixed budget,ATTACK,8,1.0,0.5428571428571428,True,True,0.9804310103374445,0.3438266860035563,fixed budget spent,0.5,0.0
+A0047,attack_day,none,evictguard,ATTACK,Fixed budget,BENIGN,9,1.0,0.11428571428571428,True,True,0.08101151241422438,0.07035110549083613,fixed budget spent,10.5,1.0
+A0048,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,0.53125,True,True,0.059301149647599735,0.09053057292872865,fixed budget spent,0.4583333333333333,0.0
+A0049,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,1.0,0.03125,True,True,0.003483551556659384,0.0,fixed budget spent,0.5,0.0
+A0050,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,0.8333333333333334,0.5161290322580645,True,True,0.03957768659031753,0.07056034012747733,fixed budget spent,0.4166666666666667,0.0
+A0051,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,0.5238095238095238,True,True,0.14438494353998346,0.14694848076390113,fixed budget spent,0.4583333333333333,0.0
+A0052,attack_day,none,evictguard,ATTACK,Fixed budget,ATTACK,9,1.0,0.11428571428571428,True,True,0.5632152833608554,0.3841082182937468,fixed budget spent,0.5,0.16666666666666666
+A0053,attack_day,none,evictguard,ATTACK,Fixed budget,BENIGN,10,1.0,0.4857142857142857,True,True,0.21614098258475042,0.13072788686739456,fixed budget spent,10.5,0.375
+A0054,attack_day,none,evictguard,ATTACK,Fixed budget,ATTACK,8,1.0,0.5714285714285714,True,True,0.9925511410983037,0.6630947059147715,fixed budget spent,0.5,0.0
+A0055,attack_day,none,evictguard,ATTACK,Fixed budget,ATTACK,8,1.0,0.5714285714285714,True,True,0.9623885345915969,0.430766264557914,fixed budget spent,0.5,0.0
+A0056,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,1.0,0.11428571428571428,True,True,0.006202733969368206,0.0,fixed budget spent,0.5,0.0
+A0057,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,0.8333333333333334,0.47619047619047616,True,True,0.07320191975552007,0.07868364517676053,fixed budget spent,0.4166666666666667,0.0
+A0058,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,10,1.0,0.4857142857142857,True,True,0.1357059319378283,0.09661336689781637,fixed budget spent,0.5,0.0
+A0059,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,0.5238095238095238,True,True,0.07990750286108163,0.141722882241855,fixed budget spent,0.4583333333333333,0.0
+A0060,attack_day,none,evictguard,ATTACK,Fixed budget,ATTACK,8,1.0,0.5714285714285714,True,True,0.9615058194920449,0.6183614379033298,fixed budget spent,0.5,0.0
+A0061,attack_day,none,evictguard,ATTACK,Fixed budget,ATTACK,8,1.0,0.5714285714285714,True,True,0.9925511410983037,0.6630947059147715,fixed budget spent,0.5,0.0
+A0062,attack_day,none,evictguard,ATTACK,Fixed budget,ATTACK,9,0.9166666666666666,0.4,True,True,0.5307839335001191,0.315471089930189,fixed budget spent,0.4583333333333333,0.4583333333333333
+A0063,attack_day,none,evictguard,ATTACK,Fixed budget,ATTACK,9,0.9166666666666666,0.4,True,True,0.5860200569854158,0.3016471322009386,fixed budget spent,0.4583333333333333,0.041666666666666664
+A0064,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,10,1.0,0.4857142857142857,True,True,0.0410763074335775,0.01570959208646241,fixed budget spent,0.5,0.0
+A0065,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,0.4857142857142857,True,True,0.03904528502904776,0.0065186413530015745,fixed budget spent,0.4583333333333333,0.0
+A0066,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,0.4857142857142857,True,True,0.04602183735746345,0.01322172351072195,fixed budget spent,0.4583333333333333,0.0
+A0067,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,0.4857142857142857,True,True,0.04602183735746345,0.01322172351072195,fixed budget spent,0.4583333333333333,0.0
+A0068,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,0.4857142857142857,True,True,0.017475147698960993,0.02471870139874702,fixed budget spent,0.4583333333333333,0.0
+A0069,attack_day,none,evictguard,ATTACK,Fixed budget,ATTACK,8,1.0,0.5714285714285714,True,True,0.9925511410983037,0.6630947059147715,fixed budget spent,0.5,0.0
+A0070,attack_day,none,evictguard,ATTACK,Fixed budget,ATTACK,8,1.0,0.5428571428571428,True,True,0.9880154046948443,0.6418084330028114,fixed budget spent,0.5,0.0
+A0071,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,1.0,0.14285714285714285,True,True,0.09408632177521757,0.14226916664818196,fixed budget spent,0.5,0.0
+A0072,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,0.8333333333333334,0.47619047619047616,True,True,0.07320191975552007,0.07868364517676053,fixed budget spent,0.4166666666666667,0.0
+A0073,attack_day,none,evictguard,ATTACK,Fixed budget,ATTACK,10,1.0,0.5428571428571428,True,True,0.9821457679253733,0.5848818844315732,fixed budget spent,0.5,0.0
+A0074,attack_day,none,evictguard,BENIGN,Fixed budget,ATTACK,10,1.0,0.4857142857142857,True,True,0.7001938153495455,0.18857335538562758,fixed budget spent,3.5,0.0
+A0075,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,0.5483870967741935,True,True,0.250221940663068,0.11381994887993413,fixed budget spent,0.4583333333333333,0.0
+A0076,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,0.75,False,False,0.003131026463685965,0.014831005329527205,fixed budget spent,0.5,0.0
+A0077,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,0.5,True,True,0.06926457546679349,0.08797290326104222,fixed budget spent,0.4583333333333333,0.0
+A0078,attack_day,none,evictguard,ATTACK,Fixed budget,ATTACK,8,1.0,0.5384615384615384,True,True,0.992538286599921,0.56893623309228,fixed budget spent,0.5,0.0
+A0079,attack_day,none,evictguard,ATTACK,Fixed budget,BENIGN,8,1.0,0.23076923076923078,False,False,0.30949255198445497,0.19046753056508406,fixed budget spent,10.5,1.0
+A0080,attack_day,none,evictguard,ATTACK,Fixed budget,ATTACK,8,1.0,0.38461538461538464,True,True,0.992538286599921,0.56893623309228,fixed budget spent,0.5,0.0
+A0081,attack_day,none,evictguard,ATTACK,Fixed budget,ATTACK,8,1.0,0.38461538461538464,True,True,0.992538286599921,0.56893623309228,fixed budget spent,0.5,0.0
+A0082,attack_day,none,evictguard,ATTACK,Fixed budget,ATTACK,9,1.0,0.46153846153846156,True,True,0.9975488842840007,0.6226980050124485,fixed budget spent,0.5,0.0
+A0083,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,0.21428571428571427,False,False,0.023600443820547413,0.04502885873405621,fixed budget spent,0.5,0.0
+A0084,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,0.75,False,False,0.003131026463685965,0.014831005329527205,fixed budget spent,0.5,0.0
+A0085,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,0.21428571428571427,False,False,0.007796318023973544,0.02553929376666683,fixed budget spent,0.4583333333333333,0.0
+A0086,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,0.21428571428571427,False,False,0.01973170312463894,0.034298676083068094,fixed budget spent,0.5,0.0
+A0087,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,0.75,False,False,0.011976357979638324,0.05399441251785133,fixed budget spent,0.5,0.0
+A0088,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,0.21428571428571427,False,False,0.023600443820547413,0.04502885873405621,fixed budget spent,0.5,0.0
+A0089,attack_day,none,evictguard,BENIGN,Fixed budget,ATTACK,9,1.0,0.2857142857142857,True,True,0.5781815934751936,0.2328639252280408,fixed budget spent,3.5,0.0
+A0090,attack_day,none,evictguard,ATTACK,Fixed budget,ATTACK,8,1.0,0.3076923076923077,True,True,0.5995942268086687,0.4291985393467049,fixed budget spent,0.5,0.16666666666666666
+A0091,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,0.23076923076923078,True,True,0.12686939958963217,0.20472685400272525,fixed budget spent,0.4583333333333333,0.0
+A0092,attack_day,none,evictguard,ATTACK,Fixed budget,ATTACK,9,1.0,0.46153846153846156,True,True,0.9975488842840007,0.6226980050124485,fixed budget spent,0.5,0.0
+A0093,attack_day,none,evictguard,ATTACK,Fixed budget,ATTACK,9,1.0,0.46153846153846156,True,True,0.9975488842840007,0.6226980050124485,fixed budget spent,0.5,0.0
+A0094,attack_day,none,evictguard,ATTACK,Fixed budget,ATTACK,8,1.0,0.38461538461538464,True,True,0.9732236301514648,0.6589959465478895,fixed budget spent,0.5,0.0
+A0156,attack_day,none,evictguard,BENIGN,Fixed budget,ATTACK,8,1.0,1.0,False,False,0.8970883164955368,0.4491522723725862,fixed budget spent,3.5,0.0
+A0157,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,True,True,0.1356896368133928,0.12443371118207928,fixed budget spent,0.5,0.0
+A0158,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,True,True,0.21200077415530036,0.10584152952547905,fixed budget spent,0.5,0.041666666666666664
+A0159,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,True,True,0.21200077415530036,0.10584152952547905,fixed budget spent,0.5,0.041666666666666664
+A0160,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,0.5,True,True,0.1388374859913029,0.25415281286347907,fixed budget spent,0.5,0.0
+A0161,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,0.5,True,True,0.0030861335792329437,0.030225438218515383,fixed budget spent,0.5,0.0
+A0162,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,1.0,True,True,0.0981386692834772,0.08347058236915998,fixed budget spent,0.4583333333333333,0.0
+A0163,attack_day,none,evictguard,BENIGN,Fixed budget,ATTACK,8,1.0,1.0,False,False,0.8970883164955368,0.4491522723725862,fixed budget spent,3.5,0.0
+A0164,attack_day,none,evictguard,BENIGN,Fixed budget,ATTACK,8,1.0,1.0,False,False,0.9180610817296984,0.4887035297889826,fixed budget spent,3.5,1.0
+A0165,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,True,True,0.21200077415530036,0.10584152952547905,fixed budget spent,0.5,0.041666666666666664
+A0166,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,True,True,0.12186992549271784,0.14195603308820762,fixed budget spent,0.5,0.041666666666666664
+A0167,attack_day,none,evictguard,BENIGN,Fixed budget,ATTACK,8,1.0,1.0,True,True,0.7883045366791213,0.2604204218228523,fixed budget spent,3.5,0.125
+A0168,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,True,True,0.21200077415530036,0.10584152952547905,fixed budget spent,0.5,0.041666666666666664
+A0169,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,True,True,0.21200077415530036,0.10584152952547905,fixed budget spent,0.5,0.041666666666666664
+A0170,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,10,1.0,0.6,True,True,0.23027663698484077,0.20646808529625862,fixed budget spent,0.5,0.0
+A0171,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,True,True,0.21200077415530036,0.10584152952547905,fixed budget spent,0.5,0.041666666666666664
+A0172,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,10,1.0,0.6,True,True,0.24735303882642865,0.13429572225357161,fixed budget spent,0.5,0.0
+A0173,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,0.5,True,True,0.1388374859913029,0.25415281286347907,fixed budget spent,0.5,0.0
+A0174,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,True,True,0.12186992549271784,0.14195603308820762,fixed budget spent,0.5,0.041666666666666664
+A0175,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,True,True,0.21200077415530036,0.10584152952547905,fixed budget spent,0.5,0.041666666666666664
+A0176,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,0.5,False,False,0.0005058561196613084,0.0,fixed budget spent,0.4583333333333333,0.0
+A0177,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,10,1.0,0.6,True,True,0.04673098090114363,0.046250219933340726,fixed budget spent,0.5,0.0
+A0178,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,True,True,0.0678336964558326,0.13058957331171142,fixed budget spent,0.5,0.0
+A0179,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,1.0,1.0,True,True,0.025976476240081484,0.03252407230534173,fixed budget spent,0.5,0.0
+A0180,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,0.5,False,False,0.01860991480192952,0.060718280187443956,fixed budget spent,0.5,0.0
+A0181,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,1.0,1.0,True,True,0.025976476240081484,0.03252407230534173,fixed budget spent,0.5,0.0
+A0182,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,0.5,False,False,0.16441361767985102,0.11788377672726517,fixed budget spent,0.5,0.0
+A0183,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,10,1.0,0.5,False,False,0.021179052460658536,0.05590971660672188,fixed budget spent,0.5,0.0
+A0184,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,0.8333333333333334,0.5,False,False,0.0005058561196613084,0.0,fixed budget spent,0.4166666666666667,0.0
+A0185,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,0.5,False,False,0.011498592814355833,0.026548778381799042,fixed budget spent,0.4583333333333333,0.0
+A0186,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,0.8333333333333334,0.5,False,False,0.0005058561196613084,0.0,fixed budget spent,0.4166666666666667,0.0
+A0187,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,True,True,0.09169484790281814,0.12331311596119425,fixed budget spent,0.5,0.0
+A0188,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,1.0,True,True,0.07757288850759264,0.07649036001732112,fixed budget spent,0.4583333333333333,0.0
+A0189,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,True,True,0.4051060934727383,0.08048904954254218,fixed budget spent,0.5,0.041666666666666664
+A0190,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,10,1.0,0.6,True,True,0.019012602361897626,0.01764104402104856,fixed budget spent,0.5,0.0
+A0191,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,True,True,0.2047726593807896,0.14083543786732258,fixed budget spent,0.5,0.041666666666666664
+A0192,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,True,True,0.4051060934727383,0.08048904954254218,fixed budget spent,0.5,0.041666666666666664
+A0193,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,True,True,0.2047726593807896,0.14083543786732258,fixed budget spent,0.5,0.041666666666666664
+A0194,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,10,1.0,0.6,True,True,0.015085345848790836,0.04139601346435768,fixed budget spent,0.5,0.0
+A0195,attack_day,none,evictguard,BENIGN,Fixed budget,ATTACK,10,1.0,0.6,True,True,0.6133218214256944,0.12657576937867682,fixed budget spent,3.5,0.0
+A0196,attack_day,none,evictguard,BENIGN,Fixed budget,ATTACK,8,1.0,1.0,True,True,0.9978843916351401,0.6039168760850594,fixed budget spent,3.5,1.0
+A0197,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,10,1.0,0.6,True,True,0.010540984141924422,0.02765520355581524,fixed budget spent,0.5,0.0
+A0198,attack_day,none,evictguard,BENIGN,Fixed budget,ATTACK,10,1.0,0.6,True,True,0.98643709224127,0.5812643840657412,fixed budget spent,3.5,0.0
+A0199,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,10,1.0,0.6,True,True,0.16244403571157506,0.09954205191013434,fixed budget spent,0.5,0.0
+A0200,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,10,1.0,0.6,True,True,0.023759032058393286,0.008023563059994127,fixed budget spent,0.5,0.0
+A0201,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,10,1.0,0.6,True,True,0.015085345848790836,0.04139601346435768,fixed budget spent,0.5,0.0
+A0202,attack_day,none,evictguard,BENIGN,Fixed budget,ATTACK,10,1.0,0.6,True,True,0.6083419804559825,0.1676597011163546,fixed budget spent,3.5,0.0
+A0203,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,1.0,True,True,0.05856499512879422,0.07531885382603133,fixed budget spent,0.4583333333333333,0.0
+A0204,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,0.5,False,False,0.008960795874200723,0.027313497856366813,fixed budget spent,0.4583333333333333,0.0
+A0205,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,10,1.0,0.6,True,True,0.014006669825175759,0.020546872357645293,fixed budget spent,0.5,0.0
+A0206,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,True,True,0.02043907624027506,0.08612740882119867,fixed budget spent,0.5,0.0
+A0207,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,0.5,False,False,0.05421771939361652,0.1326378572384647,fixed budget spent,0.5,0.0
+A0208,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,True,True,0.3598286340591022,0.19906604846388495,fixed budget spent,0.5,0.0
+A0209,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,0.5,False,False,0.06263351991019485,0.13437923536805516,fixed budget spent,0.5,0.0
+A0210,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,0.5,True,True,0.0014465311010958594,0.0,fixed budget spent,0.5,0.0
+A0211,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,False,False,0.310273249321914,0.32801277608018503,fixed budget spent,0.5,0.0
+A0212,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,0.8333333333333334,0.5,False,False,0.03393913997928085,0.09498098650108931,fixed budget spent,0.4166666666666667,0.0
+A0213,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,0.8333333333333334,1.0,True,True,0.009102872184579192,0.016978187366330045,fixed budget spent,0.4166666666666667,0.0
+A0214,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,False,False,0.310273249321914,0.32801277608018503,fixed budget spent,0.5,0.0
+A0215,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,0.8333333333333334,0.5,False,False,0.0013027354126835904,0.0,fixed budget spent,0.4166666666666667,0.0
+A0216,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,True,True,0.04555456850152112,0.09710766637245381,fixed budget spent,0.5,0.0
+A0217,attack_day,none,evictguard,BENIGN,Fixed budget,ATTACK,8,1.0,1.0,False,False,0.8746547698114562,0.4608160253740664,fixed budget spent,3.5,0.0
+A0218,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,True,True,0.04555456850152112,0.09710766637245381,fixed budget spent,0.5,0.0
+A0219,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,1.0,True,True,0.08800430307144208,0.10190079215973434,fixed budget spent,0.4583333333333333,0.0
+A0220,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,0.6,True,True,0.009382423626229926,0.053243065068089596,fixed budget spent,0.4583333333333333,0.0
+A0221,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,0.6,True,True,0.009382423626229926,0.053243065068089596,fixed budget spent,0.4583333333333333,0.0
+A0222,attack_day,none,evictguard,BENIGN,Fixed budget,ATTACK,8,0.8333333333333334,0.4,False,False,0.8983454515030246,0.30126567756782735,fixed budget spent,3.4166666666666665,0.0
+A0223,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,10,1.0,0.6,True,True,0.347491221662315,0.30116253805431714,fixed budget spent,0.5,0.0
+A0224,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,10,1.0,0.6,True,True,0.022301997979638485,0.053657298544123946,fixed budget spent,0.5,0.0
+A0225,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,0.5,False,False,0.004652836125182006,0.028498469163345648,fixed budget spent,0.4583333333333333,0.0
+A0226,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,0.8333333333333334,0.5,False,False,0.0013259489590493358,0.0,fixed budget spent,0.4166666666666667,0.0
+A0227,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,8,0.8333333333333334,0.5,False,False,0.0013259489590493358,0.0,fixed budget spent,0.4166666666666667,0.0
+A0228,attack_day,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,0.6,True,True,0.021178770942969088,0.044466347810663075,fixed budget spent,0.4583333333333333,0.0
+A0229,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,1.0,False,False,0.022438988195903897,0.09396984548070061,fixed budget spent,0.4583333333333333,0.0
+A0230,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,8,0.8333333333333334,1.0,False,False,0.00227554465568604,0.022848591737722204,fixed budget spent,0.4166666666666667,0.0
+A0237,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,False,False,0.09891772166766401,0.1198551220452545,fixed budget spent,0.5,0.0
+A0239,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,False,False,0.008772907852442986,0.0,fixed budget spent,0.5,0.0
+A0241,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,1.0,False,False,0.0017016952475101144,0.0072220772914213865,fixed budget spent,0.4583333333333333,0.0
+A0243,benign_period,none,evictguard,BENIGN,Fixed budget,ATTACK,8,1.0,1.0,False,False,0.5374257594030889,0.25969311369716735,fixed budget spent,3.5,0.041666666666666664
+A0253,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,8,0.8333333333333334,1.0,False,False,0.02661461985385939,0.0992538650955543,fixed budget spent,0.4166666666666667,0.0
+A0257,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,False,False,0.1789635618233958,0.1597468324294449,fixed budget spent,0.5,0.0
+A0258,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,8,0.8333333333333334,1.0,False,False,0.0057834375446799155,0.06560272415583292,fixed budget spent,0.4166666666666667,0.0
+A0262,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,9,1.0,1.0,False,False,0.025976476240081484,0.03252407230534173,fixed budget spent,0.5,0.0
+A0271,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,1.0,False,False,0.013383741272187302,0.04570155647314242,fixed budget spent,0.4583333333333333,0.0
+A0272,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,1.0,False,False,0.01620590899668632,0.009459855203976793,fixed budget spent,0.4583333333333333,0.0
+A0273,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,1.0,False,False,0.01570801482062307,0.03445415771322087,fixed budget spent,0.4583333333333333,0.0
+A0274,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,1.0,False,False,0.006119377159851723,0.07343504534362556,fixed budget spent,0.4583333333333333,0.0
+A0283,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,False,False,0.16168002478945986,0.10491419040922934,fixed budget spent,0.5,0.0
+A0284,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,1.0,False,False,0.00589104701336103,0.03761009219808068,fixed budget spent,0.4583333333333333,0.0
+A0292,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,9,1.0,1.0,False,False,0.025976476240081484,0.03252407230534173,fixed budget spent,0.5,0.0
+A0293,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,9,1.0,1.0,False,False,0.01635613345182869,0.013392036561967366,fixed budget spent,0.5,0.0
+A0302,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,False,False,0.05466489754629278,0.14705663271745384,fixed budget spent,0.5,0.0
+A0315,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,1.0,False,False,0.03853409768618651,0.05292559913076969,fixed budget spent,0.4583333333333333,0.0
+A0316,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,1.0,False,False,0.11608110864565135,0.08010236547417536,fixed budget spent,0.4583333333333333,0.0
+A0323,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,1.0,False,False,0.28033581901161453,0.16530924916757794,fixed budget spent,0.4583333333333333,0.0
+A0351,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,1.0,False,False,0.4075492631553133,0.18775235296062,fixed budget spent,0.4583333333333333,0.0
+A0352,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,10,1.0,1.0,False,False,0.017069997158134922,0.018650805937437613,fixed budget spent,0.5,0.0
+A0355,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,8,0.8333333333333334,1.0,False,False,0.0021463440149695565,0.0,fixed budget spent,0.4166666666666667,0.0
+A0362,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,1.0,False,False,0.12503915411875105,0.14439453508117664,fixed budget spent,0.4583333333333333,0.0
+A0363,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,False,False,0.013792834206243084,0.0019293748592710232,fixed budget spent,0.5,0.0
+A0370,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,8,0.8333333333333334,1.0,False,False,0.007438169096447965,0.0758846466482625,fixed budget spent,0.4166666666666667,0.0
+A0390,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,8,0.8333333333333334,1.0,False,False,0.01568993474803063,0.03445415771322087,fixed budget spent,0.4166666666666667,0.0
+A0415,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,10,1.0,1.0,False,False,0.11203470709198725,0.12122930362764232,fixed budget spent,0.5,0.0
+A0422,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,False,False,0.022955283976327415,0.08155786046272208,fixed budget spent,0.5,0.0
+A0429,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,False,False,0.014355176319251295,0.02896221495622633,fixed budget spent,0.5,0.0
+A0441,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,1.0,False,False,0.21898050689739437,0.07845630491250073,fixed budget spent,0.4583333333333333,0.0
+A0450,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,10,1.0,1.0,False,False,0.0995143055946216,0.10556683498432065,fixed budget spent,0.5,0.0
+A0451,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,1.0,False,False,0.05207850178388621,0.19914832901952303,fixed budget spent,0.4583333333333333,0.0
+A0452,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,8,0.8333333333333334,1.0,False,False,0.007438169096447965,0.0758846466482625,fixed budget spent,0.4166666666666667,0.0
+A0460,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,8,0.8333333333333334,1.0,False,False,0.007218689048597715,0.0757646401017581,fixed budget spent,0.4166666666666667,0.0
+A0464,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,1.0,False,False,0.029558068514528746,0.10555613873401022,fixed budget spent,0.4583333333333333,0.0
+A0473,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,8,0.8333333333333334,1.0,False,False,0.0020704122604427986,0.009594044573515204,fixed budget spent,0.4166666666666667,0.0
+A0474,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,8,0.8333333333333334,1.0,False,False,0.0020704122604427986,0.009594044573515204,fixed budget spent,0.4166666666666667,0.0
+A0503,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,8,0.8333333333333334,1.0,False,False,0.01568993474803063,0.03445415771322087,fixed budget spent,0.4166666666666667,0.0
+A0504,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,1.0,False,False,0.27039542397960453,0.1081501257607555,fixed budget spent,0.4583333333333333,0.0
+A0510,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,1.0,False,False,0.1066256379966162,0.1417664988008387,fixed budget spent,0.4583333333333333,0.0
+A0511,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,False,False,0.014355176319251295,0.02896221495622633,fixed budget spent,0.5,0.0
+A0515,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,8,1.0,1.0,False,False,0.0037805205691152145,0.07080361916585956,fixed budget spent,0.5,0.0
+A0516,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,9,0.9166666666666666,1.0,False,False,0.02606218617415952,0.10463881051107164,fixed budget spent,0.4583333333333333,0.0
+A0520,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,8,0.8333333333333334,1.0,False,False,0.0021289478724251755,0.0013068750159678077,fixed budget spent,0.4166666666666667,0.0
+A0523,benign_period,none,evictguard,BENIGN,Fixed budget,BENIGN,8,0.8333333333333334,1.0,False,False,0.007218689048597715,0.0757646401017581,fixed budget spent,0.4166666666666667,0.0
+A0043,attack_day,none,evictguard,ATTACK,Confidence stop,ATTACK,0,0.0,0.02857142857142857,True,True,0.9603705332266051,0.8266555411261319,confident,0.0,0.0
+A0044,attack_day,none,evictguard,ATTACK,Confidence stop,ATTACK,0,0.0,0.02857142857142857,True,True,0.9928162913489668,0.9131357713304592,confident,0.0,0.0
+A0045,attack_day,none,evictguard,ATTACK,Confidence stop,BENIGN,0,0.0,0.02857142857142857,True,True,0.020324981654610344,0.035469666749338054,confident,10.0,1.0
+A0046,attack_day,none,evictguard,ATTACK,Confidence stop,ATTACK,0,0.0,0.02857142857142857,True,True,0.9851843920363443,0.8376007407531642,confident,0.0,0.0
+A0047,attack_day,none,evictguard,ATTACK,Confidence stop,BENIGN,0,0.0,0.02857142857142857,True,True,0.020324981654610344,0.035469666749338054,confident,10.0,1.0
+A0048,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.006710803868943643,0.0009389388957759859,confident,0.0,0.0
+A0049,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,confident,0.0,0.0
+A0050,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.006710803868943643,0.0009389388957759859,confident,0.0,0.0
+A0051,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.014551519919603063,0.04277331862464011,confident,0.0,0.0
+A0052,attack_day,none,evictguard,ATTACK,Confidence stop,ATTACK,9,1.0,0.11428571428571428,True,True,0.5632152833608554,0.3841082182937468,budget spent,0.5,0.16666666666666666
+A0053,attack_day,none,evictguard,ATTACK,Confidence stop,BENIGN,1,0.08333333333333333,0.02857142857142857,True,True,0.022410401433047848,0.1796830990897782,confident,10.041666666666666,0.375
+A0054,attack_day,none,evictguard,ATTACK,Confidence stop,ATTACK,0,0.0,0.02857142857142857,True,True,0.9928162913489668,0.9131357713304592,confident,0.0,0.0
+A0055,attack_day,none,evictguard,ATTACK,Confidence stop,ATTACK,0,0.0,0.02857142857142857,True,True,0.9851843920363443,0.8376007407531642,confident,0.0,0.0
+A0056,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0024470869235727073,0.0,confident,0.0,0.0
+A0057,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,confident,0.0,0.0
+A0058,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.01646209369040279,0.010790551539488042,confident,0.0,0.0
+A0059,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.020324981654610344,0.035469666749338054,confident,0.0,0.0
+A0060,attack_day,none,evictguard,ATTACK,Confidence stop,ATTACK,0,0.0,0.02857142857142857,True,True,0.9736369069270617,0.8784988925041982,confident,0.0,0.0
+A0061,attack_day,none,evictguard,ATTACK,Confidence stop,ATTACK,0,0.0,0.02857142857142857,True,True,0.9928162913489668,0.9131357713304592,confident,0.0,0.0
+A0062,attack_day,none,evictguard,ATTACK,Confidence stop,ATTACK,9,0.9166666666666666,0.4,True,True,0.5307839335001191,0.315471089930189,budget spent,0.4583333333333333,0.4583333333333333
+A0063,attack_day,none,evictguard,ATTACK,Confidence stop,BENIGN,0,0.0,0.02857142857142857,True,True,0.022880739796444324,0.03370694280710899,confident,10.0,0.041666666666666664
+A0064,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0014889031699641946,0.0,confident,0.0,0.0
+A0065,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0027118162162783808,0.00882343361210027,confident,0.0,0.0
+A0066,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,confident,0.0,0.0
+A0067,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,confident,0.0,0.0
+A0068,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,4,0.4166666666666667,0.45714285714285713,True,True,0.01096779937719615,0.055130294281898966,confident,0.20833333333333334,0.0
+A0069,attack_day,none,evictguard,ATTACK,Confidence stop,ATTACK,0,0.0,0.02857142857142857,True,True,0.9928162913489668,0.9131357713304592,confident,0.0,0.0
+A0070,attack_day,none,evictguard,ATTACK,Confidence stop,ATTACK,0,0.0,0.02857142857142857,True,True,0.9928162913489668,0.9131357713304592,confident,0.0,0.0
+A0071,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.006013515692369248,0.054120147916608574,confident,0.0,0.0
+A0072,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,confident,0.0,0.0
+A0073,attack_day,none,evictguard,ATTACK,Confidence stop,ATTACK,0,0.0,0.02857142857142857,True,True,0.9928162913489668,0.9131357713304592,confident,0.0,0.0
+A0074,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.006013515692369248,0.054120147916608574,confident,0.0,0.0
+A0075,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.007977442744295963,0.024776155514435502,confident,0.0,0.0
+A0076,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0014889031699641946,0.0,confident,0.0,0.0
+A0077,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.011407314676158341,0.06407393156243382,confident,0.0,0.0
+A0078,attack_day,none,evictguard,ATTACK,Confidence stop,ATTACK,0,0.0,0.07692307692307693,True,True,0.9736369069270617,0.8784988925041982,confident,0.0,0.0
+A0079,attack_day,none,evictguard,ATTACK,Confidence stop,BENIGN,1,0.08333333333333333,0.07692307692307693,True,True,0.008172359584538496,0.0014625318569367505,confident,10.041666666666666,1.0
+A0080,attack_day,none,evictguard,ATTACK,Confidence stop,ATTACK,0,0.0,0.07692307692307693,True,True,0.9736369069270617,0.8784988925041982,confident,0.0,0.0
+A0081,attack_day,none,evictguard,ATTACK,Confidence stop,ATTACK,0,0.0,0.07692307692307693,True,True,0.9736369069270617,0.8784988925041982,confident,0.0,0.0
+A0082,attack_day,none,evictguard,ATTACK,Confidence stop,ATTACK,0,0.0,0.07692307692307693,True,True,0.9928162913489668,0.9131357713304592,confident,0.0,0.0
+A0083,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,confident,0.0,0.0
+A0084,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0027118162162783808,0.00882343361210027,confident,0.0,0.0
+A0085,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.014551519919603063,0.04277331862464011,confident,0.0,0.0
+A0086,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.020324981654610344,0.035469666749338054,confident,0.0,0.0
+A0087,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,4,0.4166666666666667,0.25,True,True,0.08591874199103662,0.22041891687877785,confident,0.20833333333333334,0.0
+A0088,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,confident,0.0,0.0
+A0089,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.007977442744295963,0.024776155514435502,confident,0.0,0.0
+A0090,attack_day,none,evictguard,ATTACK,Confidence stop,BENIGN,0,0.0,0.07692307692307693,True,True,0.022880739796444324,0.03370694280710899,confident,10.0,0.16666666666666666
+A0091,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.006013515692369248,0.054120147916608574,confident,0.0,0.0
+A0092,attack_day,none,evictguard,ATTACK,Confidence stop,ATTACK,0,0.0,0.07692307692307693,True,True,0.9928162913489668,0.9131357713304592,confident,0.0,0.0
+A0093,attack_day,none,evictguard,ATTACK,Confidence stop,ATTACK,0,0.0,0.07692307692307693,True,True,0.9928162913489668,0.9131357713304592,confident,0.0,0.0
+A0094,attack_day,none,evictguard,ATTACK,Confidence stop,ATTACK,0,0.0,0.07692307692307693,True,True,0.9603705332266051,0.8266555411261319,confident,0.0,0.0
+A0156,attack_day,none,evictguard,BENIGN,Confidence stop,ATTACK,1,0.08333333333333333,0.0,False,False,0.9894731106970334,0.9317047037192057,confident,3.0416666666666665,0.0
+A0157,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,0.4,True,True,0.06026413479329773,0.12190863736744272,confident,0.041666666666666664,0.0
+A0158,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,0.4,True,True,0.0463759707480618,0.1138810525893259,confident,0.041666666666666664,0.041666666666666664
+A0159,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,0.4,True,True,0.0463759707480618,0.1138810525893259,confident,0.041666666666666664,0.041666666666666664
+A0160,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,4,0.4166666666666667,0.5,True,True,0.051387273823877685,0.07603970841440767,confident,0.20833333333333334,0.0
+A0161,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0027118162162783808,0.00882343361210027,confident,0.0,0.0
+A0162,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.013555958753717788,0.05979069823146835,confident,0.0,0.0
+A0163,attack_day,none,evictguard,BENIGN,Confidence stop,ATTACK,1,0.08333333333333333,0.0,False,False,0.9894731106970334,0.9317047037192057,confident,3.0416666666666665,0.0
+A0164,attack_day,none,evictguard,BENIGN,Confidence stop,ATTACK,0,0.0,0.0,False,False,0.9523024309812195,0.7926725899718726,confident,3.0,1.0
+A0165,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,0.4,True,True,0.0463759707480618,0.1138810525893259,confident,0.041666666666666664,0.041666666666666664
+A0166,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,2,0.25,0.4,True,True,0.027555553535477787,0.06032842823737164,confident,0.125,0.041666666666666664
+A0167,attack_day,none,evictguard,BENIGN,Confidence stop,ATTACK,0,0.0,0.2,True,True,0.934436051698002,0.6038416528820583,confident,3.0,0.125
+A0168,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,0.4,True,True,0.0463759707480618,0.1138810525893259,confident,0.041666666666666664,0.041666666666666664
+A0169,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,0.4,True,True,0.0463759707480618,0.1138810525893259,confident,0.041666666666666664,0.041666666666666664
+A0170,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.022880739796444324,0.03370694280710899,confident,0.0,0.0
+A0171,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,0.4,True,True,0.0463759707480618,0.1138810525893259,confident,0.041666666666666664,0.041666666666666664
+A0172,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0834616142467297,0.03270952822355093,confident,0.0,0.0
+A0173,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,4,0.4166666666666667,0.5,True,True,0.051387273823877685,0.07603970841440767,confident,0.20833333333333334,0.0
+A0174,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,2,0.25,0.4,True,True,0.027555553535477787,0.06032842823737164,confident,0.125,0.041666666666666664
+A0175,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,0.4,True,True,0.0463759707480618,0.1138810525893259,confident,0.041666666666666664,0.041666666666666664
+A0176,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,confident,0.0,0.0
+A0177,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0014889031699641946,0.0,confident,0.0,0.0
+A0178,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.006710803868943643,0.0009389388957759859,confident,0.0,0.0
+A0179,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.020324981654610344,0.035469666749338054,confident,0.0,0.0
+A0180,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.011407314676158341,0.06407393156243382,confident,0.0,0.0
+A0181,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.020324981654610344,0.035469666749338054,confident,0.0,0.0
+A0182,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.006710803868943643,0.0009389388957759859,confident,0.0,0.0
+A0183,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.01037696082528424,0.0,confident,0.0,0.0
+A0184,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,confident,0.0,0.0
+A0185,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.01037696082528424,0.0,confident,0.0,0.0
+A0186,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,confident,0.0,0.0
+A0187,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,0.4,True,True,0.016114728323352895,0.08856540438446,confident,0.041666666666666664,0.0
+A0188,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.013555958753717788,0.05979069823146835,confident,0.0,0.0
+A0189,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,0.4,True,True,0.012788198809674991,0.08808417218128718,confident,0.041666666666666664,0.041666666666666664
+A0190,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0014889031699641946,0.0,confident,0.0,0.0
+A0191,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,0.4,True,True,0.028006719326882767,0.09554555215905208,confident,0.041666666666666664,0.041666666666666664
+A0192,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,0.4,True,True,0.012788198809674991,0.08808417218128718,confident,0.041666666666666664,0.041666666666666664
+A0193,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,0.4,True,True,0.028006719326882767,0.09554555215905208,confident,0.041666666666666664,0.041666666666666664
+A0194,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,0.0,False,False,0.0272168246700498,0.09304590278599373,confident,0.041666666666666664,0.0
+A0195,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,0.0,False,False,0.03382526308262888,0.13094622005228385,confident,0.041666666666666664,0.0
+A0196,attack_day,none,evictguard,BENIGN,Confidence stop,ATTACK,0,0.0,0.2,True,True,0.9711278587667208,0.6912305464188383,confident,3.0,1.0
+A0197,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,4,0.4166666666666667,0.4,True,True,0.0022527761309647345,0.008834936520150312,confident,0.20833333333333334,0.0
+A0198,attack_day,none,evictguard,BENIGN,Confidence stop,ATTACK,4,0.4166666666666667,0.4,True,True,0.9026218859223509,0.7929898676649995,confident,3.2083333333333335,0.0
+A0199,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.011374642885351045,0.0,confident,0.0,0.0
+A0200,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0027118162162783808,0.00882343361210027,confident,0.0,0.0
+A0201,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,0.0,False,False,0.0272168246700498,0.09304590278599373,confident,0.041666666666666664,0.0
+A0202,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,0.0,False,False,0.08563763187778271,0.14252501747917312,confident,0.041666666666666664,0.0
+A0203,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.012568238304490017,0.09656343277695625,confident,0.0,0.0
+A0204,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0834616142467297,0.03270952822355093,confident,0.0,0.0
+A0205,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,4,0.4166666666666667,0.4,True,True,0.0024740408078085924,0.013811097941562503,confident,0.20833333333333334,0.0
+A0206,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0024470869235727073,0.0,confident,0.0,0.0
+A0207,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,confident,0.0,0.0
+A0208,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.020324981654610344,0.035469666749338054,confident,0.0,0.0
+A0209,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,confident,0.0,0.0
+A0210,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,confident,0.0,0.0
+A0211,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,confident,0.0,0.0
+A0212,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.006349839869288819,0.0,confident,0.0,0.0
+A0213,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0024470869235727073,0.0,confident,0.0,0.0
+A0214,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,confident,0.0,0.0
+A0215,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,confident,0.0,0.0
+A0216,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.020324981654610344,0.035469666749338054,confident,0.0,0.0
+A0217,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.006710803868943643,0.0009389388957759859,confident,0.0,0.0
+A0218,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.020324981654610344,0.035469666749338054,confident,0.0,0.0
+A0219,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.013555958753717788,0.05979069823146835,confident,0.0,0.0
+A0220,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,4,0.4166666666666667,0.4,True,True,0.0024006843406942312,0.008834936520150312,confident,0.20833333333333334,0.0
+A0221,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,4,0.4166666666666667,0.4,True,True,0.0024006843406942312,0.008834936520150312,confident,0.20833333333333334,0.0
+A0222,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,0.0,False,False,0.01717940977661385,0.09461116778406092,confident,0.041666666666666664,0.0
+A0223,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,0.0,False,False,0.007185327992201506,0.0,confident,0.041666666666666664,0.0
+A0224,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0014889031699641946,0.0,confident,0.0,0.0
+A0225,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.014551519919603063,0.04277331862464011,confident,0.0,0.0
+A0226,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,confident,0.0,0.0
+A0227,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,confident,0.0,0.0
+A0228,attack_day,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,0.0,False,False,0.0027118162162783808,0.00882343361210027,confident,0.0,0.0
+A0229,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,1.0,False,False,0.004402132972622627,0.01776335486863193,confident,0.041666666666666664,0.0
+A0230,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.0012105266190465271,0.0,confident,0.0,0.0
+A0237,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,1.0,False,False,0.018332718301308584,0.0970985497408153,confident,0.041666666666666664,0.0
+A0239,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.012568238304490017,0.04551016256459867,confident,0.0,0.0
+A0241,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.0015256492360312033,0.0,confident,0.0,0.0
+A0243,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,3,0.3333333333333333,1.0,False,False,0.09559054522796276,0.11059756278488969,confident,0.16666666666666666,0.041666666666666664
+A0253,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.004406694792466202,0.03154901642791428,confident,0.0,0.0
+A0257,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.020324981654610344,0.035469666749338054,confident,0.0,0.0
+A0258,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.004406694792466202,0.03154901642791428,confident,0.0,0.0
+A0262,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.020324981654610344,0.035469666749338054,confident,0.0,0.0
+A0271,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.01927702981935573,0.07869131806901128,confident,0.0,0.0
+A0272,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.0027118162162783808,0.00882343361210027,confident,0.0,0.0
+A0273,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.0017916319021762453,0.0,confident,0.0,0.0
+A0274,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.0015256492360312033,0.0,confident,0.0,0.0
+A0283,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.0012105266190465271,0.0,confident,0.0,0.0
+A0284,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.020324981654610344,0.035469666749338054,confident,0.0,0.0
+A0292,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.020324981654610344,0.035469666749338054,confident,0.0,0.0
+A0293,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.0024470869235727073,0.0,confident,0.0,0.0
+A0302,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.004044497943865835,0.03459127761693298,confident,0.0,0.0
+A0315,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.005896608902504221,0.0,confident,0.0,0.0
+A0316,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.003686849404234259,0.06220282778868774,confident,0.0,0.0
+A0323,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.014551519919603063,0.04277331862464011,confident,0.0,0.0
+A0351,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.004044497943865835,0.03459127761693298,confident,0.0,0.0
+A0352,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.0014889031699641946,0.0,confident,0.0,0.0
+A0355,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.020324981654610344,0.035469666749338054,confident,0.0,0.0
+A0362,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,1.0,False,False,0.008750034801494623,0.03184931688708222,confident,0.041666666666666664,0.0
+A0363,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.03337687018571055,0.05900093908506806,confident,0.0,0.0
+A0370,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.004406694792466202,0.03154901642791428,confident,0.0,0.0
+A0390,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.0017916319021762453,0.0,confident,0.0,0.0
+A0415,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.004044497943865835,0.03459127761693298,confident,0.0,0.0
+A0422,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.0012665129657567767,0.0,confident,0.0,0.0
+A0429,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.0017916319021762453,0.0,confident,0.0,0.0
+A0441,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.007977442744295963,0.024776155514435502,confident,0.0,0.0
+A0450,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.014551519919603063,0.04277331862464011,confident,0.0,0.0
+A0451,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,1.0,False,False,0.012934644042941526,0.18202979464797578,confident,0.041666666666666664,0.0
+A0452,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.004406694792466202,0.03154901642791428,confident,0.0,0.0
+A0460,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.020324981654610344,0.035469666749338054,confident,0.0,0.0
+A0464,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.022880739796444324,0.03370694280710899,confident,0.0,0.0
+A0473,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.020324981654610344,0.035469666749338054,confident,0.0,0.0
+A0474,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.020324981654610344,0.035469666749338054,confident,0.0,0.0
+A0503,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.0017916319021762453,0.0,confident,0.0,0.0
+A0504,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.02751797963896291,0.0903665799568871,confident,0.0,0.0
+A0510,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,1,0.08333333333333333,1.0,False,False,0.0049515688835513666,0.0,confident,0.041666666666666664,0.0
+A0511,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.0017916319021762453,0.0,confident,0.0,0.0
+A0515,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.0012665129657567767,0.0,confident,0.0,0.0
+A0516,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.007977442744295963,0.024776155514435502,confident,0.0,0.0
+A0520,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.004406694792466202,0.03154901642791428,confident,0.0,0.0
+A0523,benign_period,none,evictguard,BENIGN,Confidence stop,BENIGN,0,0.0,1.0,False,False,0.020324981654610344,0.035469666749338054,confident,0.0,0.0
+A0043,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),ATTACK,3,0.3333333333333333,0.08571428571428572,True,True,0.9752745357112305,0.8224429813885418,gain stalled,0.16666666666666666,0.0
+A0044,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),ATTACK,4,0.5,0.08571428571428572,True,True,0.9978667500841886,0.7459069927404399,gain stalled,0.25,0.0
+A0045,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),BENIGN,8,0.9166666666666666,0.11428571428571428,True,True,0.09817969171286692,0.07296523004191523,gain stalled,10.458333333333334,1.0
+A0046,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),ATTACK,4,0.5,0.08571428571428572,True,True,0.9958798775572012,0.6936269399106257,gain stalled,0.25,0.0
+A0047,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),BENIGN,8,0.9166666666666666,0.11428571428571428,True,True,0.09817969171286692,0.07296523004191523,gain stalled,10.458333333333334,1.0
+A0048,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.009208614195862247,0.01068756180582408,gain stalled,0.16666666666666666,0.0
+A0049,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.001537255109821838,0.0,gain stalled,0.16666666666666666,0.0
+A0050,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.00864569211260601,0.0038973026962555194,gain stalled,0.16666666666666666,0.0
+A0051,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.023302952863299826,0.10681444614826106,gain stalled,0.16666666666666666,0.0
+A0052,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),ATTACK,7,0.8333333333333334,0.08571428571428572,True,True,0.6262302757640333,0.40455988528381887,gain stalled,0.4166666666666667,0.16666666666666666
+A0053,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.02857142857142857,True,True,0.027699644301455235,0.1952570450018635,gain stalled,10.166666666666666,0.375
+A0054,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),ATTACK,4,0.4166666666666667,0.34285714285714286,True,True,0.9951350826808034,0.6664469498138719,gain stalled,0.20833333333333334,0.0
+A0055,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),ATTACK,3,0.3333333333333333,0.08571428571428572,True,True,0.9957043102469968,0.8110781488853384,gain stalled,0.16666666666666666,0.0
+A0056,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,5,0.5833333333333334,0.02857142857142857,True,True,0.0036806381740543243,0.0,gain stalled,0.2916666666666667,0.0
+A0057,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.0014769289362933477,0.0,gain stalled,0.16666666666666666,0.0
+A0058,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.015845598180211213,0.010001086029733873,gain stalled,0.16666666666666666,0.0
+A0059,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,8,0.8333333333333334,0.5238095238095238,True,True,0.14364673077143025,0.13966621735431434,gain stalled,0.4166666666666667,0.0
+A0060,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),ATTACK,3,0.3333333333333333,0.08571428571428572,True,True,0.994732810207118,0.8329154426082245,gain stalled,0.16666666666666666,0.0
+A0061,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),ATTACK,3,0.3333333333333333,0.08571428571428572,True,True,0.9977756585980173,0.8635782526132846,gain stalled,0.16666666666666666,0.0
+A0062,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),BENIGN,5,0.5833333333333334,0.14285714285714285,True,True,0.2389666693072563,0.21052321413480715,gain stalled,10.291666666666666,0.4583333333333333
+A0063,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),BENIGN,5,0.5833333333333334,0.14285714285714285,True,True,0.35833331877002816,0.3999665079302356,gain stalled,10.291666666666666,0.041666666666666664
+A0064,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,0.0,False,False,0.00170506215701317,0.0,gain stalled,0.125,0.0
+A0065,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,0.0,False,False,0.004057927980983971,0.04200485637073062,gain stalled,0.125,0.0
+A0066,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.0014769289362933477,0.0,gain stalled,0.16666666666666666,0.0
+A0067,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.0014769289362933477,0.0,gain stalled,0.16666666666666666,0.0
+A0068,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),ATTACK,2,0.25,0.0,False,False,0.55012547351658,0.49152880437089613,gain stalled,3.125,0.0
+A0069,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),ATTACK,4,0.4166666666666667,0.34285714285714286,True,True,0.9951350826808034,0.6664469498138719,gain stalled,0.20833333333333334,0.0
+A0070,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),ATTACK,3,0.3333333333333333,0.02857142857142857,True,True,0.9980400965994074,0.9423273103615385,gain stalled,0.16666666666666666,0.0
+A0071,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.00543384500867065,0.0,gain stalled,0.16666666666666666,0.0
+A0072,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.0014769289362933477,0.0,gain stalled,0.16666666666666666,0.0
+A0073,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),ATTACK,3,0.3333333333333333,0.02857142857142857,True,True,0.9980400965994074,0.9423273103615385,gain stalled,0.16666666666666666,0.0
+A0074,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.005995618213751929,3.049688568273525e-05,gain stalled,0.16666666666666666,0.0
+A0075,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.006472938839992699,0.0,gain stalled,0.16666666666666666,0.0
+A0076,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,0.0,False,False,0.00170506215701317,0.0,gain stalled,0.125,0.0
+A0077,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.009208614195862247,0.009595023280810225,gain stalled,0.16666666666666666,0.0
+A0078,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),ATTACK,4,0.5,0.23076923076923078,True,True,0.9925631414984715,0.7733834233892369,gain stalled,0.25,0.0
+A0079,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.15384615384615385,True,True,0.1090655782721471,0.12182645485334591,gain stalled,10.166666666666666,1.0
+A0080,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),ATTACK,4,0.5,0.23076923076923078,True,True,0.9925631414984715,0.7733834233892369,gain stalled,0.25,0.0
+A0081,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),ATTACK,4,0.5,0.23076923076923078,True,True,0.9925631414984715,0.7733834233892369,gain stalled,0.25,0.0
+A0082,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),ATTACK,7,0.8333333333333334,0.3076923076923077,True,True,0.9975488842840007,0.6778855949675885,gain stalled,0.4166666666666667,0.0
+A0083,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.0014769289362933477,0.0,gain stalled,0.16666666666666666,0.0
+A0084,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,0.0,False,False,0.004057927980983971,0.04200485637073062,gain stalled,0.125,0.0
+A0085,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.015608882079891775,0.02066972246843065,gain stalled,0.16666666666666666,0.0
+A0086,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,5,0.5,0.21428571428571427,True,True,0.008371896637071642,0.025738388984891288,gain stalled,0.25,0.0
+A0087,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),ATTACK,2,0.25,0.0,False,False,0.55012547351658,0.49152880437089613,gain stalled,3.125,0.0
+A0088,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.0014769289362933477,0.0,gain stalled,0.16666666666666666,0.0
+A0089,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.006472938839992699,0.0,gain stalled,0.16666666666666666,0.0
+A0090,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),ATTACK,5,0.5,0.23076923076923078,True,True,0.8573946562986519,0.4211080532434214,gain stalled,0.25,0.16666666666666666
+A0091,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.007057966538160454,0.014074789606264845,gain stalled,0.16666666666666666,0.0
+A0092,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),ATTACK,7,0.8333333333333334,0.3076923076923077,True,True,0.9975488842840007,0.6778855949675885,gain stalled,0.4166666666666667,0.0
+A0093,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),ATTACK,7,0.8333333333333334,0.3076923076923077,True,True,0.9975488842840007,0.6778855949675885,gain stalled,0.4166666666666667,0.0
+A0094,attack_day,none,evictguard,ATTACK,BAGEN-style (gain stall),ATTACK,4,0.5,0.23076923076923078,True,True,0.9622959661219693,0.7176708007136678,gain stalled,0.25,0.0
+A0156,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),ATTACK,2,0.25,0.0,False,False,0.9894731106970334,0.9317047037192057,gain stalled,3.125,0.0
+A0157,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,4,0.4166666666666667,0.8,True,True,0.11829858750163603,0.17605391471309653,gain stalled,0.20833333333333334,0.0
+A0158,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,4,0.4166666666666667,0.8,True,True,0.20097092982696957,0.16037613005053725,gain stalled,0.20833333333333334,0.041666666666666664
+A0159,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,4,0.4166666666666667,0.8,True,True,0.20097092982696957,0.16037613005053725,gain stalled,0.20833333333333334,0.041666666666666664
+A0160,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),ATTACK,2,0.25,0.0,False,False,0.55012547351658,0.49152880437089613,gain stalled,3.125,0.0
+A0161,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,0.0,False,False,0.004057927980983971,0.04200485637073062,gain stalled,0.125,0.0
+A0162,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,0.0,False,False,0.009521691824232539,0.016331913411076225,gain stalled,0.125,0.0
+A0163,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),ATTACK,2,0.25,0.0,False,False,0.9894731106970334,0.9317047037192057,gain stalled,3.125,0.0
+A0164,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),ATTACK,2,0.25,0.0,False,False,0.9989317680663161,0.9746051866332305,gain stalled,3.125,1.0
+A0165,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,4,0.4166666666666667,0.8,True,True,0.20097092982696957,0.16037613005053725,gain stalled,0.20833333333333334,0.041666666666666664
+A0166,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,4,0.4166666666666667,0.8,True,True,0.10603282442180317,0.19357623661922496,gain stalled,0.20833333333333334,0.041666666666666664
+A0167,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),ATTACK,4,0.4166666666666667,0.8,True,True,0.6952744097358462,0.29711959765675855,gain stalled,3.2083333333333335,0.125
+A0168,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,4,0.4166666666666667,0.8,True,True,0.20097092982696957,0.16037613005053725,gain stalled,0.20833333333333334,0.041666666666666664
+A0169,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,4,0.4166666666666667,0.8,True,True,0.20097092982696957,0.16037613005053725,gain stalled,0.20833333333333334,0.041666666666666664
+A0170,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.020074545150052598,0.02906212694077297,gain stalled,0.16666666666666666,0.0
+A0171,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,4,0.4166666666666667,0.8,True,True,0.20097092982696957,0.16037613005053725,gain stalled,0.20833333333333334,0.041666666666666664
+A0172,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.020548262531338124,0.13156059346420673,gain stalled,0.16666666666666666,0.0
+A0173,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),ATTACK,2,0.25,0.0,False,False,0.55012547351658,0.49152880437089613,gain stalled,3.125,0.0
+A0174,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,4,0.4166666666666667,0.8,True,True,0.10603282442180317,0.19357623661922496,gain stalled,0.20833333333333334,0.041666666666666664
+A0175,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,4,0.4166666666666667,0.8,True,True,0.20097092982696957,0.16037613005053725,gain stalled,0.20833333333333334,0.041666666666666664
+A0176,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.001537255109821838,0.0,gain stalled,0.16666666666666666,0.0
+A0177,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,0.0,False,False,0.00170506215701317,0.0,gain stalled,0.125,0.0
+A0178,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.009208614195862247,0.00774308034804139,gain stalled,0.16666666666666666,0.0
+A0179,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,8,0.9166666666666666,1.0,True,True,0.06872255656348047,0.059524855245496895,gain stalled,0.4583333333333333,0.0
+A0180,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,0.0,False,False,0.012333512927834932,0.1447115171481733,gain stalled,0.125,0.0
+A0181,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,8,0.9166666666666666,1.0,True,True,0.06872255656348047,0.059524855245496895,gain stalled,0.4583333333333333,0.0
+A0182,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.00864569211260601,0.004246291442136834,gain stalled,0.16666666666666666,0.0
+A0183,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.026473257019485635,0.06380603137007283,gain stalled,0.16666666666666666,0.0
+A0184,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.0014769289362933477,0.0,gain stalled,0.16666666666666666,0.0
+A0185,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.015845598180211213,0.010001086029733873,gain stalled,0.16666666666666666,0.0
+A0186,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.0014769289362933477,0.0,gain stalled,0.16666666666666666,0.0
+A0187,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,4,0.4166666666666667,0.8,True,True,0.1531657813925731,0.18872454755523416,gain stalled,0.20833333333333334,0.0
+A0188,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,0.0,False,False,0.009251038135501991,0.016331913411076225,gain stalled,0.125,0.0
+A0189,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,4,0.4166666666666667,0.8,True,True,0.23661474953191655,0.1730467628926749,gain stalled,0.20833333333333334,0.041666666666666664
+A0190,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,0.0,False,False,0.00170506215701317,0.0,gain stalled,0.125,0.0
+A0191,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,4,0.4166666666666667,0.8,True,True,0.13785004077333068,0.20624686946136253,gain stalled,0.20833333333333334,0.041666666666666664
+A0192,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,4,0.4166666666666667,0.8,True,True,0.23661474953191655,0.1730467628926749,gain stalled,0.20833333333333334,0.041666666666666664
+A0193,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,4,0.4166666666666667,0.8,True,True,0.13785004077333068,0.20624686946136253,gain stalled,0.20833333333333334,0.041666666666666664
+A0194,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,0.0,False,False,0.0272168246700498,0.09304590278599373,gain stalled,0.125,0.0
+A0195,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,0.0,False,False,0.03382526308262888,0.13094622005228385,gain stalled,0.125,0.0
+A0196,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),ATTACK,4,0.4166666666666667,0.8,True,True,0.9957652002214215,0.7579837731347416,gain stalled,3.2083333333333335,1.0
+A0197,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),ATTACK,2,0.25,0.0,False,False,0.55012547351658,0.49152880437089613,gain stalled,3.125,0.0
+A0198,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),ATTACK,2,0.25,0.0,False,False,0.5826350722808782,0.7307625267361396,gain stalled,3.125,0.0
+A0199,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,0.0,False,False,0.014099745836956395,0.009254955930526,gain stalled,0.125,0.0
+A0200,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,0.0,False,False,0.004057927980983971,0.04200485637073062,gain stalled,0.125,0.0
+A0201,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,0.0,False,False,0.0272168246700498,0.09304590278599373,gain stalled,0.125,0.0
+A0202,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,0.0,False,False,0.08563763187778271,0.14252501747917312,gain stalled,0.125,0.0
+A0203,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.01545691297400074,0.02740408381333998,gain stalled,0.16666666666666666,0.0
+A0204,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.023036815639956933,0.023305227887337226,gain stalled,0.16666666666666666,0.0
+A0205,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),ATTACK,2,0.25,0.0,False,False,0.55012547351658,0.49152880437089613,gain stalled,3.125,0.0
+A0206,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,6,0.5833333333333334,1.0,True,True,0.010175871247932955,0.043220680831332806,gain stalled,0.2916666666666667,0.0
+A0207,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.001537255109821838,0.0,gain stalled,0.16666666666666666,0.0
+A0208,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,5,0.5,1.0,True,True,0.04678091466196239,0.07171890084016402,gain stalled,0.25,0.0
+A0209,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.0014769289362933477,0.0,gain stalled,0.16666666666666666,0.0
+A0210,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.0014769289362933477,0.0,gain stalled,0.16666666666666666,0.0
+A0211,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.0014769289362933477,0.0,gain stalled,0.16666666666666666,0.0
+A0212,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.03344673425051763,0.1393593336923797,gain stalled,0.16666666666666666,0.0
+A0213,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,5,0.5833333333333334,0.0,False,False,0.0036806381740543243,0.0,gain stalled,0.2916666666666667,0.0
+A0214,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.0014769289362933477,0.0,gain stalled,0.16666666666666666,0.0
+A0215,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.001537255109821838,0.0,gain stalled,0.16666666666666666,0.0
+A0216,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,5,0.5,1.0,True,True,0.036528349531199,0.06418599397298794,gain stalled,0.25,0.0
+A0217,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.009208614195862247,0.007394091602160082,gain stalled,0.16666666666666666,0.0
+A0218,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,5,0.5,1.0,True,True,0.036528349531199,0.06418599397298794,gain stalled,0.25,0.0
+A0219,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,0.0,False,False,0.009251038135501991,0.03613575857218798,gain stalled,0.125,0.0
+A0220,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),ATTACK,2,0.25,0.0,False,False,0.55012547351658,0.49152880437089613,gain stalled,3.125,0.0
+A0221,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),ATTACK,2,0.25,0.0,False,False,0.55012547351658,0.49152880437089613,gain stalled,3.125,0.0
+A0222,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.2,True,True,0.02963847818412645,0.055035192413710105,gain stalled,0.16666666666666666,0.0
+A0223,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.007729679107777259,0.0,gain stalled,0.16666666666666666,0.0
+A0224,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,0.0,False,False,0.00170506215701317,0.0,gain stalled,0.125,0.0
+A0225,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.032888333400897314,0.10826661598489674,gain stalled,0.16666666666666666,0.0
+A0226,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.0014769289362933477,0.0,gain stalled,0.16666666666666666,0.0
+A0227,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,0.0,False,False,0.0014769289362933477,0.0,gain stalled,0.16666666666666666,0.0
+A0228,attack_day,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,0.0,False,False,0.004057927980983971,0.04200485637073062,gain stalled,0.125,0.0
+A0229,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.006758476258921743,0.02146101757044803,gain stalled,0.16666666666666666,0.0
+A0230,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,1.0,False,False,0.0016938658143157575,0.0033008305425371288,gain stalled,0.125,0.0
+A0237,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.01970481983806366,0.1303226913459695,gain stalled,0.16666666666666666,0.0
+A0239,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,1.0,False,False,0.017937853162155237,0.14115856327399076,gain stalled,0.125,0.0
+A0241,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.001610062622942454,0.0,gain stalled,0.16666666666666666,0.0
+A0243,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,1.0,False,False,0.10697092885889017,0.1116715038625545,gain stalled,0.125,0.041666666666666664
+A0253,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,1.0,False,False,0.0031873661826096007,0.010730841250215348,gain stalled,0.125,0.0
+A0257,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,5,0.5833333333333334,1.0,False,False,0.0654965360277621,0.08708050175192832,gain stalled,0.2916666666666667,0.0
+A0258,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,1.0,False,False,0.0031873661826096007,0.010730841250215348,gain stalled,0.125,0.0
+A0262,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,5,0.5833333333333334,1.0,False,False,0.08484354364637885,0.07263760624820657,gain stalled,0.2916666666666667,0.0
+A0271,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,1.0,False,False,0.01108749990536583,0.003123616034227844,gain stalled,0.125,0.0
+A0272,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,1.0,False,False,0.004057927980983971,0.04200485637073062,gain stalled,0.125,0.0
+A0273,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.001537255109821838,0.0,gain stalled,0.16666666666666666,0.0
+A0274,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.001659300654887002,0.001390138611118329,gain stalled,0.16666666666666666,0.0
+A0283,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.006481441110688605,0.03381027776177325,gain stalled,0.16666666666666666,0.0
+A0284,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,1.0,False,False,0.023339214968502168,0.045569788888063324,gain stalled,0.125,0.0
+A0292,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,5,0.5833333333333334,1.0,False,False,0.08484354364637885,0.07263760624820657,gain stalled,0.2916666666666667,0.0
+A0293,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,6,0.6666666666666666,1.0,False,False,0.01995321909978961,0.021219491886085868,gain stalled,0.3333333333333333,0.0
+A0302,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.007840671175202114,0.01027925357988829,gain stalled,0.16666666666666666,0.0
+A0315,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,1.0,False,False,0.00864569211260601,0.002914794559846558,gain stalled,0.125,0.0
+A0316,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.004226236855904638,0.0,gain stalled,0.16666666666666666,0.0
+A0323,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.010035144641953228,0.011184421612004761,gain stalled,0.16666666666666666,0.0
+A0351,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.01690439140024191,0.027596881594502923,gain stalled,0.16666666666666666,0.0
+A0352,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,1.0,False,False,0.00170506215701317,0.0,gain stalled,0.125,0.0
+A0355,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,1.0,False,False,0.025565833732394537,0.04669445082463659,gain stalled,0.125,0.0
+A0362,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.015042713900461245,0.04371523797110758,gain stalled,0.16666666666666666,0.0
+A0363,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,4,0.4166666666666667,1.0,False,False,0.013277609197288575,0.019814029235175043,gain stalled,0.20833333333333334,0.0
+A0370,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,1.0,False,False,0.0031873661826096007,0.010730841250215348,gain stalled,0.125,0.0
+A0390,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.0014769289362933477,0.0,gain stalled,0.16666666666666666,0.0
+A0415,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.007840671175202114,0.01027925357988829,gain stalled,0.16666666666666666,0.0
+A0422,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.001609183903642678,0.0,gain stalled,0.16666666666666666,0.0
+A0429,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.0014769289362933477,0.0,gain stalled,0.16666666666666666,0.0
+A0441,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.007840671175202114,0.01027925357988829,gain stalled,0.16666666666666666,0.0
+A0450,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.011250126920572253,0.020954901149298,gain stalled,0.16666666666666666,0.0
+A0451,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.01916325725567272,0.18809516869022963,gain stalled,0.16666666666666666,0.0
+A0452,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,1.0,False,False,0.0031873661826096007,0.010730841250215348,gain stalled,0.125,0.0
+A0460,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,7,0.75,1.0,False,False,0.007218689048597715,0.07658579182205318,gain stalled,0.375,0.0
+A0464,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.034268927898129076,0.08631009908745689,gain stalled,0.16666666666666666,0.0
+A0473,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,7,0.75,1.0,False,False,0.0020704122604427986,0.010914639823556817,gain stalled,0.375,0.0
+A0474,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,7,0.75,1.0,False,False,0.0020704122604427986,0.010914639823556817,gain stalled,0.375,0.0
+A0503,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.0014769289362933477,0.0,gain stalled,0.16666666666666666,0.0
+A0504,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.04708229022969881,0.12820045444349082,gain stalled,0.16666666666666666,0.0
+A0510,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.007140645913159875,0.0021730014142814233,gain stalled,0.16666666666666666,0.0
+A0511,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.0014769289362933477,0.0,gain stalled,0.16666666666666666,0.0
+A0515,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.001609183903642678,0.0,gain stalled,0.16666666666666666,0.0
+A0516,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,3,0.3333333333333333,1.0,False,False,0.015746331239481087,0.0731732213449251,gain stalled,0.16666666666666666,0.0
+A0520,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,2,0.25,1.0,False,False,0.0031873661826096007,0.010730841250215348,gain stalled,0.125,0.0
+A0523,benign_period,none,evictguard,BENIGN,BAGEN-style (gain stall),BENIGN,7,0.75,1.0,False,False,0.007218689048597715,0.07658579182205318,gain stalled,0.375,0.0
+A0043,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),ATTACK,8,1.0,0.5714285714285714,True,True,0.6283424505795218,0.4123914383570978,end-of-budget dual threshold,0.5,0.0
+A0044,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),ATTACK,8,1.0,0.5428571428571428,True,True,0.9961646266845379,0.5761551273604135,end-of-budget dual threshold,0.5,0.0
+A0045,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),DEFER,9,1.0,0.11428571428571428,True,True,0.08101151241422438,0.07035110549083613,end-of-budget dual threshold,1.5,1.0
+A0046,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),ATTACK,8,1.0,0.5428571428571428,True,True,0.9804310103374445,0.3438266860035563,end-of-budget dual threshold,0.5,0.0
+A0047,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),DEFER,9,1.0,0.11428571428571428,True,True,0.08101151241422438,0.07035110549083613,end-of-budget dual threshold,1.5,1.0
+A0048,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,9,0.9166666666666666,0.53125,True,True,0.059301149647599735,0.09053057292872865,end-of-budget dual threshold,1.4583333333333333,0.0
+A0049,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,1.0,0.03125,True,True,0.003483551556659384,0.0,end-of-budget dual threshold,0.5,0.0
+A0050,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,0.8333333333333334,0.5161290322580645,True,True,0.03957768659031753,0.07056034012747733,end-of-budget dual threshold,0.4166666666666667,0.0
+A0051,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,9,0.9166666666666666,0.5238095238095238,True,True,0.14438494353998346,0.14694848076390113,end-of-budget dual threshold,1.4583333333333333,0.0
+A0052,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),ATTACK,9,1.0,0.11428571428571428,True,True,0.5632152833608554,0.3841082182937468,end-of-budget dual threshold,0.5,0.16666666666666666
+A0053,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),DEFER,10,1.0,0.4857142857142857,True,True,0.21614098258475042,0.13072788686739456,end-of-budget dual threshold,1.5,0.375
+A0054,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),ATTACK,8,1.0,0.5714285714285714,True,True,0.9925511410983037,0.6630947059147715,end-of-budget dual threshold,0.5,0.0
+A0055,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),ATTACK,8,1.0,0.5714285714285714,True,True,0.9623885345915969,0.430766264557914,end-of-budget dual threshold,0.5,0.0
+A0056,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,1.0,0.11428571428571428,True,True,0.006202733969368206,0.0,end-of-budget dual threshold,0.5,0.0
+A0057,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,0.8333333333333334,0.47619047619047616,True,True,0.07320191975552007,0.07868364517676053,end-of-budget dual threshold,1.4166666666666667,0.0
+A0058,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,10,1.0,0.4857142857142857,True,True,0.1357059319378283,0.09661336689781637,end-of-budget dual threshold,1.5,0.0
+A0059,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,9,0.9166666666666666,0.5238095238095238,True,True,0.07990750286108163,0.141722882241855,end-of-budget dual threshold,1.4583333333333333,0.0
+A0060,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),ATTACK,8,1.0,0.5714285714285714,True,True,0.9615058194920449,0.6183614379033298,end-of-budget dual threshold,0.5,0.0
+A0061,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),ATTACK,8,1.0,0.5714285714285714,True,True,0.9925511410983037,0.6630947059147715,end-of-budget dual threshold,0.5,0.0
+A0062,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),ATTACK,9,0.9166666666666666,0.4,True,True,0.5307839335001191,0.315471089930189,end-of-budget dual threshold,0.4583333333333333,0.4583333333333333
+A0063,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),ATTACK,9,0.9166666666666666,0.4,True,True,0.5860200569854158,0.3016471322009386,end-of-budget dual threshold,0.4583333333333333,0.041666666666666664
+A0064,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,10,1.0,0.4857142857142857,True,True,0.0410763074335775,0.01570959208646241,end-of-budget dual threshold,0.5,0.0
+A0065,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,0.9166666666666666,0.4857142857142857,True,True,0.03904528502904776,0.0065186413530015745,end-of-budget dual threshold,0.4583333333333333,0.0
+A0066,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,0.9166666666666666,0.4857142857142857,True,True,0.04602183735746345,0.01322172351072195,end-of-budget dual threshold,0.4583333333333333,0.0
+A0067,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,0.9166666666666666,0.4857142857142857,True,True,0.04602183735746345,0.01322172351072195,end-of-budget dual threshold,0.4583333333333333,0.0
+A0068,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,0.9166666666666666,0.4857142857142857,True,True,0.017475147698960993,0.02471870139874702,end-of-budget dual threshold,0.4583333333333333,0.0
+A0069,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),ATTACK,8,1.0,0.5714285714285714,True,True,0.9925511410983037,0.6630947059147715,end-of-budget dual threshold,0.5,0.0
+A0070,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),ATTACK,8,1.0,0.5428571428571428,True,True,0.9880154046948443,0.6418084330028114,end-of-budget dual threshold,0.5,0.0
+A0071,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,9,1.0,0.14285714285714285,True,True,0.09408632177521757,0.14226916664818196,end-of-budget dual threshold,1.5,0.0
+A0072,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,0.8333333333333334,0.47619047619047616,True,True,0.07320191975552007,0.07868364517676053,end-of-budget dual threshold,1.4166666666666667,0.0
+A0073,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),ATTACK,10,1.0,0.5428571428571428,True,True,0.9821457679253733,0.5848818844315732,end-of-budget dual threshold,0.5,0.0
+A0074,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),ATTACK,10,1.0,0.4857142857142857,True,True,0.7001938153495455,0.18857335538562758,end-of-budget dual threshold,3.5,0.0
+A0075,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,9,0.9166666666666666,0.5483870967741935,True,True,0.250221940663068,0.11381994887993413,end-of-budget dual threshold,1.4583333333333333,0.0
+A0076,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,1.0,0.75,False,False,0.003131026463685965,0.014831005329527205,end-of-budget dual threshold,0.5,0.0
+A0077,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,9,0.9166666666666666,0.5,True,True,0.06926457546679349,0.08797290326104222,end-of-budget dual threshold,1.4583333333333333,0.0
+A0078,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),ATTACK,8,1.0,0.5384615384615384,True,True,0.992538286599921,0.56893623309228,end-of-budget dual threshold,0.5,0.0
+A0079,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),DEFER,8,1.0,0.23076923076923078,False,False,0.30949255198445497,0.19046753056508406,end-of-budget dual threshold,1.5,1.0
+A0080,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),ATTACK,8,1.0,0.38461538461538464,True,True,0.992538286599921,0.56893623309228,end-of-budget dual threshold,0.5,0.0
+A0081,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),ATTACK,8,1.0,0.38461538461538464,True,True,0.992538286599921,0.56893623309228,end-of-budget dual threshold,0.5,0.0
+A0082,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),ATTACK,9,1.0,0.46153846153846156,True,True,0.9975488842840007,0.6226980050124485,end-of-budget dual threshold,0.5,0.0
+A0083,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,1.0,0.21428571428571427,False,False,0.023600443820547413,0.04502885873405621,end-of-budget dual threshold,0.5,0.0
+A0084,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,1.0,0.75,False,False,0.003131026463685965,0.014831005329527205,end-of-budget dual threshold,0.5,0.0
+A0085,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,0.9166666666666666,0.21428571428571427,False,False,0.007796318023973544,0.02553929376666683,end-of-budget dual threshold,0.4583333333333333,0.0
+A0086,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,1.0,0.21428571428571427,False,False,0.01973170312463894,0.034298676083068094,end-of-budget dual threshold,0.5,0.0
+A0087,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,1.0,0.75,False,False,0.011976357979638324,0.05399441251785133,end-of-budget dual threshold,0.5,0.0
+A0088,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,1.0,0.21428571428571427,False,False,0.023600443820547413,0.04502885873405621,end-of-budget dual threshold,0.5,0.0
+A0089,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),ATTACK,9,1.0,0.2857142857142857,True,True,0.5781815934751936,0.2328639252280408,end-of-budget dual threshold,3.5,0.0
+A0090,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),ATTACK,8,1.0,0.3076923076923077,True,True,0.5995942268086687,0.4291985393467049,end-of-budget dual threshold,0.5,0.16666666666666666
+A0091,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,9,0.9166666666666666,0.23076923076923078,True,True,0.12686939958963217,0.20472685400272525,end-of-budget dual threshold,1.4583333333333333,0.0
+A0092,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),ATTACK,9,1.0,0.46153846153846156,True,True,0.9975488842840007,0.6226980050124485,end-of-budget dual threshold,0.5,0.0
+A0093,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),ATTACK,9,1.0,0.46153846153846156,True,True,0.9975488842840007,0.6226980050124485,end-of-budget dual threshold,0.5,0.0
+A0094,attack_day,none,evictguard,ATTACK,Conformal deferral (end only),ATTACK,8,1.0,0.38461538461538464,True,True,0.9732236301514648,0.6589959465478895,end-of-budget dual threshold,0.5,0.0
+A0156,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),ATTACK,8,1.0,1.0,False,False,0.8970883164955368,0.4491522723725862,end-of-budget dual threshold,3.5,0.0
+A0157,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,1.0,True,True,0.1356896368133928,0.12443371118207928,end-of-budget dual threshold,1.5,0.0
+A0158,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,1.0,True,True,0.21200077415530036,0.10584152952547905,end-of-budget dual threshold,1.5,0.041666666666666664
+A0159,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,1.0,True,True,0.21200077415530036,0.10584152952547905,end-of-budget dual threshold,1.5,0.041666666666666664
+A0160,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,0.5,True,True,0.1388374859913029,0.25415281286347907,end-of-budget dual threshold,1.5,0.0
+A0161,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,1.0,0.5,True,True,0.0030861335792329437,0.030225438218515383,end-of-budget dual threshold,0.5,0.0
+A0162,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,9,0.9166666666666666,1.0,True,True,0.0981386692834772,0.08347058236915998,end-of-budget dual threshold,1.4583333333333333,0.0
+A0163,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),ATTACK,8,1.0,1.0,False,False,0.8970883164955368,0.4491522723725862,end-of-budget dual threshold,3.5,0.0
+A0164,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),ATTACK,8,1.0,1.0,False,False,0.9180610817296984,0.4887035297889826,end-of-budget dual threshold,3.5,1.0
+A0165,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,1.0,True,True,0.21200077415530036,0.10584152952547905,end-of-budget dual threshold,1.5,0.041666666666666664
+A0166,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,1.0,True,True,0.12186992549271784,0.14195603308820762,end-of-budget dual threshold,1.5,0.041666666666666664
+A0167,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),ATTACK,8,1.0,1.0,True,True,0.7883045366791213,0.2604204218228523,end-of-budget dual threshold,3.5,0.125
+A0168,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,1.0,True,True,0.21200077415530036,0.10584152952547905,end-of-budget dual threshold,1.5,0.041666666666666664
+A0169,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,1.0,True,True,0.21200077415530036,0.10584152952547905,end-of-budget dual threshold,1.5,0.041666666666666664
+A0170,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,10,1.0,0.6,True,True,0.23027663698484077,0.20646808529625862,end-of-budget dual threshold,1.5,0.0
+A0171,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,1.0,True,True,0.21200077415530036,0.10584152952547905,end-of-budget dual threshold,1.5,0.041666666666666664
+A0172,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,10,1.0,0.6,True,True,0.24735303882642865,0.13429572225357161,end-of-budget dual threshold,1.5,0.0
+A0173,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,0.5,True,True,0.1388374859913029,0.25415281286347907,end-of-budget dual threshold,1.5,0.0
+A0174,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,1.0,True,True,0.12186992549271784,0.14195603308820762,end-of-budget dual threshold,1.5,0.041666666666666664
+A0175,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,1.0,True,True,0.21200077415530036,0.10584152952547905,end-of-budget dual threshold,1.5,0.041666666666666664
+A0176,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,0.9166666666666666,0.5,False,False,0.0005058561196613084,0.0,end-of-budget dual threshold,0.4583333333333333,0.0
+A0177,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,10,1.0,0.6,True,True,0.04673098090114363,0.046250219933340726,end-of-budget dual threshold,0.5,0.0
+A0178,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,1.0,True,True,0.0678336964558326,0.13058957331171142,end-of-budget dual threshold,1.5,0.0
+A0179,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,1.0,1.0,True,True,0.025976476240081484,0.03252407230534173,end-of-budget dual threshold,0.5,0.0
+A0180,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,1.0,0.5,False,False,0.01860991480192952,0.060718280187443956,end-of-budget dual threshold,0.5,0.0
+A0181,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,1.0,1.0,True,True,0.025976476240081484,0.03252407230534173,end-of-budget dual threshold,0.5,0.0
+A0182,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,0.5,False,False,0.16441361767985102,0.11788377672726517,end-of-budget dual threshold,1.5,0.0
+A0183,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,10,1.0,0.5,False,False,0.021179052460658536,0.05590971660672188,end-of-budget dual threshold,0.5,0.0
+A0184,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,0.8333333333333334,0.5,False,False,0.0005058561196613084,0.0,end-of-budget dual threshold,0.4166666666666667,0.0
+A0185,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,0.9166666666666666,0.5,False,False,0.011498592814355833,0.026548778381799042,end-of-budget dual threshold,0.4583333333333333,0.0
+A0186,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,0.8333333333333334,0.5,False,False,0.0005058561196613084,0.0,end-of-budget dual threshold,0.4166666666666667,0.0
+A0187,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,1.0,True,True,0.09169484790281814,0.12331311596119425,end-of-budget dual threshold,1.5,0.0
+A0188,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,9,0.9166666666666666,1.0,True,True,0.07757288850759264,0.07649036001732112,end-of-budget dual threshold,1.4583333333333333,0.0
+A0189,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,1.0,True,True,0.4051060934727383,0.08048904954254218,end-of-budget dual threshold,1.5,0.041666666666666664
+A0190,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,10,1.0,0.6,True,True,0.019012602361897626,0.01764104402104856,end-of-budget dual threshold,0.5,0.0
+A0191,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,1.0,True,True,0.2047726593807896,0.14083543786732258,end-of-budget dual threshold,1.5,0.041666666666666664
+A0192,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,1.0,True,True,0.4051060934727383,0.08048904954254218,end-of-budget dual threshold,1.5,0.041666666666666664
+A0193,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,1.0,True,True,0.2047726593807896,0.14083543786732258,end-of-budget dual threshold,1.5,0.041666666666666664
+A0194,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,10,1.0,0.6,True,True,0.015085345848790836,0.04139601346435768,end-of-budget dual threshold,0.5,0.0
+A0195,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),ATTACK,10,1.0,0.6,True,True,0.6133218214256944,0.12657576937867682,end-of-budget dual threshold,3.5,0.0
+A0196,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),ATTACK,8,1.0,1.0,True,True,0.9978843916351401,0.6039168760850594,end-of-budget dual threshold,3.5,1.0
+A0197,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,10,1.0,0.6,True,True,0.010540984141924422,0.02765520355581524,end-of-budget dual threshold,0.5,0.0
+A0198,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),ATTACK,10,1.0,0.6,True,True,0.98643709224127,0.5812643840657412,end-of-budget dual threshold,3.5,0.0
+A0199,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,10,1.0,0.6,True,True,0.16244403571157506,0.09954205191013434,end-of-budget dual threshold,1.5,0.0
+A0200,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,10,1.0,0.6,True,True,0.023759032058393286,0.008023563059994127,end-of-budget dual threshold,0.5,0.0
+A0201,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,10,1.0,0.6,True,True,0.015085345848790836,0.04139601346435768,end-of-budget dual threshold,0.5,0.0
+A0202,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),ATTACK,10,1.0,0.6,True,True,0.6083419804559825,0.1676597011163546,end-of-budget dual threshold,3.5,0.0
+A0203,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,9,0.9166666666666666,1.0,True,True,0.05856499512879422,0.07531885382603133,end-of-budget dual threshold,1.4583333333333333,0.0
+A0204,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,0.9166666666666666,0.5,False,False,0.008960795874200723,0.027313497856366813,end-of-budget dual threshold,0.4583333333333333,0.0
+A0205,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,10,1.0,0.6,True,True,0.014006669825175759,0.020546872357645293,end-of-budget dual threshold,0.5,0.0
+A0206,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,1.0,1.0,True,True,0.02043907624027506,0.08612740882119867,end-of-budget dual threshold,0.5,0.0
+A0207,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,0.5,False,False,0.05421771939361652,0.1326378572384647,end-of-budget dual threshold,1.5,0.0
+A0208,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,1.0,True,True,0.3598286340591022,0.19906604846388495,end-of-budget dual threshold,1.5,0.0
+A0209,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,0.5,False,False,0.06263351991019485,0.13437923536805516,end-of-budget dual threshold,1.5,0.0
+A0210,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,1.0,0.5,True,True,0.0014465311010958594,0.0,end-of-budget dual threshold,0.5,0.0
+A0211,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,1.0,False,False,0.310273249321914,0.32801277608018503,end-of-budget dual threshold,1.5,0.0
+A0212,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,0.8333333333333334,0.5,False,False,0.03393913997928085,0.09498098650108931,end-of-budget dual threshold,0.4166666666666667,0.0
+A0213,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,0.8333333333333334,1.0,True,True,0.009102872184579192,0.016978187366330045,end-of-budget dual threshold,0.4166666666666667,0.0
+A0214,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,1.0,False,False,0.310273249321914,0.32801277608018503,end-of-budget dual threshold,1.5,0.0
+A0215,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,0.8333333333333334,0.5,False,False,0.0013027354126835904,0.0,end-of-budget dual threshold,0.4166666666666667,0.0
+A0216,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,1.0,1.0,True,True,0.04555456850152112,0.09710766637245381,end-of-budget dual threshold,0.5,0.0
+A0217,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),ATTACK,8,1.0,1.0,False,False,0.8746547698114562,0.4608160253740664,end-of-budget dual threshold,3.5,0.0
+A0218,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,1.0,1.0,True,True,0.04555456850152112,0.09710766637245381,end-of-budget dual threshold,0.5,0.0
+A0219,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,9,0.9166666666666666,1.0,True,True,0.08800430307144208,0.10190079215973434,end-of-budget dual threshold,1.4583333333333333,0.0
+A0220,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,0.9166666666666666,0.6,True,True,0.009382423626229926,0.053243065068089596,end-of-budget dual threshold,0.4583333333333333,0.0
+A0221,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,0.9166666666666666,0.6,True,True,0.009382423626229926,0.053243065068089596,end-of-budget dual threshold,0.4583333333333333,0.0
+A0222,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),ATTACK,8,0.8333333333333334,0.4,False,False,0.8983454515030246,0.30126567756782735,end-of-budget dual threshold,3.4166666666666665,0.0
+A0223,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,10,1.0,0.6,True,True,0.347491221662315,0.30116253805431714,end-of-budget dual threshold,1.5,0.0
+A0224,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,10,1.0,0.6,True,True,0.022301997979638485,0.053657298544123946,end-of-budget dual threshold,0.5,0.0
+A0225,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,0.9166666666666666,0.5,False,False,0.004652836125182006,0.028498469163345648,end-of-budget dual threshold,0.4583333333333333,0.0
+A0226,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,0.8333333333333334,0.5,False,False,0.0013259489590493358,0.0,end-of-budget dual threshold,0.4166666666666667,0.0
+A0227,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,0.8333333333333334,0.5,False,False,0.0013259489590493358,0.0,end-of-budget dual threshold,0.4166666666666667,0.0
+A0228,attack_day,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,0.9166666666666666,0.6,True,True,0.021178770942969088,0.044466347810663075,end-of-budget dual threshold,0.4583333333333333,0.0
+A0229,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,0.9166666666666666,1.0,False,False,0.022438988195903897,0.09396984548070061,end-of-budget dual threshold,0.4583333333333333,0.0
+A0230,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,0.8333333333333334,1.0,False,False,0.00227554465568604,0.022848591737722204,end-of-budget dual threshold,0.4166666666666667,0.0
+A0237,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,1.0,False,False,0.09891772166766401,0.1198551220452545,end-of-budget dual threshold,1.5,0.0
+A0239,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,1.0,1.0,False,False,0.008772907852442986,0.0,end-of-budget dual threshold,0.5,0.0
+A0241,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,0.9166666666666666,1.0,False,False,0.0017016952475101144,0.0072220772914213865,end-of-budget dual threshold,0.4583333333333333,0.0
+A0243,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),ATTACK,8,1.0,1.0,False,False,0.5374257594030889,0.25969311369716735,end-of-budget dual threshold,3.5,0.041666666666666664
+A0253,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,0.8333333333333334,1.0,False,False,0.02661461985385939,0.0992538650955543,end-of-budget dual threshold,0.4166666666666667,0.0
+A0257,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,1.0,False,False,0.1789635618233958,0.1597468324294449,end-of-budget dual threshold,1.5,0.0
+A0258,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,0.8333333333333334,1.0,False,False,0.0057834375446799155,0.06560272415583292,end-of-budget dual threshold,0.4166666666666667,0.0
+A0262,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,1.0,1.0,False,False,0.025976476240081484,0.03252407230534173,end-of-budget dual threshold,0.5,0.0
+A0271,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,0.9166666666666666,1.0,False,False,0.013383741272187302,0.04570155647314242,end-of-budget dual threshold,0.4583333333333333,0.0
+A0272,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,0.9166666666666666,1.0,False,False,0.01620590899668632,0.009459855203976793,end-of-budget dual threshold,0.4583333333333333,0.0
+A0273,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,0.9166666666666666,1.0,False,False,0.01570801482062307,0.03445415771322087,end-of-budget dual threshold,0.4583333333333333,0.0
+A0274,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,0.9166666666666666,1.0,False,False,0.006119377159851723,0.07343504534362556,end-of-budget dual threshold,0.4583333333333333,0.0
+A0283,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,1.0,False,False,0.16168002478945986,0.10491419040922934,end-of-budget dual threshold,1.5,0.0
+A0284,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,0.9166666666666666,1.0,False,False,0.00589104701336103,0.03761009219808068,end-of-budget dual threshold,0.4583333333333333,0.0
+A0292,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,1.0,1.0,False,False,0.025976476240081484,0.03252407230534173,end-of-budget dual threshold,0.5,0.0
+A0293,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,1.0,1.0,False,False,0.01635613345182869,0.013392036561967366,end-of-budget dual threshold,0.5,0.0
+A0302,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,8,1.0,1.0,False,False,0.05466489754629278,0.14705663271745384,end-of-budget dual threshold,1.5,0.0
+A0315,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,0.9166666666666666,1.0,False,False,0.03853409768618651,0.05292559913076969,end-of-budget dual threshold,0.4583333333333333,0.0
+A0316,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,9,0.9166666666666666,1.0,False,False,0.11608110864565135,0.08010236547417536,end-of-budget dual threshold,1.4583333333333333,0.0
+A0323,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,9,0.9166666666666666,1.0,False,False,0.28033581901161453,0.16530924916757794,end-of-budget dual threshold,1.4583333333333333,0.0
+A0351,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,9,0.9166666666666666,1.0,False,False,0.4075492631553133,0.18775235296062,end-of-budget dual threshold,1.4583333333333333,0.0
+A0352,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,10,1.0,1.0,False,False,0.017069997158134922,0.018650805937437613,end-of-budget dual threshold,0.5,0.0
+A0355,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,0.8333333333333334,1.0,False,False,0.0021463440149695565,0.0,end-of-budget dual threshold,0.4166666666666667,0.0
+A0362,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,9,0.9166666666666666,1.0,False,False,0.12503915411875105,0.14439453508117664,end-of-budget dual threshold,1.4583333333333333,0.0
+A0363,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,1.0,1.0,False,False,0.013792834206243084,0.0019293748592710232,end-of-budget dual threshold,0.5,0.0
+A0370,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,0.8333333333333334,1.0,False,False,0.007438169096447965,0.0758846466482625,end-of-budget dual threshold,0.4166666666666667,0.0
+A0390,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,0.8333333333333334,1.0,False,False,0.01568993474803063,0.03445415771322087,end-of-budget dual threshold,0.4166666666666667,0.0
+A0415,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,10,1.0,1.0,False,False,0.11203470709198725,0.12122930362764232,end-of-budget dual threshold,1.5,0.0
+A0422,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,1.0,1.0,False,False,0.022955283976327415,0.08155786046272208,end-of-budget dual threshold,0.5,0.0
+A0429,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,1.0,1.0,False,False,0.014355176319251295,0.02896221495622633,end-of-budget dual threshold,0.5,0.0
+A0441,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,9,0.9166666666666666,1.0,False,False,0.21898050689739437,0.07845630491250073,end-of-budget dual threshold,1.4583333333333333,0.0
+A0450,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,10,1.0,1.0,False,False,0.0995143055946216,0.10556683498432065,end-of-budget dual threshold,1.5,0.0
+A0451,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,9,0.9166666666666666,1.0,False,False,0.05207850178388621,0.19914832901952303,end-of-budget dual threshold,1.4583333333333333,0.0
+A0452,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,0.8333333333333334,1.0,False,False,0.007438169096447965,0.0758846466482625,end-of-budget dual threshold,0.4166666666666667,0.0
+A0460,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,0.8333333333333334,1.0,False,False,0.007218689048597715,0.0757646401017581,end-of-budget dual threshold,0.4166666666666667,0.0
+A0464,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,0.9166666666666666,1.0,False,False,0.029558068514528746,0.10555613873401022,end-of-budget dual threshold,0.4583333333333333,0.0
+A0473,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,0.8333333333333334,1.0,False,False,0.0020704122604427986,0.009594044573515204,end-of-budget dual threshold,0.4166666666666667,0.0
+A0474,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,0.8333333333333334,1.0,False,False,0.0020704122604427986,0.009594044573515204,end-of-budget dual threshold,0.4166666666666667,0.0
+A0503,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,0.8333333333333334,1.0,False,False,0.01568993474803063,0.03445415771322087,end-of-budget dual threshold,0.4166666666666667,0.0
+A0504,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,9,0.9166666666666666,1.0,False,False,0.27039542397960453,0.1081501257607555,end-of-budget dual threshold,1.4583333333333333,0.0
+A0510,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),DEFER,9,0.9166666666666666,1.0,False,False,0.1066256379966162,0.1417664988008387,end-of-budget dual threshold,1.4583333333333333,0.0
+A0511,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,1.0,1.0,False,False,0.014355176319251295,0.02896221495622633,end-of-budget dual threshold,0.5,0.0
+A0515,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,1.0,1.0,False,False,0.0037805205691152145,0.07080361916585956,end-of-budget dual threshold,0.5,0.0
+A0516,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,9,0.9166666666666666,1.0,False,False,0.02606218617415952,0.10463881051107164,end-of-budget dual threshold,0.4583333333333333,0.0
+A0520,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,0.8333333333333334,1.0,False,False,0.0021289478724251755,0.0013068750159678077,end-of-budget dual threshold,0.4166666666666667,0.0
+A0523,benign_period,none,evictguard,BENIGN,Conformal deferral (end only),BENIGN,8,0.8333333333333334,1.0,False,False,0.007218689048597715,0.0757646401017581,end-of-budget dual threshold,0.4166666666666667,0.0
+A0043,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,BENIGN,4,0.4166666666666667,0.08571428571428572,True,True,0.14743754469703468,0.18022834227996976,attack confidence 0.15 <= 0.20; residual risk 0.18; open leads 2,10.208333333333334,0.0
+A0044,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,ATTACK,8,1.0,0.5428571428571428,True,True,0.9961646266845379,0.5761551273604135,attack confidence 1.00 >= 0.80; residual risk 0.58,0.5,0.0
+A0045,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.02857142857142857,True,True,0.020324981654610344,0.035469666749338054,attack confidence 0.02 <= 0.20; residual risk 0.04; open leads 0,10.0,1.0
+A0046,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,ATTACK,7,0.75,0.5428571428571428,True,True,0.8567160207495808,0.18610567883531895,attack confidence 0.86 >= 0.80; residual risk 0.19,0.375,0.0
+A0047,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.02857142857142857,True,True,0.020324981654610344,0.035469666749338054,attack confidence 0.02 <= 0.20; residual risk 0.04; open leads 0,10.0,1.0
+A0048,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.006710803868943643,0.0009389388957759859,attack confidence 0.01 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0049,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0050,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.006710803868943643,0.0009389388957759859,attack confidence 0.01 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0051,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.014551519919603063,0.04277331862464011,attack confidence 0.01 <= 0.20; residual risk 0.04; open leads 0,0.0,0.0
+A0052,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.02857142857142857,True,True,0.19006539361380842,0.16865881290489151,attack confidence 0.19 <= 0.20; residual risk 0.17; open leads 0,10.0,0.16666666666666666
+A0053,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.02857142857142857,True,True,0.19006539361380842,0.16865881290489151,attack confidence 0.19 <= 0.20; residual risk 0.17; open leads 0,10.0,0.375
+A0054,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,ATTACK,8,1.0,0.5714285714285714,True,True,0.9925511410983037,0.6630947059147715,attack confidence 0.99 >= 0.80; residual risk 0.66,0.5,0.0
+A0055,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,ATTACK,4,0.4166666666666667,0.08571428571428572,True,True,0.8369676231345293,0.19519559129531025,attack confidence 0.84 >= 0.80; residual risk 0.20,0.20833333333333334,0.0
+A0056,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0024470869235727073,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0057,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0058,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.01646209369040279,0.010790551539488042,attack confidence 0.02 <= 0.20; residual risk 0.01; open leads 0,0.0,0.0
+A0059,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.020324981654610344,0.035469666749338054,attack confidence 0.02 <= 0.20; residual risk 0.04; open leads 0,0.0,0.0
+A0060,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,ATTACK,8,1.0,0.5714285714285714,True,True,0.9615058194920449,0.6183614379033298,attack confidence 0.96 >= 0.80; residual risk 0.62,0.5,0.0
+A0061,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,ATTACK,8,1.0,0.5714285714285714,True,True,0.9925511410983037,0.6630947059147715,attack confidence 0.99 >= 0.80; residual risk 0.66,0.5,0.0
+A0062,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.02857142857142857,True,True,0.19006539361380842,0.16865881290489151,attack confidence 0.19 <= 0.20; residual risk 0.17; open leads 0,10.0,0.4583333333333333
+A0063,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.02857142857142857,True,True,0.022880739796444324,0.03370694280710899,attack confidence 0.02 <= 0.20; residual risk 0.03; open leads 0,10.0,0.041666666666666664
+A0064,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0014889031699641946,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0065,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0027118162162783808,0.00882343361210027,attack confidence 0.00 <= 0.20; residual risk 0.01; open leads 0,0.0,0.0
+A0066,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0067,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0068,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,4,0.4166666666666667,0.45714285714285713,True,True,0.01096779937719615,0.055130294281898966,attack confidence 0.01 <= 0.20; residual risk 0.06; open leads 5,0.20833333333333334,0.0
+A0069,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,ATTACK,8,1.0,0.5714285714285714,True,True,0.9925511410983037,0.6630947059147715,attack confidence 0.99 >= 0.80; residual risk 0.66,0.5,0.0
+A0070,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,ATTACK,2,0.25,0.02857142857142857,True,True,0.9964878887116125,0.9176936140955689,attack confidence 1.00 >= 0.80; residual risk 0.92,0.125,0.0
+A0071,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.006013515692369248,0.054120147916608574,attack confidence 0.01 <= 0.20; residual risk 0.05; open leads 0,0.0,0.0
+A0072,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0073,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,ATTACK,2,0.25,0.02857142857142857,True,True,0.9964878887116125,0.9176936140955689,attack confidence 1.00 >= 0.80; residual risk 0.92,0.125,0.0
+A0074,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.006013515692369248,0.054120147916608574,attack confidence 0.01 <= 0.20; residual risk 0.05; open leads 0,0.0,0.0
+A0075,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.007977442744295963,0.024776155514435502,attack confidence 0.01 <= 0.20; residual risk 0.02; open leads 0,0.0,0.0
+A0076,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0014889031699641946,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0077,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.011407314676158341,0.06407393156243382,attack confidence 0.01 <= 0.20; residual risk 0.06; open leads 0,0.0,0.0
+A0078,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,ATTACK,8,1.0,0.5384615384615384,True,True,0.992538286599921,0.56893623309228,attack confidence 0.99 >= 0.80; residual risk 0.57,0.5,0.0
+A0079,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.07692307692307693,True,True,0.19006539361380842,0.16865881290489151,attack confidence 0.19 <= 0.20; residual risk 0.17; open leads 0,10.0,1.0
+A0080,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,ATTACK,8,1.0,0.38461538461538464,True,True,0.992538286599921,0.56893623309228,attack confidence 0.99 >= 0.80; residual risk 0.57,0.5,0.0
+A0081,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,ATTACK,8,1.0,0.38461538461538464,True,True,0.992538286599921,0.56893623309228,attack confidence 0.99 >= 0.80; residual risk 0.57,0.5,0.0
+A0082,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,ATTACK,9,1.0,0.46153846153846156,True,True,0.9975488842840007,0.6226980050124485,attack confidence 1.00 >= 0.80; residual risk 0.62,0.5,0.0
+A0083,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0084,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0027118162162783808,0.00882343361210027,attack confidence 0.00 <= 0.20; residual risk 0.01; open leads 0,0.0,0.0
+A0085,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.014551519919603063,0.04277331862464011,attack confidence 0.01 <= 0.20; residual risk 0.04; open leads 0,0.0,0.0
+A0086,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.020324981654610344,0.035469666749338054,attack confidence 0.02 <= 0.20; residual risk 0.04; open leads 0,0.0,0.0
+A0087,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,4,0.4166666666666667,0.25,True,True,0.08591874199103662,0.22041891687877785,attack confidence 0.09 <= 0.20; residual risk 0.22; open leads 0,0.20833333333333334,0.0
+A0088,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0089,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.007977442744295963,0.024776155514435502,attack confidence 0.01 <= 0.20; residual risk 0.02; open leads 0,0.0,0.0
+A0090,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.07692307692307693,True,True,0.022880739796444324,0.03370694280710899,attack confidence 0.02 <= 0.20; residual risk 0.03; open leads 0,10.0,0.16666666666666666
+A0091,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.006013515692369248,0.054120147916608574,attack confidence 0.01 <= 0.20; residual risk 0.05; open leads 0,0.0,0.0
+A0092,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,ATTACK,9,1.0,0.46153846153846156,True,True,0.9975488842840007,0.6226980050124485,attack confidence 1.00 >= 0.80; residual risk 0.62,0.5,0.0
+A0093,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,ATTACK,9,1.0,0.46153846153846156,True,True,0.9975488842840007,0.6226980050124485,attack confidence 1.00 >= 0.80; residual risk 0.62,0.5,0.0
+A0094,attack_day,none,evictguard,ATTACK,RISKSTOP - uncalibrated defaults,BENIGN,7,0.75,0.38461538461538464,True,True,0.07306135724906543,0.22949484056482086,attack confidence 0.07 <= 0.20; residual risk 0.23; open leads 1,10.375,0.0
+A0156,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,ATTACK,2,0.25,0.0,False,False,0.9894731106970334,0.9317047037192057,attack confidence 0.99 >= 0.80; residual risk 0.93,3.125,0.0
+A0157,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,2,0.25,0.4,True,True,0.031058547433550108,0.04875289503769181,attack confidence 0.03 <= 0.20; residual risk 0.05; open leads 1,0.125,0.0
+A0158,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,2,0.25,0.4,True,True,0.06079831813174992,0.04525838741918968,attack confidence 0.06 <= 0.20; residual risk 0.05; open leads 1,0.125,0.041666666666666664
+A0159,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,2,0.25,0.4,True,True,0.06079831813174992,0.04525838741918968,attack confidence 0.06 <= 0.20; residual risk 0.05; open leads 1,0.125,0.041666666666666664
+A0160,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,4,0.4166666666666667,0.5,True,True,0.051387273823877685,0.07603970841440767,attack confidence 0.05 <= 0.20; residual risk 0.08; open leads 0,0.20833333333333334,0.0
+A0161,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0027118162162783808,0.00882343361210027,attack confidence 0.00 <= 0.20; residual risk 0.01; open leads 0,0.0,0.0
+A0162,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.013555958753717788,0.05979069823146835,attack confidence 0.01 <= 0.20; residual risk 0.06; open leads 0,0.0,0.0
+A0163,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,ATTACK,2,0.25,0.0,False,False,0.9894731106970334,0.9317047037192057,attack confidence 0.99 >= 0.80; residual risk 0.93,3.125,0.0
+A0164,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,ATTACK,2,0.25,0.0,False,False,0.9989317680663161,0.9746051866332305,attack confidence 1.00 >= 0.80; residual risk 0.97,3.125,1.0
+A0165,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,2,0.25,0.4,True,True,0.06079831813174992,0.04525838741918968,attack confidence 0.06 <= 0.20; residual risk 0.05; open leads 1,0.125,0.041666666666666664
+A0166,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,2,0.25,0.4,True,True,0.027555553535477787,0.06032842823737164,attack confidence 0.03 <= 0.20; residual risk 0.06; open leads 1,0.125,0.041666666666666664
+A0167,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,ATTACK,6,0.75,1.0,True,True,0.8813089026588633,0.24403455424023168,attack confidence 0.88 >= 0.80; residual risk 0.24,3.375,0.125
+A0168,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,2,0.25,0.4,True,True,0.06079831813174992,0.04525838741918968,attack confidence 0.06 <= 0.20; residual risk 0.05; open leads 1,0.125,0.041666666666666664
+A0169,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,2,0.25,0.4,True,True,0.06079831813174992,0.04525838741918968,attack confidence 0.06 <= 0.20; residual risk 0.05; open leads 1,0.125,0.041666666666666664
+A0170,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.022880739796444324,0.03370694280710899,attack confidence 0.02 <= 0.20; residual risk 0.03; open leads 0,0.0,0.0
+A0171,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,2,0.25,0.4,True,True,0.06079831813174992,0.04525838741918968,attack confidence 0.06 <= 0.20; residual risk 0.05; open leads 1,0.125,0.041666666666666664
+A0172,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0834616142467297,0.03270952822355093,attack confidence 0.08 <= 0.20; residual risk 0.03; open leads 0,0.0,0.0
+A0173,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,4,0.4166666666666667,0.5,True,True,0.051387273823877685,0.07603970841440767,attack confidence 0.05 <= 0.20; residual risk 0.08; open leads 0,0.20833333333333334,0.0
+A0174,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,2,0.25,0.4,True,True,0.027555553535477787,0.06032842823737164,attack confidence 0.03 <= 0.20; residual risk 0.06; open leads 1,0.125,0.041666666666666664
+A0175,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,2,0.25,0.4,True,True,0.06079831813174992,0.04525838741918968,attack confidence 0.06 <= 0.20; residual risk 0.05; open leads 1,0.125,0.041666666666666664
+A0176,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0177,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0014889031699641946,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0178,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.006710803868943643,0.0009389388957759859,attack confidence 0.01 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0179,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.020324981654610344,0.035469666749338054,attack confidence 0.02 <= 0.20; residual risk 0.04; open leads 0,0.0,0.0
+A0180,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.011407314676158341,0.06407393156243382,attack confidence 0.01 <= 0.20; residual risk 0.06; open leads 0,0.0,0.0
+A0181,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.020324981654610344,0.035469666749338054,attack confidence 0.02 <= 0.20; residual risk 0.04; open leads 0,0.0,0.0
+A0182,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.006710803868943643,0.0009389388957759859,attack confidence 0.01 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0183,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.01037696082528424,0.0,attack confidence 0.01 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0184,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0185,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.01037696082528424,0.0,attack confidence 0.01 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0186,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0187,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,2,0.25,0.4,True,True,0.02944092548397008,0.022650143074948365,attack confidence 0.03 <= 0.20; residual risk 0.02; open leads 1,0.125,0.0
+A0188,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.013555958753717788,0.05979069823146835,attack confidence 0.01 <= 0.20; residual risk 0.06; open leads 0,0.0,0.0
+A0189,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,2,0.25,0.4,True,True,0.08140257742219768,0.03811806885502842,attack confidence 0.08 <= 0.20; residual risk 0.04; open leads 1,0.125,0.041666666666666664
+A0190,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0014889031699641946,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0191,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,2,0.25,0.4,True,True,0.026115460575903734,0.03422567627462817,attack confidence 0.03 <= 0.20; residual risk 0.03; open leads 1,0.125,0.041666666666666664
+A0192,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,2,0.25,0.4,True,True,0.08140257742219768,0.03811806885502842,attack confidence 0.08 <= 0.20; residual risk 0.04; open leads 1,0.125,0.041666666666666664
+A0193,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,2,0.25,0.4,True,True,0.026115460575903734,0.03422567627462817,attack confidence 0.03 <= 0.20; residual risk 0.03; open leads 1,0.125,0.041666666666666664
+A0194,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.16097758459442235,0.11591414351533401,attack confidence 0.16 <= 0.20; residual risk 0.12; open leads 0,0.0,0.0
+A0195,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.13099772673894594,0.11375930563295536,attack confidence 0.13 <= 0.20; residual risk 0.11; open leads 0,0.0,0.0
+A0196,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,ATTACK,8,1.0,1.0,True,True,0.9978843916351401,0.6039168760850594,attack confidence 1.00 >= 0.80; residual risk 0.60,3.5,1.0
+A0197,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,4,0.4166666666666667,0.4,True,True,0.0022527761309647345,0.008834936520150312,attack confidence 0.00 <= 0.20; residual risk 0.01; open leads 1,0.20833333333333334,0.0
+A0198,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,ATTACK,6,0.6666666666666666,0.4,True,True,0.9239898285672588,0.7369415967995254,attack confidence 0.92 >= 0.80; residual risk 0.74,3.3333333333333335,0.0
+A0199,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.011374642885351045,0.0,attack confidence 0.01 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0200,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0027118162162783808,0.00882343361210027,attack confidence 0.00 <= 0.20; residual risk 0.01; open leads 0,0.0,0.0
+A0201,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.16097758459442235,0.11591414351533401,attack confidence 0.16 <= 0.20; residual risk 0.12; open leads 0,0.0,0.0
+A0202,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.1842664873358634,0.13650727406159824,attack confidence 0.18 <= 0.20; residual risk 0.14; open leads 0,0.0,0.0
+A0203,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.012568238304490017,0.09656343277695625,attack confidence 0.01 <= 0.20; residual risk 0.10; open leads 0,0.0,0.0
+A0204,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0834616142467297,0.03270952822355093,attack confidence 0.08 <= 0.20; residual risk 0.03; open leads 0,0.0,0.0
+A0205,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,4,0.4166666666666667,0.4,True,True,0.0024740408078085924,0.013811097941562503,attack confidence 0.00 <= 0.20; residual risk 0.01; open leads 1,0.20833333333333334,0.0
+A0206,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0024470869235727073,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0207,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0208,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.020324981654610344,0.035469666749338054,attack confidence 0.02 <= 0.20; residual risk 0.04; open leads 0,0.0,0.0
+A0209,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0210,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0211,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0212,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.006349839869288819,0.0,attack confidence 0.01 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0213,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0024470869235727073,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0214,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0215,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0216,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.020324981654610344,0.035469666749338054,attack confidence 0.02 <= 0.20; residual risk 0.04; open leads 0,0.0,0.0
+A0217,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.006710803868943643,0.0009389388957759859,attack confidence 0.01 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0218,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.020324981654610344,0.035469666749338054,attack confidence 0.02 <= 0.20; residual risk 0.04; open leads 0,0.0,0.0
+A0219,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.013555958753717788,0.05979069823146835,attack confidence 0.01 <= 0.20; residual risk 0.06; open leads 0,0.0,0.0
+A0220,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,4,0.4166666666666667,0.4,True,True,0.0024006843406942312,0.008834936520150312,attack confidence 0.00 <= 0.20; residual risk 0.01; open leads 1,0.20833333333333334,0.0
+A0221,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,4,0.4166666666666667,0.4,True,True,0.0024006843406942312,0.008834936520150312,attack confidence 0.00 <= 0.20; residual risk 0.01; open leads 1,0.20833333333333334,0.0
+A0222,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.19006539361380842,0.16865881290489151,attack confidence 0.19 <= 0.20; residual risk 0.17; open leads 0,0.0,0.0
+A0223,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.19006539361380842,0.16865881290489151,attack confidence 0.19 <= 0.20; residual risk 0.17; open leads 0,0.0,0.0
+A0224,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0014889031699641946,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0225,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.014551519919603063,0.04277331862464011,attack confidence 0.01 <= 0.20; residual risk 0.04; open leads 0,0.0,0.0
+A0226,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0227,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0017916319021762453,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0228,attack_day,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,0.0,False,False,0.0027118162162783808,0.00882343361210027,attack confidence 0.00 <= 0.20; residual risk 0.01; open leads 0,0.0,0.0
+A0229,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.19006539361380842,0.16865881290489151,attack confidence 0.19 <= 0.20; residual risk 0.17; open leads 0,0.0,0.0
+A0230,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,2,0.25,1.0,False,False,0.0016938658143157575,0.0033008305425371288,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.125,0.0
+A0237,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.19006539361380842,0.16865881290489151,attack confidence 0.19 <= 0.20; residual risk 0.17; open leads 0,0.0,0.0
+A0239,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.012568238304490017,0.04551016256459867,attack confidence 0.01 <= 0.20; residual risk 0.05; open leads 0,0.0,0.0
+A0241,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,2,0.25,1.0,False,False,0.0013248998225455363,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.125,0.0
+A0243,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,2,0.25,1.0,False,False,0.10697092885889017,0.1116715038625545,attack confidence 0.11 <= 0.20; residual risk 0.11; open leads 1,0.125,0.041666666666666664
+A0253,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.004406694792466202,0.03154901642791428,attack confidence 0.00 <= 0.20; residual risk 0.03; open leads 0,0.0,0.0
+A0257,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.020324981654610344,0.035469666749338054,attack confidence 0.02 <= 0.20; residual risk 0.04; open leads 0,0.0,0.0
+A0258,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.004406694792466202,0.03154901642791428,attack confidence 0.00 <= 0.20; residual risk 0.03; open leads 0,0.0,0.0
+A0262,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.020324981654610344,0.035469666749338054,attack confidence 0.02 <= 0.20; residual risk 0.04; open leads 0,0.0,0.0
+A0271,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.01927702981935573,0.07869131806901128,attack confidence 0.02 <= 0.20; residual risk 0.08; open leads 0,0.0,0.0
+A0272,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.0027118162162783808,0.00882343361210027,attack confidence 0.00 <= 0.20; residual risk 0.01; open leads 0,0.0,0.0
+A0273,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.0017916319021762453,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0274,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,2,0.25,1.0,False,False,0.0013450081327307812,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.125,0.0
+A0283,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,2,0.25,1.0,False,False,0.006481441110688605,0.03381027776177325,attack confidence 0.01 <= 0.20; residual risk 0.03; open leads 0,0.125,0.0
+A0284,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.020324981654610344,0.035469666749338054,attack confidence 0.02 <= 0.20; residual risk 0.04; open leads 0,0.0,0.0
+A0292,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.020324981654610344,0.035469666749338054,attack confidence 0.02 <= 0.20; residual risk 0.04; open leads 0,0.0,0.0
+A0293,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.0024470869235727073,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0302,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.004044497943865835,0.03459127761693298,attack confidence 0.00 <= 0.20; residual risk 0.03; open leads 0,0.0,0.0
+A0315,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.005896608902504221,0.0,attack confidence 0.01 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0316,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.003686849404234259,0.06220282778868774,attack confidence 0.00 <= 0.20; residual risk 0.06; open leads 0,0.0,0.0
+A0323,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.014551519919603063,0.04277331862464011,attack confidence 0.01 <= 0.20; residual risk 0.04; open leads 0,0.0,0.0
+A0351,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.004044497943865835,0.03459127761693298,attack confidence 0.00 <= 0.20; residual risk 0.03; open leads 0,0.0,0.0
+A0352,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.0014889031699641946,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0355,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.020324981654610344,0.035469666749338054,attack confidence 0.02 <= 0.20; residual risk 0.04; open leads 0,0.0,0.0
+A0362,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.19006539361380842,0.16865881290489151,attack confidence 0.19 <= 0.20; residual risk 0.17; open leads 0,0.0,0.0
+A0363,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,2,0.25,1.0,False,False,0.00846467177771093,0.007726297256653418,attack confidence 0.01 <= 0.20; residual risk 0.01; open leads 1,0.125,0.0
+A0370,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.004406694792466202,0.03154901642791428,attack confidence 0.00 <= 0.20; residual risk 0.03; open leads 0,0.0,0.0
+A0390,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.0017916319021762453,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0415,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.004044497943865835,0.03459127761693298,attack confidence 0.00 <= 0.20; residual risk 0.03; open leads 0,0.0,0.0
+A0422,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,2,0.25,1.0,False,False,0.0013043717251360156,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.125,0.0
+A0429,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.0017916319021762453,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0441,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.007977442744295963,0.024776155514435502,attack confidence 0.01 <= 0.20; residual risk 0.02; open leads 0,0.0,0.0
+A0450,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.014551519919603063,0.04277331862464011,attack confidence 0.01 <= 0.20; residual risk 0.04; open leads 0,0.0,0.0
+A0451,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.19006539361380842,0.16865881290489151,attack confidence 0.19 <= 0.20; residual risk 0.17; open leads 0,0.0,0.0
+A0452,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.004406694792466202,0.03154901642791428,attack confidence 0.00 <= 0.20; residual risk 0.03; open leads 0,0.0,0.0
+A0460,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.020324981654610344,0.035469666749338054,attack confidence 0.02 <= 0.20; residual risk 0.04; open leads 0,0.0,0.0
+A0464,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.022880739796444324,0.03370694280710899,attack confidence 0.02 <= 0.20; residual risk 0.03; open leads 0,0.0,0.0
+A0473,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.020324981654610344,0.035469666749338054,attack confidence 0.02 <= 0.20; residual risk 0.04; open leads 0,0.0,0.0
+A0474,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.020324981654610344,0.035469666749338054,attack confidence 0.02 <= 0.20; residual risk 0.04; open leads 0,0.0,0.0
+A0503,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.0017916319021762453,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0504,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.02751797963896291,0.0903665799568871,attack confidence 0.03 <= 0.20; residual risk 0.09; open leads 0,0.0,0.0
+A0510,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.19006539361380842,0.16865881290489151,attack confidence 0.19 <= 0.20; residual risk 0.17; open leads 0,0.0,0.0
+A0511,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.0017916319021762453,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.0,0.0
+A0515,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,2,0.25,1.0,False,False,0.0013043717251360156,0.0,attack confidence 0.00 <= 0.20; residual risk 0.00; open leads 0,0.125,0.0
+A0516,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.007977442744295963,0.024776155514435502,attack confidence 0.01 <= 0.20; residual risk 0.02; open leads 0,0.0,0.0
+A0520,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.004406694792466202,0.03154901642791428,attack confidence 0.00 <= 0.20; residual risk 0.03; open leads 0,0.0,0.0
+A0523,benign_period,none,evictguard,BENIGN,RISKSTOP - uncalibrated defaults,BENIGN,0,0.0,1.0,False,False,0.020324981654610344,0.035469666749338054,attack confidence 0.02 <= 0.20; residual risk 0.04; open leads 0,0.0,0.0

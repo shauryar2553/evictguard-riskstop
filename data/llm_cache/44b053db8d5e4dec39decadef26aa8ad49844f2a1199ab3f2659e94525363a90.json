@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process tshark.exe, likely spawned by cmd.exe, is suspicious as it could be used for network traffic capture.\", \"attack_likelihood\": 0.8, \"choice\": 1}"}

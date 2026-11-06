@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The presence of packet capture tools suggests potential malicious activity.\", \"attack_likelihood\": 0.8, \"choice\": 7}"}

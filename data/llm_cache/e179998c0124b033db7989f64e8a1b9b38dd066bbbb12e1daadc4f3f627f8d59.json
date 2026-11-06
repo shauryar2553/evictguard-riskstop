@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The persistence mechanism involves the use of normal.dotm to start winword.exe, which then spawns mshta.exe and powershell.exe to perform network connections and file operations.\", \"attack_likelihood\": 0.8, \"choice\": 3}"}

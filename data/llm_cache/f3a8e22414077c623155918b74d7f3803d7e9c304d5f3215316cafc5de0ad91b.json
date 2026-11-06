@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"sysmon.exe loading mobsync.exe might be benign or part of legitimate usage.\", \"attack_likelihood\": 0.5, \"choice\": 1}"}

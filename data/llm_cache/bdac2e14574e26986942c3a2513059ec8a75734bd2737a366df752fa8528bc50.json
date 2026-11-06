@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process is likely performing legitimate actions related to document recovery and startup items.\", \"attack_likelihood\": 0.3, \"choice\": 0}"}

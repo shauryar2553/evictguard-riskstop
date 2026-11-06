@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process update.exe is repeatedly creating discord.exe, which is unusual and may indicate malicious activity.\", \"attack_likelihood\": 0.8, \"choice\": 1}"}

@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process rundll32.exe might be executing a malicious payload.\", \"attack_likelihood\": 0.8, \"choice\": 1}"}

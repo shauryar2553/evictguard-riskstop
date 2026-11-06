@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process discord.exe is writing temporary files, which is suspicious.\", \"attack_likelihood\": 0.7, \"choice\": 0}"}

@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The persistence mechanism involves modifying the normal.dotm file and registry entries to ensure Word starts at login.\", \"attack_likelihood\": 0.8, \"choice\": 5}"}

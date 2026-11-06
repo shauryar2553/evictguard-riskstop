@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process winword.exe is creating temporary files in the user's temp directory and modifying office templates and startup folders, which is suspicious.\", \"attack_likelihood\": 0.9, \"choice\": 0}"}

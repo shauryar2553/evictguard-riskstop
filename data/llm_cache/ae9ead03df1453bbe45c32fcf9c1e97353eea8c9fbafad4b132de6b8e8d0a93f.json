@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The cmd.exe process was likely spawned by plugin_host.exe to execute a script.\", \"attack_likelihood\": 0.7, \"choice\": 5}"}

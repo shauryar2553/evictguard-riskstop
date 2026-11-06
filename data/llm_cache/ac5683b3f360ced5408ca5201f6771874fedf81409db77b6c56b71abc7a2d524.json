@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process rundll32.exe is loading suspicious DLLs, which is a common tactic for malware to execute code in memory.\", \"attack_likelihood\": 0.9, \"choice\": 1}"}

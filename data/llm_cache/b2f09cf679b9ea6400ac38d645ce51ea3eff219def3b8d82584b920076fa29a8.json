@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process svchost.exe is writing to files related to cryptneturlcache, and mshta.exe is making network connections to 10.193.66.115:8080, which is suspicious for LLMNR/NBT-NS poisoning.\", \"attack_likelihood\": 0.9, \"choice\": 1}"}

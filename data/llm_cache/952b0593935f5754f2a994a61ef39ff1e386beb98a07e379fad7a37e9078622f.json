@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process firefox.exe executing a command and scripting interpreter is likely a false positive as it is not uncommon for browsers to execute scripts.\", \"attack_likelihood\": 0.2, \"choice\": 0}"}

@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The PowerShell process is likely being used for malicious activities, such as creating and writing to files, modifying registry settings, and accessing other processes.\", \"attack_likelihood\": 0.9, \"choice\": 0}"}

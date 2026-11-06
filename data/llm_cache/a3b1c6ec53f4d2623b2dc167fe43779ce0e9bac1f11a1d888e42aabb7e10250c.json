@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The repwmiutils.exe process is likely part of a malicious activity as it repeatedly sets registry keys related to cbdefense and there are numerous file writes in the Firefox cache directory.\", \"attack_likelihood\": 0.9, \"choice\": 6}"}

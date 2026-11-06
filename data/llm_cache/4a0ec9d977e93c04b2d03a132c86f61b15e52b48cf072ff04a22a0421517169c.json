@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process ended multiple times, which is unusual and may indicate a script or automation running.\", \"attack_likelihood\": 0.7, \"choice\": 1}"}

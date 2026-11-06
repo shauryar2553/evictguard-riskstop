@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process dllhost.exe accessed explorer.exe, which is common but could indicate a CobaltStrike screen capture.\", \"attack_likelihood\": 0.7, \"choice\": 5}"}

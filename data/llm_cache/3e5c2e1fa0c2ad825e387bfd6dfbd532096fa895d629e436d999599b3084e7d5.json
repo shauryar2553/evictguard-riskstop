@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process svchost.exe launched mshta.exe to execute a malicious HTA file, and subsequent PowerShell activities suggest lateral movement or persistence.\", \"attack_likelihood\": 0.9, \"choice\": 3}"}

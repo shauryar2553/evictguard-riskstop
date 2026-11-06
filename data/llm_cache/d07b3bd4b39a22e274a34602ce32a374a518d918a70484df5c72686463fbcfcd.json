@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"mshta.exe is likely used for malicious activities as it connects to an external IP address.\", \"attack_likelihood\": 0.8, \"choice\": 1}"}

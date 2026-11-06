@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process regsvr32.exe is likely being used to bypass security measures by modifying internet settings and whitelisting itself.\", \"attack_likelihood\": 0.9, \"choice\": 1}"}

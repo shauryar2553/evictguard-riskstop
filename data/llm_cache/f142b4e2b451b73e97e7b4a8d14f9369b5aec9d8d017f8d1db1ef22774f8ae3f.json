@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The execution of cmd.exe by explorer.exe might be benign, but the subsequent creation of tshark.exe processes by cmd.exe is suspicious.\", \"attack_likelihood\": 0.7, \"choice\": 0}"}

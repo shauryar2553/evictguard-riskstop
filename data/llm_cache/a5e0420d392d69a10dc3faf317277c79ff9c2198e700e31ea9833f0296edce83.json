@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process sysmon.exe is loading multiple executables, some of which are from an unexpected directory.\", \"attack_likelihood\": 0.7, \"choice\": 0}"}

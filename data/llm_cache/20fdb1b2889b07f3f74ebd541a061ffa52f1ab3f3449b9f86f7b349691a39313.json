@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process is likely malicious as it is writing to suspicious files and making network connections to unknown IPs.\", \"attack_likelihood\": 0.9, \"choice\": 0}"}

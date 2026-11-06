@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process sysmon.exe was loaded with a suspicious file from the downloads folder, indicating potential malicious activity.\", \"attack_likelihood\": 0.9, \"choice\": 5}"}

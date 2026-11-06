@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The cmd.exe process was launched by plugin_host.exe, which was in turn launched by Sublime Text 3.\", \"attack_likelihood\": 0.7, \"choice\": 3}"}

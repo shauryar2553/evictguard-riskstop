@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process 'discord.exe' is writing to temporary files in the user's roaming directory, which is a common behavior for the application.\", \"attack_likelihood\": 0.2, \"choice\": 7}"}

@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process plugin-container.exe likely has malicious intent as it modified a registry key for persistence.\", \"attack_likelihood\": 0.9, \"choice\": 1}"}

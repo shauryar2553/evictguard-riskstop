@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The packet capture tool dumpcap.exe is likely being used for malicious network reconnaissance.\", \"attack_likelihood\": 0.8, \"choice\": 5}"}

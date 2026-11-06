@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The firefox.exe process is writing to the AppData folder and Recent locations, which is unusual.\", \"attack_likelihood\": 0.7, \"choice\": 1}"}

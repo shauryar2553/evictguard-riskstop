@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"Firefox is writing temporary files in the recent folder, which is unusual.\", \"attack_likelihood\": 0.7, \"choice\": 5}"}

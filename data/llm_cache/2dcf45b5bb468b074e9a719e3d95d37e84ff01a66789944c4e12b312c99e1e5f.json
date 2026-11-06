@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process is making repeated network connections to the same IP address, which is suspicious.\", \"attack_likelihood\": 0.8, \"choice\": 5}"}

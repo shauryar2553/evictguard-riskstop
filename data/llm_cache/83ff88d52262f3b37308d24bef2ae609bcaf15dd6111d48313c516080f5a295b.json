@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process created by cmd.exe is likely benign as it is launching Wireshark's tshark.exe.\", \"attack_likelihood\": 0.2, \"choice\": 0}"}

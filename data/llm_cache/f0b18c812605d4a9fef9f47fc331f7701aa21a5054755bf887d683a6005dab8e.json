@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The PowerShell process is likely malicious due to unusual activities such as loading suspicious DLLs and writing to the Recent folder.\", \"attack_likelihood\": 0.9, \"choice\": 1}"}

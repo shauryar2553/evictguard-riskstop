@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process tshark.exe is writing multiple files to the temp directory, which could indicate malicious activity such as capturing network traffic for later analysis.\", \"attack_likelihood\": 0.8, \"choice\": 0}"}

@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process created csrss.exe from smss.exe, which is expected behavior.\", \"attack_likelihood\": 0.2, \"choice\": 1}"}

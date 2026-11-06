@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process mshta.exe was launched by a PowerShell script, which then created payload.exe in the user's temp directory.\", \"attack_likelihood\": 0.9, \"choice\": 5}"}

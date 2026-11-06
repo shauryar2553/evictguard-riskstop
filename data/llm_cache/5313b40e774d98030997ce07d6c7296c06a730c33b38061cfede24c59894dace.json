@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The firefox.exe process executing a command and scripting interpreter is likely due to a Discord bot or extension.\", \"attack_likelihood\": 0.7, \"choice\": 7}"}

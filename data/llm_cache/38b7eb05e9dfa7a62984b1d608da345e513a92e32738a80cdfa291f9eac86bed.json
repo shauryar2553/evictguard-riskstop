@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The firefox.exe process is loading expected DLLs and does not indicate malicious activity.\", \"attack_likelihood\": 0.1, \"choice\": 0}"}

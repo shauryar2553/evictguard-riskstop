@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The persistence mechanism involves creating Word document shortcuts in the Recent folder, which could be a tactic to ensure the malware runs every time the user opens Word.\", \"attack_likelihood\": 0.8, \"choice\": 0}"}

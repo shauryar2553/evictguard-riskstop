@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process winword.exe is writing suspicious files to temporary directories and creating multiple shortcuts in the recent documents folder.\", \"attack_likelihood\": 0.9, \"choice\": 0}"}

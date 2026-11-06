@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process sysmon.exe loading other executables might be a benign action or part of a sophisticated attack.\", \"attack_likelihood\": 0.7, \"choice\": 5}"}

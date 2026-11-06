@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The execution of Invoke-Expression in PowerShell and the creation of a cmd.exe process followed by the creation of payload.exe with DLLs in the temp directory are suspicious activities.\", \"attack_likelihood\": 0.9, \"choice\": 5}"}

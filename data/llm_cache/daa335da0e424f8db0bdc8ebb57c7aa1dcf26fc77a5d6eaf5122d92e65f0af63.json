@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The regsvr32.exe process is likely being used for malicious purposes, such as establishing a connection to a remote server.\", \"attack_likelihood\": 0.9, \"choice\": 0}"}

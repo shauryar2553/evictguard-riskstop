@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The firefox.exe process is making multiple network connections to various IP addresses, which could indicate malicious activity such as exfiltration or command and control communication.\", \"attack_likelihood\": 0.8, \"choice\": 4}"}

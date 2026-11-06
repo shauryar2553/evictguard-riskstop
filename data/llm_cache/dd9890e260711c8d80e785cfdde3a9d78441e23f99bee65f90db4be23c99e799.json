@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The activity is likely related to unauthorized network packet capture.\", \"attack_likelihood\": 0.7, \"choice\": 4}"}

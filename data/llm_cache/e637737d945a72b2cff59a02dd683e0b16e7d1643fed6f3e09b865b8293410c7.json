@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process cmd.exe is repeatedly launching tshark.exe, and writing to a file on the user's desktop, which is unusual behavior.\", \"attack_likelihood\": 0.8, \"choice\": 1}"}

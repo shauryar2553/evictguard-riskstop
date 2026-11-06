@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process tpautoconnsvc.exe is writing multiple PPD files, which might be a sign of a printer driver installation or a malicious activity like a printer driver download and installation.\", \"attack_likelihood\": 0.7, \"choice\": 1}"}

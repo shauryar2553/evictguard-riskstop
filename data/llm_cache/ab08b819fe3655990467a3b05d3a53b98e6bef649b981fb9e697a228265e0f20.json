@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process excel.exe is likely being used to execute malicious activities such as writing payload.exe in user's download folder.\", \"attack_likelihood\": 0.9, \"choice\": 0}"}

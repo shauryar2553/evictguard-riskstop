@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process cmd.exe is likely being used to execute a payload.\", \"attack_likelihood\": 0.8, \"choice\": 7}"}

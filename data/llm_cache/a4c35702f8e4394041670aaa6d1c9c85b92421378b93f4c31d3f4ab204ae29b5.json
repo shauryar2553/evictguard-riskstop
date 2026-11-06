@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The reg.exe process is likely part of a malicious activity as it modified the Run key to execute 'discord' at startup.\", \"attack_likelihood\": 0.9, \"choice\": 7}"}

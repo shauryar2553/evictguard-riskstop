@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process excel.exe is writing to temporary files and a document in the user's documents folder, which is unusual for Excel.\", \"attack_likelihood\": 0.8, \"choice\": 1}"}

@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process dllhost.exe accessed explorer.exe and loaded multiple system DLLs, which is suspicious and could indicate a screen capture activity.\", \"attack_likelihood\": 0.8, \"choice\": 1}"}

@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process is likely performing persistence by modifying Office startup items.\", \"attack_likelihood\": 0.8, \"choice\": 1}"}

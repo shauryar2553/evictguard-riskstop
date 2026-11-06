@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The PowerShell execution is likely malicious due to the encoded instructions and unusual registry and file operations.\", \"attack_likelihood\": 0.9, \"choice\": 2}"}

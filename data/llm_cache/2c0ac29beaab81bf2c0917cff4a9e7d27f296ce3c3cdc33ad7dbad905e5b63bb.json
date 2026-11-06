@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process dumpcap.exe is likely being used for network reconnaissance.\", \"attack_likelihood\": 0.7, \"choice\": 2}"}

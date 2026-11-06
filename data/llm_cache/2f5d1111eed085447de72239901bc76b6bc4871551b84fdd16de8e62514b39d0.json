@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The discovery of packet capture tools suggests potential malicious activity, but the recent file writes by firefox.exe do not indicate malicious behavior.\", \"attack_likelihood\": 0.3, \"choice\": 1}"}

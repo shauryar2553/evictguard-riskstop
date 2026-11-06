@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process lsass.exe is making multiple network connections to 192.124.249.22 and writing files to the cryptneturlcache directory, which could indicate a malicious activity.\", \"attack_likelihood\": 0.8, \"choice\": 3}"}

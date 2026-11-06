@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"tshark.exe was launched by cmd.exe, indicating potential manual execution.\", \"attack_likelihood\": 0.7, \"choice\": 4}"}

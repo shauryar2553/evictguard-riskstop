@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process is frequently loading the same DLL, which is not suspicious by itself.\", \"attack_likelihood\": 0.2, \"choice\": 2}"}

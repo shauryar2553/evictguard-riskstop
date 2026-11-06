@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process svchost.exe created mshta.exe, which is indicative of a potential malicious activity.\", \"attack_likelihood\": 0.9, \"choice\": 3}"}

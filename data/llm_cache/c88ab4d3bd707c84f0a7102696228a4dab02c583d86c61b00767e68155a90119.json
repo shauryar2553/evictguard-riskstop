@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process tshark.exe was launched by explorer.exe, indicating potential user interaction or automation.\", \"attack_likelihood\": 0.7, \"choice\": 1}"}

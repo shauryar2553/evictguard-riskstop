@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The PowerShell process is creating a payload file and executing it via cmd.exe, which is a common tactic for malware.\", \"attack_likelihood\": 0.9, \"choice\": 5}"}

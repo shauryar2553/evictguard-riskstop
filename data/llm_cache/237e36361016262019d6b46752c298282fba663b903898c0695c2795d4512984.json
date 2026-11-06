@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The tshark.exe process is likely being used to capture network traffic and potentially exfiltrate data.\", \"attack_likelihood\": 0.9, \"choice\": 7}"}

@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The PowerShell process is likely downloading a file from a URL, and the subsequent regsvr32 activity might be used to load a malicious DLL.\", \"attack_likelihood\": 0.9, \"choice\": 1}"}

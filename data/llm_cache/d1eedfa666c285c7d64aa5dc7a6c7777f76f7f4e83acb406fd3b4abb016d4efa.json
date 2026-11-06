@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process mshta.exe is likely being used to launch a script interpreter, which could be a sign of malicious activity.\", \"attack_likelihood\": 0.9, \"choice\": 0}"}

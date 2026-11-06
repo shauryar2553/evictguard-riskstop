@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process discord.exe is writing temporary files in the AppData folder, which is a common behavior for the application but could also be indicative of malicious activity if the files are unusual or contain malicious content.\", \"attack_likelihood\": 0.5, \"choice\": 7}"}

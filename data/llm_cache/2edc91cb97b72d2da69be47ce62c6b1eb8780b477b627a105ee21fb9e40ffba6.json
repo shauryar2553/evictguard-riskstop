@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The persistence mechanism involves creating a Word document that triggers mshta.exe to make network connections and modify registry keys.\", \"attack_likelihood\": 0.9, \"choice\": 2}"}

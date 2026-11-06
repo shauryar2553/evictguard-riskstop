@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process tshark.exe is capturing network packets, which is suspicious as it is not a typical behavior for this tool.\", \"attack_likelihood\": 0.7, \"choice\": 1}"}

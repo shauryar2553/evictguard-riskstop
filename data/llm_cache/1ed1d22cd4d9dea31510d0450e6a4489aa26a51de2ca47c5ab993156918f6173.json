@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The execution of taskhost.exe to create a PowerShell script suggests potential malicious activity.\", \"attack_likelihood\": 0.8, \"choice\": 7}"}

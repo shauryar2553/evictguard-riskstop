@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process sysmon.exe loading payload.exe indicates potential malicious activity as SysInternals tools are often used by attackers to evade detection.\", \"attack_likelihood\": 0.8, \"choice\": 1}"}

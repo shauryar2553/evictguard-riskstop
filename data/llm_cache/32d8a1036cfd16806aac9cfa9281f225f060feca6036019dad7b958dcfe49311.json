@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process mmc.exe is writing to suspicious files related to event viewer and registry changes, which could indicate LLMNR/NBT-NS poisoning.\", \"attack_likelihood\": 0.8, \"choice\": 7}"}

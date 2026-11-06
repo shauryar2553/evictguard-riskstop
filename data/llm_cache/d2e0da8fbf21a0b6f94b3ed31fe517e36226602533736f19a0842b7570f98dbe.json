@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process mshta.exe is likely being used to launch PowerShell scripts, which is a common tactic for attackers to evade detection and execute malicious code.\", \"attack_likelihood\": 0.9, \"choice\": 6}"}

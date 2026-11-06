@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process powershell.exe executed a hidden command and created a suspicious payload.exe process.\", \"attack_likelihood\": 0.9, \"choice\": 4}"}

@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process excel.exe is loading suspicious libraries and writing files to temporary directories, which is indicative of potential malicious activity.\", \"attack_likelihood\": 0.9, \"choice\": 1}"}

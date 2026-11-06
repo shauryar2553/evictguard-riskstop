@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The activity is likely related to a malicious payload being executed.\", \"attack_likelihood\": 0.9, \"choice\": 3}"}

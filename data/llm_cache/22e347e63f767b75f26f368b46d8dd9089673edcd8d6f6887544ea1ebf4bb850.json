@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process tshark.exe is likely benign as it is commonly used for network packet analysis.\", \"attack_likelihood\": 0.2, \"choice\": 1}"}

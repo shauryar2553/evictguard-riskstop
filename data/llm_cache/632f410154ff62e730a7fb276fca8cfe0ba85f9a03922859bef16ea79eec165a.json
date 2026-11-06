@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The LLMNR/NBT-NS poisoning might be related to the svchost.exe process.\", \"attack_likelihood\": 0.8, \"choice\": 5}"}

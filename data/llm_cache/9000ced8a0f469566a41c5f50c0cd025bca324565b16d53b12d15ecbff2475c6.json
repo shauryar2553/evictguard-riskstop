@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process svchost.exe is writing to a suspicious directory related to cryptneturlcache, which is common in LLMNR/NBT-NS poisoning attacks.\", \"attack_likelihood\": 0.9, \"choice\": 0}"}

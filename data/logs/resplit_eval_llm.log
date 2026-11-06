@@ -1,0 +1,64 @@
+578 investigations, 0 errors
+    memory                            policy   n  accuracy  missed_attack_rate  false_alarm_rate  defer_rate  budget_used  grounded_attack_rate  expected_cost  regret_vs_oracle
+evictguard                      Fixed budget 353     0.873               0.070             0.081       0.000        0.985                   1.0          0.834             0.803
+evictguard                   Confidence stop 353     0.878               0.035             0.074       0.000        0.186                   1.0          0.364             0.333
+evictguard          BAGEN-style (gain stall) 353     0.841               0.246             0.084       0.000        0.361                   1.0          0.814             0.783
+evictguard     Conformal deferral (end only) 353     0.768               0.070             0.034       0.167        0.985                   1.0          0.865             0.835
+evictguard          RISKSTOP (LTT-certified) 353     0.578               0.000             0.061       0.323        0.152                   1.0          0.575             0.544
+evictguard       RISKSTOP - no residual risk 353     0.578               0.000             0.061       0.323        0.152                   1.0          0.575             0.544
+evictguard         RISKSTOP - no query value 353     0.603               0.035             0.095       0.258        0.328                   1.0          0.744             0.713
+evictguard  RISKSTOP - uncalibrated defaults 353     0.858               0.140             0.044       0.045        0.240                   1.0          0.518             0.487
+evictguard  LLM verdict at end (no RISKSTOP) 353     0.227               0.000             0.858       0.000        0.985                   1.0          2.678             2.648
+evictguard LLM confidence stop (no RISKSTOP) 353     0.303               0.000             0.767       0.000        0.493                   1.0          2.202             2.172
+evictguard      RISKSTOP-LLM (LTT-certified) 353     0.524               0.000             0.007       0.479        0.174                   1.0          0.563             0.533
+{
+ "evictguard": {
+  "ltt": {
+   "certified_rhos": 3,
+   "threshold": 0.016666666666666666,
+   "val_cost": 0.46975806451612906,
+   "val_miss": 0.0,
+   "val_fa": 0.015873015873015872,
+   "p_miss": 0.001797010299914434,
+   "p_fa": 0.00019259058559796522
+  },
+  "params": {
+   "tau_attack": 0.7,
+   "tau_benign": 0.02,
+   "rho": 1.0,
+   "lam": 0.002,
+   "min_budget_frac": 0.25
+  },
+  "conformal": [
+   0.8,
+   0.3
+  ],
+  "ltt_llm": {
+   "certified_rhos": 3,
+   "threshold": 0.016666666666666666,
+   "val_cost": 0.5120967741935484,
+   "val_miss": 0.0,
+   "val_fa": 0.0,
+   "p_miss": 0.001797010299914434,
+   "p_fa": 1.716153733051175e-06
+  },
+  "params_llm": {
+   "tau_attack": 0.95,
+   "tau_benign": 0.05,
+   "rho": 1.0,
+   "lam": 0.002,
+   "min_budget_frac": 0.25
+  }
+ }
+}
+    memory                                vs   n  mean_cost_diff                                         CI95  riskstop_better_share  worse_share
+evictguard          BAGEN-style (gain stall) 353          -0.239 (-0.46530335221907465, -0.03139754485363552)                  0.646        0.323
+evictguard                   Confidence stop 353           0.211   (0.10079084041548632, 0.30854874881964117)                  0.082        0.442
+evictguard     Conformal deferral (end only) 353          -0.291  (-0.4228074834749764, -0.16972674693106707)                  0.751        0.241
+evictguard                      Fixed budget 353          -0.259   (-0.4037299338999056, -0.1367917847025496)                  0.694        0.306
+evictguard LLM confidence stop (no RISKSTOP) 353          -1.628     (-1.79237783286119, -1.4814388574126534)                  0.898        0.085
+evictguard  LLM verdict at end (no RISKSTOP) 353          -2.104   (-2.2528741737488196, -1.9537210812086871)                  0.932        0.068
+evictguard         RISKSTOP - no query value 353          -0.169  (-0.2554296506137866, -0.09571824834749768)                  0.292        0.028
+evictguard       RISKSTOP - no residual risk 353           0.000                                   (0.0, 0.0)                  0.000        0.000
+evictguard  RISKSTOP - uncalibrated defaults 353           0.057  (-0.13067752596789425, 0.21259147780925397)                  0.198        0.402
+evictguard      RISKSTOP-LLM (LTT-certified) 353           0.011  (-0.04981409348441927, 0.07566395184135977)                  0.122        0.181

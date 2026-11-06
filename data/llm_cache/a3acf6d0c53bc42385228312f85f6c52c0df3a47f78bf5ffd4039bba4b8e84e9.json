@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process tpautoconnsvc.exe writing to a PPD file in the spool directory is suspicious.\", \"attack_likelihood\": 0.7, \"choice\": 0}"}

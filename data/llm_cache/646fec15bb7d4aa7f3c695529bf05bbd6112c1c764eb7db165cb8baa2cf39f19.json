@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process spoolsv.exe is likely involved in malicious activity by modifying printer driver registry keys and files.\", \"attack_likelihood\": 0.8, \"choice\": 5}"}

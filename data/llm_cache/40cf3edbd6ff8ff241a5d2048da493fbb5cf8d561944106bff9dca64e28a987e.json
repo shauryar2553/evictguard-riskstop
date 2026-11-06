@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The PowerShell process is communicating with a suspicious IP address, which is a strong indicator of malicious activity.\", \"attack_likelihood\": 0.9, \"choice\": 4}"}

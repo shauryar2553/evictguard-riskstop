@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process excel.exe is creating persistence mechanisms and modifying registry keys associated with Microsoft Office applications.\", \"attack_likelihood\": 0.9, \"choice\": 0}"}

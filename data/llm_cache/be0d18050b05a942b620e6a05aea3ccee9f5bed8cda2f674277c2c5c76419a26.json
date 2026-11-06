@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The execution of SysInternals tools might be legitimate if it is part of a routine administrative task.\", \"attack_likelihood\": 0.5, \"choice\": 1}"}

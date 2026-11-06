@@ -1,0 +1,1 @@
+{"model": "qwen2.5:7b-instruct", "content": "{\"hypothesis\": \"The process excel.exe is writing to temporary files and creating suspicious links in the Office recent documents folder.\", \"attack_likelihood\": 0.9, \"choice\": 2}"}
