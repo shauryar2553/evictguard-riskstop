@@ -69,5 +69,7 @@ CDB: not better than rare-action (limitation). Details: docs/RESULTS_EVICTGUARD_
   No new LLM calls are needed for alerts already cached.
 * Re-split done (docs/RISKSTOP.md A4, `--scheme alert`): with val matching test, both RISKSTOP variants hold the guarantee
   (0% misses; false alarms 0.7% LLM / 6.1% classifier). Confidence stop is cheaper (no deferrals, no guarantee).
-* Remaining: rule-based TEST noise runs for the alert split (`collect --investigator heuristic_b12 --splits test --scheme alert --only-missing`, fast);
-  human label check; push.
+* Done 2026-11-09: rule-based TEST noise runs for the alert split (`collect --investigator heuristic_b12 --budget 12 --memories evictguard
+  --splits test --scheme alert --only-missing`, ~1 min; `--memories evictguard` is required, there are no FIFO TRAIN runs). Now n = 353,
+  guarantee holds under all noise (0% misses, 5.7% false alarms). docs/RISKSTOP.md A4 point 6.
+* Remaining: human label check (~/Desktop/EVICTGuard_label_review.csv, 0/60 filled).

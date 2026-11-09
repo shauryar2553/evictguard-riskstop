@@ -133,9 +133,14 @@ The scenario split (A3) is kept as the "unseen attack scenario" setting; both ar
    trade is worth it depends on the defer cost (fixed at 1 here, a tenth of a miss).
 4. **RISKSTOP is significantly cheaper than** fixed budget, BAGEN-style, conformal deferral and both LLM-only policies.
 5. **Ablations:** the query-value rule matters (removing it adds +0.17 cost). The residual-risk cap was again unused (LTT picked ρ = 1).
-6. **Rule-based investigator, same split** (`test_metrics_heuristic_b12_alertsplit.csv`; TEST has no-noise runs only, n = 187):
-   RISKSTOP is now certified (it wasn't under the scenario split). Test: misses 0.000 [0, 0.090], false alarms 0.054, cost 0.543.
-   Confidence stop: 0.360.
+6. **Rule-based investigator, same split, all noise conditions** (`test_metrics_heuristic_b12_alertsplit.csv`; n = 353, the same
+   TEST investigations as the LLM table). RISKSTOP is certified (it wasn't under the scenario split). Test: misses 0.000 [0.000, 0.063],
+   false alarms 0.057 [0.034, 0.090], defer 0.33, budget 0.15, cost 0.566. The guarantee holds in every noise condition
+   (no noise: 0 misses, 8/148 false alarms; background flood: 0 misses, 9/148 false alarms; missing critical: none of the 19 called benign; 18 flagged ATTACK, 1 deferred, against a gold label of DEFER).
+   Confidence stop: misses 0.053 [0.011, 0.146], false alarms 0.054, cost 0.301 (cheaper, significant; no guarantee).
+   RISKSTOP is significantly cheaper than fixed budget (−0.22) and conformal deferral (−0.25); tied with BAGEN-style.
+   The LLM investigator reaches the same miss rate with far fewer false alarms (0.7% vs 5.7%) at the same cost (0.563 vs 0.566).
+   (An earlier version of this point used no-noise runs only, n = 187: misses 0.000 [0, 0.090], false alarms 0.054, cost 0.543.)
 
 **Summary of the two settings.** Same scenarios in validation and test: the guarantee holds (0% misses, ≤ 6% false alarms).
 Unseen attack scenarios: false alarms stay controlled, but misses rise to 16%. Distribution-free guarantees need representative validation
